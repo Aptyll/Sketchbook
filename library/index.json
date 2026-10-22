@@ -4,6 +4,11 @@
       "file": "kogmaw-adc-summoner-spells.json",
       "title": "Kog'Maw ADC: summoner spells",
       "description": "Coachless WPA and win rates (patch 16.19, Diamond+) next to LoL wiki numbers, with notes."
+    },
+    {
+      "file": "kogmaw-adc-keystones-ugg.json",
+      "title": "Kog'Maw ADC: keystones (u.gg)",
+      "description": "u.gg win and pick rates for Lethal Tempo, PTA, Stormraider's Surge, Comet and First Strike (patches 26.20 and 26.21, Emerald+ and Diamond+), with noise whiskers and LoL wiki rune text."
     }
   ]
 }
