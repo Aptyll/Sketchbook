@@ -1,0 +1,57 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "pulledAt": "2026-10-22",
+  "stats": {
+    "source": "https://coachless.gg/runes/tree/kogmaw/precision/resolve?role=adc",
+    "site": "coachless.gg",
+    "patch": "16.19",
+    "rank": "Diamond+",
+    "filters": "site defaults (vs all champions)",
+    "metric": "WPA = win rate minus average pre-game win probability, in percentage points",
+    "pickCountsNote": "Keystone pick counts are across all secondary trees. Coachless shows no win rate or pre-game WP on the runes page, only WPA and picks.",
+    "primaryTreeShare": { "Precision": 84, "Sorcery": 14, "Inspiration": 1, "Domination": 0, "Resolve": 0 },
+    "notListed": ["Fleet Footwork", "Conqueror", "Summon Aery", "Deathfire Touch", "Glacial Augment", "Unsealed Spellbook", "Electrocute", "Dark Harvest", "Hail of Blades", "Grasp of the Undying", "Aftershock", "Guardian"]
+  },
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Ranged values (Kog'Maw is ranged). Level ranges are 1 to 18."
+  },
+  "icons": {
+    "source": "Riot Data Dragon",
+    "version": "16.21.1",
+    "base": "https://ddragon.leagueoflegends.com/cdn/img/"
+  },
+  "keystones": [
+    {
+      "name": "First Strike", "tree": "Inspiration",
+      "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+      "wpa": 0.56, "picks": 283,
+      "wiki": "Hit a champion first: 3s of 7% bonus true damage to champions, and 35% of that bonus damage back as gold. 25 to 15s cooldown; lost if they hit you first."
+    },
+    {
+      "name": "Lethal Tempo", "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+      "wpa": 0.38, "picks": 14827,
+      "wiki": "Each attack on a champion: +4.8% attack speed for 6s, up to 6 stacks (28.8%). At 6 stacks attacks add 6 to 21.7 adaptive damage, +1% per 1% bonus attack speed."
+    },
+    {
+      "name": "Arcane Comet", "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+      "wpa": -0.78, "picks": 1268,
+      "wiki": "Ability damage to a champion drops a comet: 15 to 110 (+10% bonus AD, +5% AP), doubled at max travel distance."
+    },
+    {
+      "name": "Press the Attack", "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+      "wpa": -0.96, "picks": 1869,
+      "wiki": "3 attacks on one champion within 4s: 40 to 174 adaptive damage, then +8% damage to champions until 5s after leaving combat."
+    },
+    {
+      "name": "Stormraider's Surge", "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+      "wpa": -1.54, "picks": 1519,
+      "wiki": "Deal 25% of a champion's max health within 3s: +36% move speed and 50% slow resist for 4s. 20 to 8.8s cooldown."
+    }
+  ]
+}
