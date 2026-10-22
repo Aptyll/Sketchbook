@@ -9,6 +9,11 @@
       "file": "kogmaw-adc-keystones-ugg.json",
       "title": "Kog'Maw ADC: keystones (u.gg)",
       "description": "u.gg win and pick rates for Lethal Tempo, PTA, Stormraider's Surge, Comet and First Strike (NA, patch 26.20: All ranks, Diamond+, Master+, Challenger), with noise whiskers and LoL wiki rune text."
+    },
+    {
+      "file": "kogmaw-adc-keystones-coachless.json",
+      "title": "Kog'Maw ADC: keystones (coachless, NA)",
+      "description": "Lethal Tempo, Press the Attack, Stormraider's Surge and more: coachless WPA for NA Gold+, Diamond+ and Master+, patches 16.17 to 16.20 added together, with noise ranges and LoL wiki numbers."
     }
   ]
 }

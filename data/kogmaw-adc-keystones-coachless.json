@@ -1,0 +1,399 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "pulledAt": "2026-10-22",
+  "stats": {
+    "source": "https://coachless.gg/runes/tree/kogmaw/precision/resolve?role=adc",
+    "site": "coachless.gg",
+    "patch": "16.17 to 16.20",
+    "filters": "vs all champions, 'Hide low occurrence' on (site default). Rank and region set in the Filters panel; they don't show in the URL.",
+    "metric": "WPA = win rate minus average pre-game win probability, in percentage points",
+    "pickCountsNote": "Keystone pick counts are across all secondary trees. The runes page shows WPA and picks only, no win rate.",
+    "limits": "Coachless's rank filter goes Gold, Platinum, Emerald, Diamond, Master+. There is no Challenger-only bracket and nothing below Gold, so 'all ranks' here means Gold+.",
+    "notListed": [
+      "Fleet Footwork",
+      "Conqueror",
+      "Summon Aery",
+      "Deathfire Touch",
+      "Glacial Augment",
+      "Unsealed Spellbook",
+      "Electrocute",
+      "Dark Harvest",
+      "Hail of Blades",
+      "Grasp of the Undying",
+      "Aftershock",
+      "Guardian"
+    ],
+    "patches": [
+      "16.17",
+      "16.18",
+      "16.19",
+      "16.20"
+    ],
+    "pooling": "Each patch was pulled on its own (the free site allows one patch at a time). The page adds them up: games are summed and WPA is the game-weighted average, which is exact because WPA is itself an average over games. Pooling mixes any balance changes between patches."
+  },
+  "brackets": [
+    {
+      "key": "naGold",
+      "label": "NA · Gold+ (all ranks)",
+      "region": "North America",
+      "ranks": "Gold, Platinum, Emerald, Diamond, Master+"
+    },
+    {
+      "key": "naDiamond",
+      "label": "NA · Diamond+",
+      "region": "North America",
+      "ranks": "Diamond, Master+"
+    },
+    {
+      "key": "naMaster",
+      "label": "NA · Master+",
+      "region": "North America",
+      "ranks": "Master+"
+    },
+    {
+      "key": "worldDiamond",
+      "label": "All regions · Diamond+",
+      "region": "all",
+      "ranks": "Diamond, Master+",
+      "reference": true
+    }
+  ],
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Ranged values (Kog'Maw is ranged). Level ranges are 1 to 18."
+  },
+  "icons": {
+    "source": "Riot Data Dragon",
+    "version": "16.21.1",
+    "base": "https://ddragon.leagueoflegends.com/cdn/img/"
+  },
+  "keystones": [
+    {
+      "name": "Lethal Tempo",
+      "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+      "wiki": "Each attack on a champion: +4.8% attack speed for 6s, up to 6 stacks (28.8%). At 6 stacks attacks add 6 to 21.7 adaptive damage, +1% per 1% bonus attack speed.",
+      "stats": {
+        "naGold": {
+          "16.17": {
+            "wpa": 0.56,
+            "picks": 13089
+          },
+          "16.18": {
+            "wpa": -0.6,
+            "picks": 10649
+          },
+          "16.19": {
+            "wpa": -0.69,
+            "picks": 10997
+          },
+          "16.20": {
+            "wpa": 0.23,
+            "picks": 12869
+          }
+        },
+        "naDiamond": {
+          "16.17": {
+            "wpa": -2.32,
+            "picks": 1418
+          },
+          "16.18": {
+            "wpa": -4.65,
+            "picks": 1113
+          },
+          "16.19": {
+            "wpa": -1.25,
+            "picks": 1301
+          },
+          "16.20": {
+            "wpa": -1.61,
+            "picks": 1294
+          }
+        },
+        "naMaster": {
+          "16.17": {
+            "wpa": -2.64,
+            "picks": 237
+          },
+          "16.18": {
+            "wpa": -3.43,
+            "picks": 216
+          },
+          "16.19": {
+            "wpa": -2.25,
+            "picks": 171
+          },
+          "16.20": {
+            "wpa": -7.93,
+            "picks": 134
+          }
+        },
+        "worldDiamond": {
+          "16.17": {
+            "wpa": -0.13,
+            "picks": 15044
+          },
+          "16.18": {
+            "wpa": 0.01,
+            "picks": 12537
+          },
+          "16.19": {
+            "wpa": 0.38,
+            "picks": 14827
+          },
+          "16.20": {
+            "wpa": 0.23,
+            "picks": 15461
+          }
+        }
+      }
+    },
+    {
+      "name": "Press the Attack",
+      "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+      "wiki": "3 attacks on one champion within 4s: 40 to 174 adaptive damage, then +8% damage to champions until 5s after leaving combat.",
+      "stats": {
+        "naGold": {
+          "16.17": {
+            "wpa": -0.94,
+            "picks": 2251
+          },
+          "16.18": {
+            "wpa": -0.83,
+            "picks": 1543
+          },
+          "16.19": {
+            "wpa": -1.48,
+            "picks": 1301
+          },
+          "16.20": {
+            "wpa": -2.11,
+            "picks": 1287
+          }
+        },
+        "naDiamond": {
+          "16.17": {
+            "wpa": 0.69,
+            "picks": 440
+          },
+          "16.18": {
+            "wpa": -4.29,
+            "picks": 263
+          },
+          "16.19": {
+            "wpa": -4.32,
+            "picks": 263
+          },
+          "16.20": {
+            "wpa": -0.95,
+            "picks": 218
+          }
+        },
+        "worldDiamond": {
+          "16.17": {
+            "wpa": -0.13,
+            "picks": 2705
+          },
+          "16.18": {
+            "wpa": -0.32,
+            "picks": 1928
+          },
+          "16.19": {
+            "wpa": -0.96,
+            "picks": 1869
+          },
+          "16.20": {
+            "wpa": -1.32,
+            "picks": 1792
+          }
+        },
+        "naMaster": {
+          "16.17": {
+            "wpa": -1.12,
+            "picks": 161
+          }
+        }
+      }
+    },
+    {
+      "name": "Stormraider's Surge",
+      "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+      "wiki": "Deal 25% of a champion's max health within 3s: +36% move speed and 50% slow resist for 4s. 20 to 8.8s cooldown.",
+      "stats": {
+        "naGold": {
+          "16.17": {
+            "wpa": 3.23,
+            "picks": 144
+          },
+          "16.18": {
+            "wpa": 1.23,
+            "picks": 385
+          },
+          "16.19": {
+            "wpa": -3.09,
+            "picks": 937
+          },
+          "16.20": {
+            "wpa": -0.04,
+            "picks": 1227
+          }
+        },
+        "naDiamond": {
+          "16.18": {
+            "wpa": 2.93,
+            "picks": 182
+          },
+          "16.19": {
+            "wpa": -1.51,
+            "picks": 347
+          },
+          "16.20": {
+            "wpa": 3.76,
+            "picks": 451
+          }
+        },
+        "naMaster": {
+          "16.18": {
+            "wpa": 2.9,
+            "picks": 126
+          },
+          "16.19": {
+            "wpa": -1.48,
+            "picks": 170
+          },
+          "16.20": {
+            "wpa": 6.03,
+            "picks": 208
+          }
+        },
+        "worldDiamond": {
+          "16.17": {
+            "wpa": 4.63,
+            "picks": 242
+          },
+          "16.18": {
+            "wpa": 4.11,
+            "picks": 644
+          },
+          "16.19": {
+            "wpa": -1.54,
+            "picks": 1519
+          },
+          "16.20": {
+            "wpa": 0.14,
+            "picks": 2629
+          }
+        }
+      }
+    },
+    {
+      "name": "Arcane Comet",
+      "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+      "wiki": "Ability damage to a champion drops a comet: 15 to 110 (+10% bonus AD, +5% AP), doubled at max travel distance.",
+      "stats": {
+        "naGold": {
+          "16.17": {
+            "wpa": -2.44,
+            "picks": 1083
+          },
+          "16.18": {
+            "wpa": 1.07,
+            "picks": 791
+          },
+          "16.19": {
+            "wpa": -0.61,
+            "picks": 729
+          },
+          "16.20": {
+            "wpa": -0.9,
+            "picks": 1013
+          }
+        },
+        "naDiamond": {
+          "16.17": {
+            "wpa": -2.02,
+            "picks": 255
+          },
+          "16.18": {
+            "wpa": -4.09,
+            "picks": 149
+          },
+          "16.19": {
+            "wpa": -1.13,
+            "picks": 144
+          },
+          "16.20": {
+            "wpa": 2.94,
+            "picks": 180
+          }
+        },
+        "worldDiamond": {
+          "16.17": {
+            "wpa": 0.6,
+            "picks": 1504
+          },
+          "16.18": {
+            "wpa": -3.1,
+            "picks": 1057
+          },
+          "16.19": {
+            "wpa": -0.78,
+            "picks": 1268
+          },
+          "16.20": {
+            "wpa": -0.34,
+            "picks": 1390
+          }
+        }
+      }
+    },
+    {
+      "name": "First Strike",
+      "tree": "Inspiration",
+      "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+      "wiki": "Hit a champion first: 3s of 7% bonus true damage to champions, and 35% of that bonus damage back as gold. 25 to 15s cooldown; lost if they hit you first.",
+      "stats": {
+        "naGold": {
+          "16.17": {
+            "wpa": -0.59,
+            "picks": 294
+          },
+          "16.18": {
+            "wpa": -4.28,
+            "picks": 186
+          },
+          "16.19": {
+            "wpa": -0.45,
+            "picks": 215
+          },
+          "16.20": {
+            "wpa": -0.47,
+            "picks": 217
+          }
+        },
+        "worldDiamond": {
+          "16.17": {
+            "wpa": -0.05,
+            "picks": 459
+          },
+          "16.18": {
+            "wpa": 6.63,
+            "picks": 283
+          },
+          "16.19": {
+            "wpa": 0.56,
+            "picks": 283
+          },
+          "16.20": {
+            "wpa": -2.11,
+            "picks": 238
+          }
+        }
+      }
+    }
+  ]
+}
