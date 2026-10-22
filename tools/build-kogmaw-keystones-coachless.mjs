@@ -43,6 +43,7 @@ s.note(0, 0, `${data.champion} ${data.role} · keystones (coachless, NA)`, { siz
 s.wobblyLine([[4, 58], [760, 54]], { color: 'Red chalk', width: 2.5 });
 s.note(0, 70,
   `Stats: ${stats.site}, patches ${patchRange} added together, pulled ${data.pulledAt}.\n`
+  + `Same patches as ${patchRange.replace(/16\./g, '26.')} on u.gg (Riot's 2026 names).\n`
   + 'Rune numbers: LoL wiki (ranged values).\n'
   + 'Coachless has no Challenger-only bracket; Master+ is its top.',
   { size: 15, color: 'Sepia' });
