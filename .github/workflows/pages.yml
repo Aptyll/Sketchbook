@@ -18,6 +18,8 @@ concurrency:
 jobs:
   test:
     runs-on: ubuntu-latest
+    # A browser install occasionally hangs; fail fast instead of waiting hours.
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -31,6 +33,7 @@ jobs:
     needs: test
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
