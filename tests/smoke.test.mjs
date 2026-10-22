@@ -411,6 +411,8 @@ test('storage ring: shows usage, grows with an image, opens a panel', async () =
   assert.equal(before.pageCount, 1);
   assert.equal(before.imageCount, 0);
   assert.ok(before.quota > 0, 'browser reports a quota');
+  assert.equal(before.budget, 50 * 1024 * 1024);
+  assert.equal(before.backupDue, false);
 
   // Add an image; the ring re-measures after saving.
   await page.evaluate(async () => {
@@ -435,9 +437,29 @@ test('storage ring: shows usage, grows with an image, opens a panel', async () =
   await page.click('#storage-ring');
   assert.equal(await page.locator('#storage-pop').isVisible(), true);
   assert.match(await page.locator('#storage-breakdown').innerText(), /1 page .* 1 image/);
-  assert.match(await page.locator('#storage-quota').innerText(), /% of the .* this browser allows/);
+  assert.match(await page.locator('#storage-used').innerText(), / \/ 50 MB$/);
+  assert.match(await page.locator('#storage-quota').innerText(), /browser allows up to .* for this site/);
+  assert.equal(await page.locator('#storage-backup').innerText(), 'No backup exported yet.');
   await page.keyboard.press('Escape');
   assert.equal(await page.locator('#storage-pop').isVisible(), false);
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
+test('storage ring: backup reminder after 7 days, cleared by an export', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 }, acceptDownloads: true });
+  await context.addInitScript(() => {
+    localStorage.setItem('sketchbook:last-backup', String(Date.now() - 9 * 24 * 60 * 60 * 1000));
+  });
+  const { page, errors } = await openApp(context);
+  await page.waitForSelector('#storage-ring.remind');
+  await page.click('#storage-ring');
+  assert.match(await page.locator('#storage-backup').innerText(), /^Last backup 9 days ago\. Export one/);
+
+  await Promise.all([page.waitForEvent('download'), page.click('#storage-export')]);
+  await page.waitForSelector('#storage-ring:not(.remind)');
+  assert.equal(await page.locator('#storage-backup').innerText(), 'Last backup today.');
 
   assert.deepEqual(errors, []);
   await context.close();

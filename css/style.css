@@ -414,6 +414,18 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
   transition: stroke-dasharray 0.4s ease;
 }
 #storage-ring.warn .ring-fill { stroke: var(--danger); }
+#storage-ring { position: relative; }
+#storage-ring.remind::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--danger);
+  box-shadow: 0 0 0 2px var(--bg);
+}
 
 #storage-pop {
   position: absolute;
@@ -439,6 +451,8 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 #storage-ring.warn ~ #storage-pop #storage-bar span { background: var(--danger); }
 #storage-safe { color: var(--danger); }
 #storage-safe.ok { color: var(--muted); }
+#storage-over, #storage-backup.due { color: var(--danger); }
+#storage-quota { opacity: 0.75; }
 .storage-actions { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px -6px -4px; }
 .storage-actions .text-btn { color: var(--accent); }
 

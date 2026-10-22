@@ -5,7 +5,7 @@ import { db } from './db.js';
 import { strokePath, pointsBounds, hitStroke, round } from './ink.js';
 import { buildBackup, downloadText, restoreBackup, referencedBlobIds, storeImageSources } from './backup.js';
 import { COLORS, uid, normalizeItem } from './format.js';
-import { initStorageMeter, scheduleStorageRefresh, refreshStorage, storageInfo } from './storage.js';
+import { initStorageMeter, scheduleStorageRefresh, refreshStorage, storageInfo, afterSave, noteBackup } from './storage.js';
 
 // ---------- Constants ----------
 
@@ -127,7 +127,7 @@ async function flush() {
   try {
     for (const page of pages) await db.put('pages', page);
     if (!dirty.size) setStatus('Saved');
-    scheduleStorageRefresh();
+    afterSave();
   } catch (err) {
     console.error(err);
     pages.forEach((p) => dirty.add(p));
@@ -917,6 +917,7 @@ async function exportBackup() {
     const json = await buildBackup();
     const stamp = new Date().toISOString().slice(0, 10);
     downloadText(`sketchbook-backup-${stamp}.json`, json);
+    noteBackup();
     toast('Backup downloaded');
   } catch (err) {
     toast(`Export failed: ${err.message}`);
@@ -1015,7 +1016,7 @@ const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 
   remove(id | ids)                delete items from the open page
   importPage(page)                add a whole page object as a new page and open it
   fit()                           zoom to show everything
-  storage()                       bytes used by pages and images, browser quota, persisted?
+  storage()                       bytes used vs the 50 MB budget, browser quota, persisted, backup due
   colors                          palette names and hex values`;
 
 const asList = (v) => (Array.isArray(v) ? v : [v]);
