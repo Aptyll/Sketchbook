@@ -402,6 +402,60 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 }
 #zoom-label { font-size: 12px; font-variant-numeric: tabular-nums; }
 
+/* ---------- Storage ring ---------- */
+
+#storage-ring { width: 26px; height: 26px; border-radius: 50%; }
+#storage-ring svg { width: 16px; height: 16px; transform: rotate(-90deg); stroke-width: 2; }
+#storage-ring .ring-track { stroke: var(--line); }
+#storage-ring .ring-fill {
+  stroke: var(--accent);
+  stroke-linecap: round;
+  stroke-dasharray: 0 100;
+  transition: stroke-dasharray 0.4s ease;
+}
+#storage-ring.warn .ring-fill { stroke: var(--danger); }
+#storage-ring { position: relative; }
+#storage-ring.remind::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--danger);
+  box-shadow: 0 0 0 2px var(--bg);
+}
+
+#storage-pop {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  width: 280px;
+  padding: 12px 14px;
+  background: var(--panel-solid);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.45);
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+  z-index: 5;
+}
+#storage-pop p { margin: 6px 0 0; }
+.storage-row { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+.storage-label { color: var(--text); font-family: var(--serif); font-size: 15px; }
+#storage-used { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+#storage-bar { height: 4px; margin-top: 8px; border-radius: 2px; background: var(--line); overflow: hidden; }
+#storage-bar span { display: block; height: 100%; background: var(--accent); border-radius: 2px; }
+#storage-ring.warn ~ #storage-pop #storage-bar span { background: var(--danger); }
+#storage-safe { color: var(--danger); }
+#storage-safe.ok { color: var(--muted); }
+#storage-over, #storage-backup.due { color: var(--danger); }
+#storage-quota { opacity: 0.75; }
+.storage-actions { display: flex; flex-wrap: wrap; gap: 4px; margin: 8px -6px -4px; }
+.storage-actions .text-btn { color: var(--accent); }
+
 #toast {
   position: absolute;
   left: 50%;
@@ -419,7 +473,9 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 @media (max-width: 720px) {
   #sidebar { position: absolute; top: 0; bottom: 0; left: 0; box-shadow: 0 0 24px rgba(0, 0, 0, 0.5); }
   body.sidebar-hidden #sidebar { box-shadow: none; }
-  #corner { display: none; }
+  /* keep just the storage ring on small screens */
+  #save-status, #zoom-label { display: none; }
+  #corner { top: 16px; right: 12px; }
   #toolbar { bottom: 10px; gap: 2px; padding: 4px; }
   .sep { margin: 4px 0; }
 }

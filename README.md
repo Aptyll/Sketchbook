@@ -36,6 +36,12 @@ Everything is saved in your browser (IndexedDB), on the device you use it on. No
 That also means clearing site data for the page, or switching browser or device, starts you fresh.
 Use **Export backup** now and then: it downloads one `.json` file with every page and image, which **Import** brings back on any browser.
 
+The small ring in the top-right corner fills as your pages and images use up a 50 MB budget. It turns red at 80%; past 100% nothing breaks, it just stays red. Click it for the details: the breakdown, how much the browser itself allows (usually far more), when you last exported a backup, and whether the browser has agreed to keep your pages ("persistent storage"). Without that, a browser may clear site data when the disk runs low, so the sketchbook asks after your first save and the panel has a button to ask again.
+
+A red dot on the ring means it has been 7 days or more since your last backup (or since you started, if you never exported one).
+
+Why not `localStorage`? It holds only about 5 MB of text per site and blocks the page while it writes, so a handful of pasted images would fill it. IndexedDB stores images as files and usually gets hundreds of times more room.
+
 ## Development
 
 Plain HTML, CSS and JavaScript modules. No build step and no runtime dependencies.
@@ -53,6 +59,7 @@ Files:
 - `js/app.js`: canvas, tools, pages, keyboard and clipboard.
 - `js/ink.js`: stroke smoothing and hit testing.
 - `js/db.js`: IndexedDB storage.
+- `js/storage.js`: the storage ring and its panel.
 - `js/backup.js`: export and import.
 - `js/format.js`: the page format, and checking of anything imported or added by an agent.
 - `library/`: ready-made pages, listed in `library/index.json`.

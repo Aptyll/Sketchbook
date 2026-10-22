@@ -79,7 +79,23 @@
 
     <div id="corner">
       <span id="save-status" aria-live="polite"></span>
+      <button id="storage-ring" class="icon-btn" aria-haspopup="dialog" aria-expanded="false" aria-controls="storage-pop" title="Storage">
+        <svg viewBox="0 0 16 16" aria-hidden="true"><circle class="ring-track" cx="8" cy="8" r="6"/><circle class="ring-fill" cx="8" cy="8" r="6"/></svg>
+      </button>
       <button id="zoom-label" class="text-btn" title="Reset zoom (0)">100%</button>
+      <div id="storage-pop" role="dialog" aria-label="Storage" hidden>
+        <div class="storage-row"><span class="storage-label">Saved in this browser</span><strong id="storage-used"></strong></div>
+        <div id="storage-bar"><span></span></div>
+        <p id="storage-breakdown"></p>
+        <p id="storage-over" hidden></p>
+        <p id="storage-backup"></p>
+        <p id="storage-safe"></p>
+        <p id="storage-quota"></p>
+        <div class="storage-actions">
+          <button id="storage-persist" class="text-btn" hidden>Ask the browser to keep them</button>
+          <button id="storage-export" class="text-btn">Export a backup</button>
+        </div>
+      </div>
     </div>
 
     <div id="toast" role="status" hidden></div>
