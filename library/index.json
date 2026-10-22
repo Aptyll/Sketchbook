@@ -1,0 +1,9 @@
+{
+  "pages": [
+    {
+      "file": "kogmaw-adc-summoner-spells.json",
+      "title": "Kog'Maw ADC: summoner spells",
+      "description": "Coachless WPA and win rates (patch 16.19, Diamond+) next to LoL wiki numbers, with notes."
+    }
+  ]
+}

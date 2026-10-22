@@ -1,0 +1,1434 @@
+{
+ "format": "sketchbook-page",
+ "version": 1,
+ "page": {
+  "title": "Kog'Maw ADC: summoner spells",
+  "fit": true,
+  "items": [
+   {
+    "id": "note-1",
+    "type": "note",
+    "x": 0,
+    "y": 0,
+    "text": "Kog'Maw ADC · summoner spells",
+    "color": "#e9dfc9",
+    "size": 38
+   },
+   {
+    "id": "ink-2",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      4.2,
+      57.4
+     ],
+     [
+      16.5,
+      57.7
+     ],
+     [
+      27.9,
+      57.1
+     ],
+     [
+      41,
+      57.8
+     ],
+     [
+      51.8,
+      58.3
+     ],
+     [
+      64.4,
+      56.8
+     ],
+     [
+      76.2,
+      57.3
+     ],
+     [
+      88.7,
+      57.9
+     ],
+     [
+      100.4,
+      57.2
+     ],
+     [
+      113.3,
+      56.7
+     ],
+     [
+      125.2,
+      56.8
+     ],
+     [
+      137.2,
+      57.5
+     ],
+     [
+      149,
+      57
+     ],
+     [
+      161.6,
+      57.3
+     ],
+     [
+      172.7,
+      56
+     ],
+     [
+      185.9,
+      56.1
+     ],
+     [
+      198.1,
+      56.8
+     ],
+     [
+      209.8,
+      56.5
+     ],
+     [
+      221.6,
+      56.7
+     ],
+     [
+      234.1,
+      56.2
+     ],
+     [
+      246.4,
+      56.8
+     ],
+     [
+      258.2,
+      56.2
+     ],
+     [
+      269.4,
+      55.6
+     ],
+     [
+      282.5,
+      56.6
+     ],
+     [
+      293.4,
+      55.6
+     ],
+     [
+      305.8,
+      55.5
+     ],
+     [
+      318.6,
+      55.3
+     ],
+     [
+      330.4,
+      54.9
+     ],
+     [
+      342.1,
+      55.6
+     ],
+     [
+      354.2,
+      55.7
+     ],
+     [
+      367.3,
+      54.9
+     ],
+     [
+      378.2,
+      55.1
+     ],
+     [
+      390.2,
+      55.6
+     ],
+     [
+      402.7,
+      55
+     ],
+     [
+      415.6,
+      55.2
+     ],
+     [
+      426.5,
+      55
+     ],
+     [
+      439.7,
+      54.6
+     ],
+     [
+      451.4,
+      55.2
+     ],
+     [
+      462.8,
+      54.5
+     ],
+     [
+      475.3,
+      54.8
+     ],
+     [
+      487.2,
+      55.3
+     ],
+     [
+      499.9,
+      55.2
+     ],
+     [
+      511.3,
+      54
+     ],
+     [
+      524.1,
+      54.6
+     ],
+     [
+      536.6,
+      53.6
+     ],
+     [
+      548.3,
+      54.7
+     ],
+     [
+      560,
+      54
+     ]
+    ]
+   },
+   {
+    "id": "note-3",
+    "type": "note",
+    "x": 0,
+    "y": 70,
+    "text": "Stats: coachless.gg, patch 16.19, Diamond+, 19,869 games.\nSpell numbers: LoL wiki. Pulled 2026-10-22.",
+    "color": "#b8925a",
+    "size": 15
+   },
+   {
+    "id": "note-4",
+    "type": "note",
+    "x": 0,
+    "y": 138,
+    "text": "Spell  ·  wiki numbers",
+    "color": "#7f98ad",
+    "size": 15
+   },
+   {
+    "id": "note-5",
+    "type": "note",
+    "x": 550,
+    "y": 138,
+    "text": "WPA (pp)",
+    "color": "#7f98ad",
+    "size": 15
+   },
+   {
+    "id": "note-6",
+    "type": "note",
+    "x": 875,
+    "y": 138,
+    "text": "Win rate · pre-game WP · picks",
+    "color": "#7f98ad",
+    "size": 15
+   },
+   {
+    "id": "ink-7",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.5,
+    "points": [
+     [
+      699.8,
+      167.3
+     ],
+     [
+      699.4,
+      180.6
+     ],
+     [
+      699.4,
+      191.4
+     ],
+     [
+      700.4,
+      203.6
+     ],
+     [
+      699.3,
+      216
+     ],
+     [
+      699.5,
+      228.2
+     ],
+     [
+      699.3,
+      239.3
+     ],
+     [
+      700.1,
+      251.7
+     ],
+     [
+      700.6,
+      262.9
+     ],
+     [
+      700.2,
+      275.4
+     ],
+     [
+      699.8,
+      287.2
+     ],
+     [
+      699.4,
+      298.1
+     ],
+     [
+      699.7,
+      310.3
+     ],
+     [
+      699.8,
+      322.2
+     ],
+     [
+      700,
+      334.4
+     ],
+     [
+      700.1,
+      346.8
+     ],
+     [
+      700.5,
+      357.5
+     ],
+     [
+      699.8,
+      369.6
+     ],
+     [
+      699.4,
+      382.8
+     ],
+     [
+      699.9,
+      393.7
+     ],
+     [
+      700.1,
+      405.2
+     ],
+     [
+      700.7,
+      418.3
+     ],
+     [
+      700.8,
+      430.4
+     ],
+     [
+      700.6,
+      442.1
+     ],
+     [
+      700.1,
+      453.9
+     ],
+     [
+      700.5,
+      465.2
+     ],
+     [
+      699.8,
+      477.8
+     ],
+     [
+      699.8,
+      489.8
+     ],
+     [
+      699.4,
+      501.8
+     ],
+     [
+      699.5,
+      513.3
+     ],
+     [
+      700.7,
+      525.5
+     ],
+     [
+      700.4,
+      537.3
+     ],
+     [
+      700.8,
+      547.9
+     ],
+     [
+      700.2,
+      560
+     ],
+     [
+      700.7,
+      573.2
+     ],
+     [
+      700.3,
+      584.2
+     ],
+     [
+      700.2,
+      596.9
+     ],
+     [
+      700.1,
+      607.5
+     ],
+     [
+      700,
+      620
+     ]
+    ]
+   },
+   {
+    "id": "ink-8",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.2,
+    "points": [
+     [
+      560.7,
+      164.7
+     ],
+     [
+      560,
+      172
+     ]
+    ]
+   },
+   {
+    "id": "note-9",
+    "type": "note",
+    "x": 551,
+    "y": 624,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 12
+   },
+   {
+    "id": "ink-10",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.2,
+    "points": [
+     [
+      630.6,
+      163.6
+     ],
+     [
+      630,
+      172
+     ]
+    ]
+   },
+   {
+    "id": "note-11",
+    "type": "note",
+    "x": 621,
+    "y": 624,
+    "text": "−1",
+    "color": "#7f98ad",
+    "size": 12
+   },
+   {
+    "id": "ink-12",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.2,
+    "points": [
+     [
+      700,
+      163.6
+     ],
+     [
+      700,
+      172
+     ]
+    ]
+   },
+   {
+    "id": "note-13",
+    "type": "note",
+    "x": 691,
+    "y": 624,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 12
+   },
+   {
+    "id": "ink-14",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.2,
+    "points": [
+     [
+      769.4,
+      164.1
+     ],
+     [
+      770,
+      172
+     ]
+    ]
+   },
+   {
+    "id": "note-15",
+    "type": "note",
+    "x": 761,
+    "y": 624,
+    "text": "+1",
+    "color": "#7f98ad",
+    "size": 12
+   },
+   {
+    "id": "ink-16",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.2,
+    "points": [
+     [
+      839.9,
+      164.5
+     ],
+     [
+      840,
+      172
+     ]
+    ]
+   },
+   {
+    "id": "note-17",
+    "type": "note",
+    "x": 831,
+    "y": 624,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 12
+   },
+   {
+    "id": "img-18",
+    "type": "image",
+    "x": 0,
+    "y": 180,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerBarrier.png"
+   },
+   {
+    "id": "note-19",
+    "type": "note",
+    "x": 70,
+    "y": 176,
+    "text": "Barrier",
+    "color": "#e9dfc9",
+    "size": 26
+   },
+   {
+    "id": "note-20",
+    "type": "note",
+    "x": 70,
+    "y": 210,
+    "text": "180s · Shield 100 to 460 (lv 1 to 18) for 2.5s. Not\nreduced by Grievous Wounds.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-21",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      700.1,
+      201.3
+     ],
+     [
+      712.9,
+      202.8
+     ],
+     [
+      723.9,
+      202.1
+     ],
+     [
+      736.2,
+      201.9
+     ],
+     [
+      749,
+      202
+     ]
+    ]
+   },
+   {
+    "id": "note-22",
+    "type": "note",
+    "x": 759,
+    "y": 190,
+    "text": "+0.70",
+    "color": "#8f9a6e",
+    "size": 16
+   },
+   {
+    "id": "note-23",
+    "type": "note",
+    "x": 875,
+    "y": 182,
+    "text": "53.3% · 52.6% · 61.3% (12,192)\nnoise ±0.9 pp",
+    "color": "#e9dfc9",
+    "size": 15
+   },
+   {
+    "id": "img-24",
+    "type": "image",
+    "x": 0,
+    "y": 272,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerFlash.png"
+   },
+   {
+    "id": "note-25",
+    "type": "note",
+    "x": 70,
+    "y": 268,
+    "text": "Flash",
+    "color": "#e9dfc9",
+    "size": 26
+   },
+   {
+    "id": "note-26",
+    "type": "note",
+    "x": 70,
+    "y": 302,
+    "text": "300s · Blink up to 400 units toward the cursor.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-27",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 10,
+    "points": [
+     [
+      697.7,
+      293.3
+     ],
+     [
+      702,
+      294
+     ]
+    ]
+   },
+   {
+    "id": "note-28",
+    "type": "note",
+    "x": 710,
+    "y": 282,
+    "text": "0.00",
+    "color": "#e9dfc9",
+    "size": 16
+   },
+   {
+    "id": "note-29",
+    "type": "note",
+    "x": 875,
+    "y": 274,
+    "text": "52.4% · 52.4% · 99.9% (19,869)\nnoise ±0.7 pp",
+    "color": "#e9dfc9",
+    "size": 15
+   },
+   {
+    "id": "img-30",
+    "type": "image",
+    "x": 0,
+    "y": 364,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerHaste.png"
+   },
+   {
+    "id": "note-31",
+    "type": "note",
+    "x": 70,
+    "y": 360,
+    "text": "Ghost",
+    "color": "#e9dfc9",
+    "size": 26
+   },
+   {
+    "id": "note-32",
+    "type": "note",
+    "x": 70,
+    "y": 394,
+    "text": "240s · 24% to 51% bonus move speed (by level) for 10s,\nignores unit collision.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-33",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 12,
+    "points": [
+     [
+      700,
+      385.5
+     ],
+     [
+      687.9,
+      386.6
+     ],
+     [
+      677.7,
+      386
+     ],
+     [
+      665.1,
+      385.4
+     ],
+     [
+      653.9,
+      386.7
+     ],
+     [
+      642.6,
+      386
+     ]
+    ]
+   },
+   {
+    "id": "note-34",
+    "type": "note",
+    "x": 580.6,
+    "y": 374,
+    "text": "−0.82",
+    "color": "#c4593f",
+    "size": 16
+   },
+   {
+    "id": "note-35",
+    "type": "note",
+    "x": 875,
+    "y": 366,
+    "text": "51.5% · 52.4% · 21.2% (4,208)\nnoise ±1.5 pp",
+    "color": "#e9dfc9",
+    "size": 15
+   },
+   {
+    "id": "img-36",
+    "type": "image",
+    "x": 0,
+    "y": 456,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerTeleport.png"
+   },
+   {
+    "id": "note-37",
+    "type": "note",
+    "x": 70,
+    "y": 452,
+    "text": "Teleport",
+    "color": "#e9dfc9",
+    "size": 26
+   },
+   {
+    "id": "note-38",
+    "type": "note",
+    "x": 70,
+    "y": 486,
+    "text": "300s · 3s channel to an allied turret, minion or ward.\nUpgrades to Unleashed Teleport at 10:00.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-39",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 12,
+    "points": [
+     [
+      700.8,
+      477.3
+     ],
+     [
+      687.6,
+      477.5
+     ],
+     [
+      675.6,
+      478.5
+     ],
+     [
+      664.4,
+      478
+     ],
+     [
+      653.7,
+      478.1
+     ],
+     [
+      640.8,
+      477.7
+     ],
+     [
+      629.3,
+      478
+     ]
+    ]
+   },
+   {
+    "id": "note-40",
+    "type": "note",
+    "x": 567.3,
+    "y": 466,
+    "text": "−1.01",
+    "color": "#c4593f",
+    "size": 16
+   },
+   {
+    "id": "note-41",
+    "type": "note",
+    "x": 875,
+    "y": 458,
+    "text": "50.8% · 51.8% · 5.8% (1,148)\nnoise ±2.9 pp",
+    "color": "#e9dfc9",
+    "size": 15
+   },
+   {
+    "id": "img-42",
+    "type": "image",
+    "x": 0,
+    "y": 548,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerExhaust.png"
+   },
+   {
+    "id": "note-43",
+    "type": "note",
+    "x": 70,
+    "y": 544,
+    "text": "Exhaust",
+    "color": "#e9dfc9",
+    "size": 26
+   },
+   {
+    "id": "note-44",
+    "type": "note",
+    "x": 70,
+    "y": 578,
+    "text": "240s · Range 650. Slows the target 40% and cuts their\ndamage dealt 35% for 3s.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-45",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 12,
+    "points": [
+     [
+      699.5,
+      570.2
+     ],
+     [
+      688,
+      569.9
+     ],
+     [
+      675.5,
+      569.8
+     ],
+     [
+      663.3,
+      570
+     ],
+     [
+      651,
+      570.3
+     ],
+     [
+      637.7,
+      569.6
+     ],
+     [
+      625.6,
+      569.3
+     ],
+     [
+      614,
+      569.8
+     ],
+     [
+      600.8,
+      570
+     ],
+     [
+      588.7,
+      569.6
+     ],
+     [
+      576.1,
+      570
+     ]
+    ]
+   },
+   {
+    "id": "note-46",
+    "type": "note",
+    "x": 514.1,
+    "y": 558,
+    "text": "−1.77",
+    "color": "#c4593f",
+    "size": 16
+   },
+   {
+    "id": "note-47",
+    "type": "note",
+    "x": 875,
+    "y": 550,
+    "text": "50.3% · 52.1% · 6.5% (1,295)\nnoise ±2.7 pp",
+    "color": "#e9dfc9",
+    "size": 15
+   },
+   {
+    "id": "note-48",
+    "type": "note",
+    "x": 0,
+    "y": 666,
+    "text": "Not on coachless's list for Kog'Maw ADC (no WPA to compare):",
+    "color": "#7f98ad",
+    "size": 15
+   },
+   {
+    "id": "img-49",
+    "type": "image",
+    "x": 0,
+    "y": 710,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerHeal.png"
+   },
+   {
+    "id": "note-50",
+    "type": "note",
+    "x": 70,
+    "y": 706,
+    "text": "Heal",
+    "color": "#7f98ad",
+    "size": 26
+   },
+   {
+    "id": "note-51",
+    "type": "note",
+    "x": 70,
+    "y": 740,
+    "text": "240s · Heals you and the nearest ally 80 to 318 (lv 1 to\n18), +30% move speed for 1s. Half healing if healed again\nwithin 35s.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "img-52",
+    "type": "image",
+    "x": 0,
+    "y": 802,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/SummonerBoost.png"
+   },
+   {
+    "id": "note-53",
+    "type": "note",
+    "x": 70,
+    "y": 798,
+    "text": "Cleanse",
+    "color": "#7f98ad",
+    "size": 26
+   },
+   {
+    "id": "note-54",
+    "type": "note",
+    "x": 70,
+    "y": 832,
+    "text": "240s · Removes disables (not airborne, nearsight or\nsuppression) and gives 75% tenacity for 3s.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "ink-55",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      642,
+      183.8
+     ],
+     [
+      648.6,
+      180.2
+     ],
+     [
+      657.9,
+      177.1
+     ],
+     [
+      667.6,
+      173.9
+     ],
+     [
+      681.7,
+      172.5
+     ],
+     [
+      693.9,
+      170.3
+     ],
+     [
+      707.1,
+      168.4
+     ],
+     [
+      721.8,
+      168
+     ],
+     [
+      736.2,
+      167.1
+     ],
+     [
+      750.7,
+      168.2
+     ],
+     [
+      765.3,
+      168.3
+     ],
+     [
+      778.4,
+      170.2
+     ],
+     [
+      793.6,
+      170.5
+     ],
+     [
+      805.8,
+      172.9
+     ],
+     [
+      817.3,
+      175.4
+     ],
+     [
+      828.3,
+      178.2
+     ],
+     [
+      839.9,
+      180.9
+     ],
+     [
+      847.5,
+      184.5
+     ],
+     [
+      854.5,
+      188.2
+     ],
+     [
+      857.2,
+      192.4
+     ],
+     [
+      863.1,
+      196.3
+     ],
+     [
+      863.5,
+      200.5
+     ],
+     [
+      862.4,
+      204.7
+     ],
+     [
+      863.2,
+      209
+     ],
+     [
+      856.5,
+      212.9
+     ],
+     [
+      850.2,
+      216.6
+     ],
+     [
+      844.8,
+      220.6
+     ],
+     [
+      835.8,
+      223.9
+     ],
+     [
+      826.7,
+      227.2
+     ],
+     [
+      814.4,
+      229.6
+     ],
+     [
+      801.5,
+      231.6
+     ],
+     [
+      789.4,
+      234
+     ],
+     [
+      776.1,
+      236
+     ],
+     [
+      761.8,
+      237.4
+     ],
+     [
+      746.5,
+      236.9
+     ],
+     [
+      731.6,
+      237.2
+     ],
+     [
+      716.6,
+      236.9
+     ],
+     [
+      701.3,
+      236.5
+     ],
+     [
+      688.6,
+      233.9
+     ],
+     [
+      675.2,
+      232.1
+     ],
+     [
+      660.9,
+      230.4
+     ],
+     [
+      650.7,
+      227.2
+     ],
+     [
+      643.5,
+      223.4
+     ],
+     [
+      632.1,
+      220.5
+     ],
+     [
+      626.5,
+      216.5
+     ],
+     [
+      621.8,
+      212.5
+     ],
+     [
+      617.6,
+      208.4
+     ],
+     [
+      615,
+      204.2
+     ],
+     [
+      612.9,
+      199.9
+     ],
+     [
+      617,
+      195.8
+     ],
+     [
+      616.6,
+      191.3
+     ],
+     [
+      622.5,
+      187.3
+     ],
+     [
+      633,
+      184
+     ],
+     [
+      639.1,
+      179.9
+     ],
+     [
+      650.3,
+      177
+     ],
+     [
+      660.7,
+      173.9
+     ],
+     [
+      672.6,
+      171.1
+     ]
+    ]
+   },
+   {
+    "id": "note-56",
+    "type": "note",
+    "x": 1260,
+    "y": 136,
+    "text": "How to read it",
+    "color": "#b8925a",
+    "size": 24
+   },
+   {
+    "id": "note-57",
+    "type": "note",
+    "x": 1260,
+    "y": 172,
+    "text": "WPA = win rate − how likely those players were to\nwin anyway (after draft). Positive means the pick\nadded win chance on average.\n\"Noise\" is my rough 95% margin from sample size\nalone. It ignores error in coachless's own model.",
+    "color": "#e9dfc9",
+    "size": 16
+   },
+   {
+    "id": "note-58",
+    "type": "note",
+    "x": 1260,
+    "y": 330,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 24
+   },
+   {
+    "id": "note-59",
+    "type": "note",
+    "x": 1260,
+    "y": 366,
+    "text": "• Flash is in 99.9% of games, so its WPA of 0.00\ncan't be measured. It's a given, not a verdict.\n• The real choice is the second spell. Barrier leads\nat +0.70 over 12,192 games.\n• Barrier vs Ghost: a 1.5 pp gap, about 1.7× its\nstandard error. A lean, not proof.\n• Teleport and Exhaust have ~1.1K to 1.3K games\neach, so ±3 pp of noise. Too few to rank them.",
+    "color": "#e9dfc9",
+    "size": 16
+   },
+   {
+    "id": "note-60",
+    "type": "note",
+    "x": 1260,
+    "y": 620,
+    "text": "Why Barrier might suit Kog'Maw",
+    "color": "#b8925a",
+    "size": 24
+   },
+   {
+    "id": "note-61",
+    "type": "note",
+    "x": 1260,
+    "y": 656,
+    "text": "• No dash: fights are decided in short burst\nwindows.\n• At lv 18 Barrier blocks 460 and is back every\n180s. Heal restores 318 to you and an ally, every\n240s.\n• Barrier ignores Grievous Wounds and works at full\nHP.\nA hypothesis from the wiki numbers, not something\nthese stats prove.",
+    "color": "#e9dfc9",
+    "size": 16
+   },
+   {
+    "id": "ink-62",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2,
+    "points": [
+     [
+      1243.7,
+      347.3
+     ],
+     [
+      1232.8,
+      342.4
+     ],
+     [
+      1222.9,
+      337.4
+     ],
+     [
+      1212.5,
+      331.7
+     ],
+     [
+      1202.9,
+      326.7
+     ],
+     [
+      1192.1,
+      320.5
+     ],
+     [
+      1182.1,
+      316.1
+     ],
+     [
+      1171.3,
+      310
+     ],
+     [
+      1161.2,
+      305.5
+     ],
+     [
+      1150,
+      299.2
+     ],
+     [
+      1140.4,
+      293.2
+     ],
+     [
+      1132,
+      285.1
+     ],
+     [
+      1123.2,
+      279.2
+     ],
+     [
+      1112.9,
+      271.8
+     ],
+     [
+      1103.7,
+      264.2
+     ],
+     [
+      1095.5,
+      257.2
+     ],
+     [
+      1085.1,
+      249.6
+     ],
+     [
+      1076.4,
+      242.7
+     ],
+     [
+      1067.4,
+      235.6
+     ],
+     [
+      1058.1,
+      228.4
+     ],
+     [
+      1049.5,
+      221.1
+     ],
+     [
+      1040,
+      214
+     ]
+    ]
+   },
+   {
+    "id": "ink-63",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2,
+    "points": [
+     [
+      1053.7,
+      217
+     ],
+     [
+      1040,
+      214
+     ]
+    ]
+   },
+   {
+    "id": "ink-64",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2,
+    "points": [
+     [
+      1046.2,
+      226.6
+     ],
+     [
+      1040,
+      214
+     ]
+    ]
+   },
+   {
+    "id": "note-65",
+    "type": "note",
+    "x": 1260,
+    "y": 860,
+    "text": "To test next: Barrier vs Heal in my own games; check\nagain on the next patch.",
+    "color": "#8f9a6e",
+    "size": 15
+   },
+   {
+    "id": "note-66",
+    "type": "note",
+    "x": 0,
+    "y": 904,
+    "text": "Sources: https://coachless.gg/spells/kogmaw?role=adc (site defaults (vs all champions))\nhttps://wiki.leagueoflegends.com/en-us/<spell> · icons: Riot Data Dragon 16.21.1\nMade by tools/build-kogmaw-spells.mjs from data/kogmaw-adc-spells.json.",
+    "color": "#7f98ad",
+    "size": 12
+   }
+  ],
+  "source": {
+   "stats": "https://coachless.gg/spells/kogmaw?role=adc",
+   "wiki": "https://wiki.leagueoflegends.com/en-us/",
+   "icons": "Riot Data Dragon 16.21.1",
+   "pulledAt": "2026-10-22"
+  }
+ }
+}

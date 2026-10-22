@@ -10,7 +10,7 @@ import { fileURLToPath } from 'node:url';
 import { chromium } from 'playwright';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
-const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png' };
+const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.png': 'image/png', '.json': 'application/json' };
 
 let server;
 let browser;
@@ -220,5 +220,110 @@ test('pages: create, switch and delete', async () => {
   assert.equal(await count(page, '#ink-layer g'), 0);
 
   assert.deepEqual(errors, []);
+  await context.close();
+});
+
+// A 1x1 PNG stands in for Riot's icon CDN, so tests never touch the network.
+const PIXEL = Buffer.from(
+  'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8sPXJfwAH6gNI5pMxEgAAAABJRU5ErkJggg==',
+  'base64',
+);
+async function fakeIcons(context, { fail = false } = {}) {
+  await context.route('https://ddragon.leagueoflegends.com/**', (route) =>
+    fail ? route.abort() : route.fulfill({ status: 200, contentType: 'image/png', body: PIXEL }));
+}
+
+test('agent API: add, remove, undo, and it persists', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  await fakeIcons(context);
+  const { page, errors } = await openApp(context);
+
+  const result = await page.evaluate(async () => {
+    const sb = window.sketchbook;
+    const pageId = sb.newPage('Agent test');
+    const ids = await sb.add([
+      { type: 'note', x: 0, y: 0, text: 'Barrier +0.70', color: 'Moss', size: 20 },
+      { type: 'stroke', points: [[0, 40], [200, 40]], color: 'red chalk', width: 4 },
+      { type: 'image', x: 0, y: 60, w: 48, h: 48, src: 'https://ddragon.leagueoflegends.com/cdn/x/img/spell/SummonerBarrier.png' },
+    ]);
+    let bad = null;
+    try { await sb.add({ type: 'note', x: 'left', y: 0, text: 'x' }); } catch (e) { bad = e.message; }
+    return { pageId, ids, bad, pages: sb.pages(), help: sb.help() };
+  });
+  assert.equal(result.ids.length, 3);
+  assert.match(result.bad, /numeric x and y/);
+  assert.match(result.help, /add\(item/);
+  assert.equal(result.pages.find((p) => p.id === result.pageId).items, 3);
+  assert.equal(await page.locator('.item.note').innerText(), 'Barrier +0.70');
+  assert.equal(await page.locator('#ink-layer path.ink').getAttribute('stroke'), '#c4593f');
+  await page.waitForSelector('.item.image img[src^="blob:"]');
+
+  // One add is one undo step.
+  await page.keyboard.press('Control+z');
+  assert.equal(await count(page, '.item'), 0);
+  await page.keyboard.press('Control+Shift+z');
+  assert.equal(await count(page, '.item'), 2);
+
+  assert.equal(await page.evaluate((id) => window.sketchbook.remove(id), result.ids[1]), 1);
+  assert.equal(await count(page, '#ink-layer g'), 0);
+  await page.waitForFunction(() => document.querySelector('#save-status').textContent === 'Saved');
+
+  // The image was stored locally, so it still loads after a reload.
+  await page.reload();
+  await page.waitForSelector('.item.image img[src^="blob:"]');
+  assert.equal(await page.locator('#page-title').inputValue(), 'Agent test');
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
+test('library: add the spells page twice, as two separate copies', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  await fakeIcons(context);
+  const { page, errors } = await openApp(context);
+
+  for (let i = 0; i < 2; i++) {
+    await page.click('#open-library');
+    await page.click('.library-entry >> text=summoner spells');
+    await page.waitForFunction((n) => document.querySelectorAll('#page-list li').length === n, i + 1);
+  }
+  assert.equal(await page.locator('#page-title').inputValue(), "Kog'Maw ADC: summoner spells");
+  await page.waitForSelector('.item.image img[src^="blob:"]');
+  assert.ok((await count(page, '.item.note')) > 20);
+  assert.ok((await count(page, '#ink-layer g')) > 5);
+  assert.ok(await page.locator('.item.note', { hasText: 'Barrier' }).first().isVisible());
+  // Opened framed to fit, so it starts zoomed out.
+  assert.notEqual(await page.locator('#zoom-label').innerText(), '100%');
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
+test('import a single page file: bad items are skipped, offline images fall back to their URL', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  await fakeIcons(context, { fail: true });
+  const { page } = await openApp(context);
+
+  const file = {
+    format: 'sketchbook-page',
+    version: 1,
+    page: {
+      title: 'From an agent',
+      items: [
+        { type: 'note', x: 10, y: 10, text: 'ok' },
+        { type: 'note', x: 10, y: 50 },
+        { type: 'blob', x: 1 },
+        { type: 'image', x: 0, y: 80, w: 64, h: 64, src: 'https://ddragon.leagueoflegends.com/cdn/x/img/spell/SummonerFlash.png' },
+      ],
+    },
+  };
+  await page.setInputFiles('#import-input', {
+    name: 'agent-page.json', mimeType: 'application/json', buffer: Buffer.from(JSON.stringify(file)),
+  });
+  await page.waitForSelector('#toast:not([hidden])');
+  assert.match(await page.locator('#toast').innerText(), /Imported 1 page, skipped 2 broken items/);
+  assert.equal(await page.locator('#page-title').inputValue(), 'From an agent');
+  assert.equal(await count(page, '.item.note'), 1);
+  assert.match(await page.locator('.item.image img').getAttribute('src'), /^https:\/\/ddragon/);
   await context.close();
 });

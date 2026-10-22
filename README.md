@@ -10,6 +10,8 @@ Think Leonardo's notebooks: ink sketches, scribbled notes and pasted images on a
 - **Notes**: click with the text tool to write anywhere.
 - **Images**: paste (Ctrl+V), drag and drop, or use the image button. Resize from the corner handle.
 - **Undo/redo**, autosave, and a backup file you can export and import.
+- **Library**: ready-made pages you can add a copy of, like *Kog'Maw ADC: summoner spells* (coachless win rates and WPA next to LoL wiki numbers).
+- **Agent friendly**: an AI agent can write and draw through `window.sketchbook`, or hand over a page file. See [docs/AGENTS.md](docs/AGENTS.md).
 
 ## Shortcuts
 
@@ -52,6 +54,10 @@ Files:
 - `js/ink.js`: stroke smoothing and hit testing.
 - `js/db.js`: IndexedDB storage.
 - `js/backup.js`: export and import.
+- `js/format.js`: the page format, and checking of anything imported or added by an agent.
+- `library/`: ready-made pages, listed in `library/index.json`.
+- `data/`, `tools/`: source numbers and the scripts that turn them into library pages (`node tools/build-kogmaw-spells.mjs`).
+- `docs/AGENTS.md`: how an AI agent can use the sketchbook.
 - `tests/smoke.test.mjs`: end-to-end tests.
 
 ## Hosting
