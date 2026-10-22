@@ -36,6 +36,10 @@ Everything is saved in your browser (IndexedDB), on the device you use it on. No
 That also means clearing site data for the page, or switching browser or device, starts you fresh.
 Use **Export backup** now and then: it downloads one `.json` file with every page and image, which **Import** brings back on any browser.
 
+The small ring in the top-right corner shows how much room your pages and images take, out of what the browser allows for the site. Click it for the details. It also says whether the browser has agreed to keep your pages ("persistent storage"); without that, a browser may clear site data when the disk runs low, so the panel offers a button to ask.
+
+Why not `localStorage`? It holds only about 5 MB of text per site and blocks the page while it writes, so a handful of pasted images would fill it. IndexedDB stores images as files and usually gets hundreds of times more room.
+
 ## Development
 
 Plain HTML, CSS and JavaScript modules. No build step and no runtime dependencies.
@@ -53,6 +57,7 @@ Files:
 - `js/app.js`: canvas, tools, pages, keyboard and clipboard.
 - `js/ink.js`: stroke smoothing and hit testing.
 - `js/db.js`: IndexedDB storage.
+- `js/storage.js`: the storage ring and its panel.
 - `js/backup.js`: export and import.
 - `js/format.js`: the page format, and checking of anything imported or added by an agent.
 - `library/`: ready-made pages, listed in `library/index.json`.

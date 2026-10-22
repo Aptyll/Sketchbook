@@ -5,6 +5,7 @@ import { db } from './db.js';
 import { strokePath, pointsBounds, hitStroke, round } from './ink.js';
 import { buildBackup, downloadText, restoreBackup, referencedBlobIds, storeImageSources } from './backup.js';
 import { COLORS, uid, normalizeItem } from './format.js';
+import { initStorageMeter, scheduleStorageRefresh, refreshStorage, storageInfo } from './storage.js';
 
 // ---------- Constants ----------
 
@@ -126,6 +127,7 @@ async function flush() {
   try {
     for (const page of pages) await db.put('pages', page);
     if (!dirty.size) setStatus('Saved');
+    scheduleStorageRefresh();
   } catch (err) {
     console.error(err);
     pages.forEach((p) => dirty.add(p));
@@ -892,6 +894,7 @@ async function deletePage(page, { quiet = false } = {}) {
   }
   try {
     await db.delete('pages', page.id);
+    scheduleStorageRefresh();
     if (!quiet) toast('Page deleted');
   } catch (err) {
     toast(`Could not delete: ${err.message}`);
@@ -945,6 +948,7 @@ async function afterImport(ids, problems, { openImported }) {
   const skipped = problems.length ? `, skipped ${problems.length} broken item${problems.length === 1 ? '' : 's'}` : '';
   if (problems.length) console.warn('Import problems:', problems);
   toast(`Imported ${ids.length} page${ids.length === 1 ? '' : 's'}${skipped}`);
+  scheduleStorageRefresh(0);
 }
 
 // ---------- Library ----------
@@ -1011,6 +1015,7 @@ const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 
   remove(id | ids)                delete items from the open page
   importPage(page)                add a whole page object as a new page and open it
   fit()                           zoom to show everything
+  storage()                       bytes used by pages and images, browser quota, persisted?
   colors                          palette names and hex values`;
 
 const asList = (v) => (Array.isArray(v) ? v : [v]);
@@ -1079,6 +1084,10 @@ const agentApi = {
     return id;
   },
   fit() { fitToContent(); },
+  async storage() {
+    await flush();
+    return (await refreshStorage()) ?? storageInfo();
+  },
 };
 
 // Deletes stored images that no page uses any more. Only looks at blobs that
@@ -1262,8 +1271,10 @@ async function init() {
   else newPage();
 
   window.sketchbook = agentApi;
-  navigator.storage?.persist?.().catch(() => {});
-  collectGarbage(startupBlobIds).catch(() => {});
+  // Ask once at startup; Chrome decides silently, others may wait for the button in the storage panel.
+  await navigator.storage?.persist?.().catch(() => {});
+  await collectGarbage(startupBlobIds).catch(() => {});
+  initStorageMeter({ onExport: exportBackup, toast });
 }
 
 init();

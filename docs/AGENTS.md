@@ -57,6 +57,7 @@ sketchbook.remove(id);                                  // delete items by id
 await sketchbook.importPage({ title: '...', fit: true, items: [...] }); // a whole page at once
 sketchbook.fit();                                       // zoom to show everything
 sketchbook.tab('patch-26.19');                          // switch the open page's tab (page().tabs lists them)
+sketchbook.storage();                                   // { total, pageBytes, imageBytes, usage, quota, persisted, ... }
 sketchbook.pages(); sketchbook.open(id);                // list and switch pages
 ```
 

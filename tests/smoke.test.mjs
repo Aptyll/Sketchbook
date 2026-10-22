@@ -401,3 +401,44 @@ test('import a single page file: bad items are skipped, offline images fall back
   assert.match(await page.locator('.item.image img').getAttribute('src'), /^https:\/\/ddragon/);
   await context.close();
 });
+
+test('storage ring: shows usage, grows with an image, opens a panel', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  const { page, errors } = await openApp(context);
+
+  await page.waitForFunction(() => document.querySelector('#storage-used').textContent !== '');
+  const before = await page.evaluate(() => window.sketchbook.storage());
+  assert.equal(before.pageCount, 1);
+  assert.equal(before.imageCount, 0);
+  assert.ok(before.quota > 0, 'browser reports a quota');
+
+  // Add an image; the ring re-measures after saving.
+  await page.evaluate(async () => {
+    const c = Object.assign(document.createElement('canvas'), { width: 300, height: 300 });
+    const g = c.getContext('2d');
+    for (let i = 0; i < 300; i++) { g.fillStyle = `hsl(${i},60%,50%)`; g.fillRect(i, (i * 7) % 300, 40, 40); }
+    const blob = await new Promise((r) => c.toBlob(r, 'image/png'));
+    const dt = new DataTransfer();
+    dt.items.add(new File([blob], 'chart.png', { type: 'image/png' }));
+    document.querySelector('#stage').dispatchEvent(
+      new DragEvent('drop', { dataTransfer: dt, clientX: 700, clientY: 400, bubbles: true, cancelable: true }),
+    );
+  });
+  await page.waitForSelector('.item.image');
+  const after = await page.evaluate(() => window.sketchbook.storage());
+  assert.equal(after.imageCount, 1);
+  assert.ok(after.imageBytes > 1000, `image bytes ${after.imageBytes}`);
+  assert.ok(after.total > before.total);
+
+  // The panel opens on click and closes with Escape.
+  assert.equal(await page.locator('#storage-pop').isVisible(), false);
+  await page.click('#storage-ring');
+  assert.equal(await page.locator('#storage-pop').isVisible(), true);
+  assert.match(await page.locator('#storage-breakdown').innerText(), /1 page .* 1 image/);
+  assert.match(await page.locator('#storage-quota').innerText(), /% of the .* this browser allows/);
+  await page.keyboard.press('Escape');
+  assert.equal(await page.locator('#storage-pop').isVisible(), false);
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
