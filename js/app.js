@@ -357,10 +357,11 @@ function fitToContent() {
     maxY = Math.max(maxY, b.y + b.h);
   }
   const pad = 48;
+  const top = pad + (state.page.tabs ? 48 : 0); // keep clear of the tab bar
   const sw = el.stage.clientWidth;
   const sh = el.stage.clientHeight;
-  const z = clamp(Math.min((sw - 2 * pad) / (maxX - minX || 1), (sh - 2 * pad) / (maxY - minY || 1), 1), MIN_ZOOM, MAX_ZOOM);
-  setView({ zoom: z, x: (sw - (maxX - minX) * z) / 2 - minX * z, y: (sh - (maxY - minY) * z) / 2 - minY * z });
+  const z = clamp(Math.min((sw - 2 * pad) / (maxX - minX || 1), (sh - top - pad) / (maxY - minY || 1), 1), MIN_ZOOM, MAX_ZOOM);
+  setView({ zoom: z, x: (sw - (maxX - minX) * z) / 2 - minX * z, y: top + (sh - top - pad - (maxY - minY) * z) / 2 - minY * z });
 }
 
 // ---------- Tools, colors, sizes ----------
