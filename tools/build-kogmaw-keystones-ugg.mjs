@@ -29,22 +29,24 @@ function gap(sample, a, b) {
 }
 
 // ---- Title ----
-s.note(0, 0, `${data.champion} ${data.role} · keystones on u.gg`, { size: 38 });
+s.note(0, 0, `${data.champion} ${data.role} · keystones on u.gg (${stats.region})`, { size: 38 });
 s.wobblyLine([[4, 58], [640, 54]], { color: 'Red chalk', width: 2.5 });
 s.note(0, 70, [
-  `Stats: ${stats.site}, ${stats.queue}, ${stats.region}. Raw win rates,`,
+  `Stats: ${stats.site}, ${stats.queue}, ${stats.region} server. Raw win rates,`,
   'not adjusted for who picks what. Rune text: LoL wiki (ranged values).',
-  `Pulled ${data.pulledAt}. u.gg's patch 26.20 is Riot's 16.20.`,
+  `Patch ${samples[0].patch} (Riot's 16.20), pulled ${data.pulledAt}.`,
+  'Rank buckets overlap: Diamond+ holds the Master+ games,',
+  'and Master+ holds the Challenger games.',
 ].join('\n'), { size: 15, color: 'Sepia' });
 
 // ---- Chart: one row per keystone, one mini plot per sample ----
-const top = 220;
+const top = 250;
 const rowH = 104;
-const colW = 300;
+const colW = 285;
 const colX0 = 640;
-const lo = 44; // win rate at the left edge of each mini plot
-const hi = 62;
-const plotW = 250;
+const lo = 30; // win rate at the left edge of each mini plot
+const hi = 70;
+const plotW = 245;
 const xOf = (col, w) => colX0 + col * colW + ((Math.min(hi, Math.max(lo, w)) - lo) / (hi - lo)) * plotW;
 const rows = data.keystones;
 const bottom = top + rows.length * rowH - 24;
@@ -52,14 +54,14 @@ const bottom = top + rows.length * rowH - 24;
 s.note(0, top - 50, 'Keystone  ·  what it does', { size: 15, color: 'Slate' });
 samples.forEach((sm, c) => {
   const x = colX0 + c * colW;
-  s.note(x, top - 86, sm.label, { size: 17, color: c === 0 ? 'Parchment' : 'Slate' });
+  s.note(x, top - 86, `${stats.region} · ${sm.label}`, { size: 17 });
   s.note(x, top - 62, `${fmtInt(sm.matches)} games · Kog avg ${sm.champWinRate}%`, { size: 13, color: 'Slate' });
   // The champion's average win rate, as a reference line.
   const ax = xOf(c, sm.champWinRate);
   s.wobblyLine([[ax, top - 30], [ax, bottom]], { color: 'Sepia', width: 1.2 });
-  // Axis ticks every 4 points.
+  // Axis ticks every 10 points.
   s.wobblyLine([[x, bottom + 6], [x + plotW, bottom + 6]], { color: 'Parchment', width: 1 });
-  for (let t = 46; t <= 62; t += 4) {
+  for (let t = lo; t <= hi; t += 10) {
     const tx = xOf(c, t);
     s.wobblyLine([[tx, bottom + 1], [tx, bottom + 11]], { color: 'Parchment', width: 1 });
     s.note(tx - 10, bottom + 14, `${t}`, { size: 12, color: 'Slate' });
@@ -92,7 +94,7 @@ rows.forEach((k, i) => {
     }
     s.wobblyLine([[xOf(c, w) - 3, cy], [xOf(c, w) + 3, cy]], { color, width: 11, wobble: 0.2 });
     s.note(colX0 + c * colW, cy + 14, `${w.toFixed(1)}% WR · ${sm.keystones[k.name][1].toFixed(1)}% pick · ${fmtK(n)} g`,
-      { size: 13, color: n < 1000 ? 'Slate' : 'Parchment' });
+      { size: 13, color: n < 100 ? 'Slate' : 'Parchment' });
   });
 });
 
@@ -100,24 +102,24 @@ rows.forEach((k, i) => {
 const main = samples[0];
 const rare = Object.keys(main.keystones).filter((name) => !rows.some((k) => k.name === name));
 const rareTop = bottom + 84;
-s.note(0, rareTop, `Under 0.5% pick rate (${main.label}). Too few games to say anything:`, { size: 15, color: 'Slate' });
+s.note(0, rareTop, `0.5% pick rate or less (${stats.region} ${main.label}). Too few games to say anything:`, { size: 15, color: 'Slate' });
 const rareText = rare.map((name) => `${name} ${wr(main, name)}% (${games(main, name)} g)`).join('\n');
 s.note(0, rareTop + 26, rareText, { size: 14, color: 'Slate' });
 const footTop = rareTop + 26 + rare.length * 20 + 30;
 
-// Circle the default pick in the biggest sample.
-const ltY = top + rows.findIndex((k) => k.name === 'Lethal Tempo') * rowH + 18;
-s.loop(xOf(0, wr(main, 'Lethal Tempo')), ltY, 34, 22, { color: 'Red chalk', width: 2.5 });
+// Circle Stormraider's Surge in the highest bucket: the headline, and the shakiest number.
+const top4 = samples[samples.length - 1];
+const ssY = top + rows.findIndex((k) => k.name === "Stormraider's Surge") * rowH + 18;
+s.loop(xOf(samples.length - 1, wr(top4, "Stormraider's Surge")), ssY, 38, 22, { color: 'Red chalk', width: 2.5 });
 
 // ---- Reading notes (right column) ----
 const colX = colX0 + samples.length * colW + 40;
-const dia = samples.find((sm) => sm.rank === 'Diamond+');
-const early = samples.find((sm) => sm.patch !== main.patch);
-const lpE = gap(main, 'Lethal Tempo', 'Press the Attack');
-const lpD = gap(dia, 'Lethal Tempo', 'Press the Attack');
-const lsE = gap(main, 'Lethal Tempo', "Stormraider's Surge");
-const lsD = gap(dia, 'Lethal Tempo', "Stormraider's Surge");
-const fsN = games(dia, 'First Strike');
+const SS = "Stormraider's Surge";
+const LT = 'Lethal Tempo';
+const pick = (sm, name) => sm.keystones[name][1];
+const ssTrend = samples.map((sm) => `${pick(sm, SS)}%`).join(' → ');
+const gaps = samples.map((sm) => ({ sm, g: gap(sm, SS, LT) }));
+const chal = samples[samples.length - 1];
 
 s.note(colX, top - 86, 'How to read it', { size: 24, color: 'Sepia' });
 s.note(colX, top - 50, [
@@ -127,23 +129,24 @@ s.note(colX, top - 50, [
 
 s.note(colX, top + 130, 'What it says', { size: 24, color: 'Sepia' });
 s.note(colX, top + 166, [
-  `• Lethal Tempo is the default: ${main.keystones['Lethal Tempo'][1]}% of ${main.label} games. It sits at or just above the average because it is most of the average.`,
-  `• PTA: ${fmtPp(-lpE.d)} pp vs Tempo in Emerald+ (${lpE.z.toFixed(1)}× its noise), but only ${fmtPp(-lpD.d)} pp in Diamond+ (${lpD.z.toFixed(1)}×). A lean against PTA, not a verdict.`,
-  `• Stormraider's Surge: ${fmtPp(-lsE.d)} pp in Emerald+ (${lsE.z.toFixed(1)}×), about even in Diamond+ (${fmtPp(-lsD.d)} pp). Higher ranks pick it more (${dia.keystones["Stormraider's Surge"][1]}% vs ${main.keystones["Stormraider's Surge"][1]}%), likely as an anti-dive pick.`,
-  `• First Strike: ≈${fsN} Diamond+ games. Its whiskers span ±${margin(fsN).toFixed(0)} pp, so it can't be ranked yet.`,
-  `• ${early.label}: only ${fmtInt(early.matches)} games. Comet and First Strike look great there, but the whiskers say wait.`,
+  `• Lethal Tempo is the default overall (${pick(main, LT)}% of all-rank games), but its share drops as rank rises: ${samples.map((sm) => `${pick(sm, LT)}%`).join(' → ')}.`,
+  `• Stormraider's Surge rises in its place: ${ssTrend} of games, from all ranks up to Challenger.`,
+  `• From Diamond+ up it also wins more than Tempo: ${gaps.slice(1).map(({ sm, g }) => `${fmtPp(g.d)} pp in ${sm.label} (${g.z.toFixed(1)}×)`).join(', ')}. Overall it is ${fmtPp(gaps[0].g.d)} pp (${gaps[0].g.z.toFixed(1)}×).`,
+  `• Challenger is ${fmtInt(chal.matches)} games, likely from a handful of players, so one-tricks can swing it. Treat the high-rank pattern as a lead to test, not a rule.`,
+  '• PTA, Comet and First Strike have under 300 games in every high bucket. Too few to rank.',
 ].join('\n'), { size: 15, maxChars: 48 });
 
 s.note(colX, top + 590, 'To test next', { size: 24, color: 'Sepia' });
 s.note(colX, top + 626, [
   '• Compare with coachless WPA, which adjusts for pre-game win chance.',
   '• Split by matchup: does PTA or Stormraider win more into tanks or dive?',
-  '• Re-pull 26.21 once it has a full patch of games.',
+  '• Look at who the NA Challenger Kog players are (u.gg leaderboard) and what they run.',
+  '• Re-pull on 26.21 once it has a full patch of games.',
 ].join('\n'), { size: 15, color: 'Moss', maxChars: 48 });
 
 s.note(0, footTop, [
   `Sources: ${stats.source}`,
-  '(+ &rank=diamond_plus; patch picker set to 26.20 and 26.21)',
+  `(+ &rank=${samples.map((sm) => sm.rankParam).join(' | ')})`,
   `${data.wiki.source}<rune>`,
   `Icons: ${data.icons.source} ${data.icons.version}`,
   'Made by tools/build-kogmaw-keystones-ugg.mjs',

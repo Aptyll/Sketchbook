@@ -4,41 +4,93 @@
   "pulledAt": "2026-10-22",
   "stats": {
     "site": "u.gg",
-    "source": "https://u.gg/lol/champions/kogmaw/runes-table?role=adc",
+    "source": "https://u.gg/lol/champions/kogmaw/runes-table?role=adc&region=na1&patch=16_20",
     "queue": "Ranked Solo",
-    "region": "World",
+    "region": "NA",
     "metric": "Raw win rate and pick rate per keystone (no adjustment for player skill or draft). Game counts are derived: pick rate x champion matches, rounded.",
-    "patchNote": "u.gg labels patches by year (26.20); Riot's own numbering for the same patch is 16.20.",
+    "patchNote": "u.gg labels patches by year (26.20); Riot's own numbering for the same patch is 16.20, which is also what u.gg's URL uses (patch=16_20).",
     "samples": [
       {
-        "id": "e-2620", "label": "Emerald+ · 26.20", "patch": "26.20", "rank": "Emerald+",
-        "matches": 54031, "champWinRate": 52.3,
+        "id": "na-all",
+        "label": "All ranks",
+        "rankParam": "overall",
+        "patch": "26.20",
+        "rank": "All ranks",
+        "matches": 24856,
+        "champWinRate": 52.31,
         "keystones": {
-          "Lethal Tempo": [52.84, 75.33], "Stormraider's Surge": [50.38, 10.01], "Press the Attack": [50.72, 6.97],
-          "Arcane Comet": [51.57, 5.98], "First Strike": [51.9, 0.87], "Deathfire Touch": [46.56, 0.35],
-          "Fleet Footwork": [53.09, 0.15], "Dark Harvest": [41.94, 0.11], "Hail of Blades": [41.82, 0.1],
-          "Conqueror": [44.44, 0.05], "Electrocute": [56.25, 0.03], "Grasp of the Undying": [50, 0.03]
+          "Lethal Tempo": [52.96, 75.99],
+          "Stormraider's Surge": [50.25, 5.55],
+          "Press the Attack": [50.16, 8.76],
+          "Arcane Comet": [50.9, 6.63],
+          "First Strike": [50.2, 0.98],
+          "Dark Harvest": [37.3, 0.5],
+          "Deathfire Touch": [46.67, 0.48],
+          "Hail of Blades": [51.35, 0.44],
+          "Fleet Footwork": [69.77, 0.17],
+          "Conqueror": [41.46, 0.16],
+          "Electrocute": [51.61, 0.12],
+          "Grasp of the Undying": [44.83, 0.12],
+          "Summon Aery": [60, 0.04],
+          "Unsealed Spellbook": [66.67, 0.04]
         }
       },
       {
-        "id": "d-2620", "label": "Diamond+ · 26.20", "patch": "26.20", "rank": "Diamond+",
-        "matches": 23348, "champWinRate": 52.07,
+        "id": "na-d",
+        "label": "Diamond+",
+        "rankParam": "diamond_plus",
+        "patch": "26.20",
+        "rank": "Diamond+",
+        "matches": 2291,
+        "champWinRate": 50.76,
         "keystones": {
-          "Lethal Tempo": [52.35, 70.12], "Stormraider's Surge": [52.07, 13.17], "Press the Attack": [51.31, 8.48],
-          "Arcane Comet": [51.21, 6.52], "First Strike": [49.8, 1.08], "Deathfire Touch": [47.37, 0.32],
-          "Dark Harvest": [45, 0.09], "Hail of Blades": [37.5, 0.07], "Fleet Footwork": [54.55, 0.05]
+          "Lethal Tempo": [49.77, 57.45],
+          "Stormraider's Surge": [53.81, 19.89],
+          "Press the Attack": [51.04, 10.44],
+          "Arcane Comet": [52.36, 8.28],
+          "First Strike": [45.45, 2.86],
+          "Deathfire Touch": [35.29, 0.74],
+          "Hail of Blades": [50, 0.09],
+          "Grasp of the Undying": [50, 0.09]
         }
       },
       {
-        "id": "e-2621", "label": "Emerald+ · 26.21 (new patch, early)", "patch": "26.21", "rank": "Emerald+",
-        "matches": 5743, "champWinRate": 53.26,
+        "id": "na-m",
+        "label": "Master+",
+        "rankParam": "master_plus",
+        "patch": "26.20",
+        "rank": "Master+",
+        "matches": 928,
+        "champWinRate": 49.46,
         "keystones": {
-          "Lethal Tempo": [53.6, 75.24], "Stormraider's Surge": [51.51, 10.38], "Press the Attack": [50.14, 6.43],
-          "Arcane Comet": [54.67, 6.34], "First Strike": [56.86, 0.89], "Deathfire Touch": [50, 0.24],
-          "Hail of Blades": [58.33, 0.21], "Dark Harvest": [50, 0.1]
+          "Lethal Tempo": [46.12, 49.68],
+          "Stormraider's Surge": [54.28, 28.8],
+          "Press the Attack": [45.88, 9.1],
+          "Arcane Comet": [59.38, 6.85],
+          "First Strike": [45.45, 4.71],
+          "Deathfire Touch": [42.86, 0.75],
+          "Fleet Footwork": [100, 0.11]
+        }
+      },
+      {
+        "id": "na-c",
+        "label": "Challenger",
+        "rankParam": "challenger",
+        "patch": "26.20",
+        "rank": "Challenger",
+        "matches": 378,
+        "champWinRate": 50,
+        "keystones": {
+          "Lethal Tempo": [34.58, 28.01],
+          "Stormraider's Surge": [59.46, 48.43],
+          "Press the Attack": [58.33, 6.28],
+          "Arcane Comet": [42.31, 6.81],
+          "First Strike": [45.95, 9.69],
+          "Deathfire Touch": [33.33, 0.79]
         }
       }
-    ]
+    ],
+    "rankNote": "Rank buckets overlap: Diamond+ includes Master+ games, and Master+ includes Challenger games."
   },
   "wiki": {
     "source": "https://wiki.leagueoflegends.com/en-us/",
@@ -51,27 +103,32 @@
   },
   "keystones": [
     {
-      "name": "Lethal Tempo", "tree": "Precision",
+      "name": "Lethal Tempo",
+      "tree": "Precision",
       "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
       "wiki": "Attacks on champions stack up to 6 times, +4.8% attack speed each (28.8% max). At 6 stacks, attacks fire a bolt: 6 to 21.7 damage, +1% per 1% bonus AS."
     },
     {
-      "name": "Stormraider's Surge", "tree": "Sorcery",
+      "name": "Stormraider's Surge",
+      "tree": "Sorcery",
       "icon": "perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
       "wiki": "Deal 25% of a champion's max HP within 3s: +36% move speed and 50% slow resist for 4s. Cooldown 20 to 8.8s."
     },
     {
-      "name": "Press the Attack", "tree": "Precision",
+      "name": "Press the Attack",
+      "tree": "Precision",
       "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
       "wiki": "3 hits on one champion: 40 to 174 adaptive damage, then +8% damage to them until out of combat. Cooldown 6s."
     },
     {
-      "name": "Arcane Comet", "tree": "Sorcery",
+      "name": "Arcane Comet",
+      "tree": "Sorcery",
       "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
       "wiki": "Ability damage drops a comet: 15 to 110 (+10% bonus AD, +5% AP). Cooldown 20 to 6.6s."
     },
     {
-      "name": "First Strike", "tree": "Inspiration",
+      "name": "First Strike",
+      "tree": "Inspiration",
       "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
       "wiki": "Hit a champion first: 3s of +7% bonus true damage, then gold equal to 35% of that bonus damage. Cooldown 25 to 15s."
     }
