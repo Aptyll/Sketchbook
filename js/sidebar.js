@@ -77,8 +77,10 @@ export function createSidebar({ list, actions }) {
 
     const name = node('span', { className: 'page-name', textContent: page.title || 'Untitled' });
     name.classList.toggle('untitled', !page.title);
-    const date = node('span', { className: 'page-date', textContent: dateFormat.format(page.createdAt) });
-    const open = node('button', { className: 'page-open', type: 'button' }, name, date);
+    const open = node('button', { className: 'page-open', type: 'button' }, name);
+    // Dates only on loose pages, so folders stay compact. The full date is in the tooltip.
+    if (depth === 0) open.append(node('span', { className: 'page-date', textContent: dateFormat.format(page.createdAt) }));
+    open.title = `${page.title || 'Untitled'} · ${dateFormat.format(page.createdAt)}`;
     open.addEventListener('click', () => actions.openPage(page));
 
     const more = menuButton('Page actions', () => pageMenu(page, more));
