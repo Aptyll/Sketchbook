@@ -32,7 +32,7 @@ All three use the same page format, below. Everything an agent adds is checked a
 ```
 
 - **Coordinates** are world units. At 100% zoom, 1 unit is 1 screen pixel. `x` grows right, `y` grows down. Pick any origin; `"fit": true` frames the whole page the first time it opens.
-- **note**: `x`, `y` is the top-left corner. `text` may contain `\n`. `size` is the font size (default 22; the toolbar sizes are 16, 22 and 34). Notes wrap at 560 units wide, so put explicit line breaks in long text.
+- **note**: `x`, `y` is the top-left corner. `text` may contain `\n`. `size` is the font size (default 22; the toolbar sizes are 16, 22 and 34). Notes wrap at 32 times their font size (512 units at size 16), and fonts differ between computers, so put explicit line breaks in long text and leave some room.
 - **stroke**: freehand ink through `points` (`[x, y]` pairs), smoothed when drawn. `width` defaults to 3. For a hand-drawn look, add points every ~12 units with a little jitter (see `tools/sketch.mjs`).
 - **image**: `w`, `h` set the size on the canvas. `src` is an `https://` or `data:image/...` URL. On import or `add`, the app downloads it and keeps a copy in the browser, so it works offline and goes into backups. If the download fails, the page shows it straight from `src`.
 - **color**: a palette name (`Parchment`, `Sepia`, `Red chalk`, `Slate`, `Moss`) or a hex value like `#c4593f`. Stick to the palette so pages look like they belong.

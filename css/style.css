@@ -207,7 +207,8 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
   overflow-wrap: break-word;
   /* absolutely positioned at the world origin, so size to content explicitly */
   width: max-content;
-  max-width: 560px;
+  /* wrap width grows with the text size, so big titles don't break early */
+  max-width: 32em;
   min-width: 1ch;
   padding: 2px 4px;
   outline: none;
