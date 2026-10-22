@@ -38,6 +38,7 @@ All three use the same page format, below. Everything an agent adds is checked a
 - **color**: a palette name (`Parchment`, `Sepia`, `Red chalk`, `Slate`, `Moss`) or a hex value like `#c4593f`. Stick to the palette so pages look like they belong.
 - **source** (optional): where the numbers came from. Always include it for data pages.
 - `id`s are optional; they are created when missing.
+- **tabs** (optional): `"tabs": [{ "id": "patch-26.20", "label": "Patch 26.20" }, ...]` plus `"activeTab"`. A tab bar shows under the title and Noah clicks between tabs. Give an item `"tab": "<id>"` to show it only on that tab; items without `tab` show on every tab (titles, labels, axes). Up to 12 tabs; an item naming an unknown tab is shown on every tab and reported. Anything Noah adds while a tab is open belongs to that tab. In `tools/sketch.mjs`, call `s.tab(id)` before adding a tab's items and `s.tab(null)` for shared ones, then pass `tabs` to `s.page()`.
 
 A full backup (Export) uses `{ "format": "sketchbook-backup", "version": 1, "pages": [...], "blobs": [...] }`; Import accepts either.
 
@@ -55,6 +56,7 @@ sketchbook.page();                                      // read the open page (a
 sketchbook.remove(id);                                  // delete items by id
 await sketchbook.importPage({ title: '...', fit: true, items: [...] }); // a whole page at once
 sketchbook.fit();                                       // zoom to show everything
+sketchbook.tab('patch-26.19');                          // switch the open page's tab (page().tabs lists them)
 sketchbook.pages(); sketchbook.open(id);                // list and switch pages
 ```
 

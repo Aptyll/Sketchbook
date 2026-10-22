@@ -37,8 +37,17 @@ export function isImageSrc(src) {
   return typeof src === 'string' && /^(https?:\/\/|data:image\/)/i.test(src) && src.length < 5_000_000;
 }
 
+const isTabId = (t) => typeof t === 'string' && t.length > 0 && t.length <= 64;
+
 // Returns a clean copy of one item, or throws an Error saying what is wrong.
+// An item may name the page tab it belongs to (`tab`); items without one show on every tab.
 export function normalizeItem(raw) {
+  const item = normalizeItemBody(raw);
+  if (isTabId(raw.tab)) item.tab = raw.tab;
+  return item;
+}
+
+function normalizeItemBody(raw) {
   if (!raw || typeof raw !== 'object') throw new Error('item is not an object');
   const id = typeof raw.id === 'string' && raw.id ? raw.id : uid();
 
@@ -109,5 +118,41 @@ export function normalizePage(raw, { freshId = false } = {}) {
   };
   if (raw.source && typeof raw.source === 'object') page.source = structuredClone(raw.source);
   if (raw.fit === true) page.fit = true;
+  const tabs = normalizeTabs(raw.tabs, problems);
+  if (tabs.length) {
+    page.tabs = tabs;
+    page.activeTab = tabs.some((t) => t.id === raw.activeTab) ? raw.activeTab : tabs[0].id;
+  }
+  // An item can only belong to a tab the page has.
+  const tabIds = new Set(tabs.map((t) => t.id));
+  for (const item of items) {
+    if (item.tab !== undefined && !tabIds.has(item.tab)) {
+      problems.push(`item ${item.id}: unknown tab "${item.tab}", shown on every tab`);
+      delete item.tab;
+    }
+  }
   return { page, problems };
+}
+
+const MAX_TABS = 12;
+
+// Page tabs: [{ id, label }]. Switching tabs shows the items for that tab
+// plus the items that belong to no tab.
+function normalizeTabs(raw, problems) {
+  if (raw === undefined) return [];
+  if (!Array.isArray(raw)) {
+    problems.push('tabs must be an array');
+    return [];
+  }
+  const tabs = [];
+  for (const t of raw.slice(0, MAX_TABS)) {
+    if (!t || !isTabId(t.id) || tabs.some((x) => x.id === t.id)) {
+      problems.push('tab needs a unique id');
+      continue;
+    }
+    const label = typeof t.label === 'string' && t.label.trim() ? t.label.trim().slice(0, 40) : t.id;
+    tabs.push({ id: t.id, label });
+  }
+  if (raw.length > MAX_TABS) problems.push(`only the first ${MAX_TABS} tabs are kept`);
+  return tabs;
 }

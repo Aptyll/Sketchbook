@@ -36,6 +36,7 @@ const el = {
   handle: $('#selection .handle'),
   hint: $('#empty-hint'),
   title: $('#page-title'),
+  tabs: $('#page-tabs'),
   pageList: $('#page-list'),
   saveStatus: $('#save-status'),
   zoomLabel: $('#zoom-label'),
@@ -73,6 +74,14 @@ const clamp = (n, lo, hi) => Math.min(hi, Math.max(lo, n));
 const items = () => state.page.items;
 const findItem = (id) => items().find((i) => i.id === id);
 const zoom = () => state.page.view.zoom;
+// Pages with tabs show the active tab's items plus the items that belong to no tab.
+const visible = (item) => !state.page.tabs || !item.tab || item.tab === state.page.activeTab;
+const visibleItems = () => items().filter(visible);
+// New items join the tab that is open, so a scribble stays with the patch it is about.
+function tagForTab(item) {
+  if (state.page.tabs && state.page.activeTab && !item.tab) item.tab = state.page.activeTab;
+  return item;
+}
 const isTyping = (target) =>
   target instanceof Element && !!target.closest('input, textarea, [contenteditable]:not([contenteditable="false"])');
 
@@ -246,7 +255,7 @@ function removeNode(id) {
 function renderAll() {
   nodes.forEach((node) => node.remove());
   nodes.clear();
-  for (const item of items()) renderItem(item);
+  for (const item of visibleItems()) renderItem(item);
   updateSelection();
   updateHint();
 }
@@ -270,7 +279,7 @@ function itemBounds(item) {
 
 function updateSelection() {
   const item = state.selectedId && findItem(state.selectedId);
-  if (!item) {
+  if (!item || !visible(item)) {
     state.selectedId = null;
     el.selection.hidden = true;
     return;
@@ -338,9 +347,9 @@ function resetZoom() {
 
 // Zooms and pans so every item on the page is in view (never above 100%).
 function fitToContent() {
-  if (!items().length) return;
+  if (!visibleItems().length) return;
   let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
-  for (const item of items()) {
+  for (const item of visibleItems()) {
     const b = itemBounds(item);
     minX = Math.min(minX, b.x);
     minY = Math.min(minY, b.y);
@@ -482,13 +491,13 @@ function startPan(e, p) {
 
 function startStroke(e, p) {
   const w = toWorld(p);
-  const item = {
+  const item = tagForTab({
     id: uid(),
     type: 'stroke',
     color: currentColor(),
     width: round(SIZES[state.sizeIndex].pen / zoom()),
     points: [[round(w.x), round(w.y)]],
-  };
+  });
   renderItem(item);
   begin(e, { kind: 'stroke', item });
 }
@@ -519,7 +528,7 @@ function eraseAlong(a, b) {
   const r = radius / zoom();
   const keep = [];
   for (const item of items()) {
-    if (item.type === 'stroke' && samples.some((s) => hitStroke(item, s.x, s.y, r))) {
+    if (item.type === 'stroke' && visible(item) && samples.some((s) => hitStroke(item, s.x, s.y, r))) {
       removeNode(item.id);
       drag.removed = true;
     } else {
@@ -640,7 +649,7 @@ function onWheel(e) {
 
 function createNote(at, text = '') {
   const size = round(SIZES[state.sizeIndex].text / zoom());
-  const item = {
+  const item = tagForTab({
     id: uid(),
     type: 'note',
     x: round(at.x - 4 / zoom()),
@@ -648,7 +657,7 @@ function createNote(at, text = '') {
     text,
     color: currentColor(),
     size,
-  };
+  });
   const before = snapshot();
   items().push(item);
   renderItem(item);
@@ -738,7 +747,7 @@ async function addImages(files, at) {
       const k = Math.min(1, MAX_IMAGE_SIDE / Math.max(width, height)) / z;
       const w = round(width * k);
       const h = round(height * k);
-      last = { id: uid(), type: 'image', x: round(at.x - w / 2 + offset), y: round(at.y - h / 2 + offset), w, h, blobId };
+      last = tagForTab({ id: uid(), type: 'image', x: round(at.x - w / 2 + offset), y: round(at.y - h / 2 + offset), w, h, blobId });
       items().push(last);
       renderItem(last);
       offset += 24 / z;
@@ -815,6 +824,7 @@ function openPage(page) {
   state.selectedId = null;
   el.title.value = page.title;
   applyView();
+  renderTabs();
   renderAll();
   renderPageList();
   updateHistoryButtons();
@@ -824,6 +834,41 @@ function openPage(page) {
     delete page.fit;
     fitToContent();
   }
+}
+
+// ---------- Page tabs ----------
+
+function renderTabs() {
+  const { tabs, activeTab } = state.page;
+  el.tabs.hidden = !tabs;
+  if (!tabs) {
+    el.tabs.replaceChildren();
+    return;
+  }
+  el.tabs.replaceChildren(
+    ...tabs.map((t) => {
+      const b = document.createElement('button');
+      b.className = 'page-tab';
+      b.type = 'button';
+      b.textContent = t.label;
+      b.dataset.tab = t.id;
+      b.setAttribute('role', 'tab');
+      b.setAttribute('aria-selected', String(t.id === activeTab));
+      b.addEventListener('click', () => switchTab(t.id));
+      return b;
+    }),
+  );
+}
+
+function switchTab(id) {
+  const page = state.page;
+  if (!page.tabs?.some((t) => t.id === id) || page.activeTab === id) return;
+  finishEditing();
+  page.activeTab = id;
+  select(null);
+  renderTabs();
+  renderAll();
+  markDirty(page, { touch: false });
 }
 
 function newPage() {
@@ -956,6 +1001,7 @@ const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 
   pages()                         list pages: [{ id, title, items }]
   page()                          copy of the open page
   open(id)                        open a page
+  tab(id)                         switch the open page to one of its tabs (page().tabs lists them)
   newPage(title?)                 create and open a blank page, returns its id
   add(item | items)               add notes, strokes, images to the open page, returns ids
       { type:'note', x, y, text, color?, size? }
@@ -991,6 +1037,11 @@ const agentApi = {
     finishEditing();
     const page = state.page;
     const added = asList(input).map((raw) => normalizeItem({ ...raw, id: undefined }));
+    const tabIds = new Set((page.tabs ?? []).map((t) => t.id));
+    for (const item of added) {
+      if (item.tab && !tabIds.has(item.tab)) throw new Error(`the open page has no tab "${item.tab}"`);
+      tagForTab(item);
+    }
     // Store remote images first, so they work offline and export with the page.
     await storeImageSources({ items: added });
     if (state.page !== page) throw new Error('the open page changed while adding');
@@ -1020,6 +1071,11 @@ const agentApi = {
     const { ids, problems } = await restoreBackup({ format: 'sketchbook-page', page: raw }, { freshIds: true });
     await afterImport(ids, problems, { openImported: true });
     return { id: ids[0], problems };
+  },
+  tab(id) {
+    if (!state.page.tabs?.some((t) => t.id === id)) throw new Error(`the open page has no tab "${id}"`);
+    switchTab(id);
+    return id;
   },
   fit() { fitToContent(); },
 };
