@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Sketchbook</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23121110'/%3E%3Cpath d='M8 23c4-1 6-5 8-9s5-6 8-6' fill='none' stroke='%23e9dfc9' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <aside id="sidebar" aria-label="Pages">
+    <div class="sidebar-head">
+      <span class="brand">Sketchbook</span>
+      <button id="new-page" class="text-btn" title="New page (N)">+ New page</button>
+    </div>
+    <ul id="page-list"></ul>
+    <div class="sidebar-foot">
+      <button id="export" class="text-btn" title="Download a backup of every page and image">Export backup</button>
+      <button id="import" class="text-btn" title="Load pages from a backup file">Import</button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="stage" class="tool-pen">
+      <div id="world">
+        <div id="image-layer"></div>
+        <svg id="ink-layer" width="1" height="1" overflow="visible"></svg>
+        <div id="note-layer"></div>
+        <div id="selection" hidden><div class="handle" hidden></div></div>
+      </div>
+      <p id="empty-hint">Draw with <kbd>P</kbd> · write with <kbd>T</kbd> · paste or drop images<br>Scroll to pan · <kbd>Ctrl</kbd> + scroll to zoom</p>
+    </div>
+
+    <div id="topbar">
+      <button id="toggle-sidebar" class="icon-btn" title="Toggle pages (\)" aria-label="Toggle pages">
+        <svg viewBox="0 0 20 20"><path d="M3 5h14M3 10h14M3 15h14"/></svg>
+      </button>
+      <input id="page-title" placeholder="Untitled" spellcheck="false" aria-label="Page title">
+    </div>
+
+    <div id="toolbar" role="toolbar" aria-label="Tools">
+      <div class="group" id="tools">
+        <button class="icon-btn" data-tool="select" title="Select and move (V)" aria-label="Select">
+          <svg viewBox="0 0 20 20"><path d="M5 3l10 6-4.5 1.2L8.5 15z"/></svg>
+        </button>
+        <button class="icon-btn" data-tool="hand" title="Pan (H, or hold Space)" aria-label="Pan">
+          <svg viewBox="0 0 20 20"><path d="M10 2v16M2 10h16M10 2l-2.5 2.5M10 2l2.5 2.5M10 18l-2.5-2.5M10 18l2.5-2.5M2 10l2.5-2.5M2 10l2.5 2.5M18 10l-2.5-2.5M18 10l-2.5 2.5"/></svg>
+        </button>
+        <button class="icon-btn" data-tool="pen" title="Pen (P)" aria-label="Pen">
+          <svg viewBox="0 0 20 20"><path d="M3 17l1-4L13.5 3.5l3 3L7 16z M11.5 5.5l3 3"/></svg>
+        </button>
+        <button class="icon-btn" data-tool="eraser" title="Eraser, removes ink (E)" aria-label="Eraser">
+          <svg viewBox="0 0 20 20"><path d="M8 17h9M3.5 12.5l7-7 5 5-6.5 6.5H7z"/></svg>
+        </button>
+        <button class="icon-btn" data-tool="text" title="Text (T)" aria-label="Text">
+          <svg viewBox="0 0 20 20"><path d="M4 5V3.5h12V5M10 3.5V17M7.5 17h5"/></svg>
+        </button>
+        <button class="icon-btn" id="add-image" title="Add image (I), or paste / drop one" aria-label="Add image">
+          <svg viewBox="0 0 20 20"><rect x="2.5" y="4" width="15" height="12" rx="1.5"/><path d="M2.5 13l4-4 3.5 3.5 2.5-2.5 5 4.5"/><circle cx="13" cy="7.5" r="1.2"/></svg>
+        </button>
+      </div>
+      <div class="sep"></div>
+      <div class="group" id="colors"></div>
+      <div class="sep"></div>
+      <div class="group" id="sizes"></div>
+      <div class="sep"></div>
+      <div class="group">
+        <button class="icon-btn" id="undo" title="Undo (Ctrl+Z)" aria-label="Undo">
+          <svg viewBox="0 0 20 20"><path d="M7 4L3 8l4 4M3 8h9a5 5 0 010 10H9"/></svg>
+        </button>
+        <button class="icon-btn" id="redo" title="Redo (Ctrl+Shift+Z)" aria-label="Redo">
+          <svg viewBox="0 0 20 20"><path d="M13 4l4 4-4 4M17 8H8a5 5 0 000 10h3"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div id="corner">
+      <span id="save-status" aria-live="polite"></span>
+      <button id="zoom-label" class="text-btn" title="Reset zoom (0)">100%</button>
+    </div>
+
+    <div id="toast" role="status" hidden></div>
+  </main>
+
+  <input id="image-input" type="file" accept="image/*" multiple hidden>
+  <input id="import-input" type="file" accept=".json,application/json" hidden>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
