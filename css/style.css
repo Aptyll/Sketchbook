@@ -287,6 +287,36 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 #page-title:focus { background: var(--panel); }
 #page-title::placeholder { color: var(--muted); font-style: italic; }
 
+/* Tabs for pages that have them (for example one tab per patch). */
+#page-tabs {
+  /* Its own row under the title, so it never runs into the toast or the save status. */
+  position: absolute;
+  top: 46px;
+  left: 42px;
+  max-width: calc(100% - 42px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  padding: 3px;
+  background: var(--panel);
+  border-radius: 999px;
+}
+#page-tabs[hidden] { display: none; }
+.page-tab {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-family: var(--serif);
+  font-size: 15px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.page-tab:hover { color: var(--text); }
+.page-tab[aria-selected="true"] { background: var(--text); color: var(--bg); }
+.page-tab:focus-visible { outline: 2px solid var(--text); outline-offset: 1px; }
+
 #toolbar {
   position: absolute;
   left: 50%;

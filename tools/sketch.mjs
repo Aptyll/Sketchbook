@@ -44,6 +44,8 @@ export function sketch({ seed = 1 } = {}) {
   const jitter = (amount) => (rand() - 0.5) * 2 * amount;
   const items = [];
   let n = 0;
+  let currentTab = null; // items added while set belong to that page tab
+  const push = (item) => items.push(currentTab ? { ...item, tab: currentTab } : item);
   const id = (kind) => `${kind}-${++n}`;
 
   // Resamples a polyline every ~12 units with a small sideways wobble.
@@ -64,14 +66,18 @@ export function sketch({ seed = 1 } = {}) {
   }
 
   const api = {
+    // Everything added until the next tab() call goes on this page tab; tab(null) for shared items.
+    tab(tabId) {
+      currentTab = tabId;
+    },
     note(x, y, text, { size = 18, color: c, maxChars } = {}) {
-      items.push({ id: id('note'), type: 'note', x: r1(x), y: r1(y), text: wrap(text, maxChars), color: color(c), size });
+      push({ id: id('note'), type: 'note', x: r1(x), y: r1(y), text: wrap(text, maxChars), color: color(c), size });
     },
     image(x, y, w, h, src) {
-      items.push({ id: id('img'), type: 'image', x: r1(x), y: r1(y), w, h, src });
+      push({ id: id('img'), type: 'image', x: r1(x), y: r1(y), w, h, src });
     },
     stroke(points, { color: c, width = 3 } = {}) {
-      items.push({ id: id('ink'), type: 'stroke', color: color(c), width, points: points.map(([x, y]) => [r1(x), r1(y)]) });
+      push({ id: id('ink'), type: 'stroke', color: color(c), width, points: points.map(([x, y]) => [r1(x), r1(y)]) });
     },
     wobblyLine(points, opts = {}) {
       api.stroke(wobble(points, opts.wobble ?? 0.8), opts);
@@ -100,9 +106,13 @@ export function sketch({ seed = 1 } = {}) {
       }
     },
     // The finished page, wrapped in the single-page file format.
-    page({ title = '', source } = {}) {
+    page({ title = '', source, tabs, activeTab } = {}) {
       const page = { title, fit: true, items };
       if (source) page.source = source;
+      if (tabs?.length) {
+        page.tabs = tabs;
+        page.activeTab = activeTab ?? tabs[0].id;
+      }
       return { format: 'sketchbook-page', version: 1, page };
     },
   };

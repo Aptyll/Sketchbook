@@ -312,6 +312,62 @@ test('library: the u.gg keystones page opens with its icons and notes', async ()
   for (const name of ['Lethal Tempo', 'Press the Attack', 'First Strike']) {
     assert.ok(await page.locator('.item.note', { hasText: name }).first().isVisible());
   }
+  // One tab per patch plus a pooled tab; it opens on the newest patch.
+  assert.deepEqual(await page.locator('.page-tab').allInnerTexts(), ['Patch 26.18', 'Patch 26.19', 'Patch 26.20', '3 patches pooled']);
+  assert.equal(await page.locator('.page-tab[aria-selected="true"]').innerText(), 'Patch 26.20');
+  assert.equal(await count(page, '.item.note >> text=What it says · Patch 26.20'), 1);
+  await page.click('.page-tab >> text=3 patches pooled');
+  assert.equal(await count(page, '.item.note >> text=What it says · 3 patches pooled'), 1);
+  assert.equal(await count(page, '.item.note >> text=What it says · Patch 26.20'), 0);
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
+test('page tabs: switch, draw on a tab, and it all survives a reload', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  const { page, errors } = await openApp(context);
+
+  const { problems } = await page.evaluate(() => window.sketchbook.importPage({
+    title: 'Tabs test',
+    tabs: [{ id: 'a', label: 'Patch A' }, { id: 'b', label: 'Patch B' }, { label: 'no id' }],
+    activeTab: 'b',
+    items: [
+      { type: 'note', x: 0, y: 0, text: 'shared title' },
+      { type: 'note', x: 0, y: 60, text: 'only on A', tab: 'a' },
+      { type: 'note', x: 0, y: 120, text: 'only on B', tab: 'b' },
+      { type: 'note', x: 0, y: 180, text: 'bad tab', tab: 'zzz' },
+    ],
+  }));
+  assert.equal(problems.length, 2); // the tab without an id, and the item with an unknown tab
+  const notes = () => page.locator('.item.note').allInnerTexts();
+  assert.deepEqual((await notes()).sort(), ['bad tab', 'only on B', 'shared title']);
+  assert.equal(await page.locator('.page-tab[aria-selected="true"]').innerText(), 'Patch B');
+
+  await page.click('.page-tab >> text=Patch A');
+  assert.deepEqual((await notes()).sort(), ['bad tab', 'only on A', 'shared title']);
+
+  // Ink drawn while a tab is open belongs to that tab.
+  await page.keyboard.press('p');
+  await drawLine(page, { x: 600, y: 500 }, { x: 800, y: 520 });
+  assert.equal(await count(page, '#ink-layer g'), 1);
+  await page.click('.page-tab >> text=Patch B');
+  assert.equal(await count(page, '#ink-layer g'), 0);
+  await page.click('.page-tab >> text=Patch A');
+  assert.equal(await count(page, '#ink-layer g'), 1);
+  const added = await page.evaluate(() => window.sketchbook.page().items.at(-1));
+  assert.equal(added.tab, 'a');
+
+  // Reload: the open tab and the tagged ink are kept.
+  await page.waitForFunction(() => document.querySelector('#save-status').textContent === 'Saved');
+  await page.reload();
+  await page.waitForSelector('.page-tab');
+  assert.equal(await page.locator('.page-tab[aria-selected="true"]').innerText(), 'Patch A');
+  assert.equal(await count(page, '#ink-layer g'), 1);
+
+  // A page without tabs shows no tab bar.
+  await page.click('#new-page');
+  assert.equal(await page.locator('#page-tabs').isVisible(), false);
 
   assert.deepEqual(errors, []);
   await context.close();
