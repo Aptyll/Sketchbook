@@ -1,0 +1,79 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "pulledAt": "2026-10-22",
+  "stats": {
+    "site": "u.gg",
+    "source": "https://u.gg/lol/champions/kogmaw/runes-table?role=adc",
+    "queue": "Ranked Solo",
+    "region": "World",
+    "metric": "Raw win rate and pick rate per keystone (no adjustment for player skill or draft). Game counts are derived: pick rate x champion matches, rounded.",
+    "patchNote": "u.gg labels patches by year (26.20); Riot's own numbering for the same patch is 16.20.",
+    "samples": [
+      {
+        "id": "e-2620", "label": "Emerald+ · 26.20", "patch": "26.20", "rank": "Emerald+",
+        "matches": 54031, "champWinRate": 52.3,
+        "keystones": {
+          "Lethal Tempo": [52.84, 75.33], "Stormraider's Surge": [50.38, 10.01], "Press the Attack": [50.72, 6.97],
+          "Arcane Comet": [51.57, 5.98], "First Strike": [51.9, 0.87], "Deathfire Touch": [46.56, 0.35],
+          "Fleet Footwork": [53.09, 0.15], "Dark Harvest": [41.94, 0.11], "Hail of Blades": [41.82, 0.1],
+          "Conqueror": [44.44, 0.05], "Electrocute": [56.25, 0.03], "Grasp of the Undying": [50, 0.03]
+        }
+      },
+      {
+        "id": "d-2620", "label": "Diamond+ · 26.20", "patch": "26.20", "rank": "Diamond+",
+        "matches": 23348, "champWinRate": 52.07,
+        "keystones": {
+          "Lethal Tempo": [52.35, 70.12], "Stormraider's Surge": [52.07, 13.17], "Press the Attack": [51.31, 8.48],
+          "Arcane Comet": [51.21, 6.52], "First Strike": [49.8, 1.08], "Deathfire Touch": [47.37, 0.32],
+          "Dark Harvest": [45, 0.09], "Hail of Blades": [37.5, 0.07], "Fleet Footwork": [54.55, 0.05]
+        }
+      },
+      {
+        "id": "e-2621", "label": "Emerald+ · 26.21 (new patch, early)", "patch": "26.21", "rank": "Emerald+",
+        "matches": 5743, "champWinRate": 53.26,
+        "keystones": {
+          "Lethal Tempo": [53.6, 75.24], "Stormraider's Surge": [51.51, 10.38], "Press the Attack": [50.14, 6.43],
+          "Arcane Comet": [54.67, 6.34], "First Strike": [56.86, 0.89], "Deathfire Touch": [50, 0.24],
+          "Hail of Blades": [58.33, 0.21], "Dark Harvest": [50, 0.1]
+        }
+      }
+    ]
+  },
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Ranged values (Kog'Maw is ranged). Per-level values at levels 1 to 18."
+  },
+  "icons": {
+    "source": "Riot Data Dragon",
+    "version": "16.21.1",
+    "base": "https://ddragon.leagueoflegends.com/cdn/img/"
+  },
+  "keystones": [
+    {
+      "name": "Lethal Tempo", "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+      "wiki": "Attacks on champions stack up to 6 times, +4.8% attack speed each (28.8% max). At 6 stacks, attacks fire a bolt: 6 to 21.7 damage, +1% per 1% bonus AS."
+    },
+    {
+      "name": "Stormraider's Surge", "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+      "wiki": "Deal 25% of a champion's max HP within 3s: +36% move speed and 50% slow resist for 4s. Cooldown 20 to 8.8s."
+    },
+    {
+      "name": "Press the Attack", "tree": "Precision",
+      "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+      "wiki": "3 hits on one champion: 40 to 174 adaptive damage, then +8% damage to them until out of combat. Cooldown 6s."
+    },
+    {
+      "name": "Arcane Comet", "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+      "wiki": "Ability damage drops a comet: 15 to 110 (+10% bonus AD, +5% AP). Cooldown 20 to 6.6s."
+    },
+    {
+      "name": "First Strike", "tree": "Inspiration",
+      "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+      "wiki": "Hit a champion first: 3s of +7% bonus true damage, then gold equal to 35% of that bonus damage. Cooldown 25 to 15s."
+    }
+  ]
+}

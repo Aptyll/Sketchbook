@@ -71,7 +71,7 @@ To add one:
 2. Write a generator in `tools/` using `tools/sketch.mjs` (notes, images, wobbly lines, loops, arrows), writing `library/<name>.json`.
 3. Add an entry to `library/index.json`, run `npm test`, open a PR.
 
-`tools/build-kogmaw-spells.mjs` is the worked example. To refresh it after a new patch: update `data/kogmaw-adc-spells.json`, then `node tools/build-kogmaw-spells.mjs`.
+`tools/build-kogmaw-spells.mjs` is the worked example. `tools/build-kogmaw-keystones-ugg.mjs` is a second one, for u.gg's raw win rates (it draws sample-size whiskers). To refresh it after a new patch: update `data/kogmaw-adc-spells.json`, then `node tools/build-kogmaw-spells.mjs`.
 
 ## 3. A page file
 

@@ -299,6 +299,24 @@ test('library: add the spells page twice, as two separate copies', async () => {
   await context.close();
 });
 
+test('library: the u.gg keystones page opens with its icons and notes', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  await fakeIcons(context);
+  const { page, errors } = await openApp(context);
+
+  await page.click('#open-library');
+  await page.click('.library-entry >> text=keystones (u.gg)');
+  await page.waitForFunction(() => document.querySelector('#page-title').value === "Kog'Maw ADC: keystones (u.gg)");
+  await page.waitForSelector('.item.image img[src^="blob:"]');
+  assert.equal(await count(page, '.item.image'), 5);
+  for (const name of ['Lethal Tempo', 'Press the Attack', 'First Strike']) {
+    assert.ok(await page.locator('.item.note', { hasText: name }).first().isVisible());
+  }
+
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
 test('import a single page file: bad items are skipped, offline images fall back to their URL', async () => {
   const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
   await fakeIcons(context, { fail: true });
