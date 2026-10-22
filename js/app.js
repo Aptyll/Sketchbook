@@ -4,7 +4,8 @@
 import { db } from './db.js';
 import { strokePath, pointsBounds, hitStroke, round } from './ink.js';
 import { buildBackup, downloadText, restoreBackup, referencedBlobIds, storeImageSources } from './backup.js';
-import { COLORS, uid, normalizeItem } from './format.js';
+import { COLORS, uid, normalizeItem, normalizeFolders, MAX_FOLDER_NAME } from './format.js';
+import { createSidebar, folderAndDescendants } from './sidebar.js';
 import { initStorageMeter, scheduleStorageRefresh, refreshStorage, storageInfo, afterSave, noteBackup } from './storage.js';
 
 // ---------- Constants ----------
@@ -54,6 +55,7 @@ const el = {
 
 const state = {
   pages: [], // every page, newest first
+  folders: [], // sidebar folders; pages point at one with folderId
   page: null, // the open page
   tool: 'pen',
   colorIndex: 0,
@@ -771,50 +773,8 @@ function pastePoint() {
 
 // ---------- Pages ----------
 
-const dateFormat = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
-
 function renderPageList() {
-  el.pageList.replaceChildren(
-    ...state.pages.map((page) => {
-      const li = document.createElement('li');
-      li.classList.toggle('active', page === state.page);
-
-      const open = document.createElement('button');
-      open.className = 'page-open';
-      const name = document.createElement('span');
-      name.className = 'page-name';
-      name.classList.toggle('untitled', !page.title);
-      name.textContent = page.title || 'Untitled';
-      const date = document.createElement('span');
-      date.className = 'page-date';
-      date.textContent = dateFormat.format(page.createdAt);
-      open.append(name, date);
-      open.addEventListener('click', () => openPage(page));
-
-      // Two-step delete: first click arms, second click deletes.
-      const del = document.createElement('button');
-      del.className = 'page-delete';
-      del.textContent = 'Delete';
-      del.title = 'Delete page';
-      let armTimer = null;
-      del.addEventListener('click', () => {
-        if (!del.classList.contains('confirm')) {
-          del.classList.add('confirm');
-          del.textContent = 'Delete?';
-          armTimer = setTimeout(() => {
-            del.classList.remove('confirm');
-            del.textContent = 'Delete';
-          }, 3000);
-          return;
-        }
-        clearTimeout(armTimer);
-        deletePage(page);
-      });
-
-      li.append(open, del);
-      return li;
-    }),
-  );
+  sidebar.render({ pages: state.pages, folders: state.folders, activePage: state.page });
 }
 
 function openPage(page) {
@@ -829,6 +789,7 @@ function openPage(page) {
   applyView();
   renderTabs();
   renderAll();
+  revealPage(page);
   renderPageList();
   updateHistoryButtons();
   storageSet(LAST_PAGE_KEY, page.id);
@@ -874,9 +835,10 @@ function switchTab(id) {
   markDirty(page, { touch: false });
 }
 
-function newPage() {
+function newPage(folderId = null) {
   const now = Date.now();
   const page = { id: uid(), title: '', createdAt: now, updatedAt: now, view: { x: 0, y: 0, zoom: 1 }, items: [] };
+  if (folderId) page.folderId = folderId;
   state.pages.unshift(page);
   markDirty(page);
   openPage(page);
@@ -904,8 +866,122 @@ async function deletePage(page, { quiet = false } = {}) {
 const isBlank = (page) => !page.title && !page.items.length;
 
 async function loadPages() {
-  const pages = await db.getAll('pages');
+  const [pages, folders] = await Promise.all([db.getAll('pages'), db.getAll('folders')]);
   state.pages = pages.sort((a, b) => b.createdAt - a.createdAt);
+  state.folders = normalizeFolders(folders).folders;
+}
+
+// ---------- Folders ----------
+// Folders only organise the sidebar. Deleting one never deletes pages: its
+// pages and folders move up a level.
+
+const sidebar = createSidebar({
+  list: el.pageList,
+  actions: {
+    openPage: (page) => openPage(page),
+    deletePage: (page) => deletePage(page),
+    movePage: (page, folderId) => movePage(page, folderId),
+    moveFolder: (folder, parentId) => moveFolder(folder, parentId),
+    toggleFolder: (folder) => {
+      folder.collapsed = !folder.collapsed;
+      saveFolder(folder);
+      renderPageList();
+    },
+    renameFolder: (folder, name) => renameFolder(folder, name),
+    deleteFolder: (folder) => deleteFolder(folder),
+    newFolder: (parentId) => createFolder({ parentId, rename: true }),
+    newPageIn: (folderId) => {
+      newPage(folderId);
+      el.title.focus();
+    },
+  },
+});
+
+async function saveFolder(folder) {
+  try {
+    await db.put('folders', folder);
+  } catch (err) {
+    toast(`Could not save the folder: ${err.message}`);
+  }
+}
+
+const folderById = (id) => state.folders.find((f) => f.id === id);
+
+function createFolder({ name = 'New folder', parentId = null, library = false, rename = false } = {}) {
+  const folder = { id: uid(), name: String(name).trim().slice(0, MAX_FOLDER_NAME) || 'New folder', parentId: folderById(parentId) ? parentId : null, createdAt: Date.now(), collapsed: false };
+  if (library) folder.library = true;
+  state.folders.push(folder);
+  if (folder.parentId) folderById(folder.parentId).collapsed = false;
+  saveFolder(folder);
+  if (rename) sidebar.startRename(folder.id);
+  else renderPageList();
+  return folder;
+}
+
+function renameFolder(folder, name) {
+  folder.name = String(name).trim().slice(0, MAX_FOLDER_NAME) || folder.name;
+  saveFolder(folder);
+  renderPageList();
+}
+
+function movePage(page, folderId) {
+  const target = folderById(folderId) ? folderId : null;
+  if ((page.folderId ?? null) === target) return;
+  if (target) page.folderId = target;
+  else delete page.folderId;
+  markDirty(page, { touch: false });
+  revealPage(page);
+  renderPageList();
+}
+
+function moveFolder(folder, parentId) {
+  const target = folderById(parentId) ? parentId : null;
+  // A folder can't go inside itself or one of its own folders.
+  if (target && folderAndDescendants(state.folders, folder.id).has(target)) return;
+  folder.parentId = target;
+  if (target) folderById(target).collapsed = false;
+  saveFolder(folder);
+  if (target) saveFolder(folderById(target));
+  renderPageList();
+}
+
+async function deleteFolder(folder) {
+  const up = folder.parentId ?? null;
+  for (const f of state.folders) {
+    if (f.parentId === folder.id) {
+      f.parentId = up;
+      saveFolder(f);
+    }
+  }
+  let moved = 0;
+  for (const page of state.pages) {
+    if (page.folderId === folder.id) {
+      if (up) page.folderId = up;
+      else delete page.folderId;
+      markDirty(page, { touch: false });
+      moved++;
+    }
+  }
+  state.folders = state.folders.filter((f) => f !== folder);
+  renderPageList();
+  try {
+    await db.delete('folders', folder.id);
+    toast(moved ? `Folder deleted, ${moved} page${moved === 1 ? '' : 's'} moved up` : 'Folder deleted');
+  } catch (err) {
+    toast(`Could not delete the folder: ${err.message}`);
+  }
+}
+
+// Opens the folders a page sits in, so the open page is always visible in the list.
+function revealPage(page) {
+  const seen = new Set();
+  for (let f = folderById(page.folderId); f && !seen.has(f.id); f = folderById(f.parentId)) {
+    seen.add(f.id);
+    if (f.collapsed) {
+      f.collapsed = false;
+      saveFolder(f);
+    }
+  }
 }
 
 // ---------- Backup ----------
@@ -957,30 +1033,63 @@ async function afterImport(ids, problems, { openImported }) {
 
 const libraryDialog = $('#library');
 
+// Library copies are filed in one "Library" folder (made when first needed).
+function libraryFolder() {
+  return state.folders.find((f) => f.library) ?? createFolder({ name: 'Library', library: true });
+}
+
+// The copy of a library entry to open: the one edited most recently.
+function libraryCopy(file) {
+  return state.pages
+    .filter((p) => p.library === file)
+    .sort((a, b) => b.updatedAt - a.updatedAt)[0];
+}
+
+async function fetchLibraryIndex() {
+  const res = await fetch('library/index.json', { cache: 'no-cache' });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const entries = (await res.json()).pages ?? [];
+  return entries.filter((e) => typeof e?.file === 'string' && typeof e.title === 'string');
+}
+
 async function openLibrary() {
   const list = $('#library-list');
   list.replaceChildren(Object.assign(document.createElement('li'), { className: 'library-msg', textContent: 'Loading…' }));
   libraryDialog.showModal();
   try {
-    const res = await fetch('library/index.json', { cache: 'no-cache' });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    const entries = (await res.json()).pages ?? [];
+    const entries = await fetchLibraryIndex();
     list.replaceChildren(
       ...entries.map((entry) => {
         const li = document.createElement('li');
+        const copy = libraryCopy(entry.file);
         const b = document.createElement('button');
         b.className = 'library-entry';
         const name = Object.assign(document.createElement('span'), { className: 'library-title', textContent: entry.title });
         const desc = Object.assign(document.createElement('span'), { className: 'library-desc', textContent: entry.description ?? '' });
         b.append(name, desc);
-        b.addEventListener('click', () => addFromLibrary(entry));
+        if (copy) {
+          b.append(Object.assign(document.createElement('span'), { className: 'library-have', textContent: 'In your Library folder · click to open it' }));
+        }
+        b.addEventListener('click', () => (copy ? openLibraryCopy(copy) : addFromLibrary(entry)));
         li.append(b);
+        // Only offered once you have a copy: a clean one, e.g. after the data was updated.
+        if (copy) {
+          const fresh = Object.assign(document.createElement('button'), { className: 'text-btn library-fresh', textContent: 'Add a fresh copy' });
+          fresh.title = 'Adds a new, unedited copy next to yours';
+          fresh.addEventListener('click', () => addFromLibrary(entry));
+          li.append(fresh);
+        }
         return li;
       }),
     );
   } catch (err) {
     list.replaceChildren(Object.assign(document.createElement('li'), { className: 'library-msg', textContent: `Couldn't load the library: ${err.message}` }));
   }
+}
+
+function openLibraryCopy(page) {
+  libraryDialog.close();
+  openPage(page);
 }
 
 async function addFromLibrary(entry) {
@@ -990,12 +1099,46 @@ async function addFromLibrary(entry) {
   try {
     const res = await fetch(`library/${entry.file}`, { cache: 'no-cache' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    // Always a new copy, so re-adding never overwrites your edits.
+    // A new copy, so it never overwrites your edits. It is tagged with its
+    // library entry and filed in the Library folder before it is saved.
     const { ids, problems } = await restoreBackup(await res.text(), { freshIds: true });
+    const folder = libraryFolder();
+    for (const id of ids) {
+      const page = await db.get('pages', id);
+      if (!page) continue;
+      page.library = entry.file;
+      page.folderId = folder.id;
+      await db.put('pages', page);
+    }
     await afterImport(ids, problems, { openImported: true });
   } catch (err) {
     toast(`Couldn't add that page: ${err.message}`);
   }
+}
+
+// Pages added from the library before folders existed have no tag. Find them
+// by their exact library title (library pages always carry a source), tag
+// them and file them in the Library folder. Runs once per page: tagged pages
+// are never moved again, so moving one out of the folder sticks.
+async function fileOldLibraryCopies() {
+  const untagged = state.pages.filter((p) => !p.library && !p.folderId && p.source);
+  if (!untagged.length) return;
+  let entries;
+  try {
+    entries = await fetchLibraryIndex();
+  } catch {
+    return; // offline: try again next visit
+  }
+  const byTitle = new Map(entries.map((e) => [e.title, e.file]));
+  const matches = untagged.filter((p) => byTitle.has(p.title));
+  if (!matches.length) return;
+  const folder = libraryFolder();
+  for (const page of matches) {
+    page.library = byTitle.get(page.title);
+    page.folderId = folder.id;
+    markDirty(page, { touch: false });
+  }
+  renderPageList();
 }
 
 // ---------- Agent API ----------
@@ -1004,7 +1147,7 @@ async function addFromLibrary(entry) {
 // docs/AGENTS.md documents it; sketchbook.help() prints a summary.
 
 const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 1px at 100% zoom)
-  pages()                         list pages: [{ id, title, items }]
+  pages()                         list pages: [{ id, title, items, folderId }]
   page()                          copy of the open page
   open(id)                        open a page
   tab(id)                         switch the open page to one of its tabs (page().tabs lists them)
@@ -1015,6 +1158,9 @@ const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 
       { type:'image', x, y, w, h, src:'https://...' }
   remove(id | ids)                delete items from the open page
   importPage(page)                add a whole page object as a new page and open it
+  folders()                       list sidebar folders: [{ id, name, parentId }]
+  newFolder(name, parentId?)      create a folder (inside another one if parentId is given), returns its id
+  move(pageId, folderId | null)   file a page in a folder, or null for the top level
   fit()                           zoom to show everything
   storage()                       bytes used vs the 50 MB budget, browser quota, persisted, backup due
   colors                          palette names and hex values`;
@@ -1024,7 +1170,19 @@ const asList = (v) => (Array.isArray(v) ? v : [v]);
 const agentApi = {
   colors: COLORS.map((c) => ({ ...c })),
   help() { return AGENT_HELP; },
-  pages() { return state.pages.map((p) => ({ id: p.id, title: p.title, items: p.items.length })); },
+  pages() { return state.pages.map((p) => ({ id: p.id, title: p.title, items: p.items.length, folderId: folderById(p.folderId) ? p.folderId : null })); },
+  folders() { return state.folders.map((f) => ({ id: f.id, name: f.name, parentId: f.parentId ?? null })); },
+  newFolder(name = 'New folder', parentId = null) {
+    if (parentId !== null && !folderById(parentId)) throw new Error(`no folder with id ${parentId}`);
+    return createFolder({ name, parentId }).id;
+  },
+  move(pageId, folderId = null) {
+    const page = state.pages.find((p) => p.id === pageId);
+    if (!page) throw new Error(`no page with id ${pageId}`);
+    if (folderId !== null && !folderById(folderId)) throw new Error(`no folder with id ${folderId}`);
+    movePage(page, folderId);
+    return folderId;
+  },
   page() { return clone(state.page); },
   open(id) {
     const page = state.pages.find((p) => p.id === id);
@@ -1208,6 +1366,7 @@ function bindEvents() {
     newPage();
     el.title.focus();
   });
+  $('#new-folder').addEventListener('click', () => createFolder({ rename: true }));
   $('#export').addEventListener('click', exportBackup);
   $('#import').addEventListener('click', () => el.importInput.click());
   $('#open-library').addEventListener('click', openLibrary);
@@ -1247,6 +1406,10 @@ function bindEvents() {
   window.addEventListener('pagehide', flush);
 }
 
+// See db.js: another tab running an older or newer copy of the site.
+window.addEventListener('sketchbook:db-blocked', () => toast('Close other Sketchbook tabs to finish updating.'));
+window.addEventListener('sketchbook:db-outdated', () => toast('The sketchbook was updated in another tab. Reload this one.'));
+
 async function init() {
   buildPalette();
   bindEvents();
@@ -1272,6 +1435,7 @@ async function init() {
   else newPage();
 
   window.sketchbook = agentApi;
+  fileOldLibraryCopies().catch((err) => console.warn('Could not file old library pages:', err));
   // Ask once at startup; Chrome decides silently, others may wait for the button in the storage panel.
   await navigator.storage?.persist?.().catch(() => {});
   await collectGarbage(startupBlobIds).catch(() => {});

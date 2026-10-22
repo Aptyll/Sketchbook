@@ -2,7 +2,7 @@
 // Images are embedded as data URLs so the file is fully self-contained.
 
 import { db } from './db.js';
-import { normalizePage, uid } from './format.js';
+import { normalizePage, normalizeFolders, uid } from './format.js';
 
 const FORMAT = 'sketchbook-backup';
 const FORMAT_VERSION = 1;
@@ -31,7 +31,8 @@ export async function buildBackup() {
   for (const rec of await db.getAll('blobs')) {
     if (used.has(rec.id)) blobs.push({ id: rec.id, dataUrl: await blobToDataUrl(rec.blob) });
   }
-  return JSON.stringify({ format: FORMAT, version: FORMAT_VERSION, exportedAt: new Date().toISOString(), pages, blobs });
+  const folders = await db.getAll('folders');
+  return JSON.stringify({ format: FORMAT, version: FORMAT_VERSION, exportedAt: new Date().toISOString(), pages, folders, blobs });
 }
 
 export function downloadText(filename, text) {
@@ -75,7 +76,7 @@ export function parseBackup(text) {
     throw new Error('That file is not valid JSON.');
   }
   if (data?.format === 'sketchbook-page' || (data && !data.format && Array.isArray(data.items))) {
-    return { pages: [data.page ?? data], blobs: [] };
+    return { pages: [data.page ?? data], folders: [], blobs: [] };
   }
   if (data?.format !== FORMAT || !Array.isArray(data.pages)) {
     throw new Error('That file is not a sketchbook backup.');
@@ -83,7 +84,9 @@ export function parseBackup(text) {
   if (data.version > FORMAT_VERSION) {
     throw new Error('That backup was made by a newer version of the sketchbook.');
   }
-  return { pages: data.pages, blobs: data.blobs ?? [] };
+  // `folders` was added later without a version bump: older copies of the
+  // site ignore it, and backups made before it simply have no folders.
+  return { pages: data.pages, folders: Array.isArray(data.folders) ? data.folders : [], blobs: data.blobs ?? [] };
 }
 
 // Merges a backup into the local database. Pages with the same id are replaced,
@@ -98,6 +101,11 @@ export async function restoreBackup(text, { freshIds = false } = {}) {
   }
   const ids = [];
   const problems = [];
+  // Folders keep their ids, so pages that point at them land in the same place.
+  // Copies (freshIds) are loose pages; the caller decides where they go.
+  const folders = normalizeFolders(data.folders);
+  problems.push(...folders.problems);
+  for (const folder of folders.folders) await db.put('folders', folder);
   for (const [i, raw] of data.pages.entries()) {
     let result;
     try {
@@ -107,6 +115,7 @@ export async function restoreBackup(text, { freshIds = false } = {}) {
       continue;
     }
     const { page } = result;
+    if (freshIds) delete page.folderId;
     problems.push(...result.problems.map((p) => `${page.title || `page ${i}`}: ${p}`));
     await storeImageSources(page);
     await db.put('pages', page);

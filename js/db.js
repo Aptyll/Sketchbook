@@ -1,8 +1,10 @@
 // Thin promise wrapper around IndexedDB.
-// Two stores: "pages" (page records with their items) and "blobs" (image files).
+// Stores: "pages" (page records with their items), "blobs" (image files) and,
+// since version 2, "folders" (sidebar folders; pages point at one with folderId).
+// Upgrades only ever add stores, so existing pages and images are never touched.
 
 const DB_NAME = 'sketchbook';
-const DB_VERSION = 1;
+const DB_VERSION = 2;
 
 let opening = null;
 
@@ -14,8 +16,23 @@ function open() {
         const db = req.result;
         if (!db.objectStoreNames.contains('pages')) db.createObjectStore('pages', { keyPath: 'id' });
         if (!db.objectStoreNames.contains('blobs')) db.createObjectStore('blobs', { keyPath: 'id' });
+        if (!db.objectStoreNames.contains('folders')) db.createObjectStore('folders', { keyPath: 'id' });
       };
-      req.onsuccess = () => resolve(req.result);
+      // An older copy of the site open in another tab holds the old version open.
+      // The upgrade waits for it; tell the user instead of hanging silently.
+      req.onblocked = () => {
+        window.dispatchEvent(new CustomEvent('sketchbook:db-blocked'));
+      };
+      req.onsuccess = () => {
+        const conn = req.result;
+        // If a newer copy of the site opens in another tab, step aside so it can upgrade.
+        conn.onversionchange = () => {
+          conn.close();
+          opening = null;
+          window.dispatchEvent(new CustomEvent('sketchbook:db-outdated'));
+        };
+        resolve(conn);
+      };
       req.onerror = () => reject(req.error);
     });
   }

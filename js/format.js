@@ -117,6 +117,9 @@ export function normalizePage(raw, { freshId = false } = {}) {
     items,
   };
   if (raw.source && typeof raw.source === 'object') page.source = structuredClone(raw.source);
+  // Sidebar placement: the folder a page sits in, and which library entry it was copied from.
+  if (isKey(raw.folderId)) page.folderId = raw.folderId;
+  if (isKey(raw.library)) page.library = raw.library;
   if (raw.fit === true) page.fit = true;
   const tabs = normalizeTabs(raw.tabs, problems);
   if (tabs.length) {
@@ -155,4 +158,56 @@ function normalizeTabs(raw, problems) {
   }
   if (raw.length > MAX_TABS) problems.push(`only the first ${MAX_TABS} tabs are kept`);
   return tabs;
+}
+
+// ---------- Folders ----------
+
+const isKey = (v) => typeof v === 'string' && v.length > 0 && v.length <= 200;
+export const MAX_FOLDER_NAME = 80;
+
+// Returns a clean folder record, or throws. A folder sits at the top level
+// (parentId null) or inside another folder. `library: true` marks the folder
+// that library pages are filed into.
+export function normalizeFolder(raw) {
+  if (!raw || typeof raw !== 'object') throw new Error('folder is not an object');
+  if (!isKey(raw.id)) throw new Error('folder needs an id');
+  const name = typeof raw.name === 'string' ? raw.name.trim().slice(0, MAX_FOLDER_NAME) : '';
+  const folder = {
+    id: raw.id,
+    name: name || 'Untitled folder',
+    parentId: isKey(raw.parentId) && raw.parentId !== raw.id ? raw.parentId : null,
+    createdAt: isNum(raw.createdAt) ? raw.createdAt : Date.now(),
+    collapsed: raw.collapsed === true,
+  };
+  if (raw.library === true) folder.library = true;
+  return folder;
+}
+
+// Cleans a list of folders: drops broken ones and duplicate ids, and moves
+// a folder to the top level if its parent is missing or it is part of a loop.
+export function normalizeFolders(rawList) {
+  const folders = [];
+  const problems = [];
+  const byId = new Map();
+  for (const [i, raw] of (Array.isArray(rawList) ? rawList : []).entries()) {
+    try {
+      const f = normalizeFolder(raw);
+      if (byId.has(f.id)) throw new Error('duplicate folder id');
+      byId.set(f.id, f);
+      folders.push(f);
+    } catch (err) {
+      problems.push(`folder ${i}: ${err.message}`);
+    }
+  }
+  for (const f of folders) {
+    const seen = new Set([f.id]);
+    for (let p = f.parentId; p; p = byId.get(p)?.parentId ?? null) {
+      if (!byId.has(p) || seen.has(p)) {
+        f.parentId = null;
+        break;
+      }
+      seen.add(p);
+    }
+  }
+  return { folders, problems };
 }
