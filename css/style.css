@@ -360,8 +360,9 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 
 #corner {
   position: absolute;
+  /* top right, so it never collides with the toolbar on narrow windows */
   right: 16px;
-  bottom: 22px;
+  top: 20px;
   display: flex;
   align-items: center;
   gap: 10px;
