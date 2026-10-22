@@ -1,0 +1,66 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "pulledAt": "2026-10-22",
+  "stats": {
+    "source": "https://coachless.gg/spells/kogmaw?role=adc",
+    "site": "coachless.gg",
+    "patch": "16.19",
+    "rank": "Diamond+",
+    "filters": "site defaults (vs all champions)",
+    "games": 19869,
+    "metric": "WPA = win rate minus average pre-game win probability, in percentage points",
+    "notListed": ["Heal", "Cleanse", "Ignite"]
+  },
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Per-level values quoted at levels 1 to 18."
+  },
+  "icons": {
+    "source": "Riot Data Dragon",
+    "version": "16.21.1",
+    "base": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/spell/"
+  },
+  "spells": [
+    {
+      "name": "Barrier", "icon": "SummonerBarrier.png",
+      "wpa": 0.70, "picks": 12192, "pickRate": 61.3, "preGameWp": 52.6, "winRate": 53.3,
+      "cooldown": 180,
+      "wiki": "Shield 100 to 460 (lv 1 to 18) for 2.5s. Not reduced by Grievous Wounds."
+    },
+    {
+      "name": "Flash", "icon": "SummonerFlash.png",
+      "wpa": 0.00, "picks": 19869, "pickRate": 99.9, "preGameWp": 52.4, "winRate": 52.4,
+      "cooldown": 300,
+      "wiki": "Blink up to 400 units toward the cursor."
+    },
+    {
+      "name": "Ghost", "icon": "SummonerHaste.png",
+      "wpa": -0.82, "picks": 4208, "pickRate": 21.2, "preGameWp": 52.4, "winRate": 51.5,
+      "cooldown": 240,
+      "wiki": "24% to 51% bonus move speed (by level) for 10s, ignores unit collision."
+    },
+    {
+      "name": "Teleport", "icon": "SummonerTeleport.png",
+      "wpa": -1.01, "picks": 1148, "pickRate": 5.8, "preGameWp": 51.8, "winRate": 50.8,
+      "cooldown": 300,
+      "wiki": "3s channel to an allied turret, minion or ward. Upgrades to Unleashed Teleport at 10:00."
+    },
+    {
+      "name": "Exhaust", "icon": "SummonerExhaust.png",
+      "wpa": -1.77, "picks": 1295, "pickRate": 6.5, "preGameWp": 52.1, "winRate": 50.3,
+      "cooldown": 240,
+      "wiki": "Range 650. Slows the target 40% and cuts their damage dealt 35% for 3s."
+    },
+    {
+      "name": "Heal", "icon": "SummonerHeal.png",
+      "cooldown": 240,
+      "wiki": "Heals you and the nearest ally 80 to 318 (lv 1 to 18), +30% move speed for 1s. Half healing if healed again within 35s."
+    },
+    {
+      "name": "Cleanse", "icon": "SummonerBoost.png",
+      "cooldown": 240,
+      "wiki": "Removes disables (not airborne, nearsight or suppression) and gives 75% tenacity for 3s."
+    }
+  ]
+}

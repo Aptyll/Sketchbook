@@ -3,17 +3,11 @@
 
 import { db } from './db.js';
 import { strokePath, pointsBounds, hitStroke, round } from './ink.js';
-import { buildBackup, downloadText, restoreBackup, referencedBlobIds } from './backup.js';
+import { buildBackup, downloadText, restoreBackup, referencedBlobIds, storeImageSources } from './backup.js';
+import { COLORS, uid, normalizeItem } from './format.js';
 
 // ---------- Constants ----------
 
-const COLORS = [
-  { name: 'Parchment', value: '#e9dfc9' },
-  { name: 'Sepia', value: '#b8925a' },
-  { name: 'Red chalk', value: '#c4593f' },
-  { name: 'Slate', value: '#7f98ad' },
-  { name: 'Moss', value: '#8f9a6e' },
-];
 // Sizes are in screen pixels at the moment of drawing, so a line looks the same
 // thickness whatever the zoom level when you draw it.
 const SIZES = [
@@ -74,8 +68,6 @@ const blobUrls = new Map(); // blob id -> Promise<object URL | null>
 let drag = null; // the active pointer gesture, if any
 let lastPointer = null; // last pointer position over the stage, for pasting
 
-const uid = () =>
-  crypto.randomUUID ? crypto.randomUUID() : Date.now().toString(36) + Math.random().toString(36).slice(2);
 const clone = (v) => structuredClone(v);
 const clamp = (n, lo, hi) => Math.min(hi, Math.max(lo, n));
 const items = () => state.page.items;
@@ -211,7 +203,10 @@ function createNode(item) {
     img.alt = '';
     img.draggable = false;
     div.append(img);
-    urlForBlob(item.blobId).then((url) => { if (url) img.src = url; });
+    // Prefer the stored copy; fall back to the web address if there isn't one.
+    const fallback = item.src ?? '';
+    if (item.blobId) urlForBlob(item.blobId).then((url) => { img.src = url ?? fallback; });
+    else img.src = fallback;
   }
   return div;
 }
@@ -339,6 +334,24 @@ function zoomAt(p, factor) {
 
 function resetZoom() {
   zoomAt(stageCenter(), 1 / zoom());
+}
+
+// Zooms and pans so every item on the page is in view (never above 100%).
+function fitToContent() {
+  if (!items().length) return;
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const item of items()) {
+    const b = itemBounds(item);
+    minX = Math.min(minX, b.x);
+    minY = Math.min(minY, b.y);
+    maxX = Math.max(maxX, b.x + b.w);
+    maxY = Math.max(maxY, b.y + b.h);
+  }
+  const pad = 48;
+  const sw = el.stage.clientWidth;
+  const sh = el.stage.clientHeight;
+  const z = clamp(Math.min((sw - 2 * pad) / (maxX - minX || 1), (sh - 2 * pad) / (maxY - minY || 1), 1), MIN_ZOOM, MAX_ZOOM);
+  setView({ zoom: z, x: (sw - (maxX - minX) * z) / 2 - minX * z, y: (sh - (maxY - minY) * z) / 2 - minY * z });
 }
 
 // ---------- Tools, colors, sizes ----------
@@ -806,6 +819,11 @@ function openPage(page) {
   renderPageList();
   updateHistoryButtons();
   storageSet(LAST_PAGE_KEY, page.id);
+  // Pages made elsewhere (library, agents) can ask to be framed on first open.
+  if (page.fit) {
+    delete page.fit;
+    fitToContent();
+  }
 }
 
 function newPage() {
@@ -860,19 +878,151 @@ async function importBackup(file) {
   finishEditing();
   await flush();
   try {
-    const ids = await restoreBackup(await file.text());
-    // A blank page (like the one a fresh browser starts with) is just clutter
-    // next to imported pages, so drop it.
-    const current = state.page;
-    if (ids.length && isBlank(current) && !ids.includes(current.id)) await db.delete('pages', current.id);
-    await loadPages();
-    const imported = state.pages.find((p) => ids.includes(p.id));
-    openPage(state.pages.find((p) => p.id === current.id) ?? imported ?? state.pages[0] ?? newPage());
-    toast(`Imported ${ids.length} page${ids.length === 1 ? '' : 's'}`);
+    const { ids, problems } = await restoreBackup(await file.text());
+    await afterImport(ids, problems, { openImported: false });
   } catch (err) {
     toast(err.message);
   }
 }
+
+// Reloads the page list after pages were written to the database, and opens
+// either the imported page or the one that was open before.
+async function afterImport(ids, problems, { openImported }) {
+  // A blank page (like the one a fresh browser starts with) is just clutter
+  // next to imported pages, so drop it.
+  const current = state.page;
+  if (ids.length && isBlank(current) && !ids.includes(current.id)) await db.delete('pages', current.id);
+  await loadPages();
+  const imported = state.pages.find((p) => ids.includes(p.id));
+  const stay = state.pages.find((p) => p.id === current.id);
+  openPage((openImported ? imported ?? stay : stay ?? imported) ?? state.pages[0] ?? newPage());
+  const skipped = problems.length ? `, skipped ${problems.length} broken item${problems.length === 1 ? '' : 's'}` : '';
+  if (problems.length) console.warn('Import problems:', problems);
+  toast(`Imported ${ids.length} page${ids.length === 1 ? '' : 's'}${skipped}`);
+}
+
+// ---------- Library ----------
+// Ready-made pages that ship with the site (library/index.json lists them).
+
+const libraryDialog = $('#library');
+
+async function openLibrary() {
+  const list = $('#library-list');
+  list.replaceChildren(Object.assign(document.createElement('li'), { className: 'library-msg', textContent: 'Loading…' }));
+  libraryDialog.showModal();
+  try {
+    const res = await fetch('library/index.json', { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const entries = (await res.json()).pages ?? [];
+    list.replaceChildren(
+      ...entries.map((entry) => {
+        const li = document.createElement('li');
+        const b = document.createElement('button');
+        b.className = 'library-entry';
+        const name = Object.assign(document.createElement('span'), { className: 'library-title', textContent: entry.title });
+        const desc = Object.assign(document.createElement('span'), { className: 'library-desc', textContent: entry.description ?? '' });
+        b.append(name, desc);
+        b.addEventListener('click', () => addFromLibrary(entry));
+        li.append(b);
+        return li;
+      }),
+    );
+  } catch (err) {
+    list.replaceChildren(Object.assign(document.createElement('li'), { className: 'library-msg', textContent: `Couldn't load the library: ${err.message}` }));
+  }
+}
+
+async function addFromLibrary(entry) {
+  libraryDialog.close();
+  finishEditing();
+  await flush();
+  try {
+    const res = await fetch(`library/${entry.file}`, { cache: 'no-cache' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    // Always a new copy, so re-adding never overwrites your edits.
+    const { ids, problems } = await restoreBackup(await res.text(), { freshIds: true });
+    await afterImport(ids, problems, { openImported: true });
+  } catch (err) {
+    toast(`Couldn't add that page: ${err.message}`);
+  }
+}
+
+// ---------- Agent API ----------
+// A small scripting surface on window.sketchbook, so an AI agent (or you, in the
+// console) can write and draw on the open page. Every change is one undo step.
+// docs/AGENTS.md documents it; sketchbook.help() prints a summary.
+
+const AGENT_HELP = `sketchbook agent API (coordinates are world units; 1 unit = 1px at 100% zoom)
+  pages()                         list pages: [{ id, title, items }]
+  page()                          copy of the open page
+  open(id)                        open a page
+  newPage(title?)                 create and open a blank page, returns its id
+  add(item | items)               add notes, strokes, images to the open page, returns ids
+      { type:'note', x, y, text, color?, size? }
+      { type:'stroke', points:[[x,y],...], color?, width? }
+      { type:'image', x, y, w, h, src:'https://...' }
+  remove(id | ids)                delete items from the open page
+  importPage(page)                add a whole page object as a new page and open it
+  fit()                           zoom to show everything
+  colors                          palette names and hex values`;
+
+const asList = (v) => (Array.isArray(v) ? v : [v]);
+
+const agentApi = {
+  colors: COLORS.map((c) => ({ ...c })),
+  help() { return AGENT_HELP; },
+  pages() { return state.pages.map((p) => ({ id: p.id, title: p.title, items: p.items.length })); },
+  page() { return clone(state.page); },
+  open(id) {
+    const page = state.pages.find((p) => p.id === id);
+    if (!page) throw new Error(`no page with id ${id}`);
+    openPage(page);
+    return page.id;
+  },
+  newPage(title = '') {
+    const page = newPage();
+    page.title = String(title);
+    el.title.value = page.title;
+    renderPageList();
+    markDirty(page);
+    return page.id;
+  },
+  async add(input) {
+    finishEditing();
+    const page = state.page;
+    const added = asList(input).map((raw) => normalizeItem({ ...raw, id: undefined }));
+    // Store remote images first, so they work offline and export with the page.
+    await storeImageSources({ items: added });
+    if (state.page !== page) throw new Error('the open page changed while adding');
+    const before = snapshot();
+    for (const item of added) {
+      items().push(item);
+      renderItem(item);
+    }
+    changed(before);
+    return added.map((i) => i.id);
+  },
+  remove(input) {
+    const ids = new Set(asList(input));
+    const before = snapshot();
+    const keep = items().filter((i) => !ids.has(i.id));
+    if (keep.length === items().length) return 0;
+    const removed = items().length - keep.length;
+    state.page.items = keep;
+    ids.forEach(removeNode);
+    select(null);
+    changed(before);
+    return removed;
+  },
+  async importPage(raw) {
+    finishEditing();
+    await flush();
+    const { ids, problems } = await restoreBackup({ format: 'sketchbook-page', page: raw }, { freshIds: true });
+    await afterImport(ids, problems, { openImported: true });
+    return { id: ids[0], problems };
+  },
+  fit() { fitToContent(); },
+};
 
 // Deletes stored images that no page uses any more. Only looks at blobs that
 // existed at startup, so images added during this session are never at risk.
@@ -886,6 +1036,7 @@ async function collectGarbage(startupBlobIds) {
 // ---------- Keyboard, clipboard, drag and drop ----------
 
 function onKeyDown(e) {
+  if (libraryDialog.open) return;
   if (isTyping(e.target)) {
     if (e.key === 'Escape') e.target.blur();
     return;
@@ -992,6 +1143,9 @@ function bindEvents() {
   });
   $('#export').addEventListener('click', exportBackup);
   $('#import').addEventListener('click', () => el.importInput.click());
+  $('#open-library').addEventListener('click', openLibrary);
+  $('#library-close').addEventListener('click', () => libraryDialog.close());
+  libraryDialog.addEventListener('click', (e) => { if (e.target === libraryDialog) libraryDialog.close(); });
 
   el.imageInput.addEventListener('change', () => {
     addImages(el.imageInput.files, toWorld(stageCenter()));
@@ -1050,6 +1204,7 @@ async function init() {
   if (first) openPage(first);
   else newPage();
 
+  window.sketchbook = agentApi;
   navigator.storage?.persist?.().catch(() => {});
   collectGarbage(startupBlobIds).catch(() => {});
 }

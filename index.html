@@ -16,8 +16,9 @@
     </div>
     <ul id="page-list"></ul>
     <div class="sidebar-foot">
-      <button id="export" class="text-btn" title="Download a backup of every page and image">Export backup</button>
-      <button id="import" class="text-btn" title="Load pages from a backup file">Import</button>
+      <button id="open-library" class="text-btn" title="Ready-made pages you can add">Library</button>
+      <button id="export" class="text-btn" title="Download a backup of every page and image">Export</button>
+      <button id="import" class="text-btn" title="Load pages from a backup or page file">Import</button>
     </div>
   </aside>
 
@@ -82,6 +83,15 @@
 
     <div id="toast" role="status" hidden></div>
   </main>
+
+  <dialog id="library" aria-labelledby="library-heading">
+    <div class="library-head">
+      <h2 id="library-heading">Library</h2>
+      <button id="library-close" class="text-btn" aria-label="Close">Close</button>
+    </div>
+    <p class="library-note">Ready-made pages. Adding one makes your own copy to scribble on.</p>
+    <ul id="library-list"></ul>
+  </dialog>
 
   <input id="image-input" type="file" accept="image/*" multiple hidden>
   <input id="import-input" type="file" accept=".json,application/json" hidden>
