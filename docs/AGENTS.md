@@ -59,6 +59,9 @@ sketchbook.fit();                                       // zoom to show everythi
 sketchbook.tab('patch-26.19');                          // switch the open page's tab (page().tabs lists them)
 sketchbook.storage();                                   // { total, budget, pageBytes, imageBytes, quota, persisted, backupDue, ... }
 sketchbook.pages(); sketchbook.open(id);                // list and switch pages
+const f = sketchbook.newFolder('Matchups');            // sidebar folders (parentId as 2nd arg nests one)
+sketchbook.move(pageId, f);                             // file a page; null moves it to the top level
+sketchbook.folders();                                   // [{ id, name, parentId }]
 ```
 
 Every `add` or `remove` is one undo step, so Noah can press Ctrl+Z to take back anything an agent did.
@@ -66,7 +69,7 @@ Pages stay in this browser's storage. The only network requests are downloads of
 
 ## 2. Library pages
 
-`library/index.json` lists ready-made pages; the **Library** button in the sidebar adds a fresh copy of one (so re-adding never overwrites Noah's scribbles).
+`library/index.json` lists ready-made pages; the **Library** button in the sidebar adds a copy of one, filed in the *Library* folder and tagged with `library: "<file>"`. Picking an entry again opens that copy instead of adding another; **Add a fresh copy** makes a clean one, so nothing ever overwrites Noah's scribbles.
 
 To add one:
 

@@ -5,12 +5,12 @@ Think Leonardo's notebooks: ink sketches, scribbled notes and pasted images on a
 
 ## What it does
 
-- **Pages**: a journal of dated pages in the sidebar. Each page is an infinite canvas.
+- **Pages and folders**: dated pages in the sidebar, filed into folders (and folders inside folders). Drag a page onto a folder, or use its **⋯** menu. Deleting a folder never deletes pages; they move up a level. Each page is an infinite canvas.
 - **Ink**: freehand pen in five muted colors (parchment, sepia, red chalk, slate, moss) and three sizes.
 - **Notes**: click with the text tool to write anywhere.
 - **Images**: paste (Ctrl+V), drag and drop, or use the image button. Resize from the corner handle.
 - **Undo/redo**, autosave, and a backup file you can export and import.
-- **Library**: ready-made pages you can add a copy of, like *Kog'Maw ADC: summoner spells* (coachless win rates and WPA next to LoL wiki numbers).
+- **Library**: ready-made pages you can add a copy of, filed in a *Library* folder. Picking one you already have opens your copy; **Add a fresh copy** makes a clean one. For example *Kog'Maw ADC: summoner spells* (coachless win rates and WPA next to LoL wiki numbers).
 - **Agent friendly**: an AI agent can write and draw through `window.sketchbook`, or hand over a page file. See [docs/AGENTS.md](docs/AGENTS.md).
 
 ## Shortcuts
@@ -56,7 +56,8 @@ npm test         # end-to-end tests in a real browser
 Files:
 
 - `index.html`, `css/style.css`: layout and look.
-- `js/app.js`: canvas, tools, pages, keyboard and clipboard.
+- `js/app.js`: canvas, tools, pages, folders, keyboard and clipboard.
+- `js/sidebar.js`: draws the page and folder tree, its menus and drag and drop.
 - `js/ink.js`: stroke smoothing and hit testing.
 - `js/db.js`: IndexedDB storage.
 - `js/storage.js`: the storage ring and its panel.

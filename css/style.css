@@ -98,20 +98,30 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
   flex: 1;
 }
 
-#page-list li {
+.sidebar-actions { display: flex; align-items: center; gap: 2px; }
+#new-page { white-space: nowrap; }
+.sidebar-actions .icon-btn { width: 30px; height: 30px; }
+.sidebar-actions .icon-btn svg { width: 18px; height: 18px; }
+
+/* Pages and folders, as one indented tree. --depth is set per row. */
+.tree-row {
+  --indent: calc(var(--depth, 0) * 14px);
   display: flex;
   align-items: center;
   border-radius: 6px;
   cursor: pointer;
 }
-#page-list li:hover { background: rgba(255, 255, 255, 0.04); }
-#page-list li.active { background: rgba(201, 164, 106, 0.12); }
+.tree-row:hover, .tree-row.menu-open { background: rgba(255, 255, 255, 0.04); }
+.tree-row.active { background: rgba(201, 164, 106, 0.12); }
+.tree-row.dragging { opacity: 0.4; }
+.tree-row.drop-target { background: rgba(201, 164, 106, 0.2); box-shadow: inset 0 0 0 1px var(--accent); }
+#page-list.drop-root { box-shadow: inset 0 0 0 1px rgba(201, 164, 106, 0.45); border-radius: 8px; }
 
 .page-open {
   flex: 1;
   min-width: 0;
   text-align: left;
-  padding: 8px 8px;
+  padding: 7px 8px 7px calc(8px + var(--indent));
 }
 .page-name {
   display: block;
@@ -124,18 +134,109 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 .page-name.untitled { color: var(--muted); font-style: italic; }
 .page-date { display: block; font-size: 11px; color: var(--muted); margin-top: 2px; }
 
-.page-delete {
+.folder-toggle {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  text-align: left;
+  padding: 7px 8px 7px calc(2px + var(--indent));
+}
+.folder-toggle .chev {
+  width: 12px;
+  height: 12px;
   flex: none;
-  color: var(--muted);
-  padding: 4px 8px;
-  margin-right: 4px;
+  fill: none;
+  stroke: var(--muted);
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: transform 0.15s ease;
+}
+.folder-toggle[aria-expanded="true"] .chev { transform: rotate(90deg); }
+.folder-icon {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+.folder-name {
+  flex: 1;
+  min-width: 0;
+  font-family: var(--serif);
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.folder-row.library .folder-name { font-style: italic; color: var(--accent); }
+.folder-count { flex: none; font-size: 11px; color: var(--muted); }
+.folder-rename {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  font-family: var(--serif);
+  font-size: 15px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--accent);
   border-radius: 4px;
-  font-size: 12px;
+  padding: 1px 4px;
+  outline: none;
+}
+
+.row-more {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  margin-right: 4px;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  color: var(--muted);
   visibility: hidden;
 }
-#page-list li:hover .page-delete, .page-delete.confirm { visibility: visible; }
-.page-delete:hover { color: var(--text); }
-.page-delete.confirm { color: var(--danger); }
+.row-more svg { width: 16px; height: 16px; fill: currentColor; }
+.tree-row:hover .row-more, .tree-row.menu-open .row-more, .row-more:focus-visible { visibility: visible; }
+.row-more:hover { color: var(--text); background: rgba(255, 255, 255, 0.06); }
+/* No hover on touch screens, so keep the menu button visible there. */
+@media (hover: none) { .row-more { visibility: visible; } }
+
+#row-menu {
+  position: fixed;
+  z-index: 20;
+  min-width: 190px;
+  max-width: 260px;
+  max-height: min(420px, calc(100vh - 16px));
+  overflow-y: auto;
+  padding: 4px;
+  background: var(--panel-solid);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+#row-menu[hidden] { display: none; }
+.menu-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 6px 10px 6px calc(10px + var(--depth, 0) * 12px);
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-item:hover, .menu-item:focus-visible { background: rgba(255, 255, 255, 0.06); outline: none; }
+.menu-item.current { color: var(--muted); cursor: default; background: none; }
+.menu-item.current::after { content: " (here)"; font-size: 12px; }
+.menu-item.danger.armed { color: var(--danger); }
+.menu-heading { padding: 6px 10px 2px; font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+.menu-sep { height: 1px; margin: 4px 6px; background: var(--line); }
 
 /* ---------- Canvas ---------- */
 
@@ -525,3 +626,5 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 .library-entry:hover, .library-entry:focus-visible { border-color: var(--accent); background: rgba(255, 255, 255, 0.03); }
 .library-title { font-family: var(--serif); font-size: 16px; }
 .library-desc, .library-msg { color: var(--muted); font-size: 13px; }
+.library-have { color: var(--accent); font-size: 12px; }
+.library-fresh { margin: 2px 0 0 6px; font-size: 12px; }

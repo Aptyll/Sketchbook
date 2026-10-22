@@ -12,7 +12,12 @@
   <aside id="sidebar" aria-label="Pages">
     <div class="sidebar-head">
       <span class="brand">Sketchbook</span>
-      <button id="new-page" class="text-btn" title="New page (N)">+ New page</button>
+      <div class="sidebar-actions">
+        <button id="new-folder" class="icon-btn" title="New folder" aria-label="New folder">
+          <svg viewBox="0 0 20 20"><path d="M2.5 5.5a1 1 0 011-1h4l1.6 1.8h7.4a1 1 0 011 1v8.2a1 1 0 01-1 1h-13a1 1 0 01-1-1zM10 9v5M7.5 11.5h5"/></svg>
+        </button>
+        <button id="new-page" class="text-btn" title="New page (N)">+ New page</button>
+      </div>
     </div>
     <ul id="page-list"></ul>
     <div class="sidebar-foot">
