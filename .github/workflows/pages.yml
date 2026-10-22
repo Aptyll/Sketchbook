@@ -11,10 +11,6 @@ permissions:
   pages: write
   id-token: write
 
-concurrency:
-  group: pages
-  cancel-in-progress: false
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -32,6 +28,11 @@ jobs:
   deploy:
     needs: test
     if: github.event_name != 'pull_request'
+    # Only deploys share this group. When it sat on the whole workflow, a
+    # queued PR test run could cancel a queued deploy of main.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
     runs-on: ubuntu-latest
     timeout-minutes: 10
     environment:
