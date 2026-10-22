@@ -6,13 +6,18 @@
     "source": "https://coachless.gg/runes/tree/kogmaw/precision/resolve?role=adc",
     "site": "coachless.gg",
     "patch": "16.19",
-    "rank": "Diamond+",
-    "filters": "site defaults (vs all champions)",
+    "filters": "vs all champions, 'Hide low occurrence' on (site default). Rank and region set in the Filters panel; they don't show in the URL.",
     "metric": "WPA = win rate minus average pre-game win probability, in percentage points",
-    "pickCountsNote": "Keystone pick counts are across all secondary trees. Coachless shows no win rate or pre-game WP on the runes page, only WPA and picks.",
-    "primaryTreeShare": { "Precision": 84, "Sorcery": 14, "Inspiration": 1, "Domination": 0, "Resolve": 0 },
+    "pickCountsNote": "Keystone pick counts are across all secondary trees. The runes page shows WPA and picks only, no win rate.",
+    "limits": "Coachless's rank filter goes Gold, Platinum, Emerald, Diamond, Master+. There is no Challenger-only bracket and nothing below Gold, so 'all ranks' here means Gold+.",
     "notListed": ["Fleet Footwork", "Conqueror", "Summon Aery", "Deathfire Touch", "Glacial Augment", "Unsealed Spellbook", "Electrocute", "Dark Harvest", "Hail of Blades", "Grasp of the Undying", "Aftershock", "Guardian"]
   },
+  "brackets": [
+    { "key": "naGold", "label": "NA · Gold+ (all ranks)", "region": "North America", "ranks": "Gold, Platinum, Emerald, Diamond, Master+" },
+    { "key": "naDiamond", "label": "NA · Diamond+", "region": "North America", "ranks": "Diamond, Master+" },
+    { "key": "naMaster", "label": "NA · Master+", "region": "North America", "ranks": "Master+" },
+    { "key": "worldDiamond", "label": "All regions · Diamond+", "region": "all", "ranks": "Diamond, Master+", "reference": true }
+  ],
   "wiki": {
     "source": "https://wiki.leagueoflegends.com/en-us/",
     "note": "Ranged values (Kog'Maw is ranged). Level ranges are 1 to 18."
@@ -24,34 +29,55 @@
   },
   "keystones": [
     {
-      "name": "First Strike", "tree": "Inspiration",
-      "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
-      "wpa": 0.56, "picks": 283,
-      "wiki": "Hit a champion first: 3s of 7% bonus true damage to champions, and 35% of that bonus damage back as gold. 25 to 15s cooldown; lost if they hit you first."
-    },
-    {
       "name": "Lethal Tempo", "tree": "Precision",
       "icon": "perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
-      "wpa": 0.38, "picks": 14827,
-      "wiki": "Each attack on a champion: +4.8% attack speed for 6s, up to 6 stacks (28.8%). At 6 stacks attacks add 6 to 21.7 adaptive damage, +1% per 1% bonus attack speed."
-    },
-    {
-      "name": "Arcane Comet", "tree": "Sorcery",
-      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
-      "wpa": -0.78, "picks": 1268,
-      "wiki": "Ability damage to a champion drops a comet: 15 to 110 (+10% bonus AD, +5% AP), doubled at max travel distance."
+      "wiki": "Each attack on a champion: +4.8% attack speed for 6s, up to 6 stacks (28.8%). At 6 stacks attacks add 6 to 21.7 adaptive damage, +1% per 1% bonus attack speed.",
+      "stats": {
+        "naGold": { "wpa": -0.69, "picks": 10997 },
+        "naDiamond": { "wpa": -1.25, "picks": 1301 },
+        "naMaster": { "wpa": -2.25, "picks": 171 },
+        "worldDiamond": { "wpa": 0.38, "picks": 14827 }
+      }
     },
     {
       "name": "Press the Attack", "tree": "Precision",
       "icon": "perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
-      "wpa": -0.96, "picks": 1869,
-      "wiki": "3 attacks on one champion within 4s: 40 to 174 adaptive damage, then +8% damage to champions until 5s after leaving combat."
+      "wiki": "3 attacks on one champion within 4s: 40 to 174 adaptive damage, then +8% damage to champions until 5s after leaving combat.",
+      "stats": {
+        "naGold": { "wpa": -1.48, "picks": 1301 },
+        "naDiamond": { "wpa": -4.32, "picks": 263 },
+        "worldDiamond": { "wpa": -0.96, "picks": 1869 }
+      }
     },
     {
       "name": "Stormraider's Surge", "tree": "Sorcery",
       "icon": "perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
-      "wpa": -1.54, "picks": 1519,
-      "wiki": "Deal 25% of a champion's max health within 3s: +36% move speed and 50% slow resist for 4s. 20 to 8.8s cooldown."
+      "wiki": "Deal 25% of a champion's max health within 3s: +36% move speed and 50% slow resist for 4s. 20 to 8.8s cooldown.",
+      "stats": {
+        "naGold": { "wpa": -3.09, "picks": 937 },
+        "naDiamond": { "wpa": -1.51, "picks": 347 },
+        "naMaster": { "wpa": -1.48, "picks": 170 },
+        "worldDiamond": { "wpa": -1.54, "picks": 1519 }
+      }
+    },
+    {
+      "name": "Arcane Comet", "tree": "Sorcery",
+      "icon": "perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+      "wiki": "Ability damage to a champion drops a comet: 15 to 110 (+10% bonus AD, +5% AP), doubled at max travel distance.",
+      "stats": {
+        "naGold": { "wpa": -0.61, "picks": 729 },
+        "naDiamond": { "wpa": -1.13, "picks": 144 },
+        "worldDiamond": { "wpa": -0.78, "picks": 1268 }
+      }
+    },
+    {
+      "name": "First Strike", "tree": "Inspiration",
+      "icon": "perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+      "wiki": "Hit a champion first: 3s of 7% bonus true damage to champions, and 35% of that bonus damage back as gold. 25 to 15s cooldown; lost if they hit you first.",
+      "stats": {
+        "naGold": { "wpa": -0.45, "picks": 215 },
+        "worldDiamond": { "wpa": 0.56, "picks": 283 }
+      }
     }
   ]
 }

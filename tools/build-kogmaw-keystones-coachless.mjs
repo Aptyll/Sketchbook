@@ -1,4 +1,4 @@
-// Builds the "Kog'Maw ADC: keystones (coachless)" library page from
+// Builds the "Kog'Maw ADC: keystones (coachless, NA)" library page from
 // data/kogmaw-adc-keystones-coachless.json.
 // Re-run after refreshing the numbers: node tools/build-kogmaw-keystones-coachless.mjs
 
@@ -9,130 +9,131 @@ import { sketch } from './sketch.mjs';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const data = JSON.parse(await readFile(`${ROOT}data/kogmaw-adc-keystones-coachless.json`, 'utf8'));
 const s = sketch({ seed: 21 });
-const { stats } = data;
+const { stats, brackets, keystones } = data;
 
 const fmtWpa = (n) => `${n > 0 ? '+' : n < 0 ? '−' : ''}${Math.abs(n).toFixed(2)}`;
 const fmtInt = (n) => n.toLocaleString('en-US');
 // 95% margin for a win rate from n games, in percentage points (binomial only).
 const margin = (n) => 1.96 * Math.sqrt(0.25 / n) * 100;
 const se = (n) => margin(n) / 1.96;
-
-const rows = [...data.keystones].sort((a, b) => b.wpa - a.wpa);
-const total = rows.reduce((sum, k) => sum + k.picks, 0);
-const share = (k) => (100 * k.picks) / total;
+const games = (b) => keystones.reduce((sum, k) => sum + (k.stats[b.key]?.picks ?? 0), 0);
+const stat = (name, key) => keystones.find((k) => k.name === name).stats[key];
 
 // ---- Title ----
-s.note(0, 0, `${data.champion} ${data.role} · keystones (coachless)`, { size: 38 });
-s.wobblyLine([[4, 58], [640, 54]], { color: 'Red chalk', width: 2.5 });
+s.note(0, 0, `${data.champion} ${data.role} · keystones (coachless, NA)`, { size: 38 });
+s.wobblyLine([[4, 58], [760, 54]], { color: 'Red chalk', width: 2.5 });
 s.note(0, 70,
-  `Stats: ${stats.site}, patch ${stats.patch}, ${stats.rank},\n${fmtInt(total)} games with a listed keystone.\n`
-  + `Rune numbers: LoL wiki (ranged values). Pulled ${data.pulledAt}.`,
+  `Stats: ${stats.site}, patch ${stats.patch}, pulled ${data.pulledAt}.\n`
+  + 'Rune numbers: LoL wiki (ranged values).\n'
+  + 'Coachless has no Challenger-only bracket; Master+ is its top.',
   { size: 15, color: 'Sepia' });
 
-// ---- Table ----
-const top = 190;
-const rowH = 104;
-const axisX = 820; // WPA zero line
-const perPoint = 60; // px per WPA percentage point
-const clip = 3.4; // whiskers are cut off here so First Strike's huge range fits
+// ---- Layout ----
+const top = 250;
+const rowH = 110;
+const panelX0 = 700;
+const panelW = 300;
+const panelGap = 24;
+const lo = -5; // WPA axis range, in percentage points
+const hi = 2;
+const perPoint = 36;
+const zeroIn = (-lo) * perPoint + 20; // zero line offset inside a panel
+const axisBottom = top + keystones.length * rowH - 30;
 
-s.note(0, top - 46, 'Keystone  ·  wiki numbers', { size: 15, color: 'Slate' });
-s.note(axisX - 150, top - 46, 'WPA (pp), whisker = noise', { size: 15, color: 'Slate' });
-s.note(axisX + clip * perPoint + 40, top - 46, 'Picks · share', { size: 15, color: 'Slate' });
-
-const axisBottom = top + rows.length * rowH - 24;
-s.wobblyLine([[axisX, top - 14], [axisX, axisBottom]], { color: 'Parchment', width: 1.5 });
-for (let t = -3; t <= 3; t++) {
-  const x = axisX + t * perPoint;
-  s.wobblyLine([[x, top - 18], [x, top - 10]], { color: 'Parchment', width: 1.2 });
-  s.note(x - 9, axisBottom + 4, t ? `${t > 0 ? '+' : '−'}${Math.abs(t)}` : '0', { size: 12, color: 'Slate' });
-}
-
-rows.forEach((k, i) => {
+// Keystone names and wiki text on the left.
+keystones.forEach((k, i) => {
   const y = top + i * rowH;
-  const thin = k.picks < 1000;
   s.image(0, y, 56, 56, data.icons.base + k.icon);
-  s.note(70, y - 6, k.name, { size: 26, color: thin ? 'Slate' : 'Parchment' });
+  s.note(70, y - 6, k.name, { size: 26 });
   s.note(70, y + 28, `${k.tree} · ${k.wiki}`, { size: 14, color: 'Sepia', maxChars: 62 });
+});
+s.note(0, top - 52, 'Keystone  ·  wiki numbers', { size: 15, color: 'Slate' });
 
-  // Noise whisker first, so the bar sits on top of it.
-  const m = margin(k.picks);
-  const lo = Math.max(k.wpa - m, -clip);
-  const hi = Math.min(k.wpa + m, clip);
-  const wy = y + 24;
-  s.wobblyLine([[axisX + lo * perPoint, wy], [axisX + hi * perPoint, wy]], { color: 'Slate', width: 1.5, wobble: 0.3 });
-  for (const [v, cut] of [[lo, k.wpa - m < -clip], [hi, k.wpa + m > clip]]) {
-    const x = axisX + v * perPoint;
-    if (cut) s.note(x + (v < 0 ? -18 : 4), wy - 12, '…', { size: 14, color: 'Slate' });
-    else s.wobblyLine([[x, wy - 7], [x, wy + 7]], { color: 'Slate', width: 1.5, wobble: 0.2 });
+// One small chart per rank bracket.
+brackets.forEach((b, p) => {
+  const x0 = panelX0 + p * (panelW + panelGap);
+  const zx = x0 + zeroIn;
+  const dim = Boolean(b.reference);
+  s.note(x0, top - 104, b.label, { size: 18, color: dim ? 'Slate' : 'Parchment' });
+  s.note(x0, top - 78, `${fmtInt(games(b))} games${dim ? ' · for reference' : ''}`, { size: 13, color: 'Slate' });
+
+  s.wobblyLine([[zx, top - 30], [zx, axisBottom]], { color: dim ? 'Slate' : 'Parchment', width: 1.3 });
+  for (let t = -4; t <= hi; t += 2) {
+    const x = zx + t * perPoint;
+    s.wobblyLine([[x, top - 34], [x, top - 26]], { color: 'Slate', width: 1.2 });
+    s.note(x - 8, top - 58, t ? `${t > 0 ? '+' : '−'}${Math.abs(t)}` : '0', { size: 12, color: 'Slate' });
   }
 
-  const end = axisX + k.wpa * perPoint;
-  const color = k.wpa > 0 ? 'Moss' : 'Red chalk';
-  s.wobblyLine([[axisX, wy], [end, wy]], { color, width: 12 });
-  const labelX = k.wpa >= 0 ? axisX - 66 : axisX + 10;
-  s.note(labelX, wy - 34, fmtWpa(k.wpa), { size: 16, color });
-
-  s.note(axisX + clip * perPoint + 40, y + 2,
-    `${fmtInt(k.picks)} · ${share(k).toFixed(1)}%\nnoise ±${m.toFixed(1)} pp`,
-    { size: 15, color: thin ? 'Slate' : 'Parchment' });
+  keystones.forEach((k, i) => {
+    const y = top + i * rowH + 18;
+    const st = k.stats[b.key];
+    if (!st) {
+      s.note(zx - 40, y - 8, 'not listed', { size: 13, color: 'Slate' });
+      return;
+    }
+    const m = margin(st.picks);
+    const a = Math.max(st.wpa - m, lo);
+    const c = Math.min(st.wpa + m, hi);
+    s.wobblyLine([[zx + a * perPoint, y], [zx + c * perPoint, y]], { color: 'Slate', width: 1.4, wobble: 0.3 });
+    for (const [v, cut] of [[a, st.wpa - m < lo], [c, st.wpa + m > hi]]) {
+      if (!cut) s.wobblyLine([[zx + v * perPoint, y - 6], [zx + v * perPoint, y + 6]], { color: 'Slate', width: 1.4, wobble: 0.2 });
+    }
+    const color = dim ? 'Slate' : st.wpa > 0 ? 'Moss' : 'Red chalk';
+    s.wobblyLine([[zx, y], [zx + st.wpa * perPoint, y]], { color, width: 11 });
+    s.note(x0 + 10, y + 12, `${fmtWpa(st.wpa)}  ·  ${fmtInt(st.picks)} games  ·  ±${m.toFixed(1)}`,
+      { size: 13, color: dim ? 'Slate' : st.picks < 500 ? 'Slate' : 'Parchment' });
+  });
 });
 
-// Circle the default pick.
-const lt = rows.find((k) => k.name === 'Lethal Tempo');
-const ltY = top + rows.indexOf(lt) * rowH;
-s.loop(axisX + 10, ltY + 14, 135, 44, { color: 'Red chalk', width: 2.5 });
+// Circle the biggest NA sample: Lethal Tempo at Gold+.
+s.loop(panelX0 + panelW / 2 - 4, top + 26, panelW / 2 - 2, 34, { color: 'Red chalk', width: 2.5 });
 
-const restTop = axisBottom + 50;
+const restTop = axisBottom + 60;
 s.note(0, restTop, [
-  'No WPA shown (too few games for coachless to list):',
-  stats.notListed.join(', ') + '.',
-  `Primary tree share: Precision ${stats.primaryTreeShare.Precision}%, Sorcery ${stats.primaryTreeShare.Sorcery}%, Inspiration ${stats.primaryTreeShare.Inspiration}%.`,
+  'Whisker = rough 95% noise from sample size alone (cut off at the axis ends).',
+  `No WPA in any bracket: ${stats.notListed.join(', ')}.`,
 ].join('\n'), { size: 15, color: 'Slate', maxChars: 68 });
 
 // ---- Reading notes (right column) ----
-const colX = 1500;
-s.note(colX, top - 46, 'How to read it', { size: 24, color: 'Sepia' });
-s.note(colX, top - 10,
+const colX = panelX0 + brackets.length * (panelW + panelGap) + 40;
+const lt = (key) => stat('Lethal Tempo', key);
+const storm = (key) => stat("Stormraider's Surge", key);
+const ltShares = brackets.map((b) => Math.round((100 * lt(b.key).picks) / games(b)));
+const shares = [Math.min(...ltShares), Math.max(...ltShares)];
+const z = (a, b) => (Math.abs(a.wpa - b.wpa) / Math.hypot(se(a.picks), se(b.picks))).toFixed(1);
+
+s.note(colX, top - 104, 'How to read it', { size: 24, color: 'Sepia' });
+s.note(colX, top - 68,
   'WPA = win rate − how likely those players were to win anyway (after draft). '
-  + 'Positive means the pick added win chance on average.\n'
-  + 'The whisker is my rough 95% range from sample size alone. If it crosses 0, the sign is not known.',
+  + 'Positive means the pick added win chance on average.',
   { size: 16, maxChars: 54 });
 
-const pta = rows.find((k) => k.name === 'Press the Attack');
-const storm = rows.find((k) => k.name === "Stormraider's Surge");
-const fs = rows.find((k) => k.name === 'First Strike');
-const z = (a, b) => ((a.wpa - b.wpa) / Math.hypot(se(a.picks), se(b.picks))).toFixed(1);
-s.note(colX, top + 150, 'What it says', { size: 24, color: 'Sepia' });
-s.note(colX, top + 186, [
-  `• Lethal Tempo is the default: ${share(lt).toFixed(0)}% of games, ${fmtWpa(lt.wpa)} WPA. That is inside its ±${margin(lt.picks).toFixed(1)} noise, so read it as "fine", not "adds win rate".`,
-  `• LT vs Press the Attack: ${(lt.wpa - pta.wpa).toFixed(1)} pp gap, about ${z(lt, pta)}× its standard error. A lean to LT, not proof.`,
-  `• LT vs Stormraider's: ${(lt.wpa - storm.wpa).toFixed(1)} pp, about ${z(lt, storm)}×. The clearest gap here, still short of solid.`,
-  `• First Strike's ${fmtWpa(fs.wpa)} is from ${fs.picks} games (±${margin(fs.picks).toFixed(1)}). It tells us nothing yet.`,
+s.note(colX, top + 30, 'What it says', { size: 24, color: 'Sepia' });
+s.note(colX, top + 66, [
+  '• In NA every keystone is below zero, in every bracket. NA Kog players win a bit less than coachless\'s model expects. So compare keystones with each other, not with 0.',
+  `• Gold+ is the only NA sample big enough to read (${fmtInt(games(brackets[0]))} games). Lethal Tempo (${fmtWpa(lt('naGold').wpa)}) sits with Comet and First Strike; Stormraider's (${fmtWpa(storm('naGold').wpa)}) trails it by about ${z(lt('naGold'), storm('naGold'))}× the noise. A lean, not proof.`,
+  `• NA Diamond+ has ${fmtInt(games(brackets[1]))} games and NA Master+ only ${fmtInt(games(brackets[2]))}. Their whiskers are wider than the gaps, so they can't rank anything yet.`,
+  `• Lethal Tempo is the most-picked keystone in every bracket (${shares[0]}% to ${shares[1]}% of games; in NA Master+ it only edges Stormraider's, 171 to 170), and no alternative beats it anywhere with a real sample.`,
 ].join('\n'), { size: 16, maxChars: 54 });
 
-s.arrow([[colX - 20, top + 215], [colX - 110, ltY - 6], [axisX + 150, ltY - 18]], { color: 'Red chalk', width: 2 });
-
-s.note(colX, top + 440, 'Why it might fit Kog\'Maw', { size: 24, color: 'Sepia' });
-s.note(colX, top + 476, [
-  '• W turns attacks into his main damage, so a keystone that pays per attack over a long fight (LT) fits.',
-  '• PTA pays once per target for 3 hits; strong in short trades, weaker in long front-to-back fights.',
-  '• Comet and Stormraider\'s are probably AP or poke setups. Coachless doesn\'t split by build, so this is a guess.',
-  'Hypotheses from the wiki text, not something these stats prove.',
+s.note(colX, top + 470, 'Caveats', { size: 24, color: 'Sepia' });
+s.note(colX, top + 506, [
+  '• A keystone comes with a secondary tree and a build. WPA credits the whole setup, not the rune alone.',
+  `• ${stats.limits}`,
+  '• Patch 16.19 only; the free site doesn\'t combine patches.',
 ].join('\n'), { size: 16, maxChars: 54 });
 
-s.note(colX, top + 720, 'Caveat: a keystone comes with a secondary tree and build. WPA credits the whole setup, not the rune alone.', { size: 15, color: 'Moss', maxChars: 54 });
-
-s.note(0, restTop + 120, [
+s.note(0, restTop + 150, [
   `Stats: ${stats.source}`,
-  `(${stats.filters}). ${stats.pickCountsNote}`,
+  `${stats.filters}`,
+  stats.pickCountsNote,
   `Rune text: ${data.wiki.source}<rune> · icons: ${data.icons.source} ${data.icons.version}`,
   'Made by tools/build-kogmaw-keystones-coachless.mjs',
   'from data/kogmaw-adc-keystones-coachless.json.',
 ].join('\n'), { size: 12, color: 'Slate', maxChars: 64 });
 
 const page = s.page({
-  title: `${data.champion} ${data.role}: keystones (coachless)`,
+  title: `${data.champion} ${data.role}: keystones (coachless, NA)`,
   source: { stats: stats.source, wiki: data.wiki.source, icons: `${data.icons.source} ${data.icons.version}`, pulledAt: data.pulledAt },
 });
 await writeFile(`${ROOT}library/kogmaw-adc-keystones-coachless.json`, JSON.stringify(page, null, 1) + '\n');
