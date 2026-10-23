@@ -1,0 +1,7741 @@
+{
+ "format": "sketchbook-page",
+ "version": 1,
+ "page": {
+  "title": "Kog'Maw ADC: Doran's starter",
+  "fit": true,
+  "items": [
+   {
+    "id": "note-1",
+    "type": "note",
+    "x": 0,
+    "y": 0,
+    "text": "Kog'Maw ADC · which Doran's?",
+    "color": "#e9dfc9",
+    "size": 40
+   },
+   {
+    "id": "ink-2",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      3.6,
+      59.9
+     ],
+     [
+      15.5,
+      59.2
+     ],
+     [
+      27.8,
+      60.4
+     ],
+     [
+      40.4,
+      59.2
+     ],
+     [
+      51.8,
+      60.3
+     ],
+     [
+      63.2,
+      59.7
+     ],
+     [
+      75.8,
+      59.3
+     ],
+     [
+      88,
+      59.9
+     ],
+     [
+      99.7,
+      59
+     ],
+     [
+      112,
+      60
+     ],
+     [
+      123.1,
+      59.8
+     ],
+     [
+      134.8,
+      59
+     ],
+     [
+      147.8,
+      59.6
+     ],
+     [
+      158.2,
+      58.9
+     ],
+     [
+      171.3,
+      59.1
+     ],
+     [
+      182.2,
+      59.1
+     ],
+     [
+      194.3,
+      58.7
+     ],
+     [
+      205.9,
+      59.4
+     ],
+     [
+      219,
+      58.3
+     ],
+     [
+      230.7,
+      59
+     ],
+     [
+      243.1,
+      58.8
+     ],
+     [
+      253.9,
+      58.7
+     ],
+     [
+      266.6,
+      57.5
+     ],
+     [
+      278.5,
+      57.5
+     ],
+     [
+      290.8,
+      57.4
+     ],
+     [
+      302,
+      58.6
+     ],
+     [
+      313.4,
+      58
+     ],
+     [
+      326.2,
+      58.1
+     ],
+     [
+      338.1,
+      58
+     ],
+     [
+      349.1,
+      57.7
+     ],
+     [
+      361.2,
+      58.4
+     ],
+     [
+      374.1,
+      57.9
+     ],
+     [
+      385.2,
+      57.2
+     ],
+     [
+      398.1,
+      57
+     ],
+     [
+      409.7,
+      57
+     ],
+     [
+      420.7,
+      57.4
+     ],
+     [
+      433.6,
+      56.8
+     ],
+     [
+      445.3,
+      56.9
+     ],
+     [
+      457.6,
+      57
+     ],
+     [
+      468.8,
+      57.3
+     ],
+     [
+      480.5,
+      56.6
+     ],
+     [
+      492.4,
+      57.4
+     ],
+     [
+      504.8,
+      56.8
+     ],
+     [
+      517.1,
+      56.6
+     ],
+     [
+      528.3,
+      57
+     ],
+     [
+      540.6,
+      56.6
+     ],
+     [
+      552.8,
+      55.6
+     ],
+     [
+      564.3,
+      56.2
+     ],
+     [
+      576.5,
+      55.8
+     ],
+     [
+      588,
+      56.7
+     ],
+     [
+      600,
+      56
+     ]
+    ]
+   },
+   {
+    "id": "note-3",
+    "type": "note",
+    "x": 0,
+    "y": 72,
+    "text": "dbow, dblade, dhelm or dring, for a Kog'Maw in NA Challenger?\nStats: coachless.gg and u.gg, NA, patches 16.18 to 16.20\n(u.gg calls them 26.x). Item numbers: LoL wiki and\nData Dragon 16.21.1. Pulled 2026-10-23.\nFour tabs, four angles. Start at the Verdict or read in order.",
+    "color": "#b8925a",
+    "size": 15
+   },
+   {
+    "id": "note-4",
+    "type": "note",
+    "x": 0,
+    "y": 180,
+    "text": "Item · cost · stats",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-5",
+    "type": "note",
+    "x": 560,
+    "y": 180,
+    "text": "Gold value of stats",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-6",
+    "type": "note",
+    "x": 780,
+    "y": 180,
+    "text": "Level 1 auto DPS",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-7",
+    "type": "note",
+    "x": 990,
+    "y": 180,
+    "text": "Level 1 bulk",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-8",
+    "type": "note",
+    "x": 1200,
+    "y": 180,
+    "text": "Mana per minute",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "img-9",
+    "type": "image",
+    "x": 0,
+    "y": 230,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1086.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-10",
+    "type": "note",
+    "x": 70,
+    "y": 222,
+    "text": "Doran's Bow  ·  400g",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-11",
+    "type": "note",
+    "x": 70,
+    "y": 258,
+    "text": "+8 AD · +15% attack speed · +1.5% omnivamp\nNo passive (no Helping Hand).",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "lane"
+   },
+   {
+    "id": "note-12",
+    "type": "note",
+    "x": 70,
+    "y": 316,
+    "text": "Added V26.09 (6 AD); AD raised to 8 in V26.10.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-13",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      560,
+      244.1
+     ],
+     [
+      571.7,
+      244.1
+     ],
+     [
+      583,
+      244.1
+     ],
+     [
+      594.6,
+      243.7
+     ],
+     [
+      606.4,
+      244
+     ],
+     [
+      618.4,
+      244
+     ],
+     [
+      629.6,
+      244.2
+     ],
+     [
+      641.6,
+      243.7
+     ],
+     [
+      653,
+      244.2
+     ],
+     [
+      665,
+      243.7
+     ],
+     [
+      676.1,
+      243.7
+     ],
+     [
+      688.2,
+      243.9
+     ],
+     [
+      699.4,
+      243.9
+     ],
+     [
+      711.3,
+      244.2
+     ],
+     [
+      722.9,
+      244
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-14",
+    "type": "note",
+    "x": 560,
+    "y": 258,
+    "text": "181% gold efficient",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-15",
+    "type": "note",
+    "x": 780,
+    "y": 230,
+    "text": "52.8",
+    "color": "#8f9a6e",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-16",
+    "type": "note",
+    "x": 780,
+    "y": 266,
+    "text": "+30% vs no item",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-17",
+    "type": "note",
+    "x": 780,
+    "y": 286,
+    "text": "heals 8 HP per 10 s of autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "note-18",
+    "type": "note",
+    "x": 990,
+    "y": 230,
+    "text": "—",
+    "color": "#7f98ad",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-19",
+    "type": "note",
+    "x": 990,
+    "y": 266,
+    "text": "no bulk",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-20",
+    "type": "note",
+    "x": 1200,
+    "y": 230,
+    "text": "—",
+    "color": "#7f98ad",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "img-21",
+    "type": "image",
+    "x": 0,
+    "y": 380,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1055.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-22",
+    "type": "note",
+    "x": 70,
+    "y": 372,
+    "text": "Doran's Blade  ·  450g",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-23",
+    "type": "note",
+    "x": 70,
+    "y": 408,
+    "text": "+10 AD · +80 health · +2.5% omnivamp\nNo passive (Life Draining was folded into omnivamp in\nV26.01).",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "lane"
+   },
+   {
+    "id": "note-24",
+    "type": "note",
+    "x": 70,
+    "y": 466,
+    "text": "V26.01: passive removed, 2.5% omnivamp added.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-25",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      560.2,
+      394.1
+     ],
+     [
+      572.1,
+      394.2
+     ],
+     [
+      584.9,
+      393.9
+     ],
+     [
+      597,
+      393.7
+     ],
+     [
+      609.6,
+      393.9
+     ],
+     [
+      621.7,
+      394.2
+     ],
+     [
+      634.1,
+      393.8
+     ],
+     [
+      646.7,
+      393.7
+     ],
+     [
+      659,
+      394
+     ],
+     [
+      671,
+      394.2
+     ],
+     [
+      683.8,
+      393.8
+     ],
+     [
+      695.9,
+      394
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-26",
+    "type": "note",
+    "x": 560,
+    "y": 408,
+    "text": "151% gold efficient",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-27",
+    "type": "note",
+    "x": 780,
+    "y": 380,
+    "text": "47.2",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-28",
+    "type": "note",
+    "x": 780,
+    "y": 416,
+    "text": "+16% vs no item",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-29",
+    "type": "note",
+    "x": 780,
+    "y": 436,
+    "text": "heals 12 HP per 10 s of autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "note-30",
+    "type": "note",
+    "x": 990,
+    "y": 380,
+    "text": "+13% / +13%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-31",
+    "type": "note",
+    "x": 990,
+    "y": 416,
+    "text": "vs physical / magic",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-32",
+    "type": "note",
+    "x": 1200,
+    "y": 380,
+    "text": "—",
+    "color": "#7f98ad",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "img-33",
+    "type": "image",
+    "x": 0,
+    "y": 530,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1120.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-34",
+    "type": "note",
+    "x": 70,
+    "y": 522,
+    "text": "Doran's Helm  ·  450g",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-35",
+    "type": "note",
+    "x": 70,
+    "y": 558,
+    "text": "+150 health · +8 armor · +8 magic resist\nHelping Hand: attacks deal 5 bonus physical damage to\nminions.",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "lane"
+   },
+   {
+    "id": "note-36",
+    "type": "note",
+    "x": 70,
+    "y": 616,
+    "text": "Added V26.09 (110 HP, 10/10); 140 HP in V26.10; 150 HP and 8/8\nin V26.13.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-37",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      559.7,
+      544.2
+     ],
+     [
+      572,
+      543.8
+     ],
+     [
+      584.1,
+      543.8
+     ],
+     [
+      596,
+      544.3
+     ],
+     [
+      607.7,
+      543.9
+     ],
+     [
+      620,
+      544.1
+     ],
+     [
+      631.8,
+      543.8
+     ],
+     [
+      643.8,
+      544.1
+     ],
+     [
+      656.2,
+      544.1
+     ],
+     [
+      668,
+      543.8
+     ],
+     [
+      680.2,
+      543.7
+     ],
+     [
+      692,
+      543.8
+     ],
+     [
+      704,
+      544
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-38",
+    "type": "note",
+    "x": 560,
+    "y": 558,
+    "text": "160% gold efficient",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-39",
+    "type": "note",
+    "x": 780,
+    "y": 530,
+    "text": "40.6",
+    "color": "#7f98ad",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-40",
+    "type": "note",
+    "x": 780,
+    "y": 566,
+    "text": "no change",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-41",
+    "type": "note",
+    "x": 990,
+    "y": 530,
+    "text": "+32% / +31%",
+    "color": "#8f9a6e",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-42",
+    "type": "note",
+    "x": 990,
+    "y": 566,
+    "text": "vs physical / magic",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-43",
+    "type": "note",
+    "x": 1200,
+    "y": 530,
+    "text": "—",
+    "color": "#7f98ad",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "img-44",
+    "type": "image",
+    "x": 0,
+    "y": 680,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1056.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-45",
+    "type": "note",
+    "x": 70,
+    "y": 672,
+    "text": "Doran's Ring  ·  400g",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-46",
+    "type": "note",
+    "x": 70,
+    "y": 708,
+    "text": "+18 AP · +90 health\nDrain: +1 mana per second, 2 per second for 5 s after\nhitting a champion. Helping Hand: +5 damage to minions.",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "lane"
+   },
+   {
+    "id": "note-47",
+    "type": "note",
+    "x": 70,
+    "y": 766,
+    "text": "Drain passive since V25.21.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-48",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      559.7,
+      693.8
+     ],
+     [
+      571.8,
+      694.2
+     ],
+     [
+      583.6,
+      694.1
+     ],
+     [
+      596,
+      694.2
+     ],
+     [
+      607.6,
+      694.2
+     ],
+     [
+      619.5,
+      694.1
+     ],
+     [
+      631.6,
+      693.8
+     ],
+     [
+      643.4,
+      693.8
+     ],
+     [
+      655.1,
+      693.9
+     ],
+     [
+      667.5,
+      694.3
+     ],
+     [
+      679.3,
+      694
+     ],
+     [
+      691.1,
+      693.8
+     ],
+     [
+      702.7,
+      694.2
+     ],
+     [
+      714.9,
+      693.8
+     ],
+     [
+      726.6,
+      694.1
+     ],
+     [
+      738.8,
+      693.9
+     ],
+     [
+      750.5,
+      694
+     ],
+     [
+      762.5,
+      694
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "ink-49",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 3,
+    "points": [
+     [
+      762.2,
+      694.1
+     ],
+     [
+      751.3,
+      694
+     ],
+     [
+      740,
+      694
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-50",
+    "type": "note",
+    "x": 560,
+    "y": 708,
+    "text": "225 to 300%  (mana counted)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-51",
+    "type": "note",
+    "x": 780,
+    "y": 680,
+    "text": "40.6",
+    "color": "#7f98ad",
+    "size": 26,
+    "tab": "lane"
+   },
+   {
+    "id": "note-52",
+    "type": "note",
+    "x": 780,
+    "y": 716,
+    "text": "no change",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-53",
+    "type": "note",
+    "x": 990,
+    "y": 680,
+    "text": "+14% / +14%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-54",
+    "type": "note",
+    "x": 990,
+    "y": 716,
+    "text": "vs physical / magic",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-55",
+    "type": "note",
+    "x": 1200,
+    "y": 680,
+    "text": "+60 to +120",
+    "color": "#8f9a6e",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-56",
+    "type": "note",
+    "x": 1200,
+    "y": 716,
+    "text": "Kog makes 105 on his own.\nThat is 57% to 114% more:\n~1.5 to 3.0 extra Q or W a minute.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-57",
+    "type": "note",
+    "x": 1460,
+    "y": 180,
+    "text": "What the lane math says",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "lane"
+   },
+   {
+    "id": "note-58",
+    "type": "note",
+    "x": 1460,
+    "y": 218,
+    "text": "• Bow is the fight item. +30% level 1 auto DPS for\nthe cheapest price, because attack speed multiplies\nKog's 61 base AD. Blade gives +16% for 50g more.\n• Helm is the survive item: about +32% effective HP\nagainst both damage types, for a champion with 635\nHP and 24 armor at level 1 and no dash.\n• Ring is the mana item. Kog's Q, W, E and R all\ncost 40+ mana and his own regen is 105 a minute. The\n18 AP adds only 0.27% max health to each W hit\n(about 2 damage on a 650 HP laner), but it also\nfeeds E and R.\n• Blade looks worst for Kog: less DPS than Bow, less\nbulk than Helm. Its 80 HP and 2.5% omnivamp are\nbuilt for melee fighters. Omnivamp heals ~12 HP per\n10 s of level 1 autos, so it is not a sustain item\nat this level.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-59",
+    "type": "note",
+    "x": 1460,
+    "y": 790,
+    "text": "Assumptions: level 1, no runes, no Q passive, target with 0\narmor for DPS.\nBulk = effective HP vs Kog with no item (HP × (1 +\nresist/100)).\nGold values: the LoL wiki cost analysis.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-60",
+    "type": "note",
+    "x": 0,
+    "y": 210,
+    "text": "Starter",
+    "color": "#7f98ad",
+    "size": 15,
+    "tab": "wpa"
+   },
+   {
+    "id": "img-61",
+    "type": "image",
+    "x": 0,
+    "y": 260,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1086.png",
+    "tab": "wpa"
+   },
+   {
+    "id": "note-62",
+    "type": "note",
+    "x": 70,
+    "y": 258,
+    "text": "Doran's Bow",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-63",
+    "type": "note",
+    "x": 70,
+    "y": 292,
+    "text": "dbow",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "wpa"
+   },
+   {
+    "id": "img-64",
+    "type": "image",
+    "x": 0,
+    "y": 378,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1056.png",
+    "tab": "wpa"
+   },
+   {
+    "id": "note-65",
+    "type": "note",
+    "x": 70,
+    "y": 376,
+    "text": "Doran's Ring",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-66",
+    "type": "note",
+    "x": 70,
+    "y": 410,
+    "text": "dring",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "wpa"
+   },
+   {
+    "id": "img-67",
+    "type": "image",
+    "x": 0,
+    "y": 496,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1120.png",
+    "tab": "wpa"
+   },
+   {
+    "id": "note-68",
+    "type": "note",
+    "x": 70,
+    "y": 494,
+    "text": "Doran's Helm",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-69",
+    "type": "note",
+    "x": 70,
+    "y": 528,
+    "text": "dhelm",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "wpa"
+   },
+   {
+    "id": "img-70",
+    "type": "image",
+    "x": 0,
+    "y": 614,
+    "w": 56,
+    "h": 56,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1055.png",
+    "tab": "wpa"
+   },
+   {
+    "id": "note-71",
+    "type": "note",
+    "x": 70,
+    "y": 612,
+    "text": "Doran's Blade",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-72",
+    "type": "note",
+    "x": 70,
+    "y": 646,
+    "text": "dblade",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-73",
+    "type": "note",
+    "x": 420,
+    "y": 164,
+    "text": "NA Gold+",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-74",
+    "type": "note",
+    "x": 420,
+    "y": 190,
+    "text": "44,277 games with a Doran's",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-75",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1.2,
+    "points": [
+     [
+      540.3,
+      219.6
+     ],
+     [
+      539.7,
+      232.6
+     ],
+     [
+      540.1,
+      243.9
+     ],
+     [
+      540.8,
+      255.4
+     ],
+     [
+      539.5,
+      268.5
+     ],
+     [
+      540.7,
+      281
+     ],
+     [
+      540.1,
+      292.6
+     ],
+     [
+      540.6,
+      304.8
+     ],
+     [
+      540.5,
+      317.1
+     ],
+     [
+      540.6,
+      328.3
+     ],
+     [
+      539.3,
+      340.8
+     ],
+     [
+      540.4,
+      352.9
+     ],
+     [
+      540.1,
+      364.1
+     ],
+     [
+      539.7,
+      377.2
+     ],
+     [
+      540.2,
+      389.2
+     ],
+     [
+      540.5,
+      401.1
+     ],
+     [
+      539.5,
+      413.2
+     ],
+     [
+      540.7,
+      425
+     ],
+     [
+      539.6,
+      436.8
+     ],
+     [
+      539.2,
+      448.9
+     ],
+     [
+      539.3,
+      460.6
+     ],
+     [
+      540.5,
+      473.4
+     ],
+     [
+      539.4,
+      484.5
+     ],
+     [
+      540,
+      497.2
+     ],
+     [
+      540.5,
+      509.2
+     ],
+     [
+      539.6,
+      521.4
+     ],
+     [
+      539.3,
+      533.9
+     ],
+     [
+      539.8,
+      544.9
+     ],
+     [
+      540.8,
+      557.4
+     ],
+     [
+      540.7,
+      569.5
+     ],
+     [
+      540.3,
+      581.5
+     ],
+     [
+      539.7,
+      593
+     ],
+     [
+      539.3,
+      605.7
+     ],
+     [
+      540.6,
+      617
+     ],
+     [
+      540.7,
+      629.8
+     ],
+     [
+      540.3,
+      642
+     ],
+     [
+      540.5,
+      653.9
+     ],
+     [
+      539.6,
+      666.6
+     ],
+     [
+      539.7,
+      678.2
+     ],
+     [
+      540,
+      690.1
+     ],
+     [
+      540,
+      702
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-76",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      420.4,
+      708.3
+     ],
+     [
+      431.9,
+      708
+     ],
+     [
+      444.6,
+      707.5
+     ],
+     [
+      456.7,
+      707.2
+     ],
+     [
+      467.8,
+      707.8
+     ],
+     [
+      479.6,
+      708.1
+     ],
+     [
+      491.4,
+      707.9
+     ],
+     [
+      504.5,
+      708.4
+     ],
+     [
+      516.3,
+      707.3
+     ],
+     [
+      527.6,
+      707.7
+     ],
+     [
+      540.7,
+      707.7
+     ],
+     [
+      552.7,
+      708.4
+     ],
+     [
+      564.2,
+      707.4
+     ],
+     [
+      575.6,
+      708.8
+     ],
+     [
+      588.4,
+      707.6
+     ],
+     [
+      599.7,
+      708.8
+     ],
+     [
+      612.7,
+      708.6
+     ],
+     [
+      624.6,
+      707.7
+     ],
+     [
+      636.1,
+      708.1
+     ],
+     [
+      648.2,
+      708.2
+     ],
+     [
+      660,
+      708
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-77",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      419.5,
+      703.1
+     ],
+     [
+      420,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-78",
+    "type": "note",
+    "x": 412,
+    "y": 716,
+    "text": "−8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-79",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      479.3,
+      703.5
+     ],
+     [
+      480,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-80",
+    "type": "note",
+    "x": 472,
+    "y": 716,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-81",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      539.7,
+      702.9
+     ],
+     [
+      540,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-82",
+    "type": "note",
+    "x": 532,
+    "y": 716,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-83",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      600,
+      703.4
+     ],
+     [
+      600,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-84",
+    "type": "note",
+    "x": 592,
+    "y": 716,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-85",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      660.3,
+      702.4
+     ],
+     [
+      660,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-86",
+    "type": "note",
+    "x": 652,
+    "y": 716,
+    "text": "+8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-87",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      525.4,
+      277.8
+     ],
+     [
+      541.2,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-88",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      525.1,
+      272
+     ],
+     [
+      525.1,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-89",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      541.2,
+      272
+     ],
+     [
+      541.2,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-90",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      530.3,
+      277.9
+     ],
+     [
+      536.2,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-91",
+    "type": "note",
+    "x": 420,
+    "y": 292,
+    "text": "−0.46 WPA · 76% of games · 33.7K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-92",
+    "type": "note",
+    "x": 420,
+    "y": 310,
+    "text": "by patch: −0.5 / −0.8 / −0.1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-93",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      518.2,
+      396.2
+     ],
+     [
+      529.5,
+      395.7
+     ],
+     [
+      541.1,
+      396.2
+     ],
+     [
+      552.9,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-94",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      518.1,
+      390
+     ],
+     [
+      518.1,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-95",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      552.9,
+      390
+     ],
+     [
+      552.9,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-96",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      532.4,
+      396
+     ],
+     [
+      538.5,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-97",
+    "type": "note",
+    "x": 420,
+    "y": 410,
+    "text": "−0.30 WPA · 16% of games · 7.1K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-98",
+    "type": "note",
+    "x": 420,
+    "y": 428,
+    "text": "by patch: +0.1 / −1.0 / −0.0",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-99",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      458.9,
+      514.2
+     ],
+     [
+      470.8,
+      513.9
+     ],
+     [
+      482,
+      513.9
+     ],
+     [
+      494,
+      513.9
+     ],
+     [
+      505.6,
+      513.9
+     ],
+     [
+      517.3,
+      514.1
+     ],
+     [
+      529.2,
+      514.2
+     ],
+     [
+      540.8,
+      513.9
+     ],
+     [
+      552.7,
+      514.1
+     ],
+     [
+      564.7,
+      514.3
+     ],
+     [
+      576.3,
+      514
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-100",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      458.7,
+      508
+     ],
+     [
+      458.7,
+      520
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-101",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      576.3,
+      508
+     ],
+     [
+      576.3,
+      520
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-102",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      514.4,
+      514.1
+     ],
+     [
+      520.5,
+      514
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-103",
+    "type": "note",
+    "x": 420,
+    "y": 528,
+    "text": "−1.50 WPA · 1% of games · 626 g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-104",
+    "type": "note",
+    "x": 420,
+    "y": 546,
+    "text": "by patch: −0.4 / −1.4 / −3.3",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-105",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      494.8,
+      632.2
+     ],
+     [
+      506.3,
+      632
+     ],
+     [
+      517.4,
+      631.9
+     ],
+     [
+      528.1,
+      632.1
+     ],
+     [
+      539.6,
+      631.7
+     ],
+     [
+      550.4,
+      632
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-106",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      495,
+      626
+     ],
+     [
+      495,
+      638
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-107",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      550.4,
+      626
+     ],
+     [
+      550.4,
+      638
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-108",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      519.9,
+      632
+     ],
+     [
+      525.7,
+      632
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-109",
+    "type": "note",
+    "x": 420,
+    "y": 646,
+    "text": "−1.15 WPA · 6% of games · 2.8K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-110",
+    "type": "note",
+    "x": 420,
+    "y": 664,
+    "text": "by patch: −0.3 / −3.2 / −0.5",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-111",
+    "type": "note",
+    "x": 710,
+    "y": 164,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-112",
+    "type": "note",
+    "x": 710,
+    "y": 190,
+    "text": "5,745 games with a Doran's",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-113",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1.2,
+    "points": [
+     [
+      829.6,
+      219.9
+     ],
+     [
+      829.6,
+      232.7
+     ],
+     [
+      830.6,
+      243.9
+     ],
+     [
+      830.5,
+      256.6
+     ],
+     [
+      829.3,
+      267.9
+     ],
+     [
+      830.8,
+      280
+     ],
+     [
+      829.6,
+      293
+     ],
+     [
+      830.2,
+      303.9
+     ],
+     [
+      829.3,
+      316.3
+     ],
+     [
+      829.7,
+      328.9
+     ],
+     [
+      829.6,
+      339.8
+     ],
+     [
+      830.4,
+      352.9
+     ],
+     [
+      829.3,
+      363.8
+     ],
+     [
+      830.7,
+      377
+     ],
+     [
+      829.7,
+      388.1
+     ],
+     [
+      829.9,
+      401.1
+     ],
+     [
+      830.3,
+      413.5
+     ],
+     [
+      829.5,
+      425.3
+     ],
+     [
+      830.8,
+      436.9
+     ],
+     [
+      830.3,
+      448.9
+     ],
+     [
+      829.9,
+      461.1
+     ],
+     [
+      829.7,
+      473.2
+     ],
+     [
+      830.7,
+      485.5
+     ],
+     [
+      830,
+      496.8
+     ],
+     [
+      829.9,
+      509.2
+     ],
+     [
+      829.5,
+      521
+     ],
+     [
+      830.8,
+      532.9
+     ],
+     [
+      829.5,
+      545.9
+     ],
+     [
+      829.6,
+      557.7
+     ],
+     [
+      830.5,
+      569.4
+     ],
+     [
+      829.6,
+      581.9
+     ],
+     [
+      829.7,
+      594.3
+     ],
+     [
+      830,
+      605.2
+     ],
+     [
+      829.4,
+      617.5
+     ],
+     [
+      829.5,
+      630
+     ],
+     [
+      829.5,
+      642.3
+     ],
+     [
+      830.3,
+      653.1
+     ],
+     [
+      830.7,
+      665.4
+     ],
+     [
+      829.6,
+      677.3
+     ],
+     [
+      829.8,
+      690.3
+     ],
+     [
+      830,
+      702
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-114",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      709.8,
+      707.2
+     ],
+     [
+      722.3,
+      708.8
+     ],
+     [
+      734.2,
+      707.9
+     ],
+     [
+      746.3,
+      708.5
+     ],
+     [
+      757.3,
+      707.8
+     ],
+     [
+      770.1,
+      707.4
+     ],
+     [
+      781.5,
+      708.8
+     ],
+     [
+      794.6,
+      707.5
+     ],
+     [
+      805.3,
+      707.9
+     ],
+     [
+      818.2,
+      707.9
+     ],
+     [
+      829.9,
+      708.3
+     ],
+     [
+      841.9,
+      707.3
+     ],
+     [
+      853.4,
+      708.1
+     ],
+     [
+      865.9,
+      707.8
+     ],
+     [
+      877.8,
+      708
+     ],
+     [
+      890.7,
+      708.2
+     ],
+     [
+      901.8,
+      708
+     ],
+     [
+      913.6,
+      707.9
+     ],
+     [
+      926.1,
+      708.4
+     ],
+     [
+      937.8,
+      708.1
+     ],
+     [
+      950,
+      708
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-115",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      710.7,
+      703.2
+     ],
+     [
+      710,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-116",
+    "type": "note",
+    "x": 702,
+    "y": 716,
+    "text": "−8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-117",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      769.2,
+      703.8
+     ],
+     [
+      770,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-118",
+    "type": "note",
+    "x": 762,
+    "y": 716,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-119",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      829.9,
+      703.8
+     ],
+     [
+      830,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-120",
+    "type": "note",
+    "x": 822,
+    "y": 716,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-121",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      890.8,
+      702.7
+     ],
+     [
+      890,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-122",
+    "type": "note",
+    "x": 882,
+    "y": 716,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-123",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      950.3,
+      702.3
+     ],
+     [
+      950,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-124",
+    "type": "note",
+    "x": 942,
+    "y": 716,
+    "text": "+8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-125",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 1.6,
+    "points": [
+     [
+      774.4,
+      278.1
+     ],
+     [
+      786.5,
+      277.9
+     ],
+     [
+      799.1,
+      278
+     ],
+     [
+      810.9,
+      277.9
+     ],
+     [
+      822.9,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-126",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 1.6,
+    "points": [
+     [
+      774.6,
+      272
+     ],
+     [
+      774.6,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-127",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 1.6,
+    "points": [
+     [
+      822.9,
+      272
+     ],
+     [
+      822.9,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-128",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 11,
+    "points": [
+     [
+      795.8,
+      278.1
+     ],
+     [
+      801.8,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-129",
+    "type": "note",
+    "x": 710,
+    "y": 292,
+    "text": "−2.08 WPA · 64% of games · 3.7K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-130",
+    "type": "note",
+    "x": 710,
+    "y": 310,
+    "text": "by patch: −4.4 / −0.7 / −1.6",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-131",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      790.7,
+      396.1
+     ],
+     [
+      804.2,
+      396.2
+     ],
+     [
+      816.8,
+      395.9
+     ],
+     [
+      830.2,
+      395.9
+     ],
+     [
+      842.9,
+      395.9
+     ],
+     [
+      856,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-132",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      790.9,
+      390
+     ],
+     [
+      790.9,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-133",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      856,
+      390
+     ],
+     [
+      856,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-134",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      820.3,
+      395.9
+     ],
+     [
+      826.5,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-135",
+    "type": "note",
+    "x": 710,
+    "y": 410,
+    "text": "−0.44 WPA · 36% of games · 2.0K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-136",
+    "type": "note",
+    "x": 710,
+    "y": 428,
+    "text": "by patch: −2.0 / −2.5 / +2.6",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-137",
+    "type": "note",
+    "x": 710,
+    "y": 506,
+    "text": "under coachless's game threshold",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-138",
+    "type": "note",
+    "x": 710,
+    "y": 624,
+    "text": "under coachless's game threshold",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-139",
+    "type": "note",
+    "x": 1000,
+    "y": 164,
+    "text": "NA Master+",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-140",
+    "type": "note",
+    "x": 1000,
+    "y": 190,
+    "text": "1,351 games with a Doran's",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-141",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1.2,
+    "points": [
+     [
+      1120.4,
+      220.7
+     ],
+     [
+      1119.8,
+      231.7
+     ],
+     [
+      1119.8,
+      244.5
+     ],
+     [
+      1119.5,
+      256.1
+     ],
+     [
+      1120.8,
+      268.3
+     ],
+     [
+      1120.8,
+      279.9
+     ],
+     [
+      1119.7,
+      293
+     ],
+     [
+      1119.9,
+      304.1
+     ],
+     [
+      1120.4,
+      315.7
+     ],
+     [
+      1119.6,
+      327.9
+     ],
+     [
+      1119.8,
+      339.8
+     ],
+     [
+      1120,
+      352.5
+     ],
+     [
+      1120,
+      364.3
+     ],
+     [
+      1119.9,
+      376.1
+     ],
+     [
+      1119.2,
+      389.1
+     ],
+     [
+      1119.4,
+      401.4
+     ],
+     [
+      1120.4,
+      413.1
+     ],
+     [
+      1119.3,
+      424.5
+     ],
+     [
+      1120.3,
+      436.7
+     ],
+     [
+      1119.8,
+      448.2
+     ],
+     [
+      1119.3,
+      460.6
+     ],
+     [
+      1120.6,
+      473.1
+     ],
+     [
+      1119.3,
+      484.6
+     ],
+     [
+      1120.3,
+      497.4
+     ],
+     [
+      1120.8,
+      509.5
+     ],
+     [
+      1119.7,
+      521.9
+     ],
+     [
+      1119.6,
+      532.9
+     ],
+     [
+      1120.7,
+      545.7
+     ],
+     [
+      1120,
+      557.6
+     ],
+     [
+      1120.5,
+      568.8
+     ],
+     [
+      1119.7,
+      581.4
+     ],
+     [
+      1119.7,
+      593.6
+     ],
+     [
+      1120.8,
+      605.5
+     ],
+     [
+      1119.3,
+      617.5
+     ],
+     [
+      1120.6,
+      629.7
+     ],
+     [
+      1119.7,
+      642.3
+     ],
+     [
+      1119.5,
+      654
+     ],
+     [
+      1120.4,
+      665.7
+     ],
+     [
+      1119.3,
+      677.5
+     ],
+     [
+      1120.7,
+      690.5
+     ],
+     [
+      1120,
+      702
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-142",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1000.7,
+      707.8
+     ],
+     [
+      1011.2,
+      708
+     ],
+     [
+      1023.7,
+      707.3
+     ],
+     [
+      1036.7,
+      707.3
+     ],
+     [
+      1048.6,
+      708.7
+     ],
+     [
+      1060.8,
+      708
+     ],
+     [
+      1071.7,
+      707.7
+     ],
+     [
+      1083.9,
+      708.6
+     ],
+     [
+      1096.4,
+      708.7
+     ],
+     [
+      1107.3,
+      707.7
+     ],
+     [
+      1120.3,
+      708
+     ],
+     [
+      1131.3,
+      707.4
+     ],
+     [
+      1143.2,
+      707.4
+     ],
+     [
+      1156,
+      708.3
+     ],
+     [
+      1167.3,
+      707.5
+     ],
+     [
+      1180,
+      708.2
+     ],
+     [
+      1191.8,
+      708.6
+     ],
+     [
+      1204.5,
+      708
+     ],
+     [
+      1216.6,
+      708.3
+     ],
+     [
+      1227.8,
+      708.6
+     ],
+     [
+      1240,
+      708
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-143",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1000.7,
+      703.3
+     ],
+     [
+      1000,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-144",
+    "type": "note",
+    "x": 992,
+    "y": 716,
+    "text": "−8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-145",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1060.3,
+      702.6
+     ],
+     [
+      1060,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-146",
+    "type": "note",
+    "x": 1052,
+    "y": 716,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-147",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1120.6,
+      702.7
+     ],
+     [
+      1120,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-148",
+    "type": "note",
+    "x": 1112,
+    "y": 716,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-149",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1180.7,
+      703.1
+     ],
+     [
+      1180,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-150",
+    "type": "note",
+    "x": 1172,
+    "y": 716,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-151",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1240.7,
+      703.4
+     ],
+     [
+      1240,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-152",
+    "type": "note",
+    "x": 1232,
+    "y": 716,
+    "text": "+8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-153",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1007.2,
+      278
+     ],
+     [
+      1019.4,
+      277.7
+     ],
+     [
+      1032,
+      278.3
+     ],
+     [
+      1044.6,
+      278.2
+     ],
+     [
+      1056.8,
+      278
+     ],
+     [
+      1069.6,
+      277.7
+     ],
+     [
+      1081.7,
+      278.2
+     ],
+     [
+      1094.5,
+      277.8
+     ],
+     [
+      1106.9,
+      278.3
+     ],
+     [
+      1118.9,
+      277.9
+     ],
+     [
+      1131.4,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-154",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1007.2,
+      272
+     ],
+     [
+      1007.2,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-155",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1131.4,
+      272
+     ],
+     [
+      1131.4,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-156",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1066.5,
+      277.9
+     ],
+     [
+      1072.3,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-157",
+    "type": "note",
+    "x": 1000,
+    "y": 292,
+    "text": "−3.38 WPA · 41% of games · 560 g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-158",
+    "type": "note",
+    "x": 1000,
+    "y": 310,
+    "text": "by patch: −4.4 / +0.4 / −7.1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-159",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1102.7,
+      396
+     ],
+     [
+      1114.7,
+      396.2
+     ],
+     [
+      1126,
+      395.8
+     ],
+     [
+      1138,
+      395.8
+     ],
+     [
+      1149.3,
+      395.9
+     ],
+     [
+      1161.1,
+      396
+     ],
+     [
+      1172.9,
+      395.7
+     ],
+     [
+      1184.4,
+      396.1
+     ],
+     [
+      1196,
+      396
+     ],
+     [
+      1207.5,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-160",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1103,
+      390
+     ],
+     [
+      1103,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-161",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1207.5,
+      390
+     ],
+     [
+      1207.5,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-162",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1152.1,
+      396.1
+     ],
+     [
+      1158.3,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-163",
+    "type": "note",
+    "x": 1000,
+    "y": 410,
+    "text": "+2.35 WPA · 59% of games · 791 g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-164",
+    "type": "note",
+    "x": 1000,
+    "y": 428,
+    "text": "by patch: +3.2 / −1.2 / +5.1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-165",
+    "type": "note",
+    "x": 1000,
+    "y": 506,
+    "text": "under coachless's game threshold",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-166",
+    "type": "note",
+    "x": 1000,
+    "y": 624,
+    "text": "under coachless's game threshold",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-167",
+    "type": "note",
+    "x": 1290,
+    "y": 164,
+    "text": "World Diamond+",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-168",
+    "type": "note",
+    "x": 1290,
+    "y": 190,
+    "text": "57,745 games with a Doran's",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-169",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1.2,
+    "points": [
+     [
+      1410.5,
+      219.7
+     ],
+     [
+      1409.2,
+      232.8
+     ],
+     [
+      1409.4,
+      244.8
+     ],
+     [
+      1409.9,
+      256.6
+     ],
+     [
+      1410.1,
+      267.5
+     ],
+     [
+      1410,
+      280.3
+     ],
+     [
+      1410.3,
+      292
+     ],
+     [
+      1410.6,
+      304.7
+     ],
+     [
+      1409.5,
+      315.9
+     ],
+     [
+      1410.2,
+      328.3
+     ],
+     [
+      1409.4,
+      341.2
+     ],
+     [
+      1410.6,
+      352
+     ],
+     [
+      1410.6,
+      364.5
+     ],
+     [
+      1409.4,
+      376
+     ],
+     [
+      1410.3,
+      388
+     ],
+     [
+      1410.1,
+      401.4
+     ],
+     [
+      1409.9,
+      413.5
+     ],
+     [
+      1409.8,
+      424.8
+     ],
+     [
+      1409.8,
+      437
+     ],
+     [
+      1410.8,
+      448.7
+     ],
+     [
+      1410.2,
+      461.7
+     ],
+     [
+      1410.6,
+      472.4
+     ],
+     [
+      1410.2,
+      485.3
+     ],
+     [
+      1409.8,
+      497.1
+     ],
+     [
+      1409.5,
+      509.9
+     ],
+     [
+      1410.4,
+      521
+     ],
+     [
+      1410.3,
+      533.3
+     ],
+     [
+      1410.7,
+      544.6
+     ],
+     [
+      1410.6,
+      557
+     ],
+     [
+      1409.2,
+      570.1
+     ],
+     [
+      1409.4,
+      580.9
+     ],
+     [
+      1410.7,
+      592.8
+     ],
+     [
+      1410,
+      606.2
+     ],
+     [
+      1409.5,
+      617.9
+     ],
+     [
+      1410.1,
+      630.3
+     ],
+     [
+      1410.7,
+      641.1
+     ],
+     [
+      1409.4,
+      653
+     ],
+     [
+      1409.7,
+      666.2
+     ],
+     [
+      1410.2,
+      678
+     ],
+     [
+      1410.4,
+      690.4
+     ],
+     [
+      1410,
+      702
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-170",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1289.8,
+      708.5
+     ],
+     [
+      1302.4,
+      708.4
+     ],
+     [
+      1313.6,
+      708.2
+     ],
+     [
+      1325.7,
+      708.5
+     ],
+     [
+      1337.3,
+      707.3
+     ],
+     [
+      1349.9,
+      708.6
+     ],
+     [
+      1362.7,
+      708.3
+     ],
+     [
+      1374.3,
+      708.1
+     ],
+     [
+      1385.8,
+      708.7
+     ],
+     [
+      1397.7,
+      708.1
+     ],
+     [
+      1410.3,
+      708.7
+     ],
+     [
+      1422.8,
+      707.8
+     ],
+     [
+      1433.5,
+      708.4
+     ],
+     [
+      1445.9,
+      708
+     ],
+     [
+      1457.3,
+      708.4
+     ],
+     [
+      1469.9,
+      707.8
+     ],
+     [
+      1481.2,
+      707.8
+     ],
+     [
+      1493.9,
+      708.6
+     ],
+     [
+      1506.1,
+      708.6
+     ],
+     [
+      1517.3,
+      708.3
+     ],
+     [
+      1530,
+      708
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-171",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1289.3,
+      702.2
+     ],
+     [
+      1290,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-172",
+    "type": "note",
+    "x": 1282,
+    "y": 716,
+    "text": "−8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-173",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1349.3,
+      702.6
+     ],
+     [
+      1350,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-174",
+    "type": "note",
+    "x": 1342,
+    "y": 716,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-175",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1409.9,
+      703.5
+     ],
+     [
+      1410,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-176",
+    "type": "note",
+    "x": 1402,
+    "y": 716,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-177",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1469.9,
+      703.1
+     ],
+     [
+      1470,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-178",
+    "type": "note",
+    "x": 1462,
+    "y": 716,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-179",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      1530.1,
+      703.6
+     ],
+     [
+      1530,
+      713
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-180",
+    "type": "note",
+    "x": 1522,
+    "y": 716,
+    "text": "+8",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-181",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1405.4,
+      277.7
+     ],
+     [
+      1419.7,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-182",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1405.3,
+      272
+     ],
+     [
+      1405.3,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-183",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1419.7,
+      272
+     ],
+     [
+      1419.7,
+      284
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-184",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1409.6,
+      277.9
+     ],
+     [
+      1415.5,
+      278
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-185",
+    "type": "note",
+    "x": 1290,
+    "y": 292,
+    "text": "+0.17 WPA · 72% of games · 41.5K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-186",
+    "type": "note",
+    "x": 1290,
+    "y": 310,
+    "text": "by patch: −0.1 / +0.3 / +0.2",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-187",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1392,
+      395.7
+     ],
+     [
+      1405.6,
+      396.3
+     ],
+     [
+      1419.3,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-188",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1392.1,
+      390
+     ],
+     [
+      1392.1,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-189",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1419.3,
+      390
+     ],
+     [
+      1419.3,
+      402
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-190",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1402.6,
+      396.2
+     ],
+     [
+      1408.7,
+      396
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-191",
+    "type": "note",
+    "x": 1290,
+    "y": 410,
+    "text": "−0.28 WPA · 20% of games · 11.7K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-192",
+    "type": "note",
+    "x": 1290,
+    "y": 428,
+    "text": "by patch: +1.1 / −1.2 / −0.4",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-193",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1359.2,
+      514.2
+     ],
+     [
+      1371.4,
+      513.9
+     ],
+     [
+      1383.8,
+      513.9
+     ],
+     [
+      1396.1,
+      513.7
+     ],
+     [
+      1407.8,
+      513.8
+     ],
+     [
+      1420.1,
+      514.2
+     ],
+     [
+      1432.5,
+      514
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-194",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1359.2,
+      508
+     ],
+     [
+      1359.2,
+      520
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-195",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1432.5,
+      508
+     ],
+     [
+      1432.5,
+      520
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-196",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1392.7,
+      514
+     ],
+     [
+      1398.9,
+      514
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-197",
+    "type": "note",
+    "x": 1290,
+    "y": 528,
+    "text": "−0.94 WPA · 3% of games · 1.6K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-198",
+    "type": "note",
+    "x": 1290,
+    "y": 546,
+    "text": "by patch: −2.3 / −0.1 / −0.6",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-199",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1374.3,
+      632.2
+     ],
+     [
+      1384.7,
+      631.8
+     ],
+     [
+      1395.6,
+      632
+     ],
+     [
+      1406.8,
+      632.2
+     ],
+     [
+      1417.6,
+      632.3
+     ],
+     [
+      1428.4,
+      632
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-200",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1374.1,
+      626
+     ],
+     [
+      1374.1,
+      638
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-201",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1.6,
+    "points": [
+     [
+      1428.4,
+      626
+     ],
+     [
+      1428.4,
+      638
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-202",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 11,
+    "points": [
+     [
+      1398.3,
+      632.1
+     ],
+     [
+      1404.2,
+      632
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-203",
+    "type": "note",
+    "x": 1290,
+    "y": 646,
+    "text": "−0.58 WPA · 5% of games · 2.9K g",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-204",
+    "type": "note",
+    "x": 1290,
+    "y": 664,
+    "text": "by patch: −0.4 / +0.1 / −1.6",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-205",
+    "type": "note",
+    "x": 420,
+    "y": 740,
+    "text": "WPA in percentage points, 3 patches added together (game-weighted).\nDot = pooled WPA. Whisker = rough 95% noise from the game count alone.\nGreen or red only when the whole whisker is on one side of zero.\n\"by patch\" lists 16.18 / 16.19 / 16.20.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "wpa"
+   },
+   {
+    "id": "ink-206",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      1124.4,
+      386.9
+     ],
+     [
+      1125.6,
+      384.4
+     ],
+     [
+      1127.9,
+      382.1
+     ],
+     [
+      1131.6,
+      380.7
+     ],
+     [
+      1133.8,
+      378.3
+     ],
+     [
+      1137.5,
+      377
+     ],
+     [
+      1141.3,
+      376.1
+     ],
+     [
+      1144.7,
+      374.4
+     ],
+     [
+      1148.8,
+      373.9
+     ],
+     [
+      1153,
+      373.4
+     ],
+     [
+      1157.1,
+      373.7
+     ],
+     [
+      1161.2,
+      374.3
+     ],
+     [
+      1165.1,
+      375.1
+     ],
+     [
+      1169.1,
+      375.7
+     ],
+     [
+      1172.8,
+      376.8
+     ],
+     [
+      1175.9,
+      378.6
+     ],
+     [
+      1179.4,
+      380.1
+     ],
+     [
+      1181.8,
+      382.2
+     ],
+     [
+      1185.1,
+      384
+     ],
+     [
+      1186.9,
+      386.5
+     ],
+     [
+      1188.9,
+      388.9
+     ],
+     [
+      1190,
+      391.5
+     ],
+     [
+      1190.7,
+      394.2
+     ],
+     [
+      1190,
+      397
+     ],
+     [
+      1189.3,
+      399.6
+     ],
+     [
+      1189.3,
+      402.4
+     ],
+     [
+      1187.2,
+      404.8
+     ],
+     [
+      1185.3,
+      407.2
+     ],
+     [
+      1183.4,
+      409.7
+     ],
+     [
+      1180.4,
+      411.5
+     ],
+     [
+      1177.1,
+      413.2
+     ],
+     [
+      1174.3,
+      415.4
+     ],
+     [
+      1170.7,
+      416.9
+     ],
+     [
+      1166.5,
+      417.5
+     ],
+     [
+      1162.6,
+      418.6
+     ],
+     [
+      1158.4,
+      419.1
+     ],
+     [
+      1154.1,
+      419
+     ],
+     [
+      1149.9,
+      418.4
+     ],
+     [
+      1145.8,
+      417.9
+     ],
+     [
+      1141.9,
+      416.9
+     ],
+     [
+      1137.6,
+      416.3
+     ],
+     [
+      1133.8,
+      414.9
+     ],
+     [
+      1131.2,
+      412.6
+     ],
+     [
+      1128.2,
+      410.7
+     ],
+     [
+      1125.1,
+      408.7
+     ],
+     [
+      1123.7,
+      406.1
+     ],
+     [
+      1121.9,
+      403.6
+     ],
+     [
+      1120.2,
+      401
+     ],
+     [
+      1120.4,
+      398.2
+     ],
+     [
+      1119.2,
+      395.5
+     ],
+     [
+      1120.2,
+      392.8
+     ],
+     [
+      1121,
+      390.1
+     ],
+     [
+      1122.3,
+      387.4
+     ],
+     [
+      1124.3,
+      385
+     ],
+     [
+      1126.2,
+      382.5
+     ],
+     [
+      1128.9,
+      380.4
+     ],
+     [
+      1131.7,
+      378.2
+     ]
+    ],
+    "tab": "wpa"
+   },
+   {
+    "id": "note-207",
+    "type": "note",
+    "x": 1620,
+    "y": 164,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-208",
+    "type": "note",
+    "x": 1620,
+    "y": 202,
+    "text": "• Ring's share climbs with rank in NA: 16% → 36% →\n59% (Gold+ → Diamond+ → Master+).\n• NA Master+: Ring +2.4 vs Bow −3.4, a 5.7 pp gap\nat 2.1× its noise. Ring was ahead in 2 of 3\npatches, on only ~1.4K games.\n• NA Diamond+: Ring ahead by 1.6 pp (1.2×). A\nlean, not a result.\n• World Diamond+ (57.7K games): Bow ahead of Ring\nby 0.5 pp (0.9×). Basically a tie.\n• Helm and Blade: 1.6K and 2.9K world Diamond+\ngames, both a little under zero, inside the noise.\nToo rare in NA high elo to show.\n• Why NA Master+ is so different from the world:\nsee tab 3. It is mostly a different build, not\njust a different starter.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "wpa"
+   },
+   {
+    "id": "note-209",
+    "type": "note",
+    "x": 0,
+    "y": 180,
+    "text": "Up the ranks, Kog turns AP and starts Ring",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "build"
+   },
+   {
+    "id": "note-210",
+    "type": "note",
+    "x": 0,
+    "y": 212,
+    "text": "NA, u.gg, 3 patches added together. Share of Kog'Maw games.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-211",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      30.3,
+      549.9
+     ],
+     [
+      42.7,
+      550
+     ],
+     [
+      54.3,
+      549.6
+     ],
+     [
+      66.3,
+      550.2
+     ],
+     [
+      78.5,
+      549.6
+     ],
+     [
+      90.9,
+      549.9
+     ],
+     [
+      102.6,
+      549.7
+     ],
+     [
+      114.3,
+      550.1
+     ],
+     [
+      126.2,
+      550
+     ],
+     [
+      137.6,
+      549.5
+     ],
+     [
+      150.5,
+      550.1
+     ],
+     [
+      163.2,
+      550.3
+     ],
+     [
+      173.7,
+      550.7
+     ],
+     [
+      187,
+      550.4
+     ],
+     [
+      198.9,
+      549.5
+     ],
+     [
+      210,
+      550.2
+     ],
+     [
+      223.3,
+      549.3
+     ],
+     [
+      234.7,
+      550.2
+     ],
+     [
+      246,
+      549.3
+     ],
+     [
+      258.4,
+      549.6
+     ],
+     [
+      270.2,
+      550.1
+     ],
+     [
+      283.5,
+      550
+     ],
+     [
+      294.3,
+      549.5
+     ],
+     [
+      307.6,
+      550
+     ],
+     [
+      318.5,
+      550.5
+     ],
+     [
+      331.7,
+      550.6
+     ],
+     [
+      342.6,
+      550
+     ],
+     [
+      355.3,
+      550.3
+     ],
+     [
+      366.6,
+      550.3
+     ],
+     [
+      380,
+      550.7
+     ],
+     [
+      391.2,
+      550.3
+     ],
+     [
+      403.5,
+      549.4
+     ],
+     [
+      415.3,
+      549.7
+     ],
+     [
+      427,
+      550
+     ],
+     [
+      439.5,
+      549.5
+     ],
+     [
+      451.9,
+      549.2
+     ],
+     [
+      462.9,
+      550.7
+     ],
+     [
+      475.6,
+      550.2
+     ],
+     [
+      486.8,
+      550
+     ],
+     [
+      499.1,
+      550.8
+     ],
+     [
+      511.5,
+      549.2
+     ],
+     [
+      524,
+      550.5
+     ],
+     [
+      535.2,
+      549.6
+     ],
+     [
+      548.3,
+      549.3
+     ],
+     [
+      559.5,
+      550.1
+     ],
+     [
+      571.2,
+      550
+     ],
+     [
+      584.6,
+      550.3
+     ],
+     [
+      596.1,
+      550
+     ],
+     [
+      608.4,
+      549.9
+     ],
+     [
+      620,
+      550
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-212",
+    "type": "note",
+    "x": -6,
+    "y": 541,
+    "text": "0%",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-213",
+    "type": "note",
+    "x": -6,
+    "y": 466,
+    "text": "25%",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "ink-214",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      29.7,
+      474.8
+     ],
+     [
+      42.2,
+      474.8
+     ],
+     [
+      53.9,
+      475.3
+     ],
+     [
+      66.5,
+      475.3
+     ],
+     [
+      78.5,
+      474.8
+     ],
+     [
+      90.4,
+      475
+     ],
+     [
+      102.3,
+      475
+     ],
+     [
+      113.9,
+      474.9
+     ],
+     [
+      126.1,
+      475.3
+     ],
+     [
+      138.4,
+      474.9
+     ],
+     [
+      150.5,
+      475.3
+     ],
+     [
+      162.4,
+      474.8
+     ],
+     [
+      174.1,
+      475.1
+     ],
+     [
+      186.8,
+      475.2
+     ],
+     [
+      198.9,
+      474.9
+     ],
+     [
+      211,
+      475.1
+     ],
+     [
+      223,
+      475.2
+     ],
+     [
+      234.8,
+      474.6
+     ],
+     [
+      247,
+      475.1
+     ],
+     [
+      258.6,
+      474.6
+     ],
+     [
+      270.8,
+      475.2
+     ],
+     [
+      283.2,
+      474.8
+     ],
+     [
+      294.9,
+      474.6
+     ],
+     [
+      307,
+      474.7
+     ],
+     [
+      318.9,
+      475.4
+     ],
+     [
+      331.3,
+      475.3
+     ],
+     [
+      342.9,
+      475.1
+     ],
+     [
+      355.4,
+      474.6
+     ],
+     [
+      367.1,
+      474.8
+     ],
+     [
+      379.1,
+      474.7
+     ],
+     [
+      391,
+      475.4
+     ],
+     [
+      403.4,
+      475.2
+     ],
+     [
+      415.5,
+      474.9
+     ],
+     [
+      427.7,
+      474.6
+     ],
+     [
+      439.2,
+      474.6
+     ],
+     [
+      451.3,
+      475
+     ],
+     [
+      463.2,
+      475.3
+     ],
+     [
+      475.2,
+      474.6
+     ],
+     [
+      487.7,
+      475.2
+     ],
+     [
+      499.8,
+      475.4
+     ],
+     [
+      511.5,
+      474.7
+     ],
+     [
+      523.7,
+      475.3
+     ],
+     [
+      535.9,
+      474.7
+     ],
+     [
+      547.6,
+      474.9
+     ],
+     [
+      560.1,
+      474.8
+     ],
+     [
+      571.8,
+      475
+     ],
+     [
+      583.7,
+      474.7
+     ],
+     [
+      595.9,
+      475
+     ],
+     [
+      607.9,
+      474.8
+     ],
+     [
+      620,
+      475
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-215",
+    "type": "note",
+    "x": -6,
+    "y": 391,
+    "text": "50%",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "ink-216",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      30.4,
+      400
+     ],
+     [
+      42.3,
+      400.1
+     ],
+     [
+      54.4,
+      400.2
+     ],
+     [
+      66.5,
+      399.7
+     ],
+     [
+      78.4,
+      400.1
+     ],
+     [
+      89.9,
+      399.8
+     ],
+     [
+      101.9,
+      400.1
+     ],
+     [
+      114.1,
+      400.1
+     ],
+     [
+      126.4,
+      399.6
+     ],
+     [
+      138.1,
+      399.7
+     ],
+     [
+      150.5,
+      400
+     ],
+     [
+      162.3,
+      399.9
+     ],
+     [
+      174.8,
+      400.2
+     ],
+     [
+      186.3,
+      399.7
+     ],
+     [
+      198.2,
+      400.1
+     ],
+     [
+      210.9,
+      400
+     ],
+     [
+      222.6,
+      400.3
+     ],
+     [
+      234.7,
+      399.6
+     ],
+     [
+      247,
+      400.3
+     ],
+     [
+      259,
+      400.2
+     ],
+     [
+      271,
+      400.4
+     ],
+     [
+      282.7,
+      399.7
+     ],
+     [
+      295,
+      400
+     ],
+     [
+      307.1,
+      400.4
+     ],
+     [
+      319.3,
+      400
+     ],
+     [
+      331.4,
+      400
+     ],
+     [
+      342.7,
+      400
+     ],
+     [
+      355.2,
+      399.8
+     ],
+     [
+      367.5,
+      399.8
+     ],
+     [
+      379,
+      400.2
+     ],
+     [
+      391.3,
+      400.2
+     ],
+     [
+      403.3,
+      400.2
+     ],
+     [
+      415,
+      400.1
+     ],
+     [
+      427.6,
+      400.1
+     ],
+     [
+      439.3,
+      400
+     ],
+     [
+      451.1,
+      399.6
+     ],
+     [
+      463.4,
+      400.4
+     ],
+     [
+      475.7,
+      400.3
+     ],
+     [
+      487.3,
+      400.2
+     ],
+     [
+      499.9,
+      400
+     ],
+     [
+      512,
+      400.2
+     ],
+     [
+      523.3,
+      400
+     ],
+     [
+      535.5,
+      399.9
+     ],
+     [
+      547.7,
+      400.1
+     ],
+     [
+      559.6,
+      400.4
+     ],
+     [
+      571.5,
+      399.7
+     ],
+     [
+      583.6,
+      399.8
+     ],
+     [
+      595.6,
+      399.7
+     ],
+     [
+      608,
+      400.3
+     ],
+     [
+      620,
+      400
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-217",
+    "type": "note",
+    "x": -6,
+    "y": 316,
+    "text": "75%",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "ink-218",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      30.1,
+      324.9
+     ],
+     [
+      41.9,
+      325.1
+     ],
+     [
+      53.9,
+      324.7
+     ],
+     [
+      66.1,
+      324.9
+     ],
+     [
+      78,
+      325
+     ],
+     [
+      90.2,
+      324.7
+     ],
+     [
+      102.6,
+      325.2
+     ],
+     [
+      114.1,
+      325.3
+     ],
+     [
+      126.2,
+      325.2
+     ],
+     [
+      138.2,
+      325.1
+     ],
+     [
+      150.7,
+      325
+     ],
+     [
+      162.3,
+      325
+     ],
+     [
+      174.8,
+      324.9
+     ],
+     [
+      186.7,
+      324.7
+     ],
+     [
+      198.8,
+      324.7
+     ],
+     [
+      210.8,
+      325.1
+     ],
+     [
+      222.3,
+      325.2
+     ],
+     [
+      234.3,
+      324.6
+     ],
+     [
+      246.9,
+      324.9
+     ],
+     [
+      259,
+      325.2
+     ],
+     [
+      271.1,
+      324.9
+     ],
+     [
+      282.8,
+      324.8
+     ],
+     [
+      294.6,
+      325.2
+     ],
+     [
+      307.2,
+      325.3
+     ],
+     [
+      318.9,
+      324.7
+     ],
+     [
+      331,
+      325
+     ],
+     [
+      343.1,
+      325.3
+     ],
+     [
+      355.5,
+      325.2
+     ],
+     [
+      367.4,
+      325.3
+     ],
+     [
+      379.3,
+      324.8
+     ],
+     [
+      391.4,
+      324.9
+     ],
+     [
+      402.9,
+      324.7
+     ],
+     [
+      415.5,
+      325.4
+     ],
+     [
+      427.1,
+      325
+     ],
+     [
+      439.7,
+      324.9
+     ],
+     [
+      451.1,
+      324.7
+     ],
+     [
+      463.3,
+      325.1
+     ],
+     [
+      475.2,
+      325.2
+     ],
+     [
+      487.6,
+      325.2
+     ],
+     [
+      499.8,
+      324.9
+     ],
+     [
+      511.7,
+      324.9
+     ],
+     [
+      523.6,
+      325.2
+     ],
+     [
+      535.7,
+      324.8
+     ],
+     [
+      547.7,
+      325.4
+     ],
+     [
+      559.5,
+      324.8
+     ],
+     [
+      572.1,
+      324.7
+     ],
+     [
+      584.1,
+      325.1
+     ],
+     [
+      596.2,
+      325
+     ],
+     [
+      608,
+      325.3
+     ],
+     [
+      620,
+      325
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-219",
+    "type": "note",
+    "x": -6,
+    "y": 241,
+    "text": "100%",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "ink-220",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      30.1,
+      249.7
+     ],
+     [
+      42.2,
+      249.7
+     ],
+     [
+      54.5,
+      250.1
+     ],
+     [
+      66.5,
+      250.1
+     ],
+     [
+      78.3,
+      249.7
+     ],
+     [
+      90.3,
+      250
+     ],
+     [
+      102.2,
+      250.2
+     ],
+     [
+      114.4,
+      250.1
+     ],
+     [
+      126.7,
+      250.1
+     ],
+     [
+      138.2,
+      250.3
+     ],
+     [
+      150.4,
+      250.2
+     ],
+     [
+      162.3,
+      249.9
+     ],
+     [
+      174.8,
+      249.6
+     ],
+     [
+      186.2,
+      249.9
+     ],
+     [
+      198.2,
+      249.7
+     ],
+     [
+      210.9,
+      250.2
+     ],
+     [
+      223,
+      250.1
+     ],
+     [
+      235,
+      250
+     ],
+     [
+      246.5,
+      250.1
+     ],
+     [
+      258.9,
+      249.7
+     ],
+     [
+      271.1,
+      250.2
+     ],
+     [
+      282.6,
+      250.1
+     ],
+     [
+      294.7,
+      250.4
+     ],
+     [
+      307.3,
+      250.2
+     ],
+     [
+      318.7,
+      250.2
+     ],
+     [
+      331.4,
+      249.7
+     ],
+     [
+      343,
+      249.9
+     ],
+     [
+      355.3,
+      250.3
+     ],
+     [
+      366.8,
+      250
+     ],
+     [
+      379.1,
+      250.2
+     ],
+     [
+      391.5,
+      250
+     ],
+     [
+      402.9,
+      250.1
+     ],
+     [
+      415.6,
+      250.4
+     ],
+     [
+      427.5,
+      250.1
+     ],
+     [
+      439.8,
+      250.2
+     ],
+     [
+      451.7,
+      249.9
+     ],
+     [
+      463.3,
+      250.1
+     ],
+     [
+      475.4,
+      250
+     ],
+     [
+      487.7,
+      249.8
+     ],
+     [
+      499.6,
+      249.9
+     ],
+     [
+      511.3,
+      250.3
+     ],
+     [
+      524,
+      249.9
+     ],
+     [
+      535.4,
+      250.4
+     ],
+     [
+      548.1,
+      250
+     ],
+     [
+      560,
+      249.7
+     ],
+     [
+      571.5,
+      250
+     ],
+     [
+      583.8,
+      249.9
+     ],
+     [
+      595.7,
+      249.9
+     ],
+     [
+      608.1,
+      250
+     ],
+     [
+      620,
+      250
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-221",
+    "type": "note",
+    "x": 30,
+    "y": 560,
+    "text": "All ranks",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-222",
+    "type": "note",
+    "x": 30,
+    "y": 578,
+    "text": "67.4K g",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-223",
+    "type": "note",
+    "x": 196.7,
+    "y": 560,
+    "text": "Diamond+",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-224",
+    "type": "note",
+    "x": 196.7,
+    "y": 578,
+    "text": "6.3K g",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-225",
+    "type": "note",
+    "x": 363.3,
+    "y": 560,
+    "text": "Master+",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-226",
+    "type": "note",
+    "x": 363.3,
+    "y": 578,
+    "text": "2.8K g",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-227",
+    "type": "note",
+    "x": 530,
+    "y": 560,
+    "text": "Challenger",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-228",
+    "type": "note",
+    "x": 530,
+    "y": 578,
+    "text": "1.2K g",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "ink-229",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      59.9,
+      497.2
+     ],
+     [
+      71.1,
+      492.7
+     ],
+     [
+      82.5,
+      488.1
+     ],
+     [
+      92.6,
+      483.9
+     ],
+     [
+      105,
+      478.9
+     ],
+     [
+      115.9,
+      474.2
+     ],
+     [
+      126.6,
+      469.2
+     ],
+     [
+      137.8,
+      464.2
+     ],
+     [
+      148.7,
+      459
+     ],
+     [
+      160.1,
+      455
+     ],
+     [
+      171.2,
+      449.2
+     ],
+     [
+      181.7,
+      445.4
+     ],
+     [
+      192.5,
+      439.3
+     ],
+     [
+      204.7,
+      435.6
+     ],
+     [
+      215.4,
+      429.9
+     ],
+     [
+      227.4,
+      426.3
+     ],
+     [
+      238,
+      423.3
+     ],
+     [
+      250.6,
+      421.5
+     ],
+     [
+      261.6,
+      418.4
+     ],
+     [
+      274,
+      416.4
+     ],
+     [
+      286.7,
+      415.6
+     ],
+     [
+      297.6,
+      411.9
+     ],
+     [
+      309.7,
+      411
+     ],
+     [
+      321.6,
+      407.9
+     ],
+     [
+      333.5,
+      406.2
+     ],
+     [
+      345.1,
+      403.2
+     ],
+     [
+      357.2,
+      402.5
+     ],
+     [
+      369.5,
+      400.3
+     ],
+     [
+      381.4,
+      397.7
+     ],
+     [
+      393,
+      395.1
+     ],
+     [
+      404,
+      391.5
+     ],
+     [
+      414.8,
+      387.1
+     ],
+     [
+      427.1,
+      383.2
+     ],
+     [
+      437.9,
+      379.8
+     ],
+     [
+      449.5,
+      376.4
+     ],
+     [
+      459.3,
+      371.9
+     ],
+     [
+      471.3,
+      368.6
+     ],
+     [
+      482.6,
+      365.2
+     ],
+     [
+      493.1,
+      361.1
+     ],
+     [
+      505,
+      357.2
+     ],
+     [
+      514.8,
+      353.9
+     ],
+     [
+      526,
+      350.1
+     ],
+     [
+      537.3,
+      345.5
+     ],
+     [
+      549,
+      342.5
+     ],
+     [
+      560,
+      338
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "ink-230",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      57,
+      497.6
+     ],
+     [
+      63,
+      497.7
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-231",
+    "type": "note",
+    "x": 46,
+    "y": 467.7,
+    "text": "17%",
+    "color": "#c4593f",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-232",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      223.7,
+      425.6
+     ],
+     [
+      229.7,
+      425.6
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-233",
+    "type": "note",
+    "x": 212.7,
+    "y": 395.6,
+    "text": "41%",
+    "color": "#c4593f",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-234",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      390.2,
+      395.4
+     ],
+     [
+      396.3,
+      395.4
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-235",
+    "type": "note",
+    "x": 379.3,
+    "y": 405.4,
+    "text": "52%",
+    "color": "#c4593f",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-236",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      556.8,
+      338.1
+     ],
+     [
+      563,
+      338
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-237",
+    "type": "note",
+    "x": 546,
+    "y": 308,
+    "text": "71%",
+    "color": "#c4593f",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "note-238",
+    "type": "note",
+    "x": 590,
+    "y": 326,
+    "text": "AP build\n(Dusk and Dawn)",
+    "color": "#c4593f",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "ink-239",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2.5,
+    "points": [
+     [
+      60.7,
+      501.8
+     ],
+     [
+      70.7,
+      497.3
+     ],
+     [
+      81.6,
+      494.5
+     ],
+     [
+      93.5,
+      490.5
+     ],
+     [
+      104.4,
+      485.5
+     ],
+     [
+      115.1,
+      482
+     ],
+     [
+      127.1,
+      478.5
+     ],
+     [
+      138.5,
+      474.4
+     ],
+     [
+      149.2,
+      469.9
+     ],
+     [
+      160.3,
+      467.1
+     ],
+     [
+      170.4,
+      462.2
+     ],
+     [
+      182.5,
+      459.4
+     ],
+     [
+      194.1,
+      455.8
+     ],
+     [
+      204.5,
+      451.4
+     ],
+     [
+      215.6,
+      447.1
+     ],
+     [
+      226.1,
+      443
+     ],
+     [
+      237.5,
+      438.7
+     ],
+     [
+      249.3,
+      433.6
+     ],
+     [
+      260,
+      430.4
+     ],
+     [
+      270.4,
+      425.7
+     ],
+     [
+      282.9,
+      420.1
+     ],
+     [
+      292.9,
+      415.2
+     ],
+     [
+      303.7,
+      411
+     ],
+     [
+      315.9,
+      406.1
+     ],
+     [
+      326,
+      402.2
+     ],
+     [
+      337.4,
+      397.8
+     ],
+     [
+      348.8,
+      393.2
+     ],
+     [
+      359.4,
+      388.8
+     ],
+     [
+      370.4,
+      383.6
+     ],
+     [
+      382.8,
+      378.7
+     ],
+     [
+      392.7,
+      374.7
+     ],
+     [
+      404.6,
+      375.3
+     ],
+     [
+      417.2,
+      373.9
+     ],
+     [
+      429.8,
+      374.9
+     ],
+     [
+      441,
+      374.6
+     ],
+     [
+      452.6,
+      374.5
+     ],
+     [
+      464,
+      375.3
+     ],
+     [
+      477.3,
+      376.2
+     ],
+     [
+      488.3,
+      375.1
+     ],
+     [
+      499.8,
+      375
+     ],
+     [
+      512.9,
+      375.5
+     ],
+     [
+      524.4,
+      376.2
+     ],
+     [
+      536.5,
+      376.4
+     ],
+     [
+      548.3,
+      376.9
+     ],
+     [
+      560,
+      376.6
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "ink-240",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      56.9,
+      501.6
+     ],
+     [
+      63,
+      501.7
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-241",
+    "type": "note",
+    "x": 46,
+    "y": 511.7,
+    "text": "16%",
+    "color": "#8f9a6e",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-242",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      223.7,
+      443.3
+     ],
+     [
+      229.7,
+      443.4
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-243",
+    "type": "note",
+    "x": 212.7,
+    "y": 453.4,
+    "text": "36%",
+    "color": "#8f9a6e",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-244",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      390.3,
+      374.3
+     ],
+     [
+      396.3,
+      374.4
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-245",
+    "type": "note",
+    "x": 379.3,
+    "y": 344.4,
+    "text": "59%",
+    "color": "#8f9a6e",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "ink-246",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      557,
+      376.6
+     ],
+     [
+      563,
+      376.6
+     ]
+    ],
+    "tab": "build"
+   },
+   {
+    "id": "note-247",
+    "type": "note",
+    "x": 546,
+    "y": 386.6,
+    "text": "58%",
+    "color": "#8f9a6e",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "note-248",
+    "type": "note",
+    "x": 590,
+    "y": 364.6,
+    "text": "Doran's Ring",
+    "color": "#8f9a6e",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-249",
+    "type": "note",
+    "x": 0,
+    "y": 606,
+    "text": "AP build = u.gg's AP variant (Dusk and Dawn > Sorcerer's Shoes > Shadowflame).\nRing share: coachless for Gold+ (not All ranks), Diamond+ and Master+;\nu.gg for Challenger, where Ring was u.gg's starter on all 3 patches.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-250",
+    "type": "note",
+    "x": 860,
+    "y": 180,
+    "text": "Each build brings its own starter",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "build"
+   },
+   {
+    "id": "note-251",
+    "type": "note",
+    "x": 860,
+    "y": 212,
+    "text": "Pooled win rate · games · u.gg's starter for that build",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "build"
+   },
+   {
+    "id": "note-252",
+    "type": "note",
+    "x": 1090,
+    "y": 244,
+    "text": "All ranks",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-253",
+    "type": "note",
+    "x": 1265,
+    "y": 244,
+    "text": "Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-254",
+    "type": "note",
+    "x": 1440,
+    "y": 244,
+    "text": "Master+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-255",
+    "type": "note",
+    "x": 1615,
+    "y": 244,
+    "text": "Challenger",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-256",
+    "type": "note",
+    "x": 860,
+    "y": 280,
+    "text": "AP build",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-257",
+    "type": "note",
+    "x": 860,
+    "y": 310,
+    "text": "Dusk and Dawn > Sorcerer's Shoes >\nShadowflame",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-258",
+    "type": "note",
+    "x": 1090,
+    "y": 280,
+    "text": "50.2%",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-259",
+    "type": "note",
+    "x": 1090,
+    "y": 310,
+    "text": "11.8K g · ±1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-260",
+    "type": "note",
+    "x": 1090,
+    "y": 328,
+    "text": "dring 68%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-261",
+    "type": "note",
+    "x": 1265,
+    "y": 280,
+    "text": "49.9%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-262",
+    "type": "note",
+    "x": 1265,
+    "y": 310,
+    "text": "2.6K g · ±2",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-263",
+    "type": "note",
+    "x": 1265,
+    "y": 328,
+    "text": "dring 80%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-264",
+    "type": "note",
+    "x": 1440,
+    "y": 280,
+    "text": "51.5%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-265",
+    "type": "note",
+    "x": 1440,
+    "y": 310,
+    "text": "1.4K g · ±3",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-266",
+    "type": "note",
+    "x": 1440,
+    "y": 328,
+    "text": "dring 81%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-267",
+    "type": "note",
+    "x": 1615,
+    "y": 280,
+    "text": "52.1%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-268",
+    "type": "note",
+    "x": 1615,
+    "y": 310,
+    "text": "829 g · ±3",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-269",
+    "type": "note",
+    "x": 1615,
+    "y": 328,
+    "text": "dring 83%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-270",
+    "type": "note",
+    "x": 860,
+    "y": 390,
+    "text": "On-hit build",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-271",
+    "type": "note",
+    "x": 860,
+    "y": 420,
+    "text": "Guinsoo's Rageblade > Berserker's\nGreaves > Navori Flickerblade /\nTerminus",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-272",
+    "type": "note",
+    "x": 1090,
+    "y": 390,
+    "text": "56.7%",
+    "color": "#8f9a6e",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-273",
+    "type": "note",
+    "x": 1090,
+    "y": 420,
+    "text": "35.6K g · ±1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-274",
+    "type": "note",
+    "x": 1090,
+    "y": 438,
+    "text": "dbow 84%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-275",
+    "type": "note",
+    "x": 1265,
+    "y": 390,
+    "text": "53.5%",
+    "color": "#8f9a6e",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-276",
+    "type": "note",
+    "x": 1265,
+    "y": 420,
+    "text": "2.3K g · ±2",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-277",
+    "type": "note",
+    "x": 1265,
+    "y": 438,
+    "text": "dhelm (38 g)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-278",
+    "type": "note",
+    "x": 1440,
+    "y": 390,
+    "text": "50.6%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-279",
+    "type": "note",
+    "x": 1440,
+    "y": 420,
+    "text": "868 g · ±3",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-280",
+    "type": "note",
+    "x": 1440,
+    "y": 438,
+    "text": "dbow (259 g)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-281",
+    "type": "note",
+    "x": 1615,
+    "y": 390,
+    "text": "47.8%",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-282",
+    "type": "note",
+    "x": 1615,
+    "y": 420,
+    "text": "249 g · ±6",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-283",
+    "type": "note",
+    "x": 1615,
+    "y": 438,
+    "text": "dhelm (12 g)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-284",
+    "type": "note",
+    "x": 860,
+    "y": 500,
+    "text": "AD build",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-285",
+    "type": "note",
+    "x": 860,
+    "y": 530,
+    "text": "Blade of the Ruined King >\nBerserker's Greaves > Guinsoo's\nRageblade",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-286",
+    "type": "note",
+    "x": 1090,
+    "y": 500,
+    "text": "45.2%",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-287",
+    "type": "note",
+    "x": 1090,
+    "y": 530,
+    "text": "22.6K g · ±1",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-288",
+    "type": "note",
+    "x": 1090,
+    "y": 548,
+    "text": "dbow 77%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-289",
+    "type": "note",
+    "x": 1265,
+    "y": 500,
+    "text": "43.6%",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-290",
+    "type": "note",
+    "x": 1265,
+    "y": 530,
+    "text": "2.1K g · ±2",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-291",
+    "type": "note",
+    "x": 1265,
+    "y": 548,
+    "text": "dbow 52%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-292",
+    "type": "note",
+    "x": 1440,
+    "y": 500,
+    "text": "43.7%",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-293",
+    "type": "note",
+    "x": 1440,
+    "y": 530,
+    "text": "973 g · ±3",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-294",
+    "type": "note",
+    "x": 1440,
+    "y": 548,
+    "text": "dbow (241 g)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-295",
+    "type": "note",
+    "x": 1615,
+    "y": 500,
+    "text": "41.1%",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "build"
+   },
+   {
+    "id": "note-296",
+    "type": "note",
+    "x": 1615,
+    "y": 530,
+    "text": "380 g · ±5",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-297",
+    "type": "note",
+    "x": 1615,
+    "y": 548,
+    "text": "dbow (81 g)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "build"
+   },
+   {
+    "id": "note-298",
+    "type": "note",
+    "x": 860,
+    "y": 610,
+    "text": "Green / red: further from Kog's average in that rank than the noise (±).\nBuilds are defined by finished items, so they skip short stomps and lean toward longer games;\ncompare builds with each other, not with 50%. Variants overlap a little.\nu.gg names one starter per build: its best scorer, not always the most bought.\nGrey \"(n g)\" = u.gg picked a rare starter there, so the usual one is unknown.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "build"
+   },
+   {
+    "id": "note-299",
+    "type": "note",
+    "x": 1780,
+    "y": 180,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "build"
+   },
+   {
+    "id": "note-300",
+    "type": "note",
+    "x": 1780,
+    "y": 218,
+    "text": "• NA Challenger Kog is mostly AP now: 71% of 1,173\ngames build Dusk and Dawn first, against 17% at\nAll ranks.\n• Those AP games start Ring 83% of the time.\nOn-hit games start Bow when there is enough data\n(All ranks: 84%).\n• Challenger, Ring vs every other start: 53.2%\n(678 g) vs 45.5% (495 g), 2.6× the noise.\n• So the starter question is really a build\nquestion: Ring is the AP start. At Challenger the\nAP build sits at 52.1% vs on-hit 47.8% (only 249\non-hit games).\n• Lower down it flips: at All ranks on-hit wins\n56.7% vs AP 50.2%. AP Kog looks like the harder\nbuild that pays off in skilled hands.\n• Caveat: NA Master+ Kog games come from a few\none-tricks with hundreds of games each (u.gg\nleaderboard). Their skill is baked into these\nnumbers.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "build"
+   },
+   {
+    "id": "note-301",
+    "type": "note",
+    "x": 0,
+    "y": 180,
+    "text": "Kog'Maw ADC in NA Challenger. My pick:",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-302",
+    "type": "note",
+    "x": 0,
+    "y": 220,
+    "text": "First decide the build. The starter follows it.",
+    "color": "#b8925a",
+    "size": 16,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-303",
+    "type": "note",
+    "x": 40,
+    "y": 290,
+    "text": "Which first item?",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-304",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      32.9,
+      285.5
+     ],
+     [
+      40.7,
+      281.9
+     ],
+     [
+      51.5,
+      279
+     ],
+     [
+      63.3,
+      276.3
+     ],
+     [
+      77.1,
+      274.4
+     ],
+     [
+      90.7,
+      272.3
+     ],
+     [
+      104.7,
+      270.2
+     ],
+     [
+      120.9,
+      270.2
+     ],
+     [
+      136.6,
+      270.2
+     ],
+     [
+      152.2,
+      270
+     ],
+     [
+      167.7,
+      270.5
+     ],
+     [
+      182.6,
+      271.8
+     ],
+     [
+      196.6,
+      273.6
+     ],
+     [
+      210.1,
+      275.6
+     ],
+     [
+      222.9,
+      277.9
+     ],
+     [
+      237.6,
+      279.9
+     ],
+     [
+      245,
+      283.7
+     ],
+     [
+      257.2,
+      286.6
+     ],
+     [
+      262.8,
+      290.5
+     ],
+     [
+      268.3,
+      294.5
+     ],
+     [
+      269,
+      298.6
+     ],
+     [
+      269.8,
+      302.7
+     ],
+     [
+      270.1,
+      306.8
+     ],
+     [
+      270.2,
+      311
+     ],
+     [
+      266.7,
+      315.1
+     ],
+     [
+      262.1,
+      319.1
+     ],
+     [
+      251.3,
+      322.4
+     ],
+     [
+      242.1,
+      325.7
+     ],
+     [
+      231,
+      328.6
+     ],
+     [
+      222,
+      332.3
+     ],
+     [
+      206.1,
+      333.6
+     ],
+     [
+      192.3,
+      335.6
+     ],
+     [
+      178.8,
+      338.2
+     ],
+     [
+      162.5,
+      338.7
+     ],
+     [
+      146.4,
+      338.5
+     ],
+     [
+      130.2,
+      339.4
+     ],
+     [
+      114.6,
+      338.2
+     ],
+     [
+      98.8,
+      337.4
+     ],
+     [
+      82.7,
+      336.5
+     ],
+     [
+      70.5,
+      333.5
+     ],
+     [
+      55.6,
+      331.8
+     ],
+     [
+      45.6,
+      328.4
+     ],
+     [
+      32,
+      325.9
+     ],
+     [
+      24,
+      322.1
+     ],
+     [
+      14.5,
+      318.6
+     ],
+     [
+      12.4,
+      314.3
+     ],
+     [
+      3,
+      310.5
+     ],
+     [
+      4.8,
+      306.1
+     ],
+     [
+      0.8,
+      301.8
+     ],
+     [
+      6.3,
+      297.6
+     ],
+     [
+      10.8,
+      293.5
+     ],
+     [
+      17.8,
+      289.7
+     ],
+     [
+      22.1,
+      285.5
+     ],
+     [
+      31.4,
+      281.9
+     ],
+     [
+      41.2,
+      278.4
+     ],
+     [
+      54.5,
+      275.8
+     ],
+     [
+      68.6,
+      273.5
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-305",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      280.8,
+      290.1
+     ],
+     [
+      291.3,
+      289.4
+     ],
+     [
+      303.2,
+      288.2
+     ],
+     [
+      315.5,
+      286.9
+     ],
+     [
+      326.7,
+      285
+     ],
+     [
+      339.4,
+      285.2
+     ],
+     [
+      351.9,
+      283.2
+     ],
+     [
+      363.5,
+      282.4
+     ],
+     [
+      375.4,
+      281.5
+     ],
+     [
+      386.9,
+      280.2
+     ],
+     [
+      399.2,
+      279
+     ],
+     [
+      410.4,
+      277.4
+     ],
+     [
+      422.2,
+      276.5
+     ],
+     [
+      433.5,
+      275.8
+     ],
+     [
+      446.1,
+      275.2
+     ],
+     [
+      457.4,
+      273.4
+     ],
+     [
+      470.2,
+      272.6
+     ],
+     [
+      480.8,
+      271.4
+     ],
+     [
+      492.7,
+      269.4
+     ],
+     [
+      504.5,
+      268.1
+     ],
+     [
+      516.5,
+      268.3
+     ],
+     [
+      528.8,
+      266.2
+     ],
+     [
+      540.7,
+      265.8
+     ],
+     [
+      552.8,
+      265.1
+     ],
+     [
+      564.4,
+      263
+     ],
+     [
+      576.6,
+      262.3
+     ],
+     [
+      588.3,
+      261.2
+     ],
+     [
+      600,
+      260
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-306",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      588,
+      267.2
+     ],
+     [
+      600,
+      260
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-307",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      586.9,
+      255.1
+     ],
+     [
+      600,
+      260
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-308",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2.5,
+    "points": [
+     [
+      279.4,
+      320.7
+     ],
+     [
+      289.6,
+      325.6
+     ],
+     [
+      300.7,
+      332.9
+     ],
+     [
+      310.6,
+      338
+     ],
+     [
+      320.9,
+      344.1
+     ],
+     [
+      331.4,
+      351.4
+     ],
+     [
+      342.1,
+      356.6
+     ],
+     [
+      353.1,
+      362.9
+     ],
+     [
+      362.6,
+      369.7
+     ],
+     [
+      373.5,
+      374.6
+     ],
+     [
+      382.5,
+      381.7
+     ],
+     [
+      394.1,
+      387.5
+     ],
+     [
+      403.5,
+      393.9
+     ],
+     [
+      414.8,
+      400
+     ],
+     [
+      424.1,
+      405.3
+     ],
+     [
+      435.6,
+      411.2
+     ],
+     [
+      445.5,
+      417.5
+     ],
+     [
+      455.9,
+      423.8
+     ],
+     [
+      466.1,
+      430.9
+     ],
+     [
+      476.2,
+      436.4
+     ],
+     [
+      486.2,
+      441.9
+     ],
+     [
+      497.4,
+      448
+     ],
+     [
+      506.9,
+      454.6
+     ],
+     [
+      517.5,
+      460.2
+     ],
+     [
+      527.5,
+      467.9
+     ],
+     [
+      537.6,
+      473.5
+     ],
+     [
+      548.8,
+      479.7
+     ],
+     [
+      558.3,
+      485
+     ],
+     [
+      568.2,
+      491
+     ],
+     [
+      578.9,
+      497.3
+     ],
+     [
+      590.4,
+      504.7
+     ],
+     [
+      600,
+      510
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-309",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2.5,
+    "points": [
+     [
+      586.1,
+      508.8
+     ],
+     [
+      600,
+      510
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-310",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2.5,
+    "points": [
+     [
+      592.3,
+      498.3
+     ],
+     [
+      600,
+      510
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "note-311",
+    "type": "note",
+    "x": 330,
+    "y": 246,
+    "text": "Dusk and Dawn (AP)",
+    "color": "#c4593f",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-312",
+    "type": "note",
+    "x": 250,
+    "y": 446,
+    "text": "Rageblade / BotRK (on-hit)",
+    "color": "#8f9a6e",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "img-313",
+    "type": "image",
+    "x": 620,
+    "y": 230,
+    "w": 64,
+    "h": 64,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1056.png",
+    "tab": "verdict"
+   },
+   {
+    "id": "note-314",
+    "type": "note",
+    "x": 700,
+    "y": 224,
+    "text": "dring  ·  the default up top",
+    "color": "#c4593f",
+    "size": 28,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-315",
+    "type": "note",
+    "x": 700,
+    "y": 264,
+    "text": "AP for W, E and R, and Drain adds 57% to Kog's\nmana regen (114% while trading), so he can\nkeep casting E and W. It is what NA Challenger\nKogs start, and it wins there (tab 3).",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "img-316",
+    "type": "image",
+    "x": 620,
+    "y": 480,
+    "w": 64,
+    "h": 64,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1086.png",
+    "tab": "verdict"
+   },
+   {
+    "id": "note-317",
+    "type": "note",
+    "x": 700,
+    "y": 474,
+    "text": "dbow  ·  the default for on-hit",
+    "color": "#8f9a6e",
+    "size": 28,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-318",
+    "type": "note",
+    "x": 700,
+    "y": 514,
+    "text": "+30% level 1 auto DPS for 400g, the most\ngold-efficient starter (181%), and its attack\nspeed is what the on-hit build wants. Top\npooled WPA in world Diamond+ (tab 2), by a\nhair.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-319",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      699.9,
+      650.2
+     ],
+     [
+      699.3,
+      661.1
+     ],
+     [
+      700.1,
+      673.2
+     ],
+     [
+      700.7,
+      684.5
+     ],
+     [
+      699.5,
+      697.2
+     ],
+     [
+      700,
+      707.7
+     ],
+     [
+      699.4,
+      719.8
+     ],
+     [
+      711.5,
+      720.3
+     ],
+     [
+      724.6,
+      720.1
+     ],
+     [
+      736.8,
+      719.5
+     ],
+     [
+      748.2,
+      720.2
+     ],
+     [
+      761.2,
+      720.6
+     ],
+     [
+      773.5,
+      719.5
+     ],
+     [
+      784.9,
+      720.4
+     ],
+     [
+      797.9,
+      719.4
+     ],
+     [
+      809.9,
+      719.7
+     ],
+     [
+      821.7,
+      719.3
+     ],
+     [
+      833.9,
+      719.8
+     ],
+     [
+      845.1,
+      720.2
+     ],
+     [
+      858.3,
+      719.6
+     ],
+     [
+      870,
+      720.8
+     ],
+     [
+      881.8,
+      719.5
+     ],
+     [
+      893.8,
+      720.7
+     ],
+     [
+      906.3,
+      719.4
+     ],
+     [
+      919.1,
+      720.2
+     ],
+     [
+      931.5,
+      720.4
+     ],
+     [
+      942.6,
+      720.8
+     ],
+     [
+      955.3,
+      720
+     ],
+     [
+      966.5,
+      719.6
+     ],
+     [
+      978.6,
+      719.5
+     ],
+     [
+      991.6,
+      720.2
+     ],
+     [
+      1003,
+      720.5
+     ],
+     [
+      1016.1,
+      720.2
+     ],
+     [
+      1027.4,
+      720.8
+     ],
+     [
+      1040,
+      720
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-320",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      1027.4,
+      726.1
+     ],
+     [
+      1040,
+      720
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "ink-321",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      1027.4,
+      713.9
+     ],
+     [
+      1040,
+      720
+     ]
+    ],
+    "tab": "verdict"
+   },
+   {
+    "id": "note-322",
+    "type": "note",
+    "x": 740,
+    "y": 690,
+    "text": "into a kill lane?",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "verdict"
+   },
+   {
+    "id": "img-323",
+    "type": "image",
+    "x": 1060,
+    "y": 690,
+    "w": 64,
+    "h": 64,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1120.png",
+    "tab": "verdict"
+   },
+   {
+    "id": "note-324",
+    "type": "note",
+    "x": 1140,
+    "y": 684,
+    "text": "dhelm  ·  the survival swap",
+    "color": "#7f98ad",
+    "size": 28,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-325",
+    "type": "note",
+    "x": 1140,
+    "y": 724,
+    "text": "About +32% effective HP vs both damage types\nat level 1. Take it into lanes that can kill\nKog before he scales (heavy level 2 all-ins,\ndouble poke). Rare in the data, so this is\nreasoning, not stats.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "img-326",
+    "type": "image",
+    "x": 0,
+    "y": 770,
+    "w": 64,
+    "h": 64,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/1055.png",
+    "tab": "verdict"
+   },
+   {
+    "id": "note-327",
+    "type": "note",
+    "x": 80,
+    "y": 764,
+    "text": "dblade  ·  skip",
+    "color": "#7f98ad",
+    "size": 28,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-328",
+    "type": "note",
+    "x": 80,
+    "y": 804,
+    "text": "Less DPS than Bow and less bulk than Helm, for\nmore gold than Bow. The data can't separate it\nfrom the others (tab 2), so this one rests on\nthe lane math. No Kog lane wants exactly this\nmix.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-329",
+    "type": "note",
+    "x": 1200,
+    "y": 200,
+    "text": "How sure am I?",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-330",
+    "type": "note",
+    "x": 1200,
+    "y": 238,
+    "text": "• Ring for AP and Bow for on-hit: confident. The\nitem stats line up with each build and the data\nagrees.\n• AP Kog being the better build in NA Challenger: a\nlean. AP beat on-hit in 2 of 3 patches, on a few\nhundred games from a handful of players.\n• Helm into kill lanes: an educated guess. Too few\nHelm games to test.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-331",
+    "type": "note",
+    "x": 1060,
+    "y": 890,
+    "text": "To test next",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-332",
+    "type": "note",
+    "x": 1060,
+    "y": 926,
+    "text": "• Matchups: Ring vs Bow into Draven, Lucian, Caitlyn\n(coachless \"vs\" filter, once samples allow).\n• AP vs on-hit Kog by enemy comp: tanky teams should\nfavour %HP W either way.\n• Re-pull when 26.21 has a full patch of games.",
+    "color": "#8f9a6e",
+    "size": 15,
+    "tab": "verdict"
+   },
+   {
+    "id": "note-333",
+    "type": "note",
+    "x": 0,
+    "y": 1080,
+    "text": "Sources:\nhttps://coachless.gg/items/kogmaw/starter?role=adc\n(Filters: NA or world, rank boxes, one patch at a time)\nhttps://stats2.u.gg/lol/1.5/<variant>/<patch>/\n  ranked_solo_5x5/96/1.5.0.json (behind u.gg's build page)\nhttps://wiki.leagueoflegends.com/en-us/Doran's_Bow, _Blade, _Helm, _Ring\nIcons: https://ddragon.leagueoflegends.com/cdn/16.21.1\nMade by tools/build-kogmaw-starters.mjs\nfrom data/kogmaw-adc-starters.json.",
+    "color": "#7f98ad",
+    "size": 12
+   }
+  ],
+  "source": {
+   "stats": "https://coachless.gg/items/kogmaw/starter?role=adc · https://u.gg/lol/champions/kogmaw/build/adc?region=na1",
+   "wiki": "https://wiki.leagueoflegends.com/en-us/",
+   "icons": "https://ddragon.leagueoflegends.com/cdn/ 16.21.1",
+   "pulledAt": "2026-10-23"
+  },
+  "tabs": [
+   {
+    "id": "lane",
+    "label": "1 · Lane math"
+   },
+   {
+    "id": "wpa",
+    "label": "2 · Who wins (coachless)"
+   },
+   {
+    "id": "build",
+    "label": "3 · Starter follows build (u.gg)"
+   },
+   {
+    "id": "verdict",
+    "label": "4 · Verdict"
+   }
+  ],
+  "activeTab": "verdict"
+ }
+}

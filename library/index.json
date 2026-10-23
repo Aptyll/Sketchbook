@@ -14,6 +14,11 @@
       "file": "kogmaw-adc-keystones-coachless.json",
       "title": "Kog'Maw ADC: keystones (coachless, NA)",
       "description": "Lethal Tempo, Press the Attack, Stormraider's Surge and more: coachless WPA for NA Gold+, Diamond+ and Master+, patches 16.17 to 16.20 added together, with noise ranges and LoL wiki numbers."
+    },
+    {
+      "file": "kogmaw-adc-starters.json",
+      "title": "Kog'Maw ADC: Doran's starter",
+      "description": "Bow, Blade, Helm or Ring? Four tabs: level 1 lane math from the LoL wiki, coachless WPA by rank (NA Gold+ to Master+, patches 16.18 to 16.20), u.gg's build variants up to NA Challenger, and a verdict per build and lane."
     }
   ]
 }

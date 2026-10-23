@@ -1,0 +1,130 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "question": "Challenger Kog'Maw ADC: Doran's Bow, Doran's Blade, Doran's Helm or Doran's Ring?",
+  "pulledAt": "2026-10-23",
+  "icons": {
+    "source": "https://ddragon.leagueoflegends.com/cdn/",
+    "version": "16.21.1",
+    "base": "https://ddragon.leagueoflegends.com/cdn/16.21.1/img/item/"
+  },
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Item stats and gold values from each item's LoL wiki page, checked against Data Dragon 16.21.1 item.json. Doran's Bow and Doran's Helm were added in V26.09."
+  },
+  "items": [
+    {
+      "key": "bow", "name": "Doran's Bow", "short": "dbow", "id": 1086, "cost": 400,
+      "stats": "+8 AD · +15% attack speed · +1.5% omnivamp",
+      "passive": "No passive (no Helping Hand).",
+      "ad": 8, "as": 0.15, "ap": 0, "hp": 0, "armor": 0, "mr": 0, "omnivamp": 0.015, "manaPerSec": 0,
+      "goldValue": 724, "efficiency": 181,
+      "history": "Added V26.09 (6 AD); AD raised to 8 in V26.10."
+    },
+    {
+      "key": "blade", "name": "Doran's Blade", "short": "dblade", "id": 1055, "cost": 450,
+      "stats": "+10 AD · +80 health · +2.5% omnivamp",
+      "passive": "No passive (Life Draining was folded into omnivamp in V26.01).",
+      "ad": 10, "as": 0, "ap": 0, "hp": 80, "armor": 0, "mr": 0, "omnivamp": 0.025, "manaPerSec": 0,
+      "goldValue": 678, "efficiency": 151,
+      "history": "V26.01: passive removed, 2.5% omnivamp added."
+    },
+    {
+      "key": "helm", "name": "Doran's Helm", "short": "dhelm", "id": 1120, "cost": 450,
+      "stats": "+150 health · +8 armor · +8 magic resist",
+      "passive": "Helping Hand: attacks deal 5 bonus physical damage to minions.",
+      "ad": 0, "as": 0, "ap": 0, "hp": 150, "armor": 8, "mr": 8, "omnivamp": 0, "manaPerSec": 0,
+      "goldValue": 720, "efficiency": 160,
+      "history": "Added V26.09 (110 HP, 10/10); 140 HP in V26.10; 150 HP and 8/8 in V26.13."
+    },
+    {
+      "key": "ring", "name": "Doran's Ring", "short": "dring", "id": 1056, "cost": 400,
+      "stats": "+18 AP · +90 health",
+      "passive": "Drain: +1 mana per second, 2 per second for 5 s after hitting a champion. Helping Hand: +5 damage to minions.",
+      "ad": 0, "as": 0, "ap": 18, "hp": 90, "armor": 0, "mr": 0, "omnivamp": 0, "manaPerSec": 1, "manaPerSecTrading": 2,
+      "goldValue": 900, "goldValueHigh": 1200, "efficiency": null,
+      "history": "Drain passive since V25.21."
+    }
+  ],
+  "kog": {
+    "source": "https://wiki.leagueoflegends.com/en-us/Kog'Maw",
+    "level1": { "hp": 635, "ad": 61, "attackSpeed": 0.665, "armor": 24, "mr": 33, "mana": 325, "manaRegenPer5": 8.75 },
+    "costs": { "Q": 40, "W": 40, "E": "40 to 100", "R": "40, +40 per stack (max 400)" },
+    "w": "Bio-Arcane Barrage: 8 s of bonus range and on-hit magic damage, 3 / 3.75 / 4.5 / 5.25 / 6% (+1.5% per 100 AP) of the target's max health.",
+    "qPassive": "Caustic Spittle passive: +5 / 10 / 15 / 20 / 25% attack speed.",
+    "attackSpeedNote": "Bonus attack speed uses ratio 0.665 (same as base)."
+  },
+  "coachless": {
+    "site": "coachless.gg",
+    "source": "https://coachless.gg/items/kogmaw/starter?role=adc",
+    "metric": "WPA = win rate minus the average pre-game win probability of those games (percentage points). Buys = games the starter was bought.",
+    "filterNote": "Filters panel: patch picked from the histogram (free tier: one patch at a time), Hide low occurrence turned off so Blade and Helm show. Starters under coachless's game threshold in a sample are missing from it.",
+    "columns": ["wpa", "buys", "pickRate", "preWP", "winRate"],
+    "samples": [
+      { "id": "na-gold", "label": "NA Gold+", "ranks": "Gold, Platinum, Emerald, Diamond, Master+", "region": "North America" },
+      { "id": "na-d", "label": "NA Diamond+", "ranks": "Diamond, Master+", "region": "North America" },
+      { "id": "na-m", "label": "NA Master+", "ranks": "Master+", "region": "North America" },
+      { "id": "world-d", "label": "World Diamond+", "ranks": "Diamond, Master+", "region": "All regions" }
+    ],
+    "patches": {
+      "16.18": {
+        "na-gold": { "Doran's Ring": [0.09, 2143, 15.6, 51.9, 52.0], "Doran's Blade": [-0.27, 998, 7.3, 52.9, 52.6], "Doran's Helm": [-0.42, 248, 1.8, 53.0, 52.6], "Doran's Bow": [-0.52, 10153, 74.1, 53.1, 52.6] },
+        "na-d": { "Doran's Ring": [-2.00, 578, 32.2, 51.2, 49.2], "Doran's Bow": [-4.37, 1067, 59.4, 51.8, 47.5] },
+        "na-m": { "Doran's Ring": [3.18, 245, 51.3, 51.3, 54.5], "Doran's Bow": [-4.42, 183, 38.5, 49.8, 45.4] },
+        "world-d": { "Doran's Ring": [1.13, 2971, 18.0, 51.3, 52.4], "Doran's Bow": [-0.10, 11912, 72.0, 52.1, 52.0], "Doran's Blade": [-0.42, 1057, 6.4, 52.0, 51.6], "Doran's Helm": [-2.30, 512, 3.1, 51.3, 49.0] }
+      },
+      "16.19": {
+        "na-gold": { "Doran's Bow": [-0.77, 10817, 75.6, 52.8, 52.0], "Doran's Ring": [-0.96, 2315, 16.2, 51.9, 51.0], "Doran's Helm": [-1.45, 223, 1.5, 53.3, 51.8], "Doran's Blade": [-3.20, 763, 5.4, 52.9, 49.7] },
+        "na-d": { "Doran's Bow": [-0.68, 1305, 60.3, 52.1, 51.4], "Doran's Ring": [-2.46, 693, 32.1, 51.5, 49.1] },
+        "na-m": { "Doran's Bow": [0.43, 211, 41.8, 49.6, 50.0], "Doran's Ring": [-1.21, 271, 54.2, 52.0, 50.7] },
+        "world-d": { "Doran's Bow": [0.35, 14231, 71.6, 52.6, 53.0], "Doran's Blade": [0.06, 1028, 5.2, 52.3, 52.3], "Doran's Helm": [-0.07, 583, 2.9, 52.0, 51.9], "Doran's Ring": [-1.20, 3941, 19.8, 51.9, 50.7] }
+      },
+      "16.20": {
+        "na-gold": { "Doran's Ring": [-0.04, 2666, 15.9, 51.5, 51.4], "Doran's Bow": [-0.14, 12742, 75.7, 52.8, 52.6], "Doran's Blade": [-0.51, 1054, 6.2, 52.8, 52.3], "Doran's Helm": [-3.30, 155, 0.9, 51.7, 48.4] },
+        "na-d": { "Doran's Ring": [2.56, 770, 34.7, 50.6, 53.2], "Doran's Bow": [-1.62, 1332, 59.7, 52.6, 51.0] },
+        "na-m": { "Doran's Ring": [5.12, 275, 61.4, 50.0, 55.1], "Doran's Bow": [-7.07, 166, 36.8, 51.0, 43.9] },
+        "world-d": { "Doran's Bow": [0.20, 15379, 71.1, 52.6, 52.8], "Doran's Ring": [-0.41, 4771, 22.1, 51.7, 51.3], "Doran's Helm": [-0.58, 512, 2.4, 52.4, 51.8], "Doran's Blade": [-1.57, 848, 3.9, 52.0, 50.4] }
+      }
+    }
+  },
+  "ugg": {
+    "site": "u.gg",
+    "source": "https://u.gg/lol/champions/kogmaw/build/adc?region=na1",
+    "dataSource": "https://stats2.u.gg/lol/1.5/<variant>/<patch>/ranked_solo_5x5/96/1.5.0.json (the JSON behind the build page), region 1 = NA, role 3 = ADC, rank keys 8 = All ranks, 11 = Diamond+, 14 = Master+, 1 = Challenger",
+    "metric": "u.gg shows one recommended starter per sample (its top pick by its own score), with games and wins. Everything else is games minus that starter. Raw win rates, Ranked Solo, NA.",
+    "patchNote": "u.gg labels patches 26.x; Riot's number (and the URL) is 16.x.",
+    "buildNote": "u.gg also splits the build into variants (AP, on-hit, AD, crit), each with its own starter. Variants overlap a little and are defined by finished items, so their win rates lean toward longer games.",
+    "samples": [
+      { "id": "all", "label": "All ranks", "rankParam": "overall" },
+      { "id": "d", "label": "Diamond+", "rankParam": "diamond_plus" },
+      { "id": "m", "label": "Master+", "rankParam": "master_plus" },
+      { "id": "c", "label": "Challenger", "rankParam": "challenger" }
+    ],
+    "columnsNote": "[champGames, champWins, starter, starterGames, starterWins]",
+    "patches": {
+      "16.18": {
+        "overall": { "all": [19227, 10062, "Doran's Bow", 13808, 7295], "d": [1659, 815, "Doran's Ring", 554, 276], "m": [827, 409, "Doran's Ring", 346, 186], "c": [329, 167, "Doran's Ring", 175, 96] },
+        "ap": { "all": [3325, 1714, "Doran's Ring", 2230, 1204], "d": [672, 328, "Doran's Ring", 552, 281], "m": [411, 209, "Doran's Ring", 347, 189], "c": [215, 110, "Doran's Ring", 179, 98] },
+        "onhit": { "all": [10420, 5913, "Doran's Bow", 8602, 4914], "d": [669, 345, "Doran's Blade", 33, 19], "m": [297, 151, "Doran's Blade", 15, 10], "c": [92, 44, "Doran's Helm", 10, 6] },
+        "ad": { "all": [6467, 2933, "Doran's Bow", 4947, 2272], "d": [539, 240, "Doran's Blade", 28, 14], "m": [264, 116, "Doran's Ring", 90, 44], "c": [103, 47, "Doran's Blade", 11, 6] }
+      },
+      "16.19": {
+        "overall": { "all": [23316, 12128, "Doran's Bow", 17148, 8996], "d": [2300, 1142, "Doran's Bow", 1353, 681], "m": [1047, 519, "Doran's Bow", 547, 275], "c": [466, 230, "Doran's Ring", 259, 129] },
+        "ap": { "all": [4009, 1987, "Doran's Ring", 2725, 1403], "d": [917, 455, "Doran's Ring", 720, 361], "m": [535, 272, "Doran's Ring", 416, 211], "c": [318, 160, "Doran's Ring", 254, 128] },
+        "onhit": { "all": [11917, 6794, "Doran's Bow", 10219, 5829], "d": [809, 447, "Doran's Helm", 38, 25], "m": [294, 158, "Doran's Bow", 259, 142], "c": [89, 45, "Doran's Shield", 1, 1] },
+        "ad": { "all": [7336, 3201, "Doran's Bow", 5567, 2447], "d": [740, 303, "Doran's Bow", 522, 221], "m": [356, 149, "Doran's Bow", 241, 103], "c": [149, 58, "Doran's Bow", 81, 33] }
+      },
+      "16.20": {
+        "overall": { "all": [24856, 13001, "Doran's Bow", 18482, 9779], "d": [2291, 1163, "Doran's Ring", 804, 420], "m": [928, 459, "Doran's Ring", 407, 221], "c": [378, 189, "Doran's Ring", 244, 136] },
+        "ap": { "all": [4420, 2200, "Doran's Ring", 3060, 1565], "d": [1003, 510, "Doran's Ring", 813, 420], "m": [498, 262, "Doran's Ring", 411, 220], "c": [296, 162, "Doran's Ring", 256, 141] },
+        "onhit": { "all": [13265, 7492, "Doran's Bow", 11236, 6392], "d": [842, 449, "Doran's Ring", 15, 11], "m": [277, 130, "Doran's Ring", 6, 5], "c": [68, 30, "Doran's Helm", 2, 2] },
+        "ad": { "all": [8806, 4079, "Doran's Bow", 6953, 3235], "d": [838, 379, "Doran's Bow", 573, 269], "m": [353, 160, "Doran's Ring", 121, 57], "c": [128, 51, "Doran's Ring", 73, 36] }
+      }
+    },
+    "variantCores": {
+      "ap": "Dusk and Dawn > Sorcerer's Shoes > Shadowflame",
+      "onhit": "Guinsoo's Rageblade > Berserker's Greaves > Navori Flickerblade / Terminus",
+      "ad": "Blade of the Ruined King > Berserker's Greaves > Guinsoo's Rageblade"
+    }
+  }
+}
