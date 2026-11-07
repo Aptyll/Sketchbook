@@ -3889,7 +3889,7 @@
     "id": "note-231",
     "type": "note",
     "x": 0,
-    "y": 218,
+    "y": 204,
     "text": "A diver chases you: who reaches who?",
     "color": "#e9dfc9",
     "size": 24,
@@ -3899,8 +3899,8 @@
     "id": "note-232",
     "type": "note",
     "x": 0,
-    "y": 250,
-    "text": "On-hit Kog, level 11, slowed 30%, vs a 390 move speed diver (2,400 HP).\nLine = distance to the diver. Tick = an auto you land.",
+    "y": 234,
+    "text": "On-hit Kog, level 11, slowed 30%.\nDiver: 390 move speed, 2,400 HP.\nLine = distance to the diver. Tick = an auto you land.",
     "color": "#7f98ad",
     "size": 13,
     "tab": "mid"
@@ -4955,8 +4955,8 @@
    {
     "id": "note-247",
     "type": "note",
-    "x": 56,
-    "y": 286.8,
+    "x": 510,
+    "y": 312.8,
     "text": "your range with W",
     "color": "#7f98ad",
     "size": 12,
@@ -4965,7 +4965,7 @@
    {
     "id": "ink-248",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2.5,
     "points": [
      [
@@ -5094,7 +5094,7 @@
    {
     "id": "ink-249",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2,
     "points": [
      [
@@ -5111,7 +5111,7 @@
    {
     "id": "ink-250",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2,
     "points": [
      [
@@ -5128,7 +5128,7 @@
    {
     "id": "ink-251",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2,
     "points": [
      [
@@ -5145,7 +5145,7 @@
    {
     "id": "ink-252",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2,
     "points": [
      [
@@ -5162,7 +5162,7 @@
    {
     "id": "ink-253",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 2,
     "points": [
      [
@@ -5179,24 +5179,24 @@
    {
     "id": "ink-254",
     "type": "stroke",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "width": 3,
     "points": [
      [
       420.4,
-      310.7
+      340.7
      ],
      [
       430.2,
-      310.2
+      340.2
      ],
      [
       439.3,
-      310
+      340
      ],
      [
       450,
-      310
+      340
      ]
     ],
     "tab": "mid"
@@ -5205,16 +5205,16 @@
     "id": "note-255",
     "type": "note",
     "x": 458,
-    "y": 300,
+    "y": 330,
     "text": "no keystone: 5 autos",
-    "color": "#7f98ad",
+    "color": "#e9dfc9",
     "size": 14,
     "tab": "mid"
    },
    {
     "id": "ink-256",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2.5,
     "points": [
      [
@@ -5347,7 +5347,7 @@
    {
     "id": "ink-257",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2,
     "points": [
      [
@@ -5364,7 +5364,7 @@
    {
     "id": "ink-258",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2,
     "points": [
      [
@@ -5381,7 +5381,7 @@
    {
     "id": "ink-259",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2,
     "points": [
      [
@@ -5398,7 +5398,7 @@
    {
     "id": "ink-260",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2,
     "points": [
      [
@@ -5415,7 +5415,7 @@
    {
     "id": "ink-261",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 2,
     "points": [
      [
@@ -5432,24 +5432,24 @@
    {
     "id": "ink-262",
     "type": "stroke",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "width": 3,
     "points": [
      [
       420.6,
-      334.1
+      364.1
      ],
      [
       429.3,
-      334.5
+      364.5
      ],
      [
       439.4,
-      334.4
+      364.4
      ],
      [
       450,
-      334
+      364
      ]
     ],
     "tab": "mid"
@@ -5458,9 +5458,9 @@
     "id": "note-263",
     "type": "note",
     "x": 458,
-    "y": 324,
+    "y": 354,
     "text": "Lethal Tempo: 5 autos",
-    "color": "#b8925a",
+    "color": "#7f98ad",
     "size": 14,
     "tab": "mid"
    },
@@ -5867,19 +5867,19 @@
     "points": [
      [
       420.3,
-      357.9
+      387.9
      ],
      [
       429.5,
-      357.9
+      387.9
      ],
      [
       440.2,
-      357.5
+      387.5
      ],
      [
       450,
-      358
+      388
      ]
     ],
     "tab": "mid"
@@ -5888,7 +5888,7 @@
     "id": "note-276",
     "type": "note",
     "x": 458,
-    "y": 348,
+    "y": 378,
     "text": "Stormraider's: 10 autos",
     "color": "#8f9a6e",
     "size": 14,

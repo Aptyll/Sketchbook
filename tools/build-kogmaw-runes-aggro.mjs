@@ -206,8 +206,8 @@ s.tab('mid');
   const maxGap = k.kog.range + 20;
   const xOf = (t) => cx + 50 + (t / 8) * (cw - 60);
   const yOf = (g) => top + ch - (g / maxGap) * ch;
-  s.note(cx, top - 82, 'A diver chases you: who reaches who?', { size: 24 });
-  s.note(cx, top - 50, `On-hit Kog, level 11, slowed 30%, vs a 390 move speed diver (${fmtInt(bruiser.hp)} HP).\nLine = distance to the diver. Tick = an auto you land.`, { size: 13, color: 'Slate' });
+  s.note(cx, top - 96, 'A diver chases you: who reaches who?', { size: 24 });
+  s.note(cx, top - 66, `On-hit Kog, level 11, slowed 30%.\nDiver: 390 move speed, ${fmtInt(bruiser.hp)} HP.\nLine = distance to the diver. Tick = an auto you land.`, { size: 13, color: 'Slate' });
   // axes
   s.wobblyLine([[cx + 50, yOf(0)], [cx + cw, yOf(0)]], { color: 'Parchment', width: 1 });
   s.wobblyLine([[cx + 50, yOf(0)], [cx + 50, yOf(maxGap)]], { color: 'Parchment', width: 1 });
@@ -217,10 +217,10 @@ s.tab('mid');
     s.note(cx - 4, yOf(g) - 9, String(g), { size: 12, color: 'Slate' });
   }
   s.note(cx + 56, yOf(175) + 4, 'diver reaches you', { size: 12, color: 'Red chalk' });
-  s.note(cx + 56, yOf(k.kog.range) - 22, 'your range with W', { size: 12, color: 'Slate' });
+  s.note(cx + cw - 130, yOf(k.kog.range) + 4, 'your range with W', { size: 12, color: 'Slate' });
   const lines = [
-    { key: null, label: 'no keystone', color: 'Slate', data: k.base },
-    { key: 'Lethal Tempo', label: 'Lethal Tempo', color: 'Sepia', data: k.rows['Lethal Tempo'] },
+    { key: null, label: 'no keystone', color: 'Parchment', data: k.base },
+    { key: 'Lethal Tempo', label: 'Lethal Tempo', color: 'Slate', data: k.rows['Lethal Tempo'] },
     { key: "Stormraider's Surge", label: "Stormraider's", color: 'Moss', data: k.rows["Stormraider's Surge"] },
   ];
   lines.forEach((ln, li) => {
@@ -230,8 +230,8 @@ s.tab('mid');
       s.stroke([[xOf(t), yOf(g) - 6], [xOf(t), yOf(g) + 6]], { color: ln.color, width: 2 });
     });
     const last = ln.data.path[ln.data.path.length - 1];
-    s.wobblyLine([[cx + 420, top + 10 + li * 24], [cx + 450, top + 10 + li * 24]], { color: ln.color, width: 3 });
-    s.note(cx + 458, top + li * 24, `${ln.label}: ${ln.data.autos} autos`, { size: 14, color: ln.color });
+    s.wobblyLine([[cx + 420, top + 40 + li * 24], [cx + 450, top + 40 + li * 24]], { color: ln.color, width: 3 });
+    s.note(cx + 458, top + 30 + li * 24, `${ln.label}: ${ln.data.autos} autos`, { size: 14, color: ln.color });
   });
   const stormAt = k.rows["Stormraider's Surge"].stormAt;
   s.arrow([[xOf(stormAt) + 30, yOf(60)], [xOf(stormAt), yOf(160)]], { color: 'Moss', width: 2 });
