@@ -1,0 +1,9222 @@
+{
+ "format": "sketchbook-page",
+ "version": 1,
+ "page": {
+  "title": "Kog'Maw ADC: runes for aggression",
+  "fit": true,
+  "items": [
+   {
+    "id": "note-1",
+    "type": "note",
+    "x": 0,
+    "y": 0,
+    "text": "Kog'Maw ADC · runes for aggression",
+    "color": "#e9dfc9",
+    "size": 40
+   },
+   {
+    "id": "ink-2",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      4.5,
+      60.3
+     ],
+     [
+      15.4,
+      60.3
+     ],
+     [
+      28.1,
+      59.5
+     ],
+     [
+      40.6,
+      60.4
+     ],
+     [
+      52.3,
+      59.9
+     ],
+     [
+      63.4,
+      59.3
+     ],
+     [
+      76.5,
+      59.9
+     ],
+     [
+      88.3,
+      59.3
+     ],
+     [
+      100.3,
+      59.6
+     ],
+     [
+      112.1,
+      59.6
+     ],
+     [
+      124,
+      58.6
+     ],
+     [
+      135.8,
+      59.2
+     ],
+     [
+      147.3,
+      59.5
+     ],
+     [
+      160,
+      58.8
+     ],
+     [
+      172.7,
+      58.1
+     ],
+     [
+      183.7,
+      58.5
+     ],
+     [
+      195.2,
+      59.1
+     ],
+     [
+      208.3,
+      59.3
+     ],
+     [
+      219.9,
+      57.8
+     ],
+     [
+      231.5,
+      58.4
+     ],
+     [
+      244.3,
+      57.6
+     ],
+     [
+      255.3,
+      58.4
+     ],
+     [
+      267.7,
+      57.8
+     ],
+     [
+      280.8,
+      58.7
+     ],
+     [
+      292.7,
+      58
+     ],
+     [
+      304.6,
+      57.2
+     ],
+     [
+      316.6,
+      58.1
+     ],
+     [
+      327.5,
+      57.4
+     ],
+     [
+      339.6,
+      58.3
+     ],
+     [
+      352.4,
+      57.4
+     ],
+     [
+      364.7,
+      56.6
+     ],
+     [
+      376.2,
+      57.6
+     ],
+     [
+      388.5,
+      57.4
+     ],
+     [
+      399.4,
+      57.5
+     ],
+     [
+      411.7,
+      56.5
+     ],
+     [
+      423.7,
+      56.9
+     ],
+     [
+      436.3,
+      57.3
+     ],
+     [
+      447.7,
+      57.2
+     ],
+     [
+      459.6,
+      57.1
+     ],
+     [
+      472.2,
+      56.5
+     ],
+     [
+      484,
+      55.8
+     ],
+     [
+      496.5,
+      56.9
+     ],
+     [
+      508,
+      57.1
+     ],
+     [
+      520.3,
+      56.6
+     ],
+     [
+      531.5,
+      55.4
+     ],
+     [
+      544,
+      56.9
+     ],
+     [
+      556.3,
+      55.9
+     ],
+     [
+      568.4,
+      55.9
+     ],
+     [
+      580.3,
+      55.9
+     ],
+     [
+      592,
+      55.7
+     ],
+     [
+      604.1,
+      56.2
+     ],
+     [
+      616.5,
+      55.2
+     ],
+     [
+      628,
+      55.3
+     ],
+     [
+      640.4,
+      54.8
+     ],
+     [
+      652.3,
+      55.9
+     ],
+     [
+      664.6,
+      55.2
+     ],
+     [
+      676.1,
+      54.5
+     ],
+     [
+      688.7,
+      54.9
+     ],
+     [
+      700,
+      55
+     ]
+    ]
+   },
+   {
+    "id": "note-3",
+    "type": "note",
+    "x": 0,
+    "y": 72,
+    "text": "Goal: pressure from level 1, win the mid-game, highest skill ceiling.\nJudged from LoL wiki numbers (patch 26.22) run through a small\nfight model, not from win rates. Win rates: tab 5 only (u.gg NA, 26.21).\nPulled 2026-11-07.",
+    "color": "#b8925a",
+    "size": 15
+   },
+   {
+    "id": "note-4",
+    "type": "note",
+    "x": 330,
+    "y": 226,
+    "text": "Levels 1 to 3\ndamage added",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "score"
+   },
+   {
+    "id": "note-5",
+    "type": "note",
+    "x": 560,
+    "y": 226,
+    "text": "Level 6 all-in\ndamage added",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "score"
+   },
+   {
+    "id": "note-6",
+    "type": "note",
+    "x": 790,
+    "y": 226,
+    "text": "Mid-game, slowed\ndamage before caught",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "score"
+   },
+   {
+    "id": "note-7",
+    "type": "note",
+    "x": 1020,
+    "y": 226,
+    "text": "Mid-game, standing\ndamage in 8 s",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "score"
+   },
+   {
+    "id": "note-8",
+    "type": "note",
+    "x": 1250,
+    "y": 226,
+    "text": "Skill ceiling\n(judgment, 1 to 5)",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "score"
+   },
+   {
+    "id": "img-9",
+    "type": "image",
+    "x": 0,
+    "y": 290,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-10",
+    "type": "note",
+    "x": 56,
+    "y": 294,
+    "text": "Stormraider's",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-11",
+    "type": "note",
+    "x": 56,
+    "y": 322,
+    "text": "Sorcery",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "note-12",
+    "type": "note",
+    "x": 330,
+    "y": 292,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-13",
+    "type": "note",
+    "x": 560,
+    "y": 292,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-14",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 7,
+    "points": [
+     [
+      789.9,
+      323.8
+     ],
+     [
+      802.7,
+      324
+     ],
+     [
+      814.7,
+      323.9
+     ],
+     [
+      827.3,
+      324
+     ],
+     [
+      839.7,
+      324.2
+     ],
+     [
+      852,
+      324.1
+     ],
+     [
+      864.5,
+      324
+     ],
+     [
+      876.7,
+      323.9
+     ],
+     [
+      889.3,
+      324.1
+     ],
+     [
+      901.7,
+      323.9
+     ],
+     [
+      914.1,
+      323.8
+     ],
+     [
+      926.6,
+      324
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-15",
+    "type": "note",
+    "x": 790,
+    "y": 292,
+    "text": "+72%",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-16",
+    "type": "note",
+    "x": 1020,
+    "y": 292,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-17",
+    "type": "note",
+    "x": 1250,
+    "y": 294,
+    "text": "●●●●●",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-18",
+    "type": "note",
+    "x": 1370,
+    "y": 292,
+    "text": "You choose the 3 s burst that fires it, then\nspend 4 s of speed: chase, dodge or\nre-space.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-19",
+    "type": "image",
+    "x": 0,
+    "y": 354,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-20",
+    "type": "note",
+    "x": 56,
+    "y": 358,
+    "text": "Electrocute",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-21",
+    "type": "note",
+    "x": 56,
+    "y": 386,
+    "text": "Domination",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-22",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 7,
+    "points": [
+     [
+      330.2,
+      388.2
+     ],
+     [
+      342,
+      388.1
+     ],
+     [
+      354.1,
+      387.8
+     ],
+     [
+      366.6,
+      387.7
+     ],
+     [
+      378.6,
+      388.1
+     ],
+     [
+      390.5,
+      388
+     ],
+     [
+      403.1,
+      388.1
+     ],
+     [
+      414.8,
+      388.3
+     ],
+     [
+      427,
+      387.9
+     ],
+     [
+      439.5,
+      387.9
+     ],
+     [
+      451.4,
+      388.1
+     ],
+     [
+      463.8,
+      388.3
+     ],
+     [
+      475.8,
+      387.7
+     ],
+     [
+      488.1,
+      388.1
+     ],
+     [
+      500,
+      388
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-23",
+    "type": "note",
+    "x": 330,
+    "y": 356,
+    "text": "+28%",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-24",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 7,
+    "points": [
+     [
+      560.2,
+      387.9
+     ],
+     [
+      572.7,
+      388
+     ],
+     [
+      585.5,
+      387.9
+     ],
+     [
+      598.2,
+      387.8
+     ],
+     [
+      611.4,
+      387.9
+     ],
+     [
+      624.1,
+      387.8
+     ],
+     [
+      636.9,
+      388
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-25",
+    "type": "note",
+    "x": 560,
+    "y": 356,
+    "text": "+11%",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-26",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      790.2,
+      388.3
+     ],
+     [
+      799.6,
+      388.1
+     ],
+     [
+      808.8,
+      388
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-27",
+    "type": "note",
+    "x": 790,
+    "y": 356,
+    "text": "+10%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-28",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1020.1,
+      387.8
+     ],
+     [
+      1031.7,
+      388.3
+     ],
+     [
+      1043.5,
+      388.3
+     ],
+     [
+      1055,
+      388
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-29",
+    "type": "note",
+    "x": 1020,
+    "y": 356,
+    "text": "+5%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-30",
+    "type": "note",
+    "x": 1250,
+    "y": 358,
+    "text": "●●●○○",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-31",
+    "type": "note",
+    "x": 1370,
+    "y": 356,
+    "text": "Three hits in 3 s, then 20 s down. One good\ntrade per wave.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-32",
+    "type": "image",
+    "x": 0,
+    "y": 418,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-33",
+    "type": "note",
+    "x": 56,
+    "y": 422,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-34",
+    "type": "note",
+    "x": 56,
+    "y": 450,
+    "text": "Precision",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-35",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 7,
+    "points": [
+     [
+      330,
+      451.8
+     ],
+     [
+      342.4,
+      452
+     ],
+     [
+      355.1,
+      452.2
+     ],
+     [
+      367.3,
+      451.9
+     ],
+     [
+      379.5,
+      452
+     ],
+     [
+      391.9,
+      452.3
+     ],
+     [
+      404.5,
+      452.2
+     ],
+     [
+      417.2,
+      452.2
+     ],
+     [
+      429.5,
+      452.2
+     ],
+     [
+      442,
+      452
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-36",
+    "type": "note",
+    "x": 330,
+    "y": 420,
+    "text": "+16%",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-37",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 7,
+    "points": [
+     [
+      560.2,
+      452.2
+     ],
+     [
+      572.2,
+      451.8
+     ],
+     [
+      584.4,
+      451.8
+     ],
+     [
+      596.4,
+      451.8
+     ],
+     [
+      608.3,
+      451.8
+     ],
+     [
+      620.2,
+      452.2
+     ],
+     [
+      632.4,
+      452
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-38",
+    "type": "note",
+    "x": 560,
+    "y": 420,
+    "text": "+11%",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-39",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      790.1,
+      451.9
+     ],
+     [
+      806.7,
+      452
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-40",
+    "type": "note",
+    "x": 790,
+    "y": 420,
+    "text": "+9%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-41",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 7,
+    "points": [
+     [
+      1020,
+      452
+     ],
+     [
+      1031.3,
+      452.3
+     ],
+     [
+      1043,
+      451.7
+     ],
+     [
+      1054.7,
+      451.7
+     ],
+     [
+      1065.9,
+      451.8
+     ],
+     [
+      1077.4,
+      452
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-42",
+    "type": "note",
+    "x": 1020,
+    "y": 420,
+    "text": "+8%",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-43",
+    "type": "note",
+    "x": 1250,
+    "y": 422,
+    "text": "●●●●○",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-44",
+    "type": "note",
+    "x": 1370,
+    "y": 420,
+    "text": "Short 6 s cooldown: many small 2v2 trades,\neach one a timing test.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-45",
+    "type": "image",
+    "x": 0,
+    "y": 482,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-46",
+    "type": "note",
+    "x": 56,
+    "y": 486,
+    "text": "First Strike",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-47",
+    "type": "note",
+    "x": 56,
+    "y": 514,
+    "text": "Inspiration",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-48",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      329.8,
+      516.1
+     ],
+     [
+      342.2,
+      515.8
+     ],
+     [
+      353.5,
+      516.1
+     ],
+     [
+      365.7,
+      516.3
+     ],
+     [
+      377.6,
+      516
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-49",
+    "type": "note",
+    "x": 330,
+    "y": 484,
+    "text": "+7%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-50",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      560.1,
+      515.8
+     ],
+     [
+      573.3,
+      516
+     ],
+     [
+      586.7,
+      516
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-51",
+    "type": "note",
+    "x": 560,
+    "y": 484,
+    "text": "+4%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-52",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      789.9,
+      515.7
+     ],
+     [
+      803.2,
+      516
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-53",
+    "type": "note",
+    "x": 790,
+    "y": 484,
+    "text": "+7%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-54",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1019.7,
+      515.8
+     ],
+     [
+      1031.3,
+      516
+     ],
+     [
+      1042.5,
+      516
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-55",
+    "type": "note",
+    "x": 1020,
+    "y": 484,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-56",
+    "type": "note",
+    "x": 1250,
+    "y": 486,
+    "text": "●●●●●",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-57",
+    "type": "note",
+    "x": 1370,
+    "y": 484,
+    "text": "Only pays if you land the first hit. Rewards\nusing W's range edge. Gold snowballs.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-58",
+    "type": "image",
+    "x": 0,
+    "y": 546,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-59",
+    "type": "note",
+    "x": 56,
+    "y": 550,
+    "text": "Arcane Comet",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-60",
+    "type": "note",
+    "x": 56,
+    "y": 578,
+    "text": "Sorcery",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-61",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      330.1,
+      579.8
+     ],
+     [
+      343.1,
+      579.9
+     ],
+     [
+      355.8,
+      580.1
+     ],
+     [
+      368.7,
+      580
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-62",
+    "type": "note",
+    "x": 330,
+    "y": 548,
+    "text": "+6%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-63",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      559.8,
+      580
+     ],
+     [
+      573,
+      580.2
+     ],
+     [
+      586.1,
+      579.8
+     ],
+     [
+      599.3,
+      580
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-64",
+    "type": "note",
+    "x": 560,
+    "y": 548,
+    "text": "+6%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-65",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      789.7,
+      579.8
+     ],
+     [
+      801.7,
+      580
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-66",
+    "type": "note",
+    "x": 790,
+    "y": 548,
+    "text": "+6%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-67",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1019.8,
+      580.1
+     ],
+     [
+      1031.1,
+      579.8
+     ],
+     [
+      1041.8,
+      580
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-68",
+    "type": "note",
+    "x": 1020,
+    "y": 548,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-69",
+    "type": "note",
+    "x": 1250,
+    "y": 550,
+    "text": "●●●○○",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-70",
+    "type": "note",
+    "x": 1370,
+    "y": 548,
+    "text": "Up to double damage when Q or R lands from\nmax range.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-71",
+    "type": "image",
+    "x": 0,
+    "y": 610,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-72",
+    "type": "note",
+    "x": 56,
+    "y": 614,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-73",
+    "type": "note",
+    "x": 56,
+    "y": 642,
+    "text": "Precision",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "note-74",
+    "type": "note",
+    "x": 330,
+    "y": 612,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-75",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 7,
+    "points": [
+     [
+      559.9,
+      644.1
+     ],
+     [
+      571.5,
+      643.8
+     ],
+     [
+      583.2,
+      644.2
+     ],
+     [
+      595.1,
+      643.9
+     ],
+     [
+      606.2,
+      644.1
+     ],
+     [
+      617.8,
+      644.2
+     ],
+     [
+      629.5,
+      643.9
+     ],
+     [
+      641.4,
+      644
+     ],
+     [
+      652.9,
+      644.1
+     ],
+     [
+      664.6,
+      644
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-76",
+    "type": "note",
+    "x": 560,
+    "y": 612,
+    "text": "+15%",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-77",
+    "type": "note",
+    "x": 790,
+    "y": 612,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-78",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 7,
+    "points": [
+     [
+      1020.1,
+      644
+     ],
+     [
+      1031.2,
+      643.7
+     ],
+     [
+      1042.5,
+      643.7
+     ],
+     [
+      1054.1,
+      644.1
+     ],
+     [
+      1065.5,
+      643.9
+     ],
+     [
+      1076.9,
+      644.2
+     ],
+     [
+      1088,
+      644.2
+     ],
+     [
+      1099.5,
+      643.9
+     ],
+     [
+      1110.7,
+      644.1
+     ],
+     [
+      1122.2,
+      644
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-79",
+    "type": "note",
+    "x": 1020,
+    "y": 612,
+    "text": "+15%",
+    "color": "#8f9a6e",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-80",
+    "type": "note",
+    "x": 1250,
+    "y": 614,
+    "text": "●●○○○",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-81",
+    "type": "note",
+    "x": 1370,
+    "y": 612,
+    "text": "Pays in long, even fights. Mostly automatic\nonce you are attacking.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-82",
+    "type": "image",
+    "x": 0,
+    "y": 674,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/DeathfireTouch/DEATHFIRE_TOUCH_KEYSTONE.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-83",
+    "type": "note",
+    "x": 56,
+    "y": 678,
+    "text": "Deathfire",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-84",
+    "type": "note",
+    "x": 56,
+    "y": 706,
+    "text": "Sorcery",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-85",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      329.7,
+      708
+     ],
+     [
+      339.8,
+      708
+     ],
+     [
+      349.6,
+      708
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-86",
+    "type": "note",
+    "x": 330,
+    "y": 676,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-87",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      559.9,
+      708
+     ],
+     [
+      571,
+      708.1
+     ],
+     [
+      581.8,
+      707.8
+     ],
+     [
+      592.9,
+      707.8
+     ],
+     [
+      603.9,
+      708
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-88",
+    "type": "note",
+    "x": 560,
+    "y": 676,
+    "text": "+6%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-89",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      790,
+      708.3
+     ],
+     [
+      804,
+      708
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-90",
+    "type": "note",
+    "x": 790,
+    "y": 676,
+    "text": "+7%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-91",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1019.8,
+      707.9
+     ],
+     [
+      1031.8,
+      708
+     ],
+     [
+      1043.8,
+      707.7
+     ],
+     [
+      1055.2,
+      708
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-92",
+    "type": "note",
+    "x": 1020,
+    "y": 676,
+    "text": "+5%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-93",
+    "type": "note",
+    "x": 1250,
+    "y": 678,
+    "text": "●●○○○",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-94",
+    "type": "note",
+    "x": 1370,
+    "y": 676,
+    "text": "A burn on Q, E and R. Kog's damage is in his\nautos, not his spells.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-95",
+    "type": "image",
+    "x": 0,
+    "y": 738,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-96",
+    "type": "note",
+    "x": 56,
+    "y": 742,
+    "text": "Conqueror",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-97",
+    "type": "note",
+    "x": 56,
+    "y": 770,
+    "text": "Precision",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-98",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      329.8,
+      771.9
+     ],
+     [
+      345.7,
+      772
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-99",
+    "type": "note",
+    "x": 330,
+    "y": 740,
+    "text": "+2%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-100",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 7,
+    "points": [
+     [
+      559.9,
+      772.1
+     ],
+     [
+      570.9,
+      771.9
+     ],
+     [
+      582.1,
+      771.7
+     ],
+     [
+      592.8,
+      772
+     ],
+     [
+      603.8,
+      771.9
+     ],
+     [
+      614.6,
+      772
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-101",
+    "type": "note",
+    "x": 560,
+    "y": 740,
+    "text": "+8%",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-102",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      790.3,
+      772.2
+     ],
+     [
+      794.6,
+      772
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-103",
+    "type": "note",
+    "x": 790,
+    "y": 740,
+    "text": "+2%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-104",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1019.9,
+      772.3
+     ],
+     [
+      1030.5,
+      772.3
+     ],
+     [
+      1041.6,
+      772
+     ],
+     [
+      1052.3,
+      772
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-105",
+    "type": "note",
+    "x": 1020,
+    "y": 740,
+    "text": "+5%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-106",
+    "type": "note",
+    "x": 1250,
+    "y": 742,
+    "text": "●○○○○",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-107",
+    "type": "note",
+    "x": 1370,
+    "y": 740,
+    "text": "Ranged gets 1 stack per attack: 12 attacks\nto fill.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-108",
+    "type": "image",
+    "x": 0,
+    "y": 802,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-109",
+    "type": "note",
+    "x": 56,
+    "y": 806,
+    "text": "Dark Harvest",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-110",
+    "type": "note",
+    "x": 56,
+    "y": 834,
+    "text": "Domination",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "note-111",
+    "type": "note",
+    "x": 330,
+    "y": 804,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-112",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      559.7,
+      836
+     ],
+     [
+      569.4,
+      836.2
+     ],
+     [
+      578.3,
+      836
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-113",
+    "type": "note",
+    "x": 560,
+    "y": 804,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-114",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      790.2,
+      836.1
+     ],
+     [
+      794.9,
+      836
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-115",
+    "type": "note",
+    "x": 790,
+    "y": 804,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-116",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1020.2,
+      836
+     ],
+     [
+      1037.1,
+      836
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-117",
+    "type": "note",
+    "x": 1020,
+    "y": 804,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-118",
+    "type": "note",
+    "x": 1250,
+    "y": 806,
+    "text": "●●○○○",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-119",
+    "type": "note",
+    "x": 1370,
+    "y": 804,
+    "text": "One hit on a low target every 35 s.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-120",
+    "type": "image",
+    "x": 0,
+    "y": 866,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-121",
+    "type": "note",
+    "x": 56,
+    "y": 870,
+    "text": "Hail of Blades",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-122",
+    "type": "note",
+    "x": 56,
+    "y": 898,
+    "text": "Domination",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "ink-123",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      329.7,
+      899.8
+     ],
+     [
+      339,
+      900.1
+     ],
+     [
+      348.1,
+      900
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-124",
+    "type": "note",
+    "x": 330,
+    "y": 868,
+    "text": "+3%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-125",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      559.8,
+      900.1
+     ],
+     [
+      573.1,
+      900
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-126",
+    "type": "note",
+    "x": 560,
+    "y": 868,
+    "text": "+2%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-127",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      789.9,
+      900.1
+     ],
+     [
+      798.4,
+      900
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-128",
+    "type": "note",
+    "x": 790,
+    "y": 868,
+    "text": "+4%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "ink-129",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 7,
+    "points": [
+     [
+      1019.8,
+      900.3
+     ],
+     [
+      1033.6,
+      900
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-130",
+    "type": "note",
+    "x": 1020,
+    "y": 868,
+    "text": "+2%",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-131",
+    "type": "note",
+    "x": 1250,
+    "y": 870,
+    "text": "●○○○○",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-132",
+    "type": "note",
+    "x": 1370,
+    "y": 868,
+    "text": "Two fast attacks, then 10 s down. Kog has no\nattack reset to extend it.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "img-133",
+    "type": "image",
+    "x": 0,
+    "y": 930,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png",
+    "tab": "score"
+   },
+   {
+    "id": "note-134",
+    "type": "note",
+    "x": 56,
+    "y": 934,
+    "text": "Fleet Footwork",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "score"
+   },
+   {
+    "id": "note-135",
+    "type": "note",
+    "x": 56,
+    "y": 962,
+    "text": "Precision",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "score"
+   },
+   {
+    "id": "note-136",
+    "type": "note",
+    "x": 330,
+    "y": 932,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-137",
+    "type": "note",
+    "x": 560,
+    "y": 932,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-138",
+    "type": "note",
+    "x": 790,
+    "y": 932,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-139",
+    "type": "note",
+    "x": 1020,
+    "y": 932,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-140",
+    "type": "note",
+    "x": 1250,
+    "y": 934,
+    "text": "●○○○○",
+    "color": "#7f98ad",
+    "size": 20,
+    "tab": "score"
+   },
+   {
+    "id": "note-141",
+    "type": "note",
+    "x": 1370,
+    "y": 932,
+    "text": "A small heal. No damage since its rework.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "ink-142",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      9.5,
+      299
+     ],
+     [
+      15.3,
+      295.5
+     ],
+     [
+      29.1,
+      293
+     ],
+     [
+      39.2,
+      289.8
+     ],
+     [
+      57.1,
+      288.2
+     ],
+     [
+      72.2,
+      286.1
+     ],
+     [
+      89,
+      284.4
+     ],
+     [
+      106.6,
+      282.9
+     ],
+     [
+      125.7,
+      282.4
+     ],
+     [
+      144.9,
+      282.3
+     ],
+     [
+      164.3,
+      281.5
+     ],
+     [
+      184.1,
+      281.7
+     ],
+     [
+      202.3,
+      283.2
+     ],
+     [
+      220.5,
+      284.5
+     ],
+     [
+      236.7,
+      286.5
+     ],
+     [
+      255.7,
+      287.9
+     ],
+     [
+      268.2,
+      290.8
+     ],
+     [
+      279.1,
+      293.9
+     ],
+     [
+      292.4,
+      296.6
+     ],
+     [
+      302.2,
+      299.8
+     ],
+     [
+      303.3,
+      303.6
+     ],
+     [
+      313,
+      307
+     ],
+     [
+      316.2,
+      310.7
+     ],
+     [
+      313.4,
+      314.4
+     ],
+     [
+      310.4,
+      318
+     ],
+     [
+      302.8,
+      321.4
+     ],
+     [
+      302.6,
+      325.4
+     ],
+     [
+      288.4,
+      328.2
+     ],
+     [
+      277.6,
+      331.2
+     ],
+     [
+      262.6,
+      333.6
+     ],
+     [
+      248.6,
+      336.1
+     ],
+     [
+      234.6,
+      338.8
+     ],
+     [
+      215.4,
+      339.9
+     ],
+     [
+      198,
+      341.7
+     ],
+     [
+      178.8,
+      342.7
+     ],
+     [
+      159.1,
+      343.8
+     ],
+     [
+      138.8,
+      343.6
+     ],
+     [
+      119.3,
+      342.6
+     ],
+     [
+      98.9,
+      342.3
+     ],
+     [
+      80.6,
+      340.7
+     ],
+     [
+      62.1,
+      339.1
+     ],
+     [
+      48.4,
+      336.2
+     ],
+     [
+      30.5,
+      334.4
+     ],
+     [
+      21.3,
+      330.9
+     ],
+     [
+      4.2,
+      328.6
+     ],
+     [
+      -5.7,
+      325.2
+     ],
+     [
+      -7.2,
+      321.3
+     ],
+     [
+      -13.7,
+      317.7
+     ],
+     [
+      -16.4,
+      314
+     ],
+     [
+      -15.3,
+      310.3
+     ],
+     [
+      -12.9,
+      306.6
+     ],
+     [
+      -10.3,
+      302.9
+     ],
+     [
+      -7.7,
+      299
+     ],
+     [
+      6.7,
+      296.1
+     ],
+     [
+      13.7,
+      292.3
+     ],
+     [
+      29.9,
+      289.9
+     ],
+     [
+      45.4,
+      287.5
+     ]
+    ],
+    "tab": "score"
+   },
+   {
+    "id": "note-143",
+    "type": "note",
+    "x": 1760,
+    "y": 226,
+    "text": "Verdict",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "score"
+   },
+   {
+    "id": "note-144",
+    "type": "note",
+    "x": 1760,
+    "y": 266,
+    "text": "• Stormraider's Surge is the pick for your goal. It\nadds no damage, but when a diver slows you it lets you\nland +72% more damage before you are caught (tab 3).\nNothing else is close: the best damage rune adds +10%.\n• It fires from level 1: three W autos are already 25%\nof a level 1 ADC's HP. In lane it is a free chase or a\nfree escape after every trade.\n• Press the Attack is the lane-bully swap: +16% damage\nin level 1 to 3 trades, every 6 s.\n• Electrocute hits hardest early (+28%) but falls off\nby mid-game and leaves Precision. Lane-only.\n• Lethal Tempo is the most damage when nobody touches\nyou (+15% over 8 s), and the least reward for early\naggression: it never fills in a short trade.\n• Skip Hail of Blades, Fleet and Conqueror on Kog.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "score"
+   },
+   {
+    "id": "note-145",
+    "type": "note",
+    "x": 0,
+    "y": 1004,
+    "text": "Damage added = the same trade with the keystone vs with no keystone, against a typical enemy ADC (levels 1 to 6)\nor a 2,400 HP diver (mid-game, tab 3). \"Standing\" = 8 s of free hitting on an enemy ADC. Sorted by goal: each column once, the slowed mid-game twice.\nSkill ceiling is a judgment call (reason next to each). Everything else is computed.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "score"
+   },
+   {
+    "id": "note-146",
+    "type": "note",
+    "x": 300,
+    "y": 208,
+    "text": "Level 1 trade",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-147",
+    "type": "note",
+    "x": 300,
+    "y": 238,
+    "text": "W on, 3 autos (~2.7 s)\nno keystone: 190 damage",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-148",
+    "type": "note",
+    "x": 600,
+    "y": 208,
+    "text": "Level 3 trade",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-149",
+    "type": "note",
+    "x": 600,
+    "y": 238,
+    "text": "Q, then 3 autos with W on\nno keystone: 271 damage",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-150",
+    "type": "note",
+    "x": 900,
+    "y": 208,
+    "text": "Level 6 all-in",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "lane"
+   },
+   {
+    "id": "note-151",
+    "type": "note",
+    "x": 900,
+    "y": 238,
+    "text": "Q, E, R and a full 8 s W\nno keystone: 820 damage",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-152",
+    "type": "image",
+    "x": 0,
+    "y": 290,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-153",
+    "type": "note",
+    "x": 44,
+    "y": 294,
+    "text": "Electrocute",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-154",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      300,
+      308.2
+     ],
+     [
+      311.9,
+      307.9
+     ],
+     [
+      323.2,
+      307.9
+     ],
+     [
+      334.8,
+      308.2
+     ],
+     [
+      346.7,
+      308.1
+     ],
+     [
+      358.3,
+      308.2
+     ],
+     [
+      370.1,
+      308.3
+     ],
+     [
+      382.1,
+      308.1
+     ],
+     [
+      393.7,
+      307.9
+     ],
+     [
+      405.5,
+      308
+     ],
+     [
+      417,
+      307.9
+     ],
+     [
+      428.9,
+      308.2
+     ],
+     [
+      440.4,
+      308.2
+     ],
+     [
+      452.4,
+      308.3
+     ],
+     [
+      463.9,
+      308.2
+     ],
+     [
+      475.8,
+      308.2
+     ],
+     [
+      487.5,
+      307.9
+     ],
+     [
+      498.7,
+      308
+     ],
+     [
+      510.7,
+      308
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-155",
+    "type": "note",
+    "x": 520.7,
+    "y": 296,
+    "text": "+56 (+29%)",
+    "color": "#8f9a6e",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-156",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      599.9,
+      308.2
+     ],
+     [
+      612.1,
+      307.8
+     ],
+     [
+      624,
+      307.9
+     ],
+     [
+      636,
+      307.9
+     ],
+     [
+      648.2,
+      308.2
+     ],
+     [
+      660.2,
+      308.3
+     ],
+     [
+      672.3,
+      308.3
+     ],
+     [
+      684,
+      308.1
+     ],
+     [
+      696.2,
+      307.9
+     ],
+     [
+      708.2,
+      307.8
+     ],
+     [
+      720,
+      308.1
+     ],
+     [
+      732.3,
+      308.1
+     ],
+     [
+      744.6,
+      308
+     ],
+     [
+      756.2,
+      308
+     ],
+     [
+      768.3,
+      308
+     ],
+     [
+      780.5,
+      307.8
+     ],
+     [
+      792.5,
+      308
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-157",
+    "type": "note",
+    "x": 802.5,
+    "y": 296,
+    "text": "+73 (+27%)",
+    "color": "#8f9a6e",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-158",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      900.3,
+      308.3
+     ],
+     [
+      911.4,
+      308.2
+     ],
+     [
+      923.5,
+      307.9
+     ],
+     [
+      935,
+      308
+     ],
+     [
+      946.5,
+      307.9
+     ],
+     [
+      958,
+      307.9
+     ],
+     [
+      969.5,
+      307.9
+     ],
+     [
+      981.3,
+      308
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-159",
+    "type": "note",
+    "x": 991.3,
+    "y": 296,
+    "text": "+93 (+11%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-160",
+    "type": "image",
+    "x": 0,
+    "y": 336,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-161",
+    "type": "note",
+    "x": 44,
+    "y": 340,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-162",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      299.8,
+      353.7
+     ],
+     [
+      312,
+      354
+     ],
+     [
+      324.3,
+      353.7
+     ],
+     [
+      336.4,
+      354.3
+     ],
+     [
+      348.3,
+      353.8
+     ],
+     [
+      360.2,
+      354.2
+     ],
+     [
+      372.4,
+      354
+     ],
+     [
+      384.5,
+      353.7
+     ],
+     [
+      396.4,
+      354.3
+     ],
+     [
+      408.2,
+      354.1
+     ],
+     [
+      420.4,
+      354
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-163",
+    "type": "note",
+    "x": 430.4,
+    "y": 342,
+    "text": "+32 (+17%)",
+    "color": "#8f9a6e",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-164",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      600.1,
+      353.9
+     ],
+     [
+      611.5,
+      353.9
+     ],
+     [
+      623.4,
+      354.2
+     ],
+     [
+      635.1,
+      354.1
+     ],
+     [
+      646.6,
+      353.9
+     ],
+     [
+      658,
+      354
+     ],
+     [
+      669.7,
+      353.9
+     ],
+     [
+      681.5,
+      353.8
+     ],
+     [
+      693.3,
+      353.8
+     ],
+     [
+      704.6,
+      353.9
+     ],
+     [
+      716.3,
+      354
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-165",
+    "type": "note",
+    "x": 726.3,
+    "y": 342,
+    "text": "+44 (+16%)",
+    "color": "#8f9a6e",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-166",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      900.1,
+      353.8
+     ],
+     [
+      912.6,
+      354
+     ],
+     [
+      925.2,
+      353.9
+     ],
+     [
+      938.2,
+      354.1
+     ],
+     [
+      951,
+      354
+     ],
+     [
+      964,
+      354.1
+     ],
+     [
+      976.5,
+      354
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-167",
+    "type": "note",
+    "x": 986.5,
+    "y": 342,
+    "text": "+87 (+11%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-168",
+    "type": "image",
+    "x": 0,
+    "y": 382,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-169",
+    "type": "note",
+    "x": 44,
+    "y": 386,
+    "text": "First Strike",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-170",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      300.2,
+      400.1
+     ],
+     [
+      312.4,
+      399.8
+     ],
+     [
+      325.4,
+      400.1
+     ],
+     [
+      337.5,
+      400
+     ],
+     [
+      350.3,
+      400
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-171",
+    "type": "note",
+    "x": 360.3,
+    "y": 388,
+    "text": "+13 (+7%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-172",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      600,
+      399.8
+     ],
+     [
+      612.7,
+      399.9
+     ],
+     [
+      625,
+      399.9
+     ],
+     [
+      637.7,
+      399.9
+     ],
+     [
+      650.3,
+      400
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-173",
+    "type": "note",
+    "x": 660.3,
+    "y": 388,
+    "text": "+19 (+7%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-174",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      899.7,
+      400.2
+     ],
+     [
+      914.1,
+      400
+     ],
+     [
+      928.2,
+      400
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-175",
+    "type": "note",
+    "x": 938.2,
+    "y": 388,
+    "text": "+32 (+4%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-176",
+    "type": "image",
+    "x": 0,
+    "y": 428,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-177",
+    "type": "note",
+    "x": 44,
+    "y": 432,
+    "text": "Arcane Comet",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-178",
+    "type": "note",
+    "x": 310,
+    "y": 434,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-179",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      600.1,
+      446.2
+     ],
+     [
+      611.6,
+      446
+     ],
+     [
+      623.3,
+      445.9
+     ],
+     [
+      635.3,
+      445.8
+     ],
+     [
+      646.8,
+      446.3
+     ],
+     [
+      658.4,
+      446.2
+     ],
+     [
+      670.3,
+      445.7
+     ],
+     [
+      681.9,
+      446
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-180",
+    "type": "note",
+    "x": 691.9,
+    "y": 434,
+    "text": "+31 (+11%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-181",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      899.9,
+      446
+     ],
+     [
+      913.7,
+      446
+     ],
+     [
+      927.7,
+      445.9
+     ],
+     [
+      941.6,
+      446
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-182",
+    "type": "note",
+    "x": 951.6,
+    "y": 434,
+    "text": "+47 (+6%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-183",
+    "type": "image",
+    "x": 0,
+    "y": 474,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/DeathfireTouch/DEATHFIRE_TOUCH_KEYSTONE.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-184",
+    "type": "note",
+    "x": 44,
+    "y": 478,
+    "text": "Deathfire",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-185",
+    "type": "note",
+    "x": 310,
+    "y": 480,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-186",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      600,
+      492.1
+     ],
+     [
+      613.8,
+      491.8
+     ],
+     [
+      627.8,
+      491.9
+     ],
+     [
+      641.5,
+      492
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-187",
+    "type": "note",
+    "x": 651.5,
+    "y": 480,
+    "text": "+16 (+6%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-188",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      899.7,
+      492.2
+     ],
+     [
+      911.6,
+      491.9
+     ],
+     [
+      923,
+      492.2
+     ],
+     [
+      934.7,
+      492
+     ],
+     [
+      946.4,
+      492
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-189",
+    "type": "note",
+    "x": 956.4,
+    "y": 480,
+    "text": "+53 (+6%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-190",
+    "type": "image",
+    "x": 0,
+    "y": 520,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-191",
+    "type": "note",
+    "x": 44,
+    "y": 524,
+    "text": "Hail of Blades",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-192",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      299.9,
+      538.1
+     ],
+     [
+      315.2,
+      538
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-193",
+    "type": "note",
+    "x": 325.2,
+    "y": 526,
+    "text": "+4 (+2%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-194",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      600.3,
+      537.9
+     ],
+     [
+      611.4,
+      538
+     ],
+     [
+      623.1,
+      538
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-195",
+    "type": "note",
+    "x": 633.1,
+    "y": 526,
+    "text": "+9 (+3%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-196",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      899.9,
+      537.8
+     ],
+     [
+      913.9,
+      538
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-197",
+    "type": "note",
+    "x": 923.9,
+    "y": 526,
+    "text": "+16 (+2%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-198",
+    "type": "image",
+    "x": 0,
+    "y": 566,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-199",
+    "type": "note",
+    "x": 44,
+    "y": 570,
+    "text": "Conqueror",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-200",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      299.7,
+      584.1
+     ],
+     [
+      309.8,
+      584
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-201",
+    "type": "note",
+    "x": 319.8,
+    "y": 572,
+    "text": "+3 (+1%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-202",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      599.7,
+      584.1
+     ],
+     [
+      611.9,
+      584.1
+     ],
+     [
+      623.5,
+      584
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-203",
+    "type": "note",
+    "x": 633.5,
+    "y": 572,
+    "text": "+9 (+3%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-204",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      900.1,
+      584
+     ],
+     [
+      911.5,
+      584
+     ],
+     [
+      923.2,
+      584
+     ],
+     [
+      934.5,
+      584
+     ],
+     [
+      946.1,
+      584.1
+     ],
+     [
+      957.7,
+      584
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-205",
+    "type": "note",
+    "x": 967.7,
+    "y": 572,
+    "text": "+66 (+8%)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-206",
+    "type": "image",
+    "x": 0,
+    "y": 612,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-207",
+    "type": "note",
+    "x": 44,
+    "y": 616,
+    "text": "Stormraider's",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-208",
+    "type": "note",
+    "x": 310,
+    "y": 618,
+    "text": "speed at 2.7 s",
+    "color": "#c4593f",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-209",
+    "type": "note",
+    "x": 610,
+    "y": 618,
+    "text": "speed at 1.3 s",
+    "color": "#c4593f",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-210",
+    "type": "note",
+    "x": 910,
+    "y": 618,
+    "text": "speed at 1.0 s",
+    "color": "#c4593f",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-211",
+    "type": "image",
+    "x": 0,
+    "y": 658,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-212",
+    "type": "note",
+    "x": 44,
+    "y": 662,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-213",
+    "type": "note",
+    "x": 310,
+    "y": 664,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-214",
+    "type": "note",
+    "x": 610,
+    "y": 664,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-215",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      899.9,
+      676.2
+     ],
+     [
+      912.4,
+      676.3
+     ],
+     [
+      924.8,
+      676.1
+     ],
+     [
+      936.7,
+      676.1
+     ],
+     [
+      948.9,
+      676.2
+     ],
+     [
+      961.1,
+      675.9
+     ],
+     [
+      973.6,
+      675.9
+     ],
+     [
+      986.2,
+      676.2
+     ],
+     [
+      998.1,
+      676.2
+     ],
+     [
+      1010.5,
+      676
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-216",
+    "type": "note",
+    "x": 1020.5,
+    "y": 664,
+    "text": "+126 (+15%)",
+    "color": "#8f9a6e",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-217",
+    "type": "image",
+    "x": 0,
+    "y": 704,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-218",
+    "type": "note",
+    "x": 44,
+    "y": 708,
+    "text": "Fleet Footwork",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-219",
+    "type": "note",
+    "x": 310,
+    "y": 710,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-220",
+    "type": "note",
+    "x": 610,
+    "y": 710,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-221",
+    "type": "note",
+    "x": 910,
+    "y": 710,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "img-222",
+    "type": "image",
+    "x": 0,
+    "y": 750,
+    "w": 34,
+    "h": 34,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png",
+    "tab": "lane"
+   },
+   {
+    "id": "note-223",
+    "type": "note",
+    "x": 44,
+    "y": 754,
+    "text": "Dark Harvest",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "lane"
+   },
+   {
+    "id": "note-224",
+    "type": "note",
+    "x": 310,
+    "y": 756,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-225",
+    "type": "note",
+    "x": 610,
+    "y": 756,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "ink-226",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 12,
+    "points": [
+     [
+      900.2,
+      768
+     ],
+     [
+      909.4,
+      768.1
+     ],
+     [
+      919.4,
+      768
+     ]
+    ],
+    "tab": "lane"
+   },
+   {
+    "id": "note-227",
+    "type": "note",
+    "x": 929.4,
+    "y": 756,
+    "text": "+22 (+3%)",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "lane"
+   },
+   {
+    "id": "note-228",
+    "type": "note",
+    "x": 1260,
+    "y": 208,
+    "text": "Breakpoints that matter",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "lane"
+   },
+   {
+    "id": "note-229",
+    "type": "note",
+    "x": 1260,
+    "y": 246,
+    "text": "• W at level 1 puts Kog at 630 range for 8 of every 17\ns. That window is when you trade.\n• Electrocute needs 3 hits inside 3 s. Level 1 Kog\nattacks every 1.50 s, so the third auto lands at 3.01 s:\ntoo late. The attack speed shard (1.37 s) fixes it. The\nsame shard is what makes every 3-hit rune work at level\n1.\n• Press the Attack procs on the 3rd auto, then has a 6 s\ncooldown: one proc per trade, every trade.\n• Lethal Tempo needs 6 attacks: about 8.2 s at level 1.\nA short trade never reaches the bonus.\n• Stormraider's fires in every one of these trades. At\nlevel 1 it is +475 units of free movement over 4 s: more\nthan Kog's whole 130 unit W range bonus, three times\nover.\n• First Strike's gold is small in lane (~7 per level 3\ntrade). Its value is the 7% and the economy runes beside\nit.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "lane"
+   },
+   {
+    "id": "note-230",
+    "type": "note",
+    "x": 0,
+    "y": 810,
+    "text": "Model: Kog with the attack speed shard, W first, Q second, E third, W maxed; no items; target = an enemy ADC at the same level\n(level 1: 640 HP, 26 armor). Q shreds resists when it lands. Comet assumes long-range casts (×1.5).\nNot modelled: mana, misses, the enemy hitting back, minions. Values marked \"a to b\" on the wiki are taken as linear in level.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "lane"
+   },
+   {
+    "id": "note-231",
+    "type": "note",
+    "x": 0,
+    "y": 218,
+    "text": "A diver chases you: who reaches who?",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "mid"
+   },
+   {
+    "id": "note-232",
+    "type": "note",
+    "x": 0,
+    "y": 250,
+    "text": "On-hit Kog, level 11, slowed 30%, vs a 390 move speed diver (2,400 HP).\nLine = distance to the diver. Tick = an auto you land.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-233",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      49.9,
+      620
+     ],
+     [
+      61.4,
+      620.5
+     ],
+     [
+      74.2,
+      620.1
+     ],
+     [
+      86.4,
+      620.6
+     ],
+     [
+      97.6,
+      619.8
+     ],
+     [
+      109.8,
+      619.6
+     ],
+     [
+      121.5,
+      619.2
+     ],
+     [
+      134.7,
+      620.1
+     ],
+     [
+      146.1,
+      619.5
+     ],
+     [
+      158,
+      619.4
+     ],
+     [
+      170.9,
+      620.1
+     ],
+     [
+      183,
+      620.7
+     ],
+     [
+      194.9,
+      619.6
+     ],
+     [
+      207.2,
+      619.5
+     ],
+     [
+      218.5,
+      619.3
+     ],
+     [
+      230.4,
+      620
+     ],
+     [
+      243.4,
+      619.7
+     ],
+     [
+      255.1,
+      620.6
+     ],
+     [
+      266.9,
+      619.7
+     ],
+     [
+      278,
+      620
+     ],
+     [
+      291.1,
+      619.8
+     ],
+     [
+      303.5,
+      619.8
+     ],
+     [
+      315.3,
+      620.7
+     ],
+     [
+      326.6,
+      619.7
+     ],
+     [
+      339.3,
+      620.6
+     ],
+     [
+      350.9,
+      619.5
+     ],
+     [
+      363.7,
+      619.3
+     ],
+     [
+      375.2,
+      620.6
+     ],
+     [
+      386.8,
+      620.8
+     ],
+     [
+      399.2,
+      619.7
+     ],
+     [
+      410.5,
+      620.5
+     ],
+     [
+      423.1,
+      619.5
+     ],
+     [
+      435.7,
+      619.6
+     ],
+     [
+      447,
+      619.9
+     ],
+     [
+      459.1,
+      620.8
+     ],
+     [
+      470.9,
+      620.5
+     ],
+     [
+      484.2,
+      619.4
+     ],
+     [
+      494.7,
+      620.2
+     ],
+     [
+      508.2,
+      619.9
+     ],
+     [
+      519.5,
+      619.3
+     ],
+     [
+      531.3,
+      619.8
+     ],
+     [
+      543.8,
+      619.8
+     ],
+     [
+      555,
+      619.3
+     ],
+     [
+      567.2,
+      619.5
+     ],
+     [
+      579.1,
+      620.7
+     ],
+     [
+      591.8,
+      620.5
+     ],
+     [
+      603.1,
+      620.1
+     ],
+     [
+      616.6,
+      620.1
+     ],
+     [
+      628.6,
+      620.2
+     ],
+     [
+      640,
+      620
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-234",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 1,
+    "points": [
+     [
+      49.6,
+      619.8
+     ],
+     [
+      50.3,
+      607.4
+     ],
+     [
+      50.8,
+      595.6
+     ],
+     [
+      50.2,
+      585.2
+     ],
+     [
+      50.2,
+      573.3
+     ],
+     [
+      49.5,
+      560.3
+     ],
+     [
+      49.4,
+      549.5
+     ],
+     [
+      49.2,
+      537.4
+     ],
+     [
+      50.5,
+      525.2
+     ],
+     [
+      49.7,
+      513.8
+     ],
+     [
+      50.5,
+      501.8
+     ],
+     [
+      50.5,
+      489.9
+     ],
+     [
+      49.9,
+      477.9
+     ],
+     [
+      50.5,
+      466.1
+     ],
+     [
+      50,
+      453.4
+     ],
+     [
+      50.3,
+      442.1
+     ],
+     [
+      50.5,
+      429.9
+     ],
+     [
+      49.5,
+      419.3
+     ],
+     [
+      49.9,
+      406
+     ],
+     [
+      49.9,
+      394.9
+     ],
+     [
+      49.4,
+      383
+     ],
+     [
+      49.6,
+      371.3
+     ],
+     [
+      49.4,
+      359.6
+     ],
+     [
+      50.1,
+      347.9
+     ],
+     [
+      49.9,
+      335.5
+     ],
+     [
+      50.6,
+      323.9
+     ],
+     [
+      49.8,
+      312.6
+     ],
+     [
+      50,
+      300
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-235",
+    "type": "note",
+    "x": 44,
+    "y": 626,
+    "text": "0 s",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-236",
+    "type": "note",
+    "x": 189,
+    "y": 626,
+    "text": "2 s",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-237",
+    "type": "note",
+    "x": 334,
+    "y": 626,
+    "text": "4 s",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-238",
+    "type": "note",
+    "x": 479,
+    "y": 626,
+    "text": "6 s",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-239",
+    "type": "note",
+    "x": 624,
+    "y": 626,
+    "text": "8 s",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-240",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      50.3,
+      543.7
+     ],
+     [
+      62.3,
+      543.2
+     ],
+     [
+      73.8,
+      543.5
+     ],
+     [
+      86.2,
+      543.2
+     ],
+     [
+      98.4,
+      543.1
+     ],
+     [
+      110.6,
+      543.7
+     ],
+     [
+      122.1,
+      543.2
+     ],
+     [
+      134,
+      543.5
+     ],
+     [
+      146.5,
+      543.3
+     ],
+     [
+      158.6,
+      543.6
+     ],
+     [
+      170.2,
+      543.3
+     ],
+     [
+      182.3,
+      543.3
+     ],
+     [
+      194.4,
+      543.3
+     ],
+     [
+      206.7,
+      543
+     ],
+     [
+      218.9,
+      543.2
+     ],
+     [
+      230.8,
+      543.6
+     ],
+     [
+      242.4,
+      543.1
+     ],
+     [
+      254.4,
+      543.1
+     ],
+     [
+      267.1,
+      543.2
+     ],
+     [
+      278.5,
+      543.2
+     ],
+     [
+      291,
+      543.5
+     ],
+     [
+      303,
+      542.9
+     ],
+     [
+      314.6,
+      543.1
+     ],
+     [
+      327,
+      543.2
+     ],
+     [
+      338.8,
+      543.4
+     ],
+     [
+      351.3,
+      543.3
+     ],
+     [
+      362.9,
+      543.2
+     ],
+     [
+      375.4,
+      542.9
+     ],
+     [
+      387.3,
+      542.9
+     ],
+     [
+      399.1,
+      543.2
+     ],
+     [
+      411,
+      543.5
+     ],
+     [
+      423.6,
+      543
+     ],
+     [
+      435.5,
+      542.9
+     ],
+     [
+      447.4,
+      543.4
+     ],
+     [
+      459.7,
+      543.4
+     ],
+     [
+      471.2,
+      543.3
+     ],
+     [
+      483.5,
+      543.4
+     ],
+     [
+      495.7,
+      543
+     ],
+     [
+      507.7,
+      543.1
+     ],
+     [
+      519.7,
+      543.4
+     ],
+     [
+      532,
+      543.4
+     ],
+     [
+      543.5,
+      543.5
+     ],
+     [
+      555.4,
+      543.3
+     ],
+     [
+      567.9,
+      543.1
+     ],
+     [
+      580,
+      543.7
+     ],
+     [
+      591.5,
+      543.6
+     ],
+     [
+      603.9,
+      543.1
+     ],
+     [
+      615.6,
+      543.1
+     ],
+     [
+      628.3,
+      543.6
+     ],
+     [
+      640,
+      543.3
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-241",
+    "type": "note",
+    "x": -4,
+    "y": 534.3,
+    "text": "175",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-242",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      49.7,
+      400.6
+     ],
+     [
+      62.3,
+      400.8
+     ],
+     [
+      74.4,
+      401.1
+     ],
+     [
+      86.2,
+      400.6
+     ],
+     [
+      98.2,
+      400.4
+     ],
+     [
+      110.5,
+      400.7
+     ],
+     [
+      121.9,
+      401.2
+     ],
+     [
+      134.2,
+      401.2
+     ],
+     [
+      146.3,
+      401.2
+     ],
+     [
+      158.5,
+      400.7
+     ],
+     [
+      170.6,
+      400.5
+     ],
+     [
+      182.3,
+      400.4
+     ],
+     [
+      194.8,
+      400.6
+     ],
+     [
+      206.8,
+      401
+     ],
+     [
+      218.5,
+      401.1
+     ],
+     [
+      230.7,
+      401.1
+     ],
+     [
+      242.6,
+      400.9
+     ],
+     [
+      254.6,
+      400.5
+     ],
+     [
+      266.5,
+      400.8
+     ],
+     [
+      278.4,
+      400.8
+     ],
+     [
+      290.4,
+      401.1
+     ],
+     [
+      302.8,
+      400.8
+     ],
+     [
+      314.6,
+      400.8
+     ],
+     [
+      326.6,
+      400.6
+     ],
+     [
+      338.7,
+      401.1
+     ],
+     [
+      350.8,
+      401.1
+     ],
+     [
+      362.8,
+      400.7
+     ],
+     [
+      375.4,
+      400.8
+     ],
+     [
+      386.8,
+      400.7
+     ],
+     [
+      398.9,
+      400.5
+     ],
+     [
+      411.3,
+      400.8
+     ],
+     [
+      423.4,
+      400.6
+     ],
+     [
+      435.3,
+      400.5
+     ],
+     [
+      447,
+      400.6
+     ],
+     [
+      459.5,
+      400.8
+     ],
+     [
+      471.6,
+      401.1
+     ],
+     [
+      483.1,
+      400.7
+     ],
+     [
+      495.5,
+      400.9
+     ],
+     [
+      507.8,
+      401.2
+     ],
+     [
+      519.7,
+      401
+     ],
+     [
+      532,
+      400.8
+     ],
+     [
+      543.9,
+      400.6
+     ],
+     [
+      555.5,
+      400.7
+     ],
+     [
+      567.8,
+      400.7
+     ],
+     [
+      579.7,
+      401.1
+     ],
+     [
+      591.5,
+      400.4
+     ],
+     [
+      604,
+      401
+     ],
+     [
+      616,
+      401.1
+     ],
+     [
+      627.8,
+      400.8
+     ],
+     [
+      640,
+      400.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-243",
+    "type": "note",
+    "x": -4,
+    "y": 391.8,
+    "text": "500",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-244",
+    "type": "stroke",
+    "color": "#3a352c",
+    "width": 1,
+    "points": [
+     [
+      49.7,
+      308.5
+     ],
+     [
+      62.2,
+      308.7
+     ],
+     [
+      73.8,
+      308.8
+     ],
+     [
+      86.4,
+      308.4
+     ],
+     [
+      98.2,
+      308.6
+     ],
+     [
+      110.3,
+      308.7
+     ],
+     [
+      121.9,
+      308.4
+     ],
+     [
+      134.1,
+      308.5
+     ],
+     [
+      146.5,
+      309.2
+     ],
+     [
+      158.1,
+      308.6
+     ],
+     [
+      170.6,
+      308.7
+     ],
+     [
+      182.4,
+      308.6
+     ],
+     [
+      194.4,
+      308.9
+     ],
+     [
+      206.7,
+      309.1
+     ],
+     [
+      218.9,
+      309.1
+     ],
+     [
+      230.4,
+      308.7
+     ],
+     [
+      242.7,
+      308.8
+     ],
+     [
+      255,
+      308.5
+     ],
+     [
+      266.6,
+      309
+     ],
+     [
+      279.2,
+      309.2
+     ],
+     [
+      290.8,
+      308.4
+     ],
+     [
+      302.7,
+      308.7
+     ],
+     [
+      315,
+      308.8
+     ],
+     [
+      326.9,
+      309.2
+     ],
+     [
+      338.8,
+      308.8
+     ],
+     [
+      351.1,
+      308.9
+     ],
+     [
+      363.1,
+      308.9
+     ],
+     [
+      375.4,
+      308.5
+     ],
+     [
+      387.5,
+      308.6
+     ],
+     [
+      399,
+      308.8
+     ],
+     [
+      411.4,
+      308.8
+     ],
+     [
+      422.9,
+      308.9
+     ],
+     [
+      435.1,
+      308.5
+     ],
+     [
+      447.3,
+      308.6
+     ],
+     [
+      459.8,
+      308.9
+     ],
+     [
+      471.8,
+      309
+     ],
+     [
+      483.1,
+      308.4
+     ],
+     [
+      495.6,
+      308.7
+     ],
+     [
+      507.7,
+      308.4
+     ],
+     [
+      519.9,
+      309.1
+     ],
+     [
+      531.8,
+      308.8
+     ],
+     [
+      543.5,
+      308.8
+     ],
+     [
+      556,
+      308.6
+     ],
+     [
+      567.5,
+      308.5
+     ],
+     [
+      580,
+      308.4
+     ],
+     [
+      592,
+      309.1
+     ],
+     [
+      603.7,
+      308.8
+     ],
+     [
+      616,
+      308.4
+     ],
+     [
+      627.7,
+      308.5
+     ],
+     [
+      640,
+      308.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-245",
+    "type": "note",
+    "x": -4,
+    "y": 299.8,
+    "text": "710",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-246",
+    "type": "note",
+    "x": 56,
+    "y": 547.3,
+    "text": "diver reaches you",
+    "color": "#c4593f",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-247",
+    "type": "note",
+    "x": 56,
+    "y": 286.8,
+    "text": "your range with W",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-248",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2.5,
+    "points": [
+     [
+      50.2,
+      308.8
+     ],
+     [
+      53.8,
+      317.9
+     ],
+     [
+      57.9,
+      327.5
+     ],
+     [
+      67.9,
+      335.1
+     ],
+     [
+      77.7,
+      342.6
+     ],
+     [
+      87.8,
+      350.2
+     ],
+     [
+      97.9,
+      358.2
+     ],
+     [
+      101.7,
+      367.6
+     ],
+     [
+      105.6,
+      377.1
+     ],
+     [
+      115.4,
+      384.6
+     ],
+     [
+      125.9,
+      392.1
+     ],
+     [
+      135.7,
+      399.9
+     ],
+     [
+      145.7,
+      407.7
+     ],
+     [
+      149.8,
+      417.1
+     ],
+     [
+      153.2,
+      426.2
+     ],
+     [
+      163.6,
+      433.8
+     ],
+     [
+      173.4,
+      441.6
+     ],
+     [
+      183.3,
+      449.4
+     ],
+     [
+      193.2,
+      457.2
+     ],
+     [
+      197.2,
+      466.3
+     ],
+     [
+      201,
+      476
+     ],
+     [
+      211.2,
+      483.3
+     ],
+     [
+      221.2,
+      491.3
+     ],
+     [
+      230.8,
+      498.9
+     ],
+     [
+      241.2,
+      506.3
+     ],
+     [
+      244.7,
+      515.9
+     ],
+     [
+      249,
+      525.2
+     ],
+     [
+      257.2,
+      531.4
+     ],
+     [
+      264.7,
+      537.6
+     ],
+     [
+      272.9,
+      543.6
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-249",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      57.9,
+      321.5
+     ],
+     [
+      57.9,
+      333.5
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-250",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      105.7,
+      370.9
+     ],
+     [
+      105.7,
+      382.9
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-251",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      153.5,
+      420.3
+     ],
+     [
+      153.5,
+      432.3
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-252",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      201.2,
+      469.8
+     ],
+     [
+      201.2,
+      481.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-253",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      249,
+      519.2
+     ],
+     [
+      249,
+      531.2
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-254",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 3,
+    "points": [
+     [
+      420.4,
+      310.7
+     ],
+     [
+      430.2,
+      310.2
+     ],
+     [
+      439.3,
+      310
+     ],
+     [
+      450,
+      310
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-255",
+    "type": "note",
+    "x": 458,
+    "y": 300,
+    "text": "no keystone: 5 autos",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-256",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2.5,
+    "points": [
+     [
+      50,
+      308.8
+     ],
+     [
+      54.1,
+      317.9
+     ],
+     [
+      57.9,
+      327.8
+     ],
+     [
+      67.6,
+      335
+     ],
+     [
+      78.1,
+      342.7
+     ],
+     [
+      87.9,
+      350.4
+     ],
+     [
+      97.7,
+      357.9
+     ],
+     [
+      101.5,
+      367.1
+     ],
+     [
+      105.3,
+      376.8
+     ],
+     [
+      115.6,
+      384
+     ],
+     [
+      125,
+      391.6
+     ],
+     [
+      134.9,
+      399
+     ],
+     [
+      144.6,
+      406.3
+     ],
+     [
+      148.4,
+      415.6
+     ],
+     [
+      152.1,
+      424.6
+     ],
+     [
+      161.8,
+      431.8
+     ],
+     [
+      171,
+      439.5
+     ],
+     [
+      180.8,
+      446.8
+     ],
+     [
+      190.6,
+      453.9
+     ],
+     [
+      194.2,
+      463
+     ],
+     [
+      197.8,
+      471.9
+     ],
+     [
+      207,
+      478.8
+     ],
+     [
+      216.5,
+      486.3
+     ],
+     [
+      226.1,
+      493.1
+     ],
+     [
+      235.4,
+      500.5
+     ],
+     [
+      239.1,
+      509.4
+     ],
+     [
+      242.4,
+      518
+     ],
+     [
+      251.6,
+      525.1
+     ],
+     [
+      260.7,
+      531.7
+     ],
+     [
+      270.4,
+      538.7
+     ],
+     [
+      279.4,
+      546.1
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-257",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      57.9,
+      321.5
+     ],
+     [
+      57.9,
+      333.5
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-258",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      105.5,
+      370.5
+     ],
+     [
+      105.5,
+      382.5
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-259",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      152.2,
+      418.6
+     ],
+     [
+      152.2,
+      430.6
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-260",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      197.8,
+      465.6
+     ],
+     [
+      197.8,
+      477.6
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-261",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      242.6,
+      511.8
+     ],
+     [
+      242.6,
+      523.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-262",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 3,
+    "points": [
+     [
+      420.6,
+      334.1
+     ],
+     [
+      429.3,
+      334.5
+     ],
+     [
+      439.4,
+      334.4
+     ],
+     [
+      450,
+      334
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-263",
+    "type": "note",
+    "x": 458,
+    "y": 324,
+    "text": "Lethal Tempo: 5 autos",
+    "color": "#b8925a",
+    "size": 14,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-264",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2.5,
+    "points": [
+     [
+      50.2,
+      308.6
+     ],
+     [
+      53.7,
+      318
+     ],
+     [
+      58.2,
+      327.5
+     ],
+     [
+      67.8,
+      335.3
+     ],
+     [
+      77.8,
+      343
+     ],
+     [
+      88,
+      350.6
+     ],
+     [
+      97.6,
+      358.2
+     ],
+     [
+      101.7,
+      367.8
+     ],
+     [
+      105.7,
+      376.7
+     ],
+     [
+      115.6,
+      384.7
+     ],
+     [
+      125.9,
+      392.3
+     ],
+     [
+      135.8,
+      400
+     ],
+     [
+      145.3,
+      407.7
+     ],
+     [
+      149.2,
+      417.2
+     ],
+     [
+      153.6,
+      426.4
+     ],
+     [
+      167,
+      422.7
+     ],
+     [
+      180.1,
+      419.1
+     ],
+     [
+      193.5,
+      415.6
+     ],
+     [
+      197.3,
+      425
+     ],
+     [
+      201.4,
+      434.5
+     ],
+     [
+      214.6,
+      431.4
+     ],
+     [
+      227.5,
+      427.8
+     ],
+     [
+      241.1,
+      424
+     ],
+     [
+      244.9,
+      433.7
+     ],
+     [
+      248.9,
+      442.8
+     ],
+     [
+      262.4,
+      439.6
+     ],
+     [
+      275.7,
+      436
+     ],
+     [
+      288.6,
+      432.4
+     ],
+     [
+      293,
+      441.7
+     ],
+     [
+      296.6,
+      450.9
+     ],
+     [
+      310.3,
+      447.4
+     ],
+     [
+      323.2,
+      443.8
+     ],
+     [
+      336.7,
+      440.7
+     ],
+     [
+      340.6,
+      450
+     ],
+     [
+      344.4,
+      459.1
+     ],
+     [
+      357.8,
+      456.1
+     ],
+     [
+      371.2,
+      452.2
+     ],
+     [
+      384.6,
+      448.7
+     ],
+     [
+      388.2,
+      458.2
+     ],
+     [
+      392.5,
+      467.8
+     ],
+     [
+      405.4,
+      464.1
+     ],
+     [
+      418.6,
+      460.3
+     ],
+     [
+      432,
+      457.2
+     ],
+     [
+      436.3,
+      466.6
+     ],
+     [
+      440.3,
+      476.1
+     ],
+     [
+      450.3,
+      483.3
+     ],
+     [
+      459.9,
+      491.3
+     ],
+     [
+      469.7,
+      498.9
+     ],
+     [
+      479.6,
+      506.7
+     ],
+     [
+      483.8,
+      515.9
+     ],
+     [
+      487.8,
+      525.3
+     ],
+     [
+      495.8,
+      531.4
+     ],
+     [
+      503.9,
+      537.2
+     ],
+     [
+      511.7,
+      543.7
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-265",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      57.9,
+      321.5
+     ],
+     [
+      57.9,
+      333.5
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-266",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      105.7,
+      370.9
+     ],
+     [
+      105.7,
+      382.9
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-267",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      153.5,
+      420.3
+     ],
+     [
+      153.5,
+      432.3
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-268",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      201.2,
+      428.6
+     ],
+     [
+      201.2,
+      440.6
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-269",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      249,
+      436.8
+     ],
+     [
+      249,
+      448.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-270",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      296.8,
+      445.1
+     ],
+     [
+      296.8,
+      457.1
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-271",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      344.5,
+      453.3
+     ],
+     [
+      344.5,
+      465.3
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-272",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      392.3,
+      461.6
+     ],
+     [
+      392.3,
+      473.6
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-273",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      440,
+      469.8
+     ],
+     [
+      440,
+      481.8
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-274",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      487.8,
+      519.2
+     ],
+     [
+      487.8,
+      531.2
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-275",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 3,
+    "points": [
+     [
+      420.3,
+      357.9
+     ],
+     [
+      429.5,
+      357.9
+     ],
+     [
+      440.2,
+      357.5
+     ],
+     [
+      450,
+      358
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-276",
+    "type": "note",
+    "x": 458,
+    "y": 348,
+    "text": "Stormraider's: 10 autos",
+    "color": "#8f9a6e",
+    "size": 14,
+    "tab": "mid"
+   },
+   {
+    "id": "ink-277",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      174.8,
+      593.6
+     ],
+     [
+      167.6,
+      582.4
+     ],
+     [
+      161.1,
+      571.3
+     ],
+     [
+      153.3,
+      560.2
+     ],
+     [
+      145.5,
+      549.9
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-278",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      157.7,
+      556.8
+     ],
+     [
+      145.5,
+      549.9
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "ink-279",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      147.6,
+      563.7
+     ],
+     [
+      145.5,
+      549.9
+     ]
+    ],
+    "tab": "mid"
+   },
+   {
+    "id": "note-280",
+    "type": "note",
+    "x": 179.5,
+    "y": 585.7,
+    "text": "speed fires at 1.3 s (Q, E, 1 auto)",
+    "color": "#8f9a6e",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-281",
+    "type": "note",
+    "x": 760,
+    "y": 218,
+    "text": "Damage landed before the diver reaches you",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "mid"
+   },
+   {
+    "id": "note-282",
+    "type": "note",
+    "x": 760,
+    "y": 250,
+    "text": "Within one 8 s W window, vs no keystone. Autos landed in brackets.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "note-283",
+    "type": "note",
+    "x": 970,
+    "y": 286,
+    "text": "On-hit,\nopen chase",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "note-284",
+    "type": "note",
+    "x": 1120,
+    "y": 286,
+    "text": "On-hit,\nslowed 30%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "note-285",
+    "type": "note",
+    "x": 1270,
+    "y": 286,
+    "text": "AP,\nopen chase",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "note-286",
+    "type": "note",
+    "x": 1420,
+    "y": 286,
+    "text": "AP,\nslowed 30%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "mid"
+   },
+   {
+    "id": "img-287",
+    "type": "image",
+    "x": 760,
+    "y": 326,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-288",
+    "type": "note",
+    "x": 800,
+    "y": 330,
+    "text": "Stormraider's",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-289",
+    "type": "note",
+    "x": 970,
+    "y": 330,
+    "text": "+27% (13)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-290",
+    "type": "note",
+    "x": 1120,
+    "y": 330,
+    "text": "+84% (10)",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-291",
+    "type": "note",
+    "x": 1270,
+    "y": 330,
+    "text": "+17% (12)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-292",
+    "type": "note",
+    "x": 1420,
+    "y": 330,
+    "text": "+61% (9)",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-293",
+    "type": "image",
+    "x": 760,
+    "y": 366,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/Electrocute/Electrocute.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-294",
+    "type": "note",
+    "x": 800,
+    "y": 370,
+    "text": "Electrocute",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-295",
+    "type": "note",
+    "x": 970,
+    "y": 370,
+    "text": "+5% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-296",
+    "type": "note",
+    "x": 1120,
+    "y": 370,
+    "text": "+9% (5)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-297",
+    "type": "note",
+    "x": 1270,
+    "y": 370,
+    "text": "+6% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-298",
+    "type": "note",
+    "x": 1420,
+    "y": 370,
+    "text": "+11% (5)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-299",
+    "type": "image",
+    "x": 760,
+    "y": 406,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-300",
+    "type": "note",
+    "x": 800,
+    "y": 410,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-301",
+    "type": "note",
+    "x": 970,
+    "y": 410,
+    "text": "+8% (10)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-302",
+    "type": "note",
+    "x": 1120,
+    "y": 410,
+    "text": "+8% (5)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-303",
+    "type": "note",
+    "x": 1270,
+    "y": 410,
+    "text": "+9% (10)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-304",
+    "type": "note",
+    "x": 1420,
+    "y": 410,
+    "text": "+9% (5)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-305",
+    "type": "image",
+    "x": 760,
+    "y": 446,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/DeathfireTouch/DEATHFIRE_TOUCH_KEYSTONE.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-306",
+    "type": "note",
+    "x": 800,
+    "y": 450,
+    "text": "Deathfire",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-307",
+    "type": "note",
+    "x": 970,
+    "y": 450,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-308",
+    "type": "note",
+    "x": 1120,
+    "y": 450,
+    "text": "+8% (5)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-309",
+    "type": "note",
+    "x": 1270,
+    "y": 450,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-310",
+    "type": "note",
+    "x": 1420,
+    "y": 450,
+    "text": "+7% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-311",
+    "type": "image",
+    "x": 760,
+    "y": 486,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-312",
+    "type": "note",
+    "x": 800,
+    "y": 490,
+    "text": "First Strike",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-313",
+    "type": "note",
+    "x": 970,
+    "y": 490,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-314",
+    "type": "note",
+    "x": 1120,
+    "y": 490,
+    "text": "+7% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-315",
+    "type": "note",
+    "x": 1270,
+    "y": 490,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-316",
+    "type": "note",
+    "x": 1420,
+    "y": 490,
+    "text": "+7% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-317",
+    "type": "image",
+    "x": 760,
+    "y": 526,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-318",
+    "type": "note",
+    "x": 800,
+    "y": 530,
+    "text": "Arcane Comet",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-319",
+    "type": "note",
+    "x": 970,
+    "y": 530,
+    "text": "+3% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-320",
+    "type": "note",
+    "x": 1120,
+    "y": 530,
+    "text": "+6% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-321",
+    "type": "note",
+    "x": 1270,
+    "y": 530,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-322",
+    "type": "note",
+    "x": 1420,
+    "y": 530,
+    "text": "+7% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-323",
+    "type": "image",
+    "x": 760,
+    "y": 566,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/HailOfBlades/HailOfBlades.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-324",
+    "type": "note",
+    "x": 800,
+    "y": 570,
+    "text": "Hail of Blades",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-325",
+    "type": "note",
+    "x": 970,
+    "y": 570,
+    "text": "+11% (11)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-326",
+    "type": "note",
+    "x": 1120,
+    "y": 570,
+    "text": "+4% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-327",
+    "type": "note",
+    "x": 1270,
+    "y": 570,
+    "text": "+3% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-328",
+    "type": "note",
+    "x": 1420,
+    "y": 570,
+    "text": "+5% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-329",
+    "type": "image",
+    "x": 760,
+    "y": 606,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Domination/DarkHarvest/DarkHarvest.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-330",
+    "type": "note",
+    "x": 800,
+    "y": 610,
+    "text": "Dark Harvest",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-331",
+    "type": "note",
+    "x": 970,
+    "y": 610,
+    "text": "+2% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-332",
+    "type": "note",
+    "x": 1120,
+    "y": 610,
+    "text": "0 (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-333",
+    "type": "note",
+    "x": 1270,
+    "y": 610,
+    "text": "+3% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-334",
+    "type": "note",
+    "x": 1420,
+    "y": 610,
+    "text": "+5% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-335",
+    "type": "image",
+    "x": 760,
+    "y": 646,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Conqueror/Conqueror.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-336",
+    "type": "note",
+    "x": 800,
+    "y": 650,
+    "text": "Conqueror",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-337",
+    "type": "note",
+    "x": 970,
+    "y": 650,
+    "text": "+4% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-338",
+    "type": "note",
+    "x": 1120,
+    "y": 650,
+    "text": "+3% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-339",
+    "type": "note",
+    "x": 1270,
+    "y": 650,
+    "text": "+3% (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-340",
+    "type": "note",
+    "x": 1420,
+    "y": 650,
+    "text": "+2% (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-341",
+    "type": "image",
+    "x": 760,
+    "y": 686,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-342",
+    "type": "note",
+    "x": 800,
+    "y": 690,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-343",
+    "type": "note",
+    "x": 970,
+    "y": 690,
+    "text": "+15% (11)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-344",
+    "type": "note",
+    "x": 1120,
+    "y": 690,
+    "text": "0 (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-345",
+    "type": "note",
+    "x": 1270,
+    "y": 690,
+    "text": "+16% (11)",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-346",
+    "type": "note",
+    "x": 1420,
+    "y": 690,
+    "text": "0 (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "img-347",
+    "type": "image",
+    "x": 760,
+    "y": 726,
+    "w": 30,
+    "h": 30,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png",
+    "tab": "mid"
+   },
+   {
+    "id": "note-348",
+    "type": "note",
+    "x": 800,
+    "y": 730,
+    "text": "Fleet Footwork",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-349",
+    "type": "note",
+    "x": 970,
+    "y": 730,
+    "text": "0 (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-350",
+    "type": "note",
+    "x": 1120,
+    "y": 730,
+    "text": "0 (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-351",
+    "type": "note",
+    "x": 1270,
+    "y": 730,
+    "text": "0 (10)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-352",
+    "type": "note",
+    "x": 1420,
+    "y": 730,
+    "text": "0 (5)",
+    "color": "#7f98ad",
+    "size": 16,
+    "tab": "mid"
+   },
+   {
+    "id": "note-353",
+    "type": "note",
+    "x": 970,
+    "y": 770,
+    "text": "none: 10 autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-354",
+    "type": "note",
+    "x": 1120,
+    "y": 770,
+    "text": "none: 5 autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-355",
+    "type": "note",
+    "x": 1270,
+    "y": 770,
+    "text": "none: 10 autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-356",
+    "type": "note",
+    "x": 1420,
+    "y": 770,
+    "text": "none: 5 autos",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-357",
+    "type": "note",
+    "x": 1600,
+    "y": 218,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "mid"
+   },
+   {
+    "id": "note-358",
+    "type": "note",
+    "x": 1600,
+    "y": 256,
+    "text": "• Kog's mid-game is decided by how many W autos he\nlands before someone reaches him. Damage runes\nmultiply each auto by a few %. Stormraider's adds\nautos.\n• Slowed 30%: no keystone lands 5 autos and is\ncaught at 3.1 s. Stormraider's lands 10 and is\ncaught at 6.4 s. Its 50% slow resist is half of\nthat.\n• Open chase: Stormraider's still lands 3 more\nautos (on-hit). Lethal Tempo's extra speed only\nadds about one.\n• It is back every ~13 s at level 11: every fight,\noften twice.\n• Limits: the diver here has no dash or knock-up.\nA dash skips the chase and shrinks every\nkeystone's value, Stormraider's most. Against hard\nengage, your flash and positioning matter more\nthan any rune.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "mid"
+   },
+   {
+    "id": "note-359",
+    "type": "note",
+    "x": 0,
+    "y": 680,
+    "text": "Model: level 11, W rank 5, Q rank 3. On-hit = Blade of the Ruined King, Guinsoo's Rageblade, Berserker's Greaves. AP = Dusk and Dawn, Nashor's Tooth, Sorcerer's Shoes.\nItem passives left out (every keystone gets them). Kog stands still only for his attack windup, then walks back.\nStormraider's fires once Kog has dealt 25% of the diver's max HP inside 3 s, from the real damage timeline.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "mid"
+   },
+   {
+    "id": "note-360",
+    "type": "note",
+    "x": 0,
+    "y": 230,
+    "text": "A · Storm Kog (default)",
+    "color": "#8f9a6e",
+    "size": 26,
+    "tab": "pages"
+   },
+   {
+    "id": "note-361",
+    "type": "note",
+    "x": 0,
+    "y": 264,
+    "text": "Both builds. Any lane where you can trade inside W range.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-362",
+    "type": "image",
+    "x": 0,
+    "y": 310,
+    "w": 60,
+    "h": 60,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-363",
+    "type": "note",
+    "x": 74,
+    "y": 324,
+    "text": "Stormraider's Surge",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "pages"
+   },
+   {
+    "id": "img-364",
+    "type": "image",
+    "x": 8,
+    "y": 376,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ManaflowBand/ManaflowBand.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-365",
+    "type": "note",
+    "x": 74,
+    "y": 384,
+    "text": "Manaflow Band",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-366",
+    "type": "image",
+    "x": 8,
+    "y": 442,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/Transcendence/Transcendence.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-367",
+    "type": "note",
+    "x": 74,
+    "y": 450,
+    "text": "Transcendence",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-368",
+    "type": "image",
+    "x": 8,
+    "y": 508,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/Scorch/Scorch.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-369",
+    "type": "note",
+    "x": 74,
+    "y": 516,
+    "text": "Scorch",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-370",
+    "type": "image",
+    "x": 300,
+    "y": 324,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-371",
+    "type": "note",
+    "x": 350,
+    "y": 332,
+    "text": "Legend: Alacrity",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-372",
+    "type": "image",
+    "x": 300,
+    "y": 390,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-373",
+    "type": "note",
+    "x": 350,
+    "y": 398,
+    "text": "Coup de Grace",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-374",
+    "type": "image",
+    "x": 300,
+    "y": 470,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsAttackSpeedIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-375",
+    "type": "note",
+    "x": 336,
+    "y": 472,
+    "text": "10% attack speed",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-376",
+    "type": "image",
+    "x": 300,
+    "y": 504,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsMovementSpeedIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-377",
+    "type": "note",
+    "x": 336,
+    "y": 506,
+    "text": "2.5% move speed",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-378",
+    "type": "image",
+    "x": 300,
+    "y": 538,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsHealthScalingIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-379",
+    "type": "note",
+    "x": 336,
+    "y": 540,
+    "text": "10 to 200 HP",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "ink-380",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1,
+    "points": [
+     [
+      -0.8,
+      589.8
+     ],
+     [
+      12.4,
+      589.2
+     ],
+     [
+      24.1,
+      590.6
+     ],
+     [
+      36.3,
+      589.8
+     ],
+     [
+      48.7,
+      590.1
+     ],
+     [
+      60.7,
+      590.4
+     ],
+     [
+      73.2,
+      589.5
+     ],
+     [
+      85.3,
+      588.9
+     ],
+     [
+      96.4,
+      590
+     ],
+     [
+      109.4,
+      589.1
+     ],
+     [
+      120.1,
+      589.1
+     ],
+     [
+      132.2,
+      589
+     ],
+     [
+      144.5,
+      588.9
+     ],
+     [
+      157.3,
+      589
+     ],
+     [
+      168.9,
+      588.7
+     ],
+     [
+      181.6,
+      589.1
+     ],
+     [
+      193.7,
+      590
+     ],
+     [
+      205.8,
+      589
+     ],
+     [
+      218.2,
+      588.6
+     ],
+     [
+      230.2,
+      589.7
+     ],
+     [
+      241.2,
+      589.4
+     ],
+     [
+      254,
+      589.4
+     ],
+     [
+      266.5,
+      588.3
+     ],
+     [
+      278.5,
+      588.4
+     ],
+     [
+      290.2,
+      589.8
+     ],
+     [
+      301.8,
+      589.4
+     ],
+     [
+      314.4,
+      588.5
+     ],
+     [
+      326.2,
+      588.2
+     ],
+     [
+      338.4,
+      588.9
+     ],
+     [
+      351.1,
+      589
+     ],
+     [
+      362.2,
+      588.2
+     ],
+     [
+      374.7,
+      589.3
+     ],
+     [
+      387.2,
+      589.1
+     ],
+     [
+      398.8,
+      588.6
+     ],
+     [
+      410.5,
+      588
+     ],
+     [
+      423.7,
+      588.5
+     ],
+     [
+      435.5,
+      588.4
+     ],
+     [
+      447.1,
+      589.2
+     ],
+     [
+      459.8,
+      587.7
+     ],
+     [
+      470.8,
+      588.8
+     ],
+     [
+      483.8,
+      588.6
+     ],
+     [
+      496.1,
+      588.3
+     ],
+     [
+      507.2,
+      587.5
+     ],
+     [
+      519.3,
+      587.5
+     ],
+     [
+      532.2,
+      588.8
+     ],
+     [
+      543,
+      588.8
+     ],
+     [
+      556.1,
+      588
+     ],
+     [
+      568.3,
+      588.7
+     ],
+     [
+      580,
+      588
+     ]
+    ],
+    "tab": "pages"
+   },
+   {
+    "id": "note-381",
+    "type": "note",
+    "x": 0,
+    "y": 604,
+    "text": "• Stormraider's: every trade ends with a free chase or escape.\n• Manaflow: Q, E and R stacks cost mana. Pressure every second\nneeds mana every second.\n• Transcendence: 10 haste by level 8 takes W from 17 to 15.5 s, so\nW is up 52% of the time instead of 47%. Takedowns refund 20% after\n11.\n• Scorch: extra lane damage on every Q and R poke. Gathering Storm\nif you expect a long game.\n• Alacrity + Coup de Grace: more autos per W, and the 8% that\nfinishes the chase.\n• Shards: attack speed (level 1 breakpoint), move speed (stacks\nwith the surge), scaling HP.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "pages"
+   },
+   {
+    "id": "note-382",
+    "type": "note",
+    "x": 640,
+    "y": 230,
+    "text": "B · Lane bully (on-hit)",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "pages"
+   },
+   {
+    "id": "note-383",
+    "type": "note",
+    "x": 640,
+    "y": 264,
+    "text": "On-hit build, a 2v2 lane decided at levels 2 to 3, an engage support.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-384",
+    "type": "image",
+    "x": 640,
+    "y": 310,
+    "w": 60,
+    "h": 60,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-385",
+    "type": "note",
+    "x": 714,
+    "y": 324,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "pages"
+   },
+   {
+    "id": "img-386",
+    "type": "image",
+    "x": 648,
+    "y": 376,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PresenceOfMind/PresenceOfMind.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-387",
+    "type": "note",
+    "x": 714,
+    "y": 384,
+    "text": "Presence of Mind",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-388",
+    "type": "image",
+    "x": 648,
+    "y": 442,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-389",
+    "type": "note",
+    "x": 714,
+    "y": 450,
+    "text": "Legend: Alacrity",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-390",
+    "type": "image",
+    "x": 648,
+    "y": 508,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-391",
+    "type": "note",
+    "x": 714,
+    "y": 516,
+    "text": "Coup de Grace",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-392",
+    "type": "image",
+    "x": 940,
+    "y": 324,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/Transcendence/Transcendence.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-393",
+    "type": "note",
+    "x": 990,
+    "y": 332,
+    "text": "Transcendence",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-394",
+    "type": "image",
+    "x": 940,
+    "y": 390,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/Scorch/Scorch.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-395",
+    "type": "note",
+    "x": 990,
+    "y": 398,
+    "text": "Scorch",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-396",
+    "type": "image",
+    "x": 940,
+    "y": 470,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsAttackSpeedIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-397",
+    "type": "note",
+    "x": 976,
+    "y": 472,
+    "text": "10% attack speed",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-398",
+    "type": "image",
+    "x": 940,
+    "y": 504,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsAdaptiveForceIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-399",
+    "type": "note",
+    "x": 976,
+    "y": 506,
+    "text": "5.4 AD or 9 AP",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-400",
+    "type": "image",
+    "x": 940,
+    "y": 538,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsHealthPlusIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-401",
+    "type": "note",
+    "x": 976,
+    "y": 540,
+    "text": "65 HP",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "ink-402",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1,
+    "points": [
+     [
+      640.6,
+      589.3
+     ],
+     [
+      652.3,
+      590.3
+     ],
+     [
+      663.7,
+      589.6
+     ],
+     [
+      676.9,
+      589.7
+     ],
+     [
+      689,
+      590.5
+     ],
+     [
+      700.4,
+      589.5
+     ],
+     [
+      712.6,
+      590.4
+     ],
+     [
+      725.4,
+      589.3
+     ],
+     [
+      737.2,
+      589.1
+     ],
+     [
+      749.1,
+      589.5
+     ],
+     [
+      760.4,
+      588.9
+     ],
+     [
+      772.5,
+      589
+     ],
+     [
+      784.9,
+      589
+     ],
+     [
+      796.4,
+      589.7
+     ],
+     [
+      808.9,
+      589.6
+     ],
+     [
+      822,
+      589.8
+     ],
+     [
+      833.8,
+      589.9
+     ],
+     [
+      845.5,
+      589.7
+     ],
+     [
+      858.2,
+      589.7
+     ],
+     [
+      870.3,
+      589
+     ],
+     [
+      881,
+      589.6
+     ],
+     [
+      893.7,
+      589.2
+     ],
+     [
+      905,
+      589.1
+     ],
+     [
+      917.4,
+      589.2
+     ],
+     [
+      929.4,
+      589.7
+     ],
+     [
+      942.8,
+      588.2
+     ],
+     [
+      953.6,
+      589.5
+     ],
+     [
+      966.3,
+      589.2
+     ],
+     [
+      977.7,
+      588.8
+     ],
+     [
+      989.6,
+      588.9
+     ],
+     [
+      1002.2,
+      589.2
+     ],
+     [
+      1014.3,
+      588.2
+     ],
+     [
+      1027,
+      588
+     ],
+     [
+      1039.2,
+      588.3
+     ],
+     [
+      1051.6,
+      588.1
+     ],
+     [
+      1062.2,
+      588.1
+     ],
+     [
+      1074.3,
+      587.7
+     ],
+     [
+      1086.6,
+      588.4
+     ],
+     [
+      1099.6,
+      587.7
+     ],
+     [
+      1110.9,
+      588.7
+     ],
+     [
+      1122.9,
+      587.6
+     ],
+     [
+      1134.7,
+      589
+     ],
+     [
+      1146.8,
+      587.6
+     ],
+     [
+      1159,
+      587.6
+     ],
+     [
+      1171.8,
+      587.9
+     ],
+     [
+      1183.5,
+      587.9
+     ],
+     [
+      1195.2,
+      587.4
+     ],
+     [
+      1207.2,
+      587.7
+     ],
+     [
+      1220,
+      588
+     ]
+    ],
+    "tab": "pages"
+   },
+   {
+    "id": "note-403",
+    "type": "note",
+    "x": 640,
+    "y": 604,
+    "text": "• Press the Attack: +16% damage in every level 1 to 3 trade, every\n6 s, and 8% on all follow-up damage.\n• Presence of Mind: mana back on every trade.\n• Alacrity + Coup de Grace: the Precision damage core.\n• Transcendence + Scorch: W uptime and poke from the second tree.\n• Shards: attack speed, adaptive, 65 HP (beats scaling HP until\nabout level 6).\n• Cost: no speed. You win trades, but a dive catches you.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "pages"
+   },
+   {
+    "id": "note-404",
+    "type": "note",
+    "x": 1280,
+    "y": 230,
+    "text": "C · First Strike (AP, economy)",
+    "color": "#e9dfc9",
+    "size": 26,
+    "tab": "pages"
+   },
+   {
+    "id": "note-405",
+    "type": "note",
+    "x": 1280,
+    "y": 264,
+    "text": "AP build, when you can reliably hit first from W range.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-406",
+    "type": "image",
+    "x": 1280,
+    "y": 310,
+    "w": 60,
+    "h": 60,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-407",
+    "type": "note",
+    "x": 1354,
+    "y": 324,
+    "text": "First Strike",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "pages"
+   },
+   {
+    "id": "img-408",
+    "type": "image",
+    "x": 1288,
+    "y": 376,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/MagicalFootwear/MagicalFootwear.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-409",
+    "type": "note",
+    "x": 1354,
+    "y": 384,
+    "text": "Magical Footwear",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-410",
+    "type": "image",
+    "x": 1288,
+    "y": 442,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/PerfectTiming/AlchemistCabinet.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-411",
+    "type": "note",
+    "x": 1354,
+    "y": 450,
+    "text": "Triple Tonic",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-412",
+    "type": "image",
+    "x": 1288,
+    "y": 508,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Resolve/ApproachVelocity/ApproachVelocity.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-413",
+    "type": "note",
+    "x": 1354,
+    "y": 516,
+    "text": "Approach Velocity",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "pages"
+   },
+   {
+    "id": "img-414",
+    "type": "image",
+    "x": 1580,
+    "y": 324,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ManaflowBand/ManaflowBand.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-415",
+    "type": "note",
+    "x": 1630,
+    "y": 332,
+    "text": "Manaflow Band",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-416",
+    "type": "image",
+    "x": 1580,
+    "y": 390,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/Transcendence/Transcendence.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-417",
+    "type": "note",
+    "x": 1630,
+    "y": 398,
+    "text": "Transcendence",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "pages"
+   },
+   {
+    "id": "img-418",
+    "type": "image",
+    "x": 1580,
+    "y": 470,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsAttackSpeedIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-419",
+    "type": "note",
+    "x": 1616,
+    "y": 472,
+    "text": "10% attack speed",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-420",
+    "type": "image",
+    "x": 1580,
+    "y": 504,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsAdaptiveForceIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-421",
+    "type": "note",
+    "x": 1616,
+    "y": 506,
+    "text": "5.4 AD or 9 AP",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "img-422",
+    "type": "image",
+    "x": 1580,
+    "y": 538,
+    "w": 26,
+    "h": 26,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/StatMods/StatModsHealthScalingIcon.png",
+    "tab": "pages"
+   },
+   {
+    "id": "note-423",
+    "type": "note",
+    "x": 1616,
+    "y": 540,
+    "text": "10 to 200 HP",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "ink-424",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 1,
+    "points": [
+     [
+      1279.8,
+      589.4
+     ],
+     [
+      1292.6,
+      589.7
+     ],
+     [
+      1303.6,
+      589.3
+     ],
+     [
+      1316.6,
+      590.4
+     ],
+     [
+      1328.4,
+      590.2
+     ],
+     [
+      1339.7,
+      589.5
+     ],
+     [
+      1353.1,
+      590.3
+     ],
+     [
+      1365.2,
+      590.1
+     ],
+     [
+      1377,
+      588.9
+     ],
+     [
+      1389,
+      589.3
+     ],
+     [
+      1400,
+      589.2
+     ],
+     [
+      1412.7,
+      588.8
+     ],
+     [
+      1424.4,
+      589.5
+     ],
+     [
+      1436.8,
+      588.9
+     ],
+     [
+      1449.6,
+      590.1
+     ],
+     [
+      1460.7,
+      588.9
+     ],
+     [
+      1473.7,
+      589.1
+     ],
+     [
+      1485.7,
+      589.1
+     ],
+     [
+      1497,
+      589.9
+     ],
+     [
+      1509.1,
+      589.6
+     ],
+     [
+      1522.5,
+      589.3
+     ],
+     [
+      1534.4,
+      588.3
+     ],
+     [
+      1546.6,
+      588.5
+     ],
+     [
+      1557.3,
+      588.5
+     ],
+     [
+      1570.5,
+      588.9
+     ],
+     [
+      1582.4,
+      589.1
+     ],
+     [
+      1594.9,
+      589.3
+     ],
+     [
+      1606.3,
+      588.2
+     ],
+     [
+      1617.8,
+      588.8
+     ],
+     [
+      1631.1,
+      588.4
+     ],
+     [
+      1642.6,
+      588.9
+     ],
+     [
+      1654.6,
+      588.9
+     ],
+     [
+      1666.8,
+      588.8
+     ],
+     [
+      1678.8,
+      588.4
+     ],
+     [
+      1690.3,
+      589.3
+     ],
+     [
+      1703.5,
+      588
+     ],
+     [
+      1715.2,
+      588.7
+     ],
+     [
+      1727.6,
+      588.6
+     ],
+     [
+      1739.4,
+      588.9
+     ],
+     [
+      1751.6,
+      589.1
+     ],
+     [
+      1763.7,
+      588.3
+     ],
+     [
+      1774.9,
+      587.6
+     ],
+     [
+      1788,
+      588.7
+     ],
+     [
+      1799,
+      588.9
+     ],
+     [
+      1811,
+      587.7
+     ],
+     [
+      1823.5,
+      587.6
+     ],
+     [
+      1835.9,
+      588
+     ],
+     [
+      1848.5,
+      587.4
+     ],
+     [
+      1860,
+      588
+     ]
+    ],
+    "tab": "pages"
+   },
+   {
+    "id": "note-425",
+    "type": "note",
+    "x": 1280,
+    "y": 604,
+    "text": "• First Strike: 7% true damage and gold, only when you hit first.\nThe most skill-tested keystone.\n• Magical Footwear + Triple Tonic: free boots and elixirs. Your\ngold goes straight into AP.\n• Approach Velocity: 7.5% speed toward targets slowed by your E. A\nsmall chase tool.\n• Manaflow + Transcendence: mana and W uptime.\n• Cost: no fight power after the first 3 s. Ranked third for your\ngoal.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "pages"
+   },
+   {
+    "id": "note-426",
+    "type": "note",
+    "x": 0,
+    "y": 930,
+    "text": "Swaps: Tenacity and slow resist shard instead of scaling HP into heavy CC. Cut Down instead of Coup de Grace into tanks.\nGathering Storm instead of Scorch if the game will go long. Triumph instead of Alacrity if you keep dying right after kills.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "pages"
+   },
+   {
+    "id": "note-427",
+    "type": "note",
+    "x": 0,
+    "y": 208,
+    "text": "Keystone pick rate by rank · u.gg, NA, Ranked Solo, patch 26.21",
+    "color": "#e9dfc9",
+    "size": 22,
+    "tab": "context"
+   },
+   {
+    "id": "note-428",
+    "type": "note",
+    "x": 0,
+    "y": 238,
+    "text": "Context only. Win rate in brackets, with its rough 95% noise. Buckets overlap (Diamond+ holds Master+ holds Challenger).",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "context"
+   },
+   {
+    "id": "note-429",
+    "type": "note",
+    "x": 260,
+    "y": 274,
+    "text": "All ranks · 25,380 games",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "context"
+   },
+   {
+    "id": "note-430",
+    "type": "note",
+    "x": 560,
+    "y": 274,
+    "text": "Diamond+ · 2,577 games",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "context"
+   },
+   {
+    "id": "note-431",
+    "type": "note",
+    "x": 860,
+    "y": 274,
+    "text": "Master+ · 1,165 games",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "context"
+   },
+   {
+    "id": "note-432",
+    "type": "note",
+    "x": 1160,
+    "y": 274,
+    "text": "Challenger · 515 games",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "context"
+   },
+   {
+    "id": "img-433",
+    "type": "image",
+    "x": 0,
+    "y": 314,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+    "tab": "context"
+   },
+   {
+    "id": "note-434",
+    "type": "note",
+    "x": 52,
+    "y": 322,
+    "text": "Stormraider's",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "context"
+   },
+   {
+    "id": "ink-435",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      259.9,
+      327.9
+     ],
+     [
+      277.3,
+      328
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-436",
+    "type": "note",
+    "x": 285.3,
+    "y": 316,
+    "text": "7%",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-437",
+    "type": "note",
+    "x": 260,
+    "y": 342,
+    "text": "1,754 g · 49.8% WR ±2",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-438",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      559.9,
+      327.9
+     ],
+     [
+      572.8,
+      327.7
+     ],
+     [
+      585,
+      327.8
+     ],
+     [
+      597.6,
+      328
+     ],
+     [
+      609.7,
+      328.2
+     ],
+     [
+      622.5,
+      328
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-439",
+    "type": "note",
+    "x": 630.5,
+    "y": 316,
+    "text": "25%",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-440",
+    "type": "note",
+    "x": 560,
+    "y": 342,
+    "text": "644 g · 51.4% WR ±4",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-441",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      859.8,
+      327.7
+     ],
+     [
+      871.7,
+      327.8
+     ],
+     [
+      883.7,
+      328.1
+     ],
+     [
+      895.2,
+      327.9
+     ],
+     [
+      907.1,
+      327.7
+     ],
+     [
+      919,
+      327.8
+     ],
+     [
+      930.9,
+      328.1
+     ],
+     [
+      942.6,
+      327.8
+     ],
+     [
+      954.3,
+      328
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-442",
+    "type": "note",
+    "x": 962.3,
+    "y": 316,
+    "text": "38%",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-443",
+    "type": "note",
+    "x": 860,
+    "y": 342,
+    "text": "439 g · 51.0% WR ±5",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-444",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 12,
+    "points": [
+     [
+      1160.2,
+      328.2
+     ],
+     [
+      1172.2,
+      328.1
+     ],
+     [
+      1184.3,
+      328.1
+     ],
+     [
+      1196.3,
+      328.2
+     ],
+     [
+      1208.4,
+      327.9
+     ],
+     [
+      1220.8,
+      327.9
+     ],
+     [
+      1232.9,
+      328.2
+     ],
+     [
+      1244.9,
+      328.1
+     ],
+     [
+      1257.5,
+      328.1
+     ],
+     [
+      1269.3,
+      327.8
+     ],
+     [
+      1281.4,
+      328
+     ],
+     [
+      1293.6,
+      328.2
+     ],
+     [
+      1305.9,
+      328
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-445",
+    "type": "note",
+    "x": 1313.9,
+    "y": 316,
+    "text": "58%",
+    "color": "#8f9a6e",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-446",
+    "type": "note",
+    "x": 1160,
+    "y": 342,
+    "text": "301 g · 50.7% WR ±6",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "img-447",
+    "type": "image",
+    "x": 0,
+    "y": 384,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "context"
+   },
+   {
+    "id": "note-448",
+    "type": "note",
+    "x": 52,
+    "y": 392,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "context"
+   },
+   {
+    "id": "ink-449",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 12,
+    "points": [
+     [
+      260,
+      398
+     ],
+     [
+      272.3,
+      398.1
+     ],
+     [
+      285,
+      398.1
+     ],
+     [
+      296.9,
+      398
+     ],
+     [
+      309.6,
+      398.1
+     ],
+     [
+      321.8,
+      398
+     ],
+     [
+      334.2,
+      398.1
+     ],
+     [
+      346.7,
+      397.9
+     ],
+     [
+      359.1,
+      398.1
+     ],
+     [
+      371.3,
+      398.2
+     ],
+     [
+      383.6,
+      397.8
+     ],
+     [
+      395.8,
+      397.9
+     ],
+     [
+      408.6,
+      398.1
+     ],
+     [
+      420.8,
+      398.2
+     ],
+     [
+      433.4,
+      397.9
+     ],
+     [
+      445.5,
+      398
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-450",
+    "type": "note",
+    "x": 453.5,
+    "y": 386,
+    "text": "74%",
+    "color": "#b8925a",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-451",
+    "type": "note",
+    "x": 260,
+    "y": 412,
+    "text": "18,829 g · 52.2% WR ±1",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-452",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 12,
+    "points": [
+     [
+      559.8,
+      397.7
+     ],
+     [
+      572.3,
+      398
+     ],
+     [
+      584.8,
+      398.2
+     ],
+     [
+      596.8,
+      398.1
+     ],
+     [
+      608.8,
+      397.9
+     ],
+     [
+      621.2,
+      398
+     ],
+     [
+      633.4,
+      398.2
+     ],
+     [
+      645.8,
+      397.8
+     ],
+     [
+      657.7,
+      398.2
+     ],
+     [
+      670,
+      398.2
+     ],
+     [
+      682.1,
+      398
+     ],
+     [
+      694.6,
+      397.8
+     ],
+     [
+      706.8,
+      398
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-453",
+    "type": "note",
+    "x": 714.8,
+    "y": 386,
+    "text": "59%",
+    "color": "#b8925a",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-454",
+    "type": "note",
+    "x": 560,
+    "y": 412,
+    "text": "1,513 g · 49.8% WR ±3",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-455",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 12,
+    "points": [
+     [
+      859.8,
+      398
+     ],
+     [
+      872.1,
+      398.1
+     ],
+     [
+      884.3,
+      397.9
+     ],
+     [
+      895.9,
+      398.1
+     ],
+     [
+      908,
+      397.8
+     ],
+     [
+      920.1,
+      397.9
+     ],
+     [
+      931.8,
+      398
+     ],
+     [
+      944.2,
+      398.1
+     ],
+     [
+      955.9,
+      397.8
+     ],
+     [
+      968,
+      398
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-456",
+    "type": "note",
+    "x": 976,
+    "y": 386,
+    "text": "43%",
+    "color": "#b8925a",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-457",
+    "type": "note",
+    "x": 860,
+    "y": 412,
+    "text": "503 g · 48.3% WR ±4",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-458",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 12,
+    "points": [
+     [
+      1159.8,
+      398.2
+     ],
+     [
+      1172.9,
+      397.9
+     ],
+     [
+      1186.1,
+      398.2
+     ],
+     [
+      1199,
+      397.7
+     ],
+     [
+      1211.5,
+      397.9
+     ],
+     [
+      1224.7,
+      398
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-459",
+    "type": "note",
+    "x": 1232.7,
+    "y": 386,
+    "text": "26%",
+    "color": "#b8925a",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-460",
+    "type": "note",
+    "x": 1160,
+    "y": 412,
+    "text": "133 g · 51.9% WR ±8",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "img-461",
+    "type": "image",
+    "x": 0,
+    "y": 454,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "context"
+   },
+   {
+    "id": "note-462",
+    "type": "note",
+    "x": 52,
+    "y": 462,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "context"
+   },
+   {
+    "id": "ink-463",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      260.1,
+      468
+     ],
+     [
+      271.4,
+      467.7
+     ],
+     [
+      282.7,
+      468
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-464",
+    "type": "note",
+    "x": 290.7,
+    "y": 456,
+    "text": "9%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-465",
+    "type": "note",
+    "x": 260,
+    "y": 482,
+    "text": "2,302 g · 51.6% WR ±2",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-466",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      559.8,
+      468.3
+     ],
+     [
+      577.4,
+      468
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-467",
+    "type": "note",
+    "x": 585.4,
+    "y": 456,
+    "text": "7%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-468",
+    "type": "note",
+    "x": 560,
+    "y": 482,
+    "text": "179 g · 47.5% WR ±7",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-469",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      859.9,
+      467.7
+     ],
+     [
+      869.4,
+      468
+     ],
+     [
+      878.5,
+      468
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-470",
+    "type": "note",
+    "x": 886.5,
+    "y": 456,
+    "text": "7%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-471",
+    "type": "note",
+    "x": 860,
+    "y": 482,
+    "text": "86 g · 52.3% WR ±11",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-472",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      1160,
+      467.7
+     ],
+     [
+      1169.3,
+      468
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-473",
+    "type": "note",
+    "x": 1177.3,
+    "y": 456,
+    "text": "4%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-474",
+    "type": "note",
+    "x": 1160,
+    "y": 482,
+    "text": "19 g · too few",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "img-475",
+    "type": "image",
+    "x": 0,
+    "y": 524,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/ArcaneComet/ArcaneComet.png",
+    "tab": "context"
+   },
+   {
+    "id": "note-476",
+    "type": "note",
+    "x": 52,
+    "y": 532,
+    "text": "Arcane Comet",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "context"
+   },
+   {
+    "id": "ink-477",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      260,
+      537.8
+     ],
+     [
+      277.6,
+      538
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-478",
+    "type": "note",
+    "x": 285.6,
+    "y": 526,
+    "text": "7%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-479",
+    "type": "note",
+    "x": 260,
+    "y": 552,
+    "text": "1,789 g · 48.8% WR ±2",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-480",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      559.9,
+      537.8
+     ],
+     [
+      569,
+      538.3
+     ],
+     [
+      578.5,
+      538
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-481",
+    "type": "note",
+    "x": 586.5,
+    "y": 526,
+    "text": "7%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-482",
+    "type": "note",
+    "x": 560,
+    "y": 552,
+    "text": "190 g · 49.5% WR ±7",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-483",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      860.1,
+      538
+     ],
+     [
+      872.5,
+      538.3
+     ],
+     [
+      884.5,
+      538
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-484",
+    "type": "note",
+    "x": 892.5,
+    "y": 526,
+    "text": "10%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-485",
+    "type": "note",
+    "x": 860,
+    "y": 552,
+    "text": "114 g · 50.0% WR ±9",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-486",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      1159.9,
+      538.3
+     ],
+     [
+      1172.6,
+      537.9
+     ],
+     [
+      1184.8,
+      538
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-487",
+    "type": "note",
+    "x": 1192.8,
+    "y": 526,
+    "text": "10%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-488",
+    "type": "note",
+    "x": 1160,
+    "y": 552,
+    "text": "51 g · 56.9% WR ±14",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "img-489",
+    "type": "image",
+    "x": 0,
+    "y": 594,
+    "w": 40,
+    "h": 40,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Inspiration/FirstStrike/FirstStrike.png",
+    "tab": "context"
+   },
+   {
+    "id": "note-490",
+    "type": "note",
+    "x": 52,
+    "y": 602,
+    "text": "First Strike",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "context"
+   },
+   {
+    "id": "ink-491",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      260.3,
+      608.3
+     ],
+     [
+      262.2,
+      608
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-492",
+    "type": "note",
+    "x": 270.2,
+    "y": 596,
+    "text": "1%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-493",
+    "type": "note",
+    "x": 260,
+    "y": 622,
+    "text": "221 g · 54.8% WR ±7",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-494",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      559.9,
+      608.3
+     ],
+     [
+      564,
+      608
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-495",
+    "type": "note",
+    "x": 572,
+    "y": 596,
+    "text": "2%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-496",
+    "type": "note",
+    "x": 560,
+    "y": 622,
+    "text": "41 g · 70.7% WR ±15",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-497",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      860.1,
+      608
+     ],
+     [
+      864.3,
+      608
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-498",
+    "type": "note",
+    "x": 872.3,
+    "y": 596,
+    "text": "2%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-499",
+    "type": "note",
+    "x": 860,
+    "y": 622,
+    "text": "20 g · 80.0% WR ±22",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "ink-500",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 12,
+    "points": [
+     [
+      1160,
+      608.1
+     ],
+     [
+      1164.9,
+      608
+     ]
+    ],
+    "tab": "context"
+   },
+   {
+    "id": "note-501",
+    "type": "note",
+    "x": 1172.9,
+    "y": 596,
+    "text": "2%",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "context"
+   },
+   {
+    "id": "note-502",
+    "type": "note",
+    "x": 1160,
+    "y": 622,
+    "text": "10 g · too few",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "context"
+   },
+   {
+    "id": "note-503",
+    "type": "note",
+    "x": 1500,
+    "y": 208,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 24,
+    "tab": "context"
+   },
+   {
+    "id": "note-504",
+    "type": "note",
+    "x": 1500,
+    "y": 246,
+    "text": "• Stormraider's climbs with rank: 7% of games at\nAll ranks, 58% in NA Challenger. Lethal Tempo\nfalls from 74% to 26%.\n• That matches the model: the best players picked\nthe rune that buys autos, not the one that adds\ndamage.\n• No win-rate gap here is bigger than its noise.\nChallenger is only 515 games, and a few one-tricks\nplay most of them.\n• First Strike's high win rates sit on 20 to 40\ngames. Ignore them.\n• Earlier patches with more detail: the \"keystones\n(u.gg)\" and \"keystones (coachless, NA)\" library\npages.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "context"
+   }
+  ],
+  "source": {
+   "stats": "https://u.gg/lol/champions/kogmaw/runes-table?role=adc&region=na1&patch=16_21",
+   "numbers": "https://wiki.leagueoflegends.com/en-us/",
+   "model": "tools/kogmaw-rune-model.mjs",
+   "pulledAt": "2026-11-07"
+  },
+  "tabs": [
+   {
+    "id": "score",
+    "label": "1 · Scorecard"
+   },
+   {
+    "id": "lane",
+    "label": "2 · Levels 1 to 6"
+   },
+   {
+    "id": "mid",
+    "label": "3 · Mid-game kiting"
+   },
+   {
+    "id": "pages",
+    "label": "4 · Rune pages"
+   },
+   {
+    "id": "context",
+    "label": "5 · What NA plays (context)"
+   }
+  ],
+  "activeTab": "score"
+ }
+}
