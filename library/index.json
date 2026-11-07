@@ -29,6 +29,11 @@
       "file": "kogmaw-adc-runes-aggro.json",
       "title": "Kog'Maw ADC: runes for aggression",
       "description": "First principles, not win rate: which keystone gives the most level 1 to 3 pressure, mid-game skirmish power and skill ceiling. A fight and kiting model for 11 keystones (LoL wiki, patch 26.22), three rune pages, and u.gg NA keystone pick rates (patch 26.21) as context."
+    },
+    {
+      "file": "kogmaw-adc-items-aggro.json",
+      "title": "Kog'Maw ADC: items for aggression",
+      "description": "First principles, not win rate: 14 build paths bought with the same gold and run through a fight model (LoL wiki, patch 26.22). First back, item order, a fed-diver duel, a tank fight, three build paths, and coachless/u.gg NA numbers (patch 16.21) as context."
     }
   ]
 }
