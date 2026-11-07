@@ -416,18 +416,19 @@ s.tab('paths');
     // ceiling dots + key numbers
     const r = ev[p.id].at;
     s.note(x, top + 104, `Skill ceiling ${'●'.repeat(ceiling[p.id])}${'○'.repeat(5 - ceiling[p.id])}`, { size: 16, color: 'Sepia' });
-    s.note(x, top + 132, `Item 1: ${fmtInt(r.one.skirmish.total)} in 8 s · Item 2: ADC dead in ${r.two.skirmish.killAt.toFixed(1)} s · Item 3: ${fmtInt(r.three.front.total)} on the tank`, { size: 13, color: 'Slate' });
-    s.wobblyLine([[x, top + 162], [x + colW - 60, top + 160]], { color: 'Sepia', width: 1 });
-    s.note(x, top + 176, p.why.map((w) => `• ${w}`).join('\n'), { size: 14, maxChars: 68 });
+    s.note(x, top + 130, `Item 1: ${fmtInt(r.one.skirmish.total)} damage in 8 s\nItem 2: an ADC dead in ${r.two.skirmish.killAt.toFixed(1)} s\nItem 3: ${fmtInt(r.three.front.total)} on the tank in 16 s`, { size: 13, color: 'Slate' });
+    s.wobblyLine([[x, top + 192], [x + colW - 60, top + 190]], { color: 'Sepia', width: 1 });
+    s.note(x, top + 206, p.why.map((w) => `• ${w}`).join('\n'), { size: 14, maxChars: 60 });
   });
   // runes reminder
-  const ry = top + 410;
+  const ry = top + 470;
   s.image(0, ry, 44, 44, runeIcon("Stormraider's Surge"));
-  s.note(56, ry, "All three assume the runes page's default: Stormraider's Surge, Manaflow,\nTranscendence, Scorch; Legend: Alacrity, Coup de Grace.", { size: 14 });
-  s.note(56, ry + 44, 'Swaps: Wit\'s End into magic divers, Mercurial or Banshee\'s into a key CC spell, Jak\'Sho when you are the target. See the "carry into fed assassins" page.', { size: 13, color: 'Slate' });
-  s.note(0, ry + 100, [
-    'Skill ceiling judgments: Spellblade paths 4 to 5 (spell-auto weaving, burst vs spaced, R mana), Kraken, Ruined King and Navori 3 (count hits, use the slow,',
-    'spend the resets), Stormsurge 3 (hit the 25% threshold), Rageblade, Terminus and Wit\'s End 2 (stand and hit).',
+  s.note(56, ry, "All three assume the runes page's default:\nStormraider's Surge, Manaflow, Transcendence, Scorch;\nLegend: Alacrity, Coup de Grace.", { size: 14 });
+  s.note(700, ry, 'Defensive swaps: Wit\'s End into magic divers,\nMercurial or Banshee\'s into one key CC spell,\nJak\'Sho when you are the target.\nSee the "carry into fed assassins" page.', { size: 14, color: 'Slate' });
+  s.note(0, ry + 90, [
+    'Skill ceiling judgments: Spellblade paths 4 to 5 (spell-auto weaving, burst vs spaced, R mana).',
+    'Kraken, Ruined King and Navori 3 (count hits, use the slow, spend the resets). Stormsurge 3 (hit the 25% threshold).',
+    'Rageblade, Terminus and Wit\'s End 2 (stand and hit).',
   ].join('\n'), { size: 12, color: 'Slate' });
 }
 

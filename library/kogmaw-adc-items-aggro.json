@@ -24438,8 +24438,8 @@
     "id": "note-668",
     "type": "note",
     "x": 0,
-    "y": 432,
-    "text": "Item 1: 2,454 in 8 s · Item 2: ADC dead in 1.3 s · Item 3: 11,292 on the tank",
+    "y": 430,
+    "text": "Item 1: 2,454 damage in 8 s\nItem 2: an ADC dead in 1.3 s\nItem 3: 11,292 on the tank in 16 s",
     "color": "#7f98ad",
     "size": 13,
     "tab": "paths"
@@ -24452,207 +24452,207 @@
     "points": [
      [
       -0.4,
-      462.4
+      492.4
      ],
      [
       11.4,
-      462.1
+      492.1
      ],
      [
       23.6,
-      462.4
+      492.4
      ],
      [
       35.2,
-      461.5
+      491.5
      ],
      [
       47.6,
-      461.1
+      491.1
      ],
      [
       59.2,
-      462.4
+      492.4
      ],
      [
       72.4,
-      462
+      492
      ],
      [
       83.3,
-      461
+      491
      ],
      [
       96.6,
-      461
+      491
      ],
      [
       107.9,
-      461.4
+      491.4
      ],
      [
       119.8,
-      461.8
+      491.8
      ],
      [
       132.5,
-      461.4
+      491.4
      ],
      [
       144.5,
-      461.3
+      491.3
      ],
      [
       156,
-      462.2
+      492.2
      ],
      [
       168.4,
-      462.2
+      492.2
      ],
      [
       180.4,
-      461.3
+      491.3
      ],
      [
       191.5,
-      461.2
+      491.2
      ],
      [
       203.6,
-      461.2
+      491.2
      ],
      [
       215.5,
-      460.7
+      490.7
      ],
      [
       228.5,
-      461.3
+      491.3
      ],
      [
       240,
-      461.8
+      491.8
      ],
      [
       251.9,
-      460.9
+      490.9
      ],
      [
       263.7,
-      461.5
+      491.5
      ],
      [
       276.2,
-      461.6
+      491.6
      ],
      [
       287.6,
-      461.2
+      491.2
      ],
      [
       299.6,
-      461.3
+      491.3
      ],
      [
       312.1,
-      461.4
+      491.4
      ],
      [
       324.5,
-      460.7
+      490.7
      ],
      [
       336.2,
-      461.3
+      491.3
      ],
      [
       347.8,
-      460.1
+      490.1
      ],
      [
       359.3,
-      460.5
+      490.5
      ],
      [
       371.4,
-      460.8
+      490.8
      ],
      [
       384.7,
-      460.2
+      490.2
      ],
      [
       396.1,
-      460.7
+      490.7
      ],
      [
       408.2,
-      460.6
+      490.6
      ],
      [
       419.5,
-      460.7
+      490.7
      ],
      [
       432,
-      460.7
+      490.7
      ],
      [
       443.9,
-      460.5
+      490.5
      ],
      [
       456,
-      459.7
+      489.7
      ],
      [
       467.9,
-      459.7
+      489.7
      ],
      [
       479.6,
-      460.6
+      490.6
      ],
      [
       492.4,
-      459.9
+      489.9
      ],
      [
       504.2,
-      460.9
+      490.9
      ],
      [
       516.6,
-      460.3
+      490.3
      ],
      [
       527.3,
-      460
+      490
      ],
      [
       540.8,
-      459.6
+      489.6
      ],
      [
       552.2,
-      460.7
+      490.7
      ],
      [
       563.9,
-      460
+      490
      ],
      [
       576,
-      460
+      490
      ],
      [
       588.5,
-      459.7
+      489.7
      ],
      [
       600,
-      460
+      490
      ]
     ],
     "tab": "paths"
@@ -24661,8 +24661,8 @@
     "id": "note-670",
     "type": "note",
     "x": 0,
-    "y": 476,
-    "text": "• Kills an ADC in 1.3 s at item 2, the fastest of the full builds\nthat also hold up in teamfights.\n• Nashor's first: attack speed and on-hit for W. Dusk second: every\nspell becomes another W hit and a heal.\n• Skill: weave a spell before an auto every 1.5 s for Spellblade,\nand choose burst (Q E R at once) or spaced spells per fight.\n• Rabadon's third: +30% AP on everything. Late: Shadowflame or Void\nStaff.",
+    "y": 506,
+    "text": "• Kills an ADC in 1.3 s at item 2, the fastest of the full\nbuilds that also hold up in teamfights.\n• Nashor's first: attack speed and on-hit for W. Dusk\nsecond: every spell becomes another W hit and a heal.\n• Skill: weave a spell before an auto every 1.5 s for\nSpellblade, and choose burst (Q E R at once) or spaced\nspells per fight.\n• Rabadon's third: +30% AP on everything. Late: Shadowflame\nor Void Staff.",
     "color": "#e9dfc9",
     "size": 14,
     "tab": "paths"
@@ -24841,8 +24841,8 @@
     "id": "note-688",
     "type": "note",
     "x": 660,
-    "y": 432,
-    "text": "Item 1: 2,915 in 8 s · Item 2: ADC dead in 2.0 s · Item 3: 14,294 on the tank",
+    "y": 430,
+    "text": "Item 1: 2,915 damage in 8 s\nItem 2: an ADC dead in 2.0 s\nItem 3: 14,294 on the tank in 16 s",
     "color": "#7f98ad",
     "size": 13,
     "tab": "paths"
@@ -24855,207 +24855,207 @@
     "points": [
      [
       660.3,
-      462
+      492
      ],
      [
       672.8,
-      461.5
+      491.5
      ],
      [
       684.5,
-      461.5
+      491.5
      ],
      [
       696.1,
-      461.8
+      491.8
      ],
      [
       707.9,
-      462.5
+      492.5
      ],
      [
       719.7,
-      461.8
+      491.8
      ],
      [
       731.3,
-      462.3
+      492.3
      ],
      [
       744.3,
-      461.8
+      491.8
      ],
      [
       755.5,
-      462.1
+      492.1
      ],
      [
       768.1,
-      461.9
+      491.9
      ],
      [
       780.5,
-      462.2
+      492.2
      ],
      [
       791.4,
-      462.1
+      492.1
      ],
      [
       803.9,
-      461.9
+      491.9
      ],
      [
       815.6,
-      460.7
+      490.7
      ],
      [
       828.8,
-      461.6
+      491.6
      ],
      [
       840.4,
-      461.5
+      491.5
      ],
      [
       852.3,
-      461.7
+      491.7
      ],
      [
       864.8,
-      460.7
+      490.7
      ],
      [
       875.4,
-      461.3
+      491.3
      ],
      [
       888.2,
-      460.7
+      490.7
      ],
      [
       900.3,
-      461.3
+      491.3
      ],
      [
       912.4,
-      461.7
+      491.7
      ],
      [
       924.4,
-      461.6
+      491.6
      ],
      [
       936.6,
-      460.8
+      490.8
      ],
      [
       947.6,
-      460.8
+      490.8
      ],
      [
       959.8,
-      460.3
+      490.3
      ],
      [
       971.5,
-      461.7
+      491.7
      ],
      [
       984.4,
-      461.5
+      491.5
      ],
      [
       995.9,
-      461.1
+      491.1
      ],
      [
       1008.2,
-      460.1
+      490.1
      ],
      [
       1019.3,
-      461.3
+      491.3
      ],
      [
       1032.3,
-      461.4
+      491.4
      ],
      [
       1044.3,
-      460.9
+      490.9
      ],
      [
       1056.7,
-      460.1
+      490.1
      ],
      [
       1067.8,
-      461
+      491
      ],
      [
       1079.4,
-      460.8
+      490.8
      ],
      [
       1092.3,
-      461.1
+      491.1
      ],
      [
       1103.7,
-      461.1
+      491.1
      ],
      [
       1116.3,
-      459.9
+      489.9
      ],
      [
       1128.3,
-      460.4
+      490.4
      ],
      [
       1139.8,
-      460.4
+      490.4
      ],
      [
       1152.8,
-      459.8
+      489.8
      ],
      [
       1163.2,
-      461
+      491
      ],
      [
       1175.3,
-      459.6
+      489.6
      ],
      [
       1188.7,
-      460.1
+      490.1
      ],
      [
       1199.3,
-      459.9
+      489.9
      ],
      [
       1211.2,
-      460.9
+      490.9
      ],
      [
       1223.7,
-      460.2
+      490.2
      ],
      [
       1236.7,
-      459.6
+      489.6
      ],
      [
       1247.8,
-      459.8
+      489.8
      ],
      [
       1260,
-      460
+      490
      ]
     ],
     "tab": "paths"
@@ -25064,8 +25064,8 @@
     "id": "note-690",
     "type": "note",
     "x": 660,
-    "y": 476,
-    "text": "• Best item 1 (2,915 damage in 8 s) and 14,294 on the tank at item\n3.\n• Rageblade's phantom hit, Dusk's second on-hit and Nashor's AP all\nmultiply W's % HP damage.\n• Swap Berserker's for Sorcerer's when the enemy is squishy: faster\nkills, less sustained damage.\n• Late: Terminus, then Navori for near-permanent W.",
+    "y": 506,
+    "text": "• Best item 1 (2,915 damage in 8 s) and 14,294 on the tank\nat item 3.\n• Rageblade's phantom hit, Dusk's second on-hit and Nashor's\nAP all multiply W's % HP damage.\n• Swap Berserker's for Sorcerer's when the enemy is squishy:\nfaster kills, less sustained damage.\n• Late: Terminus, then Navori for near-permanent W.",
     "color": "#e9dfc9",
     "size": 14,
     "tab": "paths"
@@ -25264,8 +25264,8 @@
     "id": "note-710",
     "type": "note",
     "x": 1320,
-    "y": 432,
-    "text": "Item 1: 2,833 in 8 s · Item 2: ADC dead in 2.1 s · Item 3: 13,930 on the tank",
+    "y": 430,
+    "text": "Item 1: 2,833 damage in 8 s\nItem 2: an ADC dead in 2.1 s\nItem 3: 13,930 on the tank in 16 s",
     "color": "#7f98ad",
     "size": 13,
     "tab": "paths"
@@ -25278,207 +25278,207 @@
     "points": [
      [
       1319.5,
-      462.6
+      492.6
      ],
      [
       1331.3,
-      462.4
+      492.4
      ],
      [
       1344.4,
-      462
+      492
      ],
      [
       1355.8,
-      462.4
+      492.4
      ],
      [
       1367.9,
-      462.2
+      492.2
      ],
      [
       1380.8,
-      461.5
+      491.5
      ],
      [
       1392,
-      462.2
+      492.2
      ],
      [
       1404.7,
-      461.1
+      491.1
      ],
      [
       1416.2,
-      461.5
+      491.5
      ],
      [
       1428.6,
-      461.2
+      491.2
      ],
      [
       1440.2,
-      462
+      492
      ],
      [
       1452.1,
-      461.4
+      491.4
      ],
      [
       1464.8,
-      462.2
+      492.2
      ],
      [
       1476.5,
-      461.9
+      491.9
      ],
      [
       1487.7,
-      462
+      492
      ],
      [
       1500.1,
-      461.7
+      491.7
      ],
      [
       1512,
-      461.3
+      491.3
      ],
      [
       1524.1,
-      461.7
+      491.7
      ],
      [
       1535.9,
-      460.7
+      490.7
      ],
      [
       1548.1,
-      461
+      491
      ],
      [
       1559.6,
-      461.5
+      491.5
      ],
      [
       1571.3,
-      461.6
+      491.6
      ],
      [
       1584.3,
-      460.6
+      490.6
      ],
      [
       1595.4,
-      461.5
+      491.5
      ],
      [
       1608.6,
-      461.1
+      491.1
      ],
      [
       1619.5,
-      460.3
+      490.3
      ],
      [
       1631.3,
-      461.2
+      491.2
      ],
      [
       1643.8,
-      461.5
+      491.5
      ],
      [
       1655.5,
-      460.8
+      490.8
      ],
      [
       1667.3,
-      460.7
+      490.7
      ],
      [
       1679.8,
-      460.6
+      490.6
      ],
      [
       1691.6,
-      460.8
+      490.8
      ],
      [
       1703.7,
-      460.4
+      490.4
      ],
      [
       1715.6,
-      459.9
+      489.9
      ],
      [
       1728.1,
-      460.6
+      490.6
      ],
      [
       1739.5,
-      460.7
+      490.7
      ],
      [
       1751.9,
-      459.9
+      489.9
      ],
      [
       1764.3,
-      459.8
+      489.8
      ],
      [
       1775.3,
-      460.9
+      490.9
      ],
      [
       1788.2,
-      459.9
+      489.9
      ],
      [
       1800.6,
-      460
+      490
      ],
      [
       1812.7,
-      461
+      491
      ],
      [
       1824.3,
-      459.7
+      489.7
      ],
      [
       1836.4,
-      459.8
+      489.8
      ],
      [
       1847.8,
-      460.9
+      490.9
      ],
      [
       1860.2,
-      459.6
+      489.6
      ],
      [
       1871.6,
-      460.8
+      490.8
      ],
      [
       1883.9,
-      459.7
+      489.7
      ],
      [
       1895.8,
-      459.6
+      489.6
      ],
      [
       1907.3,
-      459.8
+      489.8
      ],
      [
       1920,
-      460
+      490
      ]
     ],
     "tab": "paths"
@@ -25487,8 +25487,8 @@
     "id": "note-712",
     "type": "note",
     "x": 1320,
-    "y": 476,
-    "text": "• Most damage over 8 s at items 2 and 3 (5,527 at item 2). Wins\nevery slowed duel at item 2 here.\n• Kraken's every-third-hit burst grows on low targets, and its move\nspeed stacks with Stormraider's.\n• Lower ceiling: mostly stand and hit. Time Kraken's third hit for\nthe finish.\n• Late: Navori, then Wit's End or a defensive item.",
+    "y": 506,
+    "text": "• Most damage over 8 s at items 2 and 3 (5,527 at item 2).\nWins every slowed duel at item 2 here.\n• Kraken's every-third-hit burst grows on low targets, and\nits move speed stacks with Stormraider's.\n• Lower ceiling: mostly stand and hit. Time Kraken's third\nhit for the finish.\n• Late: Navori, then Wit's End or a defensive item.",
     "color": "#e9dfc9",
     "size": 14,
     "tab": "paths"
@@ -25497,7 +25497,7 @@
     "id": "img-713",
     "type": "image",
     "x": 0,
-    "y": 710,
+    "y": 770,
     "w": 44,
     "h": 44,
     "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
@@ -25507,8 +25507,8 @@
     "id": "note-714",
     "type": "note",
     "x": 56,
-    "y": 710,
-    "text": "All three assume the runes page's default: Stormraider's Surge, Manaflow,\nTranscendence, Scorch; Legend: Alacrity, Coup de Grace.",
+    "y": 770,
+    "text": "All three assume the runes page's default:\nStormraider's Surge, Manaflow, Transcendence, Scorch;\nLegend: Alacrity, Coup de Grace.",
     "color": "#e9dfc9",
     "size": 14,
     "tab": "paths"
@@ -25516,19 +25516,19 @@
    {
     "id": "note-715",
     "type": "note",
-    "x": 56,
-    "y": 754,
-    "text": "Swaps: Wit's End into magic divers, Mercurial or Banshee's into a key CC spell, Jak'Sho when you are the target. See the \"carry into fed assassins\" page.",
+    "x": 700,
+    "y": 770,
+    "text": "Defensive swaps: Wit's End into magic divers,\nMercurial or Banshee's into one key CC spell,\nJak'Sho when you are the target.\nSee the \"carry into fed assassins\" page.",
     "color": "#7f98ad",
-    "size": 13,
+    "size": 14,
     "tab": "paths"
    },
    {
     "id": "note-716",
     "type": "note",
     "x": 0,
-    "y": 810,
-    "text": "Skill ceiling judgments: Spellblade paths 4 to 5 (spell-auto weaving, burst vs spaced, R mana), Kraken, Ruined King and Navori 3 (count hits, use the slow,\nspend the resets), Stormsurge 3 (hit the 25% threshold), Rageblade, Terminus and Wit's End 2 (stand and hit).",
+    "y": 860,
+    "text": "Skill ceiling judgments: Spellblade paths 4 to 5 (spell-auto weaving, burst vs spaced, R mana).\nKraken, Ruined King and Navori 3 (count hits, use the slow, spend the resets). Stormsurge 3 (hit the 25% threshold).\nRageblade, Terminus and Wit's End 2 (stand and hit).",
     "color": "#7f98ad",
     "size": 12,
     "tab": "paths"
