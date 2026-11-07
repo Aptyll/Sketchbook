@@ -24,6 +24,11 @@
       "file": "kogmaw-adc-vs-assassins.json",
       "title": "Kog'Maw ADC: carry into fed assassins",
       "description": "Behind into fed Syndra, Qiyana and Yone: their engage ranges vs yours, the cooldown windows to fight in, AP and on-hit defensive picks checked against their CC types, coachless 16.21 WPA (NA and all regions Diamond+) and u.gg NA AP vs on-hit, and a game plan."
+    },
+    {
+      "file": "kogmaw-adc-runes-aggro.json",
+      "title": "Kog'Maw ADC: runes for aggression",
+      "description": "First principles, not win rate: which keystone gives the most level 1 to 3 pressure, mid-game skirmish power and skill ceiling. A fight and kiting model for 11 keystones (LoL wiki, patch 26.22), three rune pages, and u.gg NA keystone pick rates (patch 26.21) as context."
     }
   ]
 }
