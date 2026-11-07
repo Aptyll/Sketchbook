@@ -19,6 +19,11 @@
       "file": "kogmaw-adc-starters.json",
       "title": "Kog'Maw ADC: Doran's starter",
       "description": "Bow, Blade, Helm or Ring? Four tabs: level 1 lane math from the LoL wiki, coachless WPA by rank (NA Gold+ to Master+, patches 16.18 to 16.20), u.gg's build variants up to NA Challenger, and a verdict per build and lane."
+    },
+    {
+      "file": "kogmaw-adc-vs-assassins.json",
+      "title": "Kog'Maw ADC: carry into fed assassins",
+      "description": "Behind into fed Syndra, Qiyana and Yone: their engage ranges vs yours, the cooldown windows to fight in, AP and on-hit defensive picks checked against their CC types, coachless 16.21 WPA (NA and all regions Diamond+) and u.gg NA AP vs on-hit, and a game plan."
     }
   ]
 }
