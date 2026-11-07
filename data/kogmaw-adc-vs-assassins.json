@@ -1,0 +1,215 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "question": "How does Kog'Maw ADC still carry from behind into fed assassins (Syndra, Qiyana, Yone)?",
+  "pulledAt": "2026-11-07",
+  "patch": { "coachless": "16.21", "ugg": "26.21 (URL 16_21)", "dataDragon": "16.22.1", "note": "16.21 is the latest full patch on 2026-11-07; 16.22 had only just started." },
+  "icons": {
+    "item": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/",
+    "spell": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/",
+    "champion": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/",
+    "rune": "https://ddragon.leagueoflegends.com/cdn/img/"
+  },
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "note": "Ranges and cooldowns from each champion's LoL wiki page, pulled 2026-11-07. Ranges are centre to centre and ignore hitboxes (about 65 units each), so real reach is a little longer on both sides. Cooldowns are base values with no ability haste."
+  },
+  "kog": {
+    "icon": "KogMaw.png",
+    "ranges": [
+      { "key": "aa", "label": "Auto attack", "range": 500 },
+      { "key": "w", "label": "W on (rank 1 to 5)", "range": 710, "from": 630, "icon": "KogMawBioArcaneBarrage.png" },
+      { "key": "q", "label": "Q Caustic Spittle", "range": 1200, "icon": "KogMawQ.png" },
+      { "key": "e", "label": "E Void Ooze (40 to 60% slow)", "range": 1360, "icon": "KogMawVoidOoze.png" },
+      { "key": "r", "label": "R Living Artillery (rank 1 / 2 / 3)", "range": 1800, "from": 1300, "steps": [1300, 1550, 1800], "icon": "KogMawLivingArtillery.png" }
+    ],
+    "w": { "bonusRange": [130, 150, 170, 190, 210], "duration": 8, "cooldown": 17, "damage": "3 to 6% (+1.5% per 100 AP) of max health, magic, on-hit" },
+    "r": { "range": [1300, 1550, 1800], "cooldown": [2, 1.5, 1], "note": "Grants sight of the area and reveals enemies hit for 2 s. +100% damage below 40% health." }
+  },
+  "threats": [
+    {
+      "key": "syndra", "name": "Syndra", "icon": "Syndra.png", "damage": "magic",
+      "reach": [
+        { "label": "R Unleashed Power (burst)", "range": 675, "icon": "SyndraR.png" },
+        { "label": "Q Dark Sphere", "range": 800, "icon": "SyndraQ.png" },
+        { "label": "Q then E: sphere stun", "range": 1300, "icon": "SyndraE.png", "cc": true }
+      ],
+      "flash": 400,
+      "keyCC": { "spell": "E Scatter the Weak (with a sphere)", "type": "knockback (airborne), then stun", "cooldown": [15] },
+      "ult": { "cooldown": [120, 100, 80] }
+    },
+    {
+      "key": "qiyana", "name": "Qiyana", "icon": "Qiyana.png", "damage": "physical",
+      "reach": [
+        { "label": "E Audacity (dash to a target)", "range": 650, "icon": "QiyanaE.png" },
+        { "label": "R Supreme Display (wall stun)", "range": 875, "icon": "QiyanaR.png", "cc": true },
+        { "label": "W dash (300) then R", "range": 1175, "icon": "QiyanaW.png", "cc": true }
+      ],
+      "flash": 400,
+      "keyCC": { "spell": "R Supreme Display of Talent", "type": "knockback (airborne), then stun on terrain", "cooldown": [120] },
+      "eCooldown": [11, 10, 9, 8, 7],
+      "ult": { "cooldown": [120] }
+    },
+    {
+      "key": "yone", "name": "Yone", "icon": "Yone.png", "damage": "mixed",
+      "reach": [
+        { "label": "R Fate Sealed", "range": 1000, "icon": "YoneR.png", "cc": true },
+        { "label": "Q3 (dash 450 + wind line)", "range": 1050, "icon": "YoneQ.png", "cc": true },
+        { "label": "E dash (300) then R", "range": 1300, "icon": "YoneE.png", "cc": true }
+      ],
+      "flash": 400,
+      "keyCC": { "spell": "R Fate Sealed", "type": "knockdown (airborne) and stun", "cooldown": [120, 100, 80] },
+      "eCooldown": [22, 19, 16, 13, 10],
+      "ult": { "cooldown": [120, 100, 80] }
+    }
+  ],
+  "coachless": {
+    "site": "coachless.gg",
+    "patch": "16.21",
+    "metric": "WPA = win rate minus the average win probability at the moment the item was bought (percentage points). Buys = games it was bought.",
+    "note": "Free tier: one patch, no 'vs champion' filter (paywalled), so these are all Kog'Maw ADC games, not only games into assassins. 'Hide low occurrence' was off. NA Diamond+ hides any item under about 130 buys, so most defensive items only show for all regions.",
+    "samples": {
+      "na-d": { "label": "NA Diamond+", "games": 2036 },
+      "world-d": { "label": "All regions Diamond+", "games": 21697 }
+    },
+    "columns": ["wpa", "buys", "pickRate", "preBuyWP", "winRate"],
+    "legendaries": {
+      "na-d": {
+        "Dusk and Dawn": [1.39, 822, 10.7, 50.9, 52.3],
+        "Stormsurge": [0.94, 173, 2.3, 58.7, 59.7],
+        "Rabadon's Deathcap": [0.87, 446, 5.8, 54.6, 55.5],
+        "Terminus": [0.69, 865, 11.3, 52.4, 53.1],
+        "Runaan's Hurricane": [0.51, 601, 7.8, 53.2, 53.7],
+        "Shadowflame": [0.36, 713, 9.3, 52.2, 52.5],
+        "Wit's End": [0.30, 223, 2.9, 55.2, 55.5],
+        "Guinsoo's Rageblade": [-0.13, 1340, 17.5, 50.9, 50.8],
+        "Navori Flickerblade": [-0.64, 660, 8.7, 51.8, 51.1],
+        "Luden's Echo": [-0.93, 141, 1.9, 53.8, 52.8],
+        "Void Staff": [-3.06, 153, 2.0, 51.8, 48.7],
+        "Jak'Sho, The Protean": [-3.16, 339, 4.4, 55.4, 52.2],
+        "Blade of The Ruined King": [-3.27, 452, 5.9, 53.4, 50.1],
+        "Zhonya's Hourglass": [-3.74, 132, 1.7, 53.0, 49.2]
+      },
+      "world-d": {
+        "Banshee's Veil": [6.32, 342, 0.5, 50.6, 56.9],
+        "Void Staff": [3.99, 956, 1.3, 51.4, 55.4],
+        "Phantom Dancer": [3.85, 152, 0.2, 56.5, 60.4],
+        "Infinity Edge": [2.30, 105, 0.1, 55.3, 57.6],
+        "Stormsurge": [2.11, 566, 0.8, 58.2, 60.3],
+        "Luden's Echo": [1.96, 1130, 1.5, 55.3, 57.3],
+        "Kaenic Rookern": [1.21, 103, 0.1, 60.1, 61.3],
+        "Rabadon's Deathcap": [1.15, 2971, 4.0, 54.7, 55.8],
+        "Runaan's Hurricane": [0.66, 6359, 8.6, 54.2, 54.9],
+        "Kraken Slayer": [0.58, 1177, 1.6, 55.0, 55.6],
+        "Guinsoo's Rageblade": [0.39, 15216, 20.5, 52.3, 52.6],
+        "Nashor's Tooth": [0.06, 702, 1.0, 54.4, 54.5],
+        "Wit's End": [0.05, 2520, 3.4, 54.6, 54.7],
+        "Navori Flickerblade": [0.02, 7345, 9.9, 54.4, 54.4],
+        "Shadowflame": [-0.01, 4957, 6.7, 53.1, 53.1],
+        "Statikk Shiv": [-0.02, 188, 0.3, 52.4, 52.4],
+        "Dusk and Dawn": [-0.09, 5392, 7.3, 52.2, 52.1],
+        "Terminus": [-0.10, 9993, 13.5, 54.7, 54.6],
+        "Zhonya's Hourglass": [-0.48, 1224, 1.7, 53.4, 52.9],
+        "Randuin's Omen": [-0.63, 944, 1.3, 55.9, 55.3],
+        "Cryptbloom": [-0.80, 101, 0.1, 54.6, 53.9],
+        "Mejai's Soulstealer": [-0.81, 299, 0.4, 79.2, 78.3],
+        "Archangel's Staff": [-1.27, 220, 0.3, 56.6, 55.3],
+        "Blackfire Torch": [-1.36, 159, 0.2, 56.4, 55.1],
+        "Guardian Angel": [-1.59, 220, 0.3, 54.3, 52.8],
+        "Hexoptics C44": [-1.64, 124, 0.2, 60.0, 58.4],
+        "Blade of The Ruined King": [-1.64, 5236, 7.1, 53.1, 51.5],
+        "Jak'Sho, The Protean": [-2.48, 4139, 5.6, 55.8, 53.4],
+        "Mercurial Scimitar": [-4.56, 268, 0.4, 53.1, 48.5]
+      }
+    },
+    "boots": {
+      "na-d": {
+        "Sorcerer's Shoes": [0.29, 760, 34.5, 51.2, 51.5],
+        "Gluttonous Greaves": [0.20, 488, 22.3, 53.8, 54.0],
+        "Berserker's Greaves": [-0.33, 788, 35.8, 50.5, 50.1]
+      },
+      "world-d": {
+        "Gluttonous Greaves": [1.45, 4143, 19.6, 53.6, 55.1],
+        "Berserker's Greaves": [0.17, 10370, 49.0, 51.6, 51.8],
+        "Sorcerer's Shoes": [0.07, 4974, 23.5, 53.0, 53.1],
+        "Boots of Swiftness": [-0.25, 300, 1.4, 53.2, 53.0],
+        "Plated Steelcaps": [-1.49, 1062, 5.0, 51.0, 49.5],
+        "Mercury's Treads": [-2.29, 279, 1.3, 50.3, 48.0]
+      }
+    },
+    "resolveRunes": {
+      "note": "Resolve as the secondary tree, picks per rune. NA Diamond+ listed only Conditioning (-1.56, 1,100) and Overgrowth (-1.23, 1,134); the defensive runes were under its threshold.",
+      "world-d": {
+        "Conditioning": [0.03, 12209],
+        "Overgrowth": [-0.07, 12584],
+        "Revitalize": [0.75, 324],
+        "Shield Bash": [4.92, 277],
+        "Bone Plating": [-2.32, 742],
+        "Unflinching": [-3.82, 259],
+        "Second Wind": [-7.69, 129]
+      }
+    },
+    "spells": {
+      "note": "Pre-game choice (WPA vs pre-game win probability), all Kog'Maw ADC games.",
+      "world-d": {
+        "Teleport": [1.47, 949],
+        "Cleanse": [0.96, 1178],
+        "Ghost": [0.84, 5339],
+        "Flash": [-0.01, 21697],
+        "Exhaust": [-0.37, 1710],
+        "Barrier": [-0.53, 12477]
+      }
+    }
+  },
+  "ugg": {
+    "site": "u.gg",
+    "source": "https://stats2.u.gg/lol/1.5/<variant>/16_21/ranked_solo_5x5/96/1.5.0.json (NA, ADC)",
+    "note": "u.gg's build variants are defined by finished items, so they lean toward longer games. Compare them with each other, not with 50%.",
+    "ranks": [
+      { "id": "all", "label": "All ranks" },
+      { "id": "d", "label": "Diamond+" },
+      { "id": "m", "label": "Master+" },
+      { "id": "c", "label": "Challenger" }
+    ],
+    "games": {
+      "overall": { "all": [25380, 13102], "d": [2577, 1297], "m": [1165, 586], "c": [515, 268] },
+      "ap": { "all": [5167, 2500], "d": [1102, 550], "m": [698, 353], "c": [395, 206] },
+      "onhit": { "all": [12049, 6776], "d": [857, 481], "m": [262, 141], "c": [66, 41] }
+    },
+    "cores": {
+      "ap": "Dusk and Dawn, Sorcerer's Shoes, Shadowflame",
+      "onhit": "Guinsoo's Rageblade, Gluttonous Greaves, Navori Flickerblade"
+    }
+  },
+  "items": {
+    "Banshee's Veil": { "id": 3102, "cost": 3000, "text": "105 AP, 40 MR. Spell shield blocks the next enemy ability." },
+    "Zhonya's Hourglass": { "id": 3157, "cost": 3250, "text": "105 AP, 50 armor. Active: 2.5 s stasis." },
+    "Guardian Angel": { "id": 3026, "cost": 3200, "text": "55 AD, 45 armor. Revive after 4 s stasis." },
+    "Mercurial Scimitar": { "id": 3139, "cost": 3200, "text": "50 AD, 35 MR, 10% life steal. Active: removes CC except airborne." },
+    "Quicksilver Sash": { "id": 3140, "cost": 1300, "text": "30 MR. Active: removes CC except airborne." },
+    "Wit's End": { "id": 3091, "cost": 2800, "text": "50% attack speed, 45 MR, 20% tenacity, magic on-hit." },
+    "Jak'Sho, The Protean": { "id": 6665, "cost": 3200, "text": "350 HP, 45 armor, 45 MR, more after 5 s of combat." },
+    "Gluttonous Greaves": { "id": 3008, "cost": 1100, "text": "45 move speed, 4% omnivamp, +0.6% per takedown (up to 10)." },
+    "Mercury's Treads": { "id": 3111, "cost": 1250, "text": "20 MR, 45 move speed, 30% tenacity." },
+    "Plated Steelcaps": { "id": 3047, "cost": 1200, "text": "Armor and less damage from attacks." },
+    "Dusk and Dawn": { "id": 2510, "cost": 3100 },
+    "Shadowflame": { "id": 4645, "cost": 3200 },
+    "Rabadon's Deathcap": { "id": 3089, "cost": 3500 },
+    "Void Staff": { "id": 3135, "cost": 3000 },
+    "Guinsoo's Rageblade": { "id": 3124, "cost": 3000 },
+    "Blade of The Ruined King": { "id": 3153, "cost": 3200 },
+    "Navori Flickerblade": { "id": 6675, "cost": 2650 },
+    "Terminus": { "id": 3302, "cost": 3000 },
+    "Runaan's Hurricane": { "id": 3085, "cost": 2650 },
+    "Sorcerer's Shoes": { "id": 3020, "cost": 1100 },
+    "Berserker's Greaves": { "id": 3006, "cost": 1100 }
+  },
+  "runes": {
+    "Bone Plating": { "icon": "perk-images/Styles/Resolve/BonePlating/BonePlating.png", "text": "After a hit from a champion, their next 3 hits deal 30 to 60 less. 55 s cooldown." },
+    "Revitalize": { "icon": "perk-images/Styles/Resolve/Revitalize/Revitalize.png" },
+    "Shield Bash": { "icon": "perk-images/Styles/Resolve/MirrorShell/MirrorShell.png" },
+    "Second Wind": { "icon": "perk-images/Styles/Resolve/SecondWind/SecondWind.png" },
+    "Unflinching": { "icon": "perk-images/Styles/Sorcery/Unflinching/Unflinching.png" }
+  },
+  "summoners": { "Cleanse": "SummonerBoost.png", "Barrier": "SummonerBarrier.png", "Ghost": "SummonerHaste.png", "Flash": "SummonerFlash.png" }
+}
