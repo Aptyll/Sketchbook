@@ -1,0 +1,169 @@
+{
+  "champion": "Vayne",
+  "role": "ADC",
+  "pulledAt": "2026-11-17",
+  "patch": { "riot": "16.22", "ugg": "26.22", "note": "Latest full patch on both sites when pulled (u.gg has no 16.23 data yet)." },
+  "icons": {
+    "version": "16.22.1",
+    "item": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/",
+    "spell": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/",
+    "rune": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/",
+    "champion": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/"
+  },
+  "samples": {
+    "naD": { "label": "NA Diamond+", "site": "coachless", "games": 1775 },
+    "naE": { "label": "NA Emerald+", "site": "coachless", "games": 6302 },
+    "wD": { "label": "All regions Diamond+", "site": "coachless", "games": 19646 },
+    "wE": { "label": "All regions Emerald+", "site": "coachless", "games": 72216 },
+    "naMasterNote": "coachless NA Master+ says 'Not enough data to display' for Vayne ADC on 16.22."
+  },
+  "ugg": {
+    "source": "https://u.gg/lol/champions/vayne/build/adc (region=na1) and /runes-table; JSON stats2.u.gg/lol/1.5/<overview|crit-overview|onhit-overview|ad-overview>/16_22/ranked_solo_5x5/67/1.5.0.json",
+    "ranks": {
+      "all": { "label": "All ranks", "games": 36294, "wins": 17998 },
+      "dplus": { "label": "Diamond+", "games": 2229, "wins": 1115 },
+      "mplus": { "label": "Master+", "games": 771, "wins": 379 },
+      "chall": { "label": "Challenger", "games": 168, "wins": 83 }
+    },
+    "keystones": {
+      "note": "u.gg runes table, NA, patch 26.22: [win rate %, pick rate %]",
+      "Lethal Tempo": { "all": [49.85, 71.47], "dplus": [50.26, 78.2], "mplus": [50.34, 76.52], "chall": [50.4, 74.4] },
+      "Press the Attack": { "all": [48.89, 24.82], "dplus": [50.93, 16.82], "mplus": [46.38, 17.9], "chall": [47.06, 20.24] },
+      "Fleet Footwork": { "all": [47.02, 1.62], "dplus": [42.05, 3.95], "mplus": [37.04, 3.5], "chall": [37.5, 4.76] }
+    },
+    "secondary": {
+      "note": "Share of games per secondary tree (Precision primary), and their win rate, from the u.gg runes table. [share %, win rate %]",
+      "Resolve": { "all": [67.0, 49.6], "dplus": [53.3, 49.5], "mplus": [50.3, 49.2], "chall": [46.4, 47.4] },
+      "Domination": { "all": [21.3, 49.0], "dplus": [22.7, 50.2], "mplus": [21.4, 47.3], "chall": [29.8, 50.0] },
+      "Inspiration": { "all": [5.9, 51.3], "dplus": [17.2, 55.4], "mplus": [22.6, 51.7], "chall": [16.1, 55.5] },
+      "Sorcery": { "all": [4.7, 48.8], "dplus": [6.5, 39.7], "mplus": [5.4, 45.2], "chall": [7.7, 46.1] }
+    },
+    "variants": {
+      "note": "u.gg build variants: games and wins where that build was finished. Finished-build win rates favour builds that come online later, so compare shares, not win rates.",
+      "onhit": { "label": "On-hit", "all": [14713, 8176], "dplus": [748, 402], "mplus": [218, 111], "chall": [38, 17], "core": "Kraken Slayer > Berserker's > Rageblade (Diamond+); Ruined King > Berserker's > Rageblade (All ranks)" },
+      "crit": { "label": "Crit", "all": [5047, 2857], "dplus": [554, 315], "mplus": [223, 127], "chall": [62, 39], "core": "Essence Reaver > Berserker's > Fiendhunter Bolts (Diamond+)" },
+      "ad": { "label": "Kraken + Stormrazor", "all": [16256, 6866], "dplus": [952, 410], "mplus": [332, 143], "chall": [69, 27], "core": "Kraken Slayer > Gluttonous Greaves > Stormrazor (Diamond+)" }
+    },
+    "bestStarter": {
+      "note": "u.gg's pick for the starter (its best scorer, not a full table) [items, games, wins]",
+      "all": ["Doran's Bow + 2 potions", 25287, 12573],
+      "dplus": ["Doran's Blade + potion", 454, 239],
+      "mplus": ["Doran's Blade + potion", 112, 59],
+      "chall": ["Doran's Blade + potion", 28, 17]
+    },
+    "toughestLanes": {
+      "note": "u.gg 'toughest matchups', NA Diamond+ 26.22: [Vayne win rate %, games]. Tiny samples.",
+      "Viktor": [31.3, 16], "Seraphine": [33.3, 12], "Karthus": [33.3, 12], "Swain": [36.4, 22], "Yasuo": [37.5, 16],
+      "Caitlyn": [40.5, 74], "Miss Fortune": [41.1, 56], "Brand": [41.2, 17], "Vel'Koz": [43.8, 16], "Lux": [43.8, 16]
+    }
+  },
+  "coachless": {
+    "source": "https://coachless.gg/<runes/tree|items|spells>/vayne?role=adc, patch 16.22, Filters: ranks and region as labelled. Hide low occurrence on (items under ~1% hidden).",
+    "metric": "WPA = win rate minus average pre-game (or pre-buy) win probability, in percentage points. [WPA, picks]",
+    "keystones": {
+      "Lethal Tempo": { "naD": [0.84, 1394], "naE": [-0.05, 4852], "wD": [0.15, 15342], "wE": [0.15, 55966] },
+      "Press the Attack": { "naD": [2.13, 286], "naE": [-0.40, 1240], "wD": [-0.45, 3651], "wE": [-0.37, 13935] },
+      "Fleet Footwork": { "naE": [-5.56, 146], "wD": [0.85, 393], "wE": [-0.26, 1220] }
+    },
+    "precisionRows": {
+      "Cut Down": { "naD": [3.28, 666], "naE": [1.56, 1586], "wD": [1.12, 4516], "wE": [0.27, 11814] },
+      "Coup de Grace": { "naD": [-0.91, 1060], "naE": [-1.07, 4456], "wD": [-0.52, 14263], "wE": [-0.13, 57438] },
+      "Last Stand": { "naE": [1.36, 195], "wD": [3.86, 617], "wE": [2.27, 1898] },
+      "Legend: Bloodline": { "naD": [1.93, 380], "naE": [2.41, 909], "wD": [1.01, 2997], "wE": [0.51, 8103] },
+      "Legend: Alacrity": { "naD": [0.43, 1380], "naE": [-0.79, 5329], "wD": [-0.20, 16371], "wE": [-0.07, 62972] },
+      "Triumph": { "naE": [-0.14, 5781] },
+      "Presence of Mind": { "naE": [-0.96, 383] }
+    },
+    "secondaryShare": {
+      "note": "Share of Precision games by secondary tree, %: [Domination, Sorcery, Resolve, Inspiration]",
+      "naD": [23, 7, 55, 16], "naE": [20, 4, 65, 11], "wD": [19, 3, 66, 12], "wE": [17, 3, 71, 9]
+    },
+    "secondaryRunes": {
+      "note": "All regions Diamond+ only (NA is too small). [WPA, picks]",
+      "Triple Tonic": [4.77, 1048], "Magical Footwear": [4.71, 360], "Cash Back": [1.27, 1864], "Biscuit Delivery": [-1.65, 396],
+      "Sudden Impact": [2.76, 2549], "Taste of Blood": [-2.85, 1093],
+      "Overgrowth": [-0.40, 12248], "Bone Plating": [-1.71, 856], "Second Wind": [2.94, 171], "Unflinching": [5.33, 248]
+    },
+    "spells": {
+      "Barrier": { "naD": [1.61, 1271], "naE": [0.67, 4642], "wD": [-0.15, 14404], "wE": [0.11, 55785] },
+      "Flash": { "naD": [0.99, 1775], "naE": [-0.18, 6302], "wD": [0.00, 19646], "wE": [-0.01, 72216] },
+      "Exhaust": { "wD": [1.22, 2754], "wE": [-0.20, 7706] },
+      "Ghost": { "wD": [-0.20, 1321], "wE": [0.03, 4666] },
+      "Cleanse": { "wD": [-0.61, 1065], "wE": [-0.21, 3525] }
+    },
+    "starters": {
+      "Doran's Blade": { "naE": [0.04, 1451], "wD": [1.35, 4137], "wE": [1.02, 15486] },
+      "Doran's Bow": { "naD": [0.66, 1352], "naE": [-0.26, 4739], "wD": [-0.31, 15095], "wE": [-0.28, 55305] }
+    },
+    "firstItem": {
+      "note": "Legendaries, slot filter '1st'. [WPA, buys, share of first items %]",
+      "naD": { "Yun Tal Wildarrows": [5.69, 124, 6.9], "Stormrazor": [1.81, 127, 7.3], "Kraken Slayer": [0.64, 543, 30.9], "Essence Reaver": [-0.07, 302, 17.1], "Blade of The Ruined King": [-3.11, 557, 31.4] },
+      "wD": { "Essence Reaver": [1.75, 3210, 16.4], "Stormrazor": [0.86, 1348, 6.9], "Kraken Slayer": [0.22, 6330, 32.4], "Blade of The Ruined King": [-1.51, 6710, 34.4] },
+      "wE": { "Trinity Force": [1.06, 1032, 1.4], "Stormrazor": [0.89, 4154, 5.8], "Essence Reaver": [0.89, 10451, 14.6], "Kraken Slayer": [0.13, 21652, 30.2], "Yun Tal Wildarrows": [-0.04, 1625, 2.3], "Blade of The Ruined King": [-0.47, 29351, 41.0] }
+    },
+    "legendaries": {
+      "note": "Legendaries, any slot. [WPA, buys]",
+      "naD": { "Yun Tal Wildarrows": [5.07, 134], "Wit's End": [4.54, 103], "Essence Reaver": [1.06, 349], "Infinity Edge": [1.03, 388], "Stormrazor": [0.67, 489], "Kraken Slayer": [0.20, 578], "Lord Dominik's Regards": [0.19, 186], "Guinsoo's Rageblade": [-0.45, 909], "Fiendhunter Bolts": [-0.80, 406], "Jak'Sho, The Protean": [-1.21, 193], "Terminus": [-1.70, 549], "Experimental Hexplate": [-3.30, 200], "Blade of The Ruined King": [-3.59, 624] },
+      "wD": { "Essence Reaver": [1.31, 3964], "Lord Dominik's Regards": [1.21, 1704], "Stormrazor": [0.67, 5092], "Fiendhunter Bolts": [0.57, 4240], "Terminus": [0.50, 6178], "Kraken Slayer": [0.13, 7032], "Wit's End": [0.11, 1286], "Guinsoo's Rageblade": [0.05, 10366], "Infinity Edge": [-0.17, 3427], "Jak'Sho, The Protean": [-1.10, 2558], "Experimental Hexplate": [-1.25, 2905], "Blade of The Ruined King": [-1.33, 7882] },
+      "wE": { "Bloodthirster": [1.94, 1086], "Phantom Dancer": [1.40, 2295], "Mortal Reminder": [1.16, 1035], "Randuin's Omen": [1.01, 1841], "Lord Dominik's Regards": [0.82, 5900], "Terminus": [0.78, 23844], "Hexoptics C44": [0.54, 1017], "Essence Reaver": [0.52, 13194], "Trinity Force": [0.39, 1581], "Stormrazor": [0.32, 17337], "Mercurial Scimitar": [0.25, 2022], "Wit's End": [0.25, 4643], "Guinsoo's Rageblade": [0.15, 40454], "Kraken Slayer": [0.00, 25753], "Guardian Angel": [-0.14, 1771], "Jak'Sho, The Protean": [-0.17, 9937], "Infinity Edge": [-0.41, 11889], "Blade of The Ruined King": [-0.41, 34737], "Fiendhunter Bolts": [-0.43, 14156], "Yun Tal Wildarrows": [-0.79, 2023], "Experimental Hexplate": [-1.22, 11490] }
+    },
+    "boots": {
+      "naD": { "Berserker's Greaves": [-1.49, 1207] },
+      "wD": { "Gluttonous Greaves": [1.54, 2173], "Berserker's Greaves": [-0.04, 15290] },
+      "wE": { "Plated Steelcaps": [1.95, 2424], "Mercury's Treads": [1.86, 1253], "Gluttonous Greaves": [1.25, 5819], "Berserker's Greaves": [-0.07, 59768], "Boots of Swiftness": [-2.55, 1328] }
+    }
+  },
+  "items": {
+    "note": "Ids, cost and the stats that matter from Data Dragon 16.22.1.",
+    "Doran's Blade": { "id": 1055, "cost": 450, "text": "10 AD, 80 HP, 2.5% omnivamp" },
+    "Doran's Bow": { "id": 1086, "cost": 400, "text": "7 AD, 15% attack speed, 1.5% omnivamp" },
+    "Kraken Slayer": { "id": 6672, "cost": 3000, "text": "45 AD, 40% AS. Every 3rd attack: bonus damage, more on low-HP targets" },
+    "Essence Reaver": { "id": 3508, "cost": 3050, "text": "50 AD, 20 haste, 25% crit. After a spell (Q), next attack hits harder and gives mana" },
+    "Blade of The Ruined King": { "id": 3153, "cost": 3200, "text": "40 AD, 25% AS, 10% life steal. Current-HP% on-hit; 3 hits slow 30%" },
+    "Stormrazor": { "id": 3095, "cost": 3200, "text": "50 AD, 25% AS, 25% crit. Energized attack: magic damage + 45% move speed" },
+    "Yun Tal Wildarrows": { "id": 3032, "cost": 3000, "text": "50 AD, 45% AS, crit that grows to 25%. Burst of 30% AS on champions" },
+    "Guinsoo's Rageblade": { "id": 3124, "cost": 3000, "text": "30 AD, 30 AP, 25% AS. Stacks AS; every 3rd attack applies on-hit twice" },
+    "Terminus": { "id": 3302, "cost": 3000, "text": "30 AD, 35% AS. Alternating hits give resists, then armor and magic pen" },
+    "Lord Dominik's Regards": { "id": 3036, "cost": 3300, "text": "35 AD, 35% armor pen, 25% crit. Up to +15% damage vs bonus HP" },
+    "Fiendhunter Bolts": { "id": 2512, "cost": 2650, "text": "45% AS, 25% crit, 30 ult haste. After R: 3 empowered attacks" },
+    "Infinity Edge": { "id": 3031, "cost": 3500, "text": "Crit damage item" },
+    "Wit's End": { "id": 3091, "cost": 2800, "text": "50% AS, 45 MR, 20% tenacity, magic on-hit" },
+    "Mercurial Scimitar": { "id": 3139, "cost": 3200, "text": "50 AD, 35 MR, 10% life steal. Active: remove CC (not airborne)" },
+    "Guardian Angel": { "id": 3026, "cost": 3200, "text": "55 AD, 45 armor. Revive once on lethal damage" },
+    "Bloodthirster": { "id": 3072, "cost": 3400, "text": "80 AD, 15% life steal, overheal shield" },
+    "Randuin's Omen": { "id": 3143, "cost": 2700, "text": "350 HP, 75 armor, 30% less crit damage taken" },
+    "Berserker's Greaves": { "id": 3006, "cost": 1100, "text": "30% AS, 45 move speed" },
+    "Gluttonous Greaves": { "id": 3008, "cost": 1100, "text": "45 move speed, 4% omnivamp, +0.6% per takedown (up to 10)" },
+    "Plated Steelcaps": { "id": 3047, "cost": 1200, "text": "25 armor, 10% less damage from attacks" },
+    "Mercury's Treads": { "id": 3111, "cost": 1250, "text": "20 MR, 30% tenacity" }
+  },
+  "spells": {
+    "Flash": { "icon": "SummonerFlash.png", "text": "400-unit blink, 300 s" },
+    "Barrier": { "icon": "SummonerBarrier.png", "text": "Shield 100 to 460 for 2.5 s, 180 s" },
+    "Exhaust": { "icon": "SummonerExhaust.png", "text": "Slow 40% and cut their damage 35% for 3 s, 240 s" },
+    "Cleanse": { "icon": "SummonerBoost.png", "text": "Remove disables (not airborne or suppression), 240 s" },
+    "Ghost": { "icon": "SummonerHaste.png", "text": "24% to 51% move speed for 10 s, 240 s" }
+  },
+  "runes": {
+    "Lethal Tempo": { "icon": "Styles/Precision/LethalTempo/LethalTempoTemp.png", "text": "Up to +28.8% attack speed over 6 hits, then bonus damage per hit" },
+    "Press the Attack": { "icon": "Styles/Precision/PressTheAttack/PressTheAttack.png", "text": "3 hits: 40 to 174 damage, then +8% damage taken" },
+    "Fleet Footwork": { "icon": "Styles/Precision/FleetFootwork/FleetFootwork.png", "text": "Charged hit heals 9 to 110 and gives 15% move speed" },
+    "Cut Down": { "icon": "Styles/Precision/CutDown/CutDown.png" },
+    "Coup de Grace": { "icon": "Styles/Precision/CoupDeGrace/CoupDeGrace.png" },
+    "Legend: Bloodline": { "icon": "Styles/Precision/LegendBloodline/LegendBloodline.png" },
+    "Legend: Alacrity": { "icon": "Styles/Precision/LegendAlacrity/LegendAlacrity.png" },
+    "Triumph": { "icon": "Styles/Precision/Triumph.png" },
+    "Resolve": { "icon": "Styles/7204_Resolve.png" },
+    "Domination": { "icon": "Styles/7200_Domination.png" },
+    "Inspiration": { "icon": "Styles/7203_Whimsy.png" },
+    "Sorcery": { "icon": "Styles/7202_Sorcery.png" }
+  },
+  "vayne": {
+    "source": "https://wiki.leagueoflegends.com/en-us/Vayne (abilities as of V26.20)",
+    "range": 550,
+    "q": "Tumble: 300-unit dash, next attack +75% to 115% AD. Cooldown 6 to 2 s",
+    "w": "Silver Bolts: every 3rd hit on the same target deals 4% to 10% of max HP as true damage (min 40 to 100)",
+    "e": "Condemn: 550 range knockback 475 units; stun 1.5 s if they hit a wall. Cooldown 20 to 12 s",
+    "r": "Final Hour: +35 to 65 AD for 8 to 12 s, Tumble cooldown cut 30% to 50% and gives 1 s stealth. Cooldown 100 to 70 s"
+  }
+}
