@@ -39,6 +39,11 @@
       "file": "kogmaw-keep-or-switch.json",
       "title": "Coach: keep Kog'Maw or switch?",
       "description": "First principles, no win rates: should a Master 450 LP Kog'Maw one-trick keep him to reach Challenger? Verdict, both sides steelmanned, low mobility / assassins / objectives split into champion vs skill, a 60 second objective clock, and seven habits."
+    },
+    {
+      "file": "climb-plan-challenger.json",
+      "title": "Climb plan: Masters 450 to Challenger",
+      "description": "Coach mode, first principles: honest push-back, the math of losing (games to climb by win rate, streak odds at 55%), a daily practice system with stop rules and a death log, in-game rules for objectives and fights, and a three-phase plan from D4 to Challenger."
     }
   ]
 }
