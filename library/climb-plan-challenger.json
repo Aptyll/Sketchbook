@@ -577,7 +577,7 @@
     "type": "note",
     "x": 600,
     "y": 240,
-    "text": "\"I want a champ and role I can enjoy and climb.\"",
+    "text": "\"I'll keep playing Kog'Maw. I went 60% over 150\nMasters games.\"",
     "color": "#b8925a",
     "size": 17,
     "tab": "truth"
@@ -772,7 +772,7 @@
     "type": "note",
     "x": 600,
     "y": 304,
-    "text": "Enjoyment matters: decay is a sign the fun ran out. But\nevery switch throws away thousands of games of reps.\nChoose once, this week, then lock it for 100 games. A\nswitch decided after a bad session is tilt, not\nstrategy.",
+    "text": "Good call. 60% is above Challenger pace (even its noise\nrange, about 52 to 68%, is above 50). The risk is your\npattern: you left Darius at 60% too, after losses to\nmatchups and teams. The champion was never the problem.\nA loss you could not control is not evidence to switch.",
     "color": "#e9dfc9",
     "size": 15,
     "tab": "truth"
@@ -7600,7 +7600,7 @@
     "type": "note",
     "x": 0,
     "y": 340,
-    "text": "• You were Masters 450; D4 is below your level. The\ndanger is impatience, not skill.\n• Champion: whatever you can play best this week. Do\nnot experiment here.\n• Focus: avoidable deaths ≤ 2 per game.\n• Daily system from tab 3, stop rules strict.\n• Exit: Masters.",
+    "text": "• You were Masters 450; D4 is below your level. The\ndanger is impatience, not skill.\n• Champion: Kog'Maw, locked. No new builds or runes\nthis phase.\n• Focus: avoidable deaths ≤ 2 per game.\n• Daily system from tab 3, stop rules strict.\n• Exit: Masters.",
     "color": "#e9dfc9",
     "size": 15,
     "tab": "plan"
@@ -7882,7 +7882,7 @@
     "type": "note",
     "x": 600,
     "y": 340,
-    "text": "• Run the objective clock for every objective.\n• Death review twice a week, weekly focus from the\nlog.\n• Focus: arrive first, wave pushed, at most\nobjectives.\n• Allow the champion choice to settle: 100 games\nbefore judging it.\n• Exit: Grandmaster.",
+    "text": "• Run the objective clock for every objective.\n• Death review twice a week, weekly focus from the\nlog.\n• Focus: arrive first, wave pushed, at most\nobjectives.\n• Judge yourself over 50+ games, never over one\nsession.\n• Exit: Grandmaster.",
     "color": "#e9dfc9",
     "size": 15,
     "tab": "plan"
@@ -8184,7 +8184,7 @@
     "type": "note",
     "x": 0,
     "y": 630,
-    "text": "Getting back to Masters should be quick if you play.\nChallenger is a volume question as much as a skill one: at a\n55% win rate the math on tab 2 says ~500 games from here.\n\nIf you can play ~25 games a week, that is a long season. Fewer\ngames means GM is the realistic target this season and\nChallenger the next. Both are on the path you are already on.",
+    "text": "Getting back to Masters should be quick if you play.\nChallenger is a volume question as much as a skill one: tab 2\nsays ~500 games at 55%, ~250 at your Masters Kog pace of 60%.\n\nHolding 60% means keeping the habits that got you there, in\nevery session. Fewer games a week means GM is the realistic\ntarget this season and Challenger the next.",
     "color": "#e9dfc9",
     "size": 15,
     "tab": "plan"
@@ -8208,6 +8208,2044 @@
     "color": "#e9dfc9",
     "size": 18,
     "tab": "plan"
+   },
+   {
+    "id": "note-180",
+    "type": "note",
+    "x": 0,
+    "y": 210,
+    "text": "Positioning checklist (say it in your head every fight)",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "kog"
+   },
+   {
+    "id": "note-181",
+    "type": "note",
+    "x": 0,
+    "y": 270,
+    "text": "1",
+    "color": "#c4593f",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-182",
+    "type": "note",
+    "x": 40,
+    "y": 272,
+    "text": "Is W up?",
+    "color": "#c4593f",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-183",
+    "type": "note",
+    "x": 40,
+    "y": 302,
+    "text": "W is on for 8 s of every 17. With it down you are a 500-range\nchampion: step back, do not show yourself until it is back.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-184",
+    "type": "note",
+    "x": 0,
+    "y": 370,
+    "text": "2",
+    "color": "#c4593f",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-185",
+    "type": "note",
+    "x": 40,
+    "y": 372,
+    "text": "Where are their gap closers?",
+    "color": "#c4593f",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-186",
+    "type": "note",
+    "x": 40,
+    "y": 402,
+    "text": "Name each one out loud. Not on the map = assume it is in the\nnearest fog to you.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-187",
+    "type": "note",
+    "x": 0,
+    "y": 470,
+    "text": "3",
+    "color": "#b8925a",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-188",
+    "type": "note",
+    "x": 40,
+    "y": 472,
+    "text": "Edge of W range, not past it",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-189",
+    "type": "note",
+    "x": 40,
+    "y": 502,
+    "text": "Hit the closest enemy at max range (630 to 710 with W). The\nfrontline is a fine target. Walking forward for the backline is\nhow you die.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-190",
+    "type": "note",
+    "x": 0,
+    "y": 570,
+    "text": "4",
+    "color": "#b8925a",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-191",
+    "type": "note",
+    "x": 40,
+    "y": 572,
+    "text": "Something between you and the fog",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-192",
+    "type": "note",
+    "x": 40,
+    "y": 602,
+    "text": "Your support, your frontline, a minion wave or a wall. Never be\nthe champion closest to the fog.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-193",
+    "type": "note",
+    "x": 0,
+    "y": 670,
+    "text": "5",
+    "color": "#8f9a6e",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-194",
+    "type": "note",
+    "x": 40,
+    "y": 672,
+    "text": "Know your exit first",
+    "color": "#8f9a6e",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-195",
+    "type": "note",
+    "x": 40,
+    "y": 702,
+    "text": "Before the fight, know the step you take when they engage: toward\nyour team, never away into unwarded jungle.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-196",
+    "type": "note",
+    "x": 0,
+    "y": 770,
+    "text": "6",
+    "color": "#8f9a6e",
+    "size": 28,
+    "tab": "kog"
+   },
+   {
+    "id": "note-197",
+    "type": "note",
+    "x": 40,
+    "y": 772,
+    "text": "Scout with R and wards, not your face",
+    "color": "#8f9a6e",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-198",
+    "type": "note",
+    "x": 40,
+    "y": 802,
+    "text": "R gives sight and reveals for 2 s from 1,300+ range. Use it on a\nbrush before you walk past it.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "note-199",
+    "type": "note",
+    "x": 760,
+    "y": 210,
+    "text": "VOD routine: 25 minutes, twice a week",
+    "color": "#e9dfc9",
+    "size": 24,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-200",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.6,
+    "points": [
+     [
+      760.6,
+      274.7
+     ],
+     [
+      761.5,
+      273.6
+     ],
+     [
+      762.6,
+      272.6
+     ],
+     [
+      763.8,
+      272
+     ],
+     [
+      764.9,
+      270.9
+     ],
+     [
+      766.3,
+      270.5
+     ],
+     [
+      767.7,
+      270
+     ],
+     [
+      769.1,
+      269.9
+     ],
+     [
+      770.6,
+      270
+     ],
+     [
+      772,
+      270.1
+     ],
+     [
+      773.5,
+      270.1
+     ],
+     [
+      774.8,
+      270.9
+     ],
+     [
+      776.3,
+      271.3
+     ],
+     [
+      777.5,
+      272.1
+     ],
+     [
+      778.6,
+      273.1
+     ],
+     [
+      779.5,
+      274.3
+     ],
+     [
+      780.5,
+      275.4
+     ],
+     [
+      781.3,
+      276.7
+     ],
+     [
+      781.6,
+      278.1
+     ],
+     [
+      782.1,
+      279.5
+     ],
+     [
+      782.5,
+      281
+     ],
+     [
+      782.3,
+      282.5
+     ],
+     [
+      781.9,
+      283.9
+     ],
+     [
+      781.6,
+      285.3
+     ],
+     [
+      781.3,
+      286.8
+     ],
+     [
+      780.9,
+      288.2
+     ],
+     [
+      779.8,
+      289.3
+     ],
+     [
+      779.1,
+      290.7
+     ],
+     [
+      777.7,
+      291.3
+     ],
+     [
+      776.8,
+      292.5
+     ],
+     [
+      775.3,
+      292.9
+     ],
+     [
+      774.1,
+      293.8
+     ],
+     [
+      772.6,
+      294.2
+     ],
+     [
+      771.1,
+      294.3
+     ],
+     [
+      769.6,
+      294.7
+     ],
+     [
+      768.1,
+      294.4
+     ],
+     [
+      766.7,
+      293.9
+     ],
+     [
+      765.4,
+      293.3
+     ],
+     [
+      764,
+      292.9
+     ],
+     [
+      762.7,
+      292
+     ],
+     [
+      761.6,
+      291
+     ],
+     [
+      760.4,
+      290.2
+     ],
+     [
+      759.5,
+      288.9
+     ],
+     [
+      758.9,
+      287.5
+     ],
+     [
+      757.9,
+      286.3
+     ],
+     [
+      757.8,
+      284.8
+     ],
+     [
+      757.4,
+      283.3
+     ],
+     [
+      757.6,
+      281.8
+     ],
+     [
+      757.5,
+      280.3
+     ],
+     [
+      757.7,
+      278.8
+     ],
+     [
+      758,
+      277.3
+     ],
+     [
+      758.9,
+      276
+     ],
+     [
+      759.7,
+      274.7
+     ],
+     [
+      760.4,
+      273.3
+     ],
+     [
+      761.8,
+      272.6
+     ],
+     [
+      763,
+      271.6
+     ],
+     [
+      764.1,
+      270.5
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-201",
+    "type": "note",
+    "x": 794,
+    "y": 272,
+    "text": "Pick two games",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-202",
+    "type": "note",
+    "x": 794,
+    "y": 302,
+    "text": "One loss, one win, each with 2+ deaths. Never the same day you\nlost it: review with a calm head.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-203",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.6,
+    "points": [
+     [
+      759.8,
+      375.2
+     ],
+     [
+      760.7,
+      374.1
+     ],
+     [
+      761.9,
+      373.3
+     ],
+     [
+      762.8,
+      372.1
+     ],
+     [
+      764.2,
+      371.6
+     ],
+     [
+      765.4,
+      370.7
+     ],
+     [
+      766.8,
+      370.2
+     ],
+     [
+      768.2,
+      369.9
+     ],
+     [
+      769.7,
+      369.6
+     ],
+     [
+      771.1,
+      369.9
+     ],
+     [
+      772.5,
+      370.4
+     ],
+     [
+      773.9,
+      370.5
+     ],
+     [
+      775.2,
+      371.2
+     ],
+     [
+      776.7,
+      371.6
+     ],
+     [
+      777.7,
+      372.7
+     ],
+     [
+      778.9,
+      373.6
+     ],
+     [
+      780,
+      374.6
+     ],
+     [
+      780.8,
+      375.8
+     ],
+     [
+      781.5,
+      377.1
+     ],
+     [
+      781.6,
+      378.7
+     ],
+     [
+      782.2,
+      380
+     ],
+     [
+      782.4,
+      381.5
+     ],
+     [
+      782.1,
+      383
+     ],
+     [
+      781.8,
+      384.4
+     ],
+     [
+      781.6,
+      385.9
+     ],
+     [
+      781.2,
+      387.3
+     ],
+     [
+      780.4,
+      388.5
+     ],
+     [
+      779.7,
+      389.8
+     ],
+     [
+      778.6,
+      390.9
+     ],
+     [
+      777.5,
+      391.9
+     ],
+     [
+      776.2,
+      392.6
+     ],
+     [
+      775,
+      393.5
+     ],
+     [
+      773.5,
+      393.7
+     ],
+     [
+      772.1,
+      394.1
+     ],
+     [
+      770.6,
+      394.2
+     ],
+     [
+      769.1,
+      394.6
+     ],
+     [
+      767.7,
+      394.1
+     ],
+     [
+      766.2,
+      393.8
+     ],
+     [
+      764.8,
+      393.4
+     ],
+     [
+      763.5,
+      392.6
+     ],
+     [
+      762.1,
+      392
+     ],
+     [
+      761.3,
+      390.7
+     ],
+     [
+      760,
+      389.8
+     ],
+     [
+      759.3,
+      388.4
+     ],
+     [
+      758.3,
+      387.2
+     ],
+     [
+      758.1,
+      385.7
+     ],
+     [
+      757.5,
+      384.3
+     ],
+     [
+      757.2,
+      382.8
+     ],
+     [
+      757.3,
+      381.2
+     ],
+     [
+      757.6,
+      379.7
+     ],
+     [
+      757.7,
+      378.2
+     ],
+     [
+      758.5,
+      376.9
+     ],
+     [
+      759.2,
+      375.5
+     ],
+     [
+      760,
+      374.2
+     ],
+     [
+      761.1,
+      373.2
+     ],
+     [
+      762.1,
+      372.1
+     ],
+     [
+      763.4,
+      371.3
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-204",
+    "type": "note",
+    "x": 794,
+    "y": 372,
+    "text": "Pass 1 · Deaths (10 min)",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-205",
+    "type": "note",
+    "x": 794,
+    "y": 402,
+    "text": "Jump to each death, rewind 15 s, pause. What did I know? What was\nI trying to do? Log the category from tab 3.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-206",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.6,
+    "points": [
+     [
+      758.7,
+      478
+     ],
+     [
+      759,
+      476.5
+     ],
+     [
+      760.2,
+      475.5
+     ],
+     [
+      760.9,
+      474.3
+     ],
+     [
+      761.6,
+      473
+     ],
+     [
+      763,
+      472.3
+     ],
+     [
+      764.1,
+      471.4
+     ],
+     [
+      765.3,
+      470.6
+     ],
+     [
+      766.8,
+      470.3
+     ],
+     [
+      768.3,
+      470.2
+     ],
+     [
+      769.7,
+      470
+     ],
+     [
+      771.1,
+      470
+     ],
+     [
+      772.5,
+      470.3
+     ],
+     [
+      773.9,
+      470.6
+     ],
+     [
+      775.2,
+      471.2
+     ],
+     [
+      776.6,
+      471.7
+     ],
+     [
+      777.9,
+      472.5
+     ],
+     [
+      779,
+      473.5
+     ],
+     [
+      779.8,
+      474.8
+     ],
+     [
+      780.7,
+      475.9
+     ],
+     [
+      781.3,
+      477.2
+     ],
+     [
+      781.5,
+      478.7
+     ],
+     [
+      782.1,
+      480.1
+     ],
+     [
+      782.4,
+      481.5
+     ],
+     [
+      782.4,
+      483
+     ],
+     [
+      782.2,
+      484.5
+     ],
+     [
+      781.9,
+      486
+     ],
+     [
+      781.1,
+      487.2
+     ],
+     [
+      780.6,
+      488.6
+     ],
+     [
+      779.6,
+      489.8
+     ],
+     [
+      778.5,
+      490.8
+     ],
+     [
+      777.4,
+      491.7
+     ],
+     [
+      776.1,
+      492.5
+     ],
+     [
+      774.8,
+      493.2
+     ],
+     [
+      773.5,
+      493.8
+     ],
+     [
+      772.1,
+      494.1
+     ],
+     [
+      770.6,
+      494.7
+     ],
+     [
+      769.1,
+      494.3
+     ],
+     [
+      767.6,
+      494.4
+     ],
+     [
+      766.1,
+      494.1
+     ],
+     [
+      764.9,
+      493.1
+     ],
+     [
+      763.4,
+      492.8
+     ],
+     [
+      762.1,
+      491.9
+     ],
+     [
+      761.2,
+      490.7
+     ],
+     [
+      760.3,
+      489.5
+     ],
+     [
+      759.3,
+      488.4
+     ],
+     [
+      758.5,
+      487.2
+     ],
+     [
+      757.8,
+      485.8
+     ],
+     [
+      757.8,
+      484.2
+     ],
+     [
+      757.7,
+      482.7
+     ],
+     [
+      757.4,
+      481.2
+     ],
+     [
+      757.6,
+      479.7
+     ],
+     [
+      757.9,
+      478.3
+     ],
+     [
+      758.6,
+      476.9
+     ],
+     [
+      759.2,
+      475.5
+     ],
+     [
+      759.8,
+      474.1
+     ],
+     [
+      760.8,
+      472.9
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-207",
+    "type": "note",
+    "x": 794,
+    "y": 472,
+    "text": "Pass 2 · Fights (10 min)",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-208",
+    "type": "note",
+    "x": 794,
+    "y": 502,
+    "text": "Pause the moment the first enemy engages. Was W up? Was I at the\nedge of W range? Who stood between me and them? Run the checklist\non the left.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-209",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.6,
+    "points": [
+     [
+      760.3,
+      575
+     ],
+     [
+      761,
+      573.7
+     ],
+     [
+      762.1,
+      572.7
+     ],
+     [
+      763.5,
+      572.1
+     ],
+     [
+      764.6,
+      571.3
+     ],
+     [
+      765.9,
+      570.7
+     ],
+     [
+      767.3,
+      570.1
+     ],
+     [
+      768.8,
+      570.2
+     ],
+     [
+      770.2,
+      569.7
+     ],
+     [
+      771.6,
+      570.1
+     ],
+     [
+      773.1,
+      570.1
+     ],
+     [
+      774.4,
+      570.8
+     ],
+     [
+      775.8,
+      571.2
+     ],
+     [
+      777,
+      572.1
+     ],
+     [
+      778.3,
+      572.8
+     ],
+     [
+      779.3,
+      573.9
+     ],
+     [
+      780.3,
+      575
+     ],
+     [
+      781,
+      576.3
+     ],
+     [
+      781.4,
+      577.8
+     ],
+     [
+      782,
+      579.1
+     ],
+     [
+      782,
+      580.6
+     ],
+     [
+      782.4,
+      582.1
+     ],
+     [
+      782.2,
+      583.5
+     ],
+     [
+      782.2,
+      585
+     ],
+     [
+      781.3,
+      586.3
+     ],
+     [
+      781.1,
+      587.9
+     ],
+     [
+      780.2,
+      589.1
+     ],
+     [
+      779.4,
+      590.4
+     ],
+     [
+      778.2,
+      591.2
+     ],
+     [
+      777.2,
+      592.3
+     ],
+     [
+      775.9,
+      593.2
+     ],
+     [
+      774.5,
+      593.7
+     ],
+     [
+      773,
+      594.1
+     ],
+     [
+      771.5,
+      594.2
+     ],
+     [
+      770.1,
+      594.4
+     ],
+     [
+      768.6,
+      594.7
+     ],
+     [
+      767.2,
+      593.9
+     ],
+     [
+      765.7,
+      593.6
+     ],
+     [
+      764.2,
+      593.3
+     ],
+     [
+      763.1,
+      592.2
+     ],
+     [
+      761.9,
+      591.3
+     ],
+     [
+      760.8,
+      590.3
+     ],
+     [
+      760,
+      589.1
+     ],
+     [
+      759.1,
+      587.9
+     ],
+     [
+      758.1,
+      586.7
+     ],
+     [
+      757.6,
+      585.2
+     ],
+     [
+      757.8,
+      583.7
+     ],
+     [
+      757.5,
+      582.2
+     ],
+     [
+      757.6,
+      580.7
+     ],
+     [
+      757.8,
+      579.2
+     ],
+     [
+      758,
+      577.7
+     ],
+     [
+      758.7,
+      576.4
+     ],
+     [
+      759.7,
+      575.2
+     ],
+     [
+      760.2,
+      573.7
+     ],
+     [
+      761.4,
+      572.7
+     ],
+     [
+      762.6,
+      571.8
+     ],
+     [
+      763.7,
+      570.6
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-210",
+    "type": "note",
+    "x": 794,
+    "y": 572,
+    "text": "Pass 3 · Objectives (5 min)",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-211",
+    "type": "note",
+    "x": 794,
+    "y": 602,
+    "text": "Pause 90, 60 and 30 s before each drake and Baron. Where was I,\nand which waves were pushed?",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-212",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.6,
+    "points": [
+     [
+      760.5,
+      674.3
+     ],
+     [
+      761.5,
+      673.3
+     ],
+     [
+      762.5,
+      672.2
+     ],
+     [
+      763.7,
+      671.4
+     ],
+     [
+      765.2,
+      671
+     ],
+     [
+      766.6,
+      670.7
+     ],
+     [
+      767.9,
+      670.3
+     ],
+     [
+      769.3,
+      669.7
+     ],
+     [
+      770.8,
+      670
+     ],
+     [
+      772.2,
+      670.3
+     ],
+     [
+      773.7,
+      670.1
+     ],
+     [
+      775.1,
+      670.8
+     ],
+     [
+      776.4,
+      671.5
+     ],
+     [
+      777.4,
+      672.6
+     ],
+     [
+      778.7,
+      673.3
+     ],
+     [
+      779.6,
+      674.5
+     ],
+     [
+      780.3,
+      675.7
+     ],
+     [
+      781.3,
+      676.9
+     ],
+     [
+      781.8,
+      678.3
+     ],
+     [
+      781.9,
+      679.8
+     ],
+     [
+      782.4,
+      681.2
+     ],
+     [
+      782.1,
+      682.7
+     ],
+     [
+      782.2,
+      684.2
+     ],
+     [
+      781.6,
+      685.5
+     ],
+     [
+      781.2,
+      686.9
+     ],
+     [
+      780.8,
+      688.4
+     ],
+     [
+      779.5,
+      689.3
+     ],
+     [
+      779,
+      690.8
+     ],
+     [
+      777.8,
+      691.7
+     ],
+     [
+      776.4,
+      692.4
+     ],
+     [
+      775.1,
+      693
+     ],
+     [
+      773.8,
+      693.5
+     ],
+     [
+      772.4,
+      694
+     ],
+     [
+      770.9,
+      694.4
+     ],
+     [
+      769.5,
+      694.3
+     ],
+     [
+      768,
+      694.2
+     ],
+     [
+      766.6,
+      693.8
+     ],
+     [
+      765.2,
+      693.3
+     ],
+     [
+      763.9,
+      692.6
+     ],
+     [
+      762.4,
+      692.2
+     ],
+     [
+      761.4,
+      690.9
+     ],
+     [
+      760.3,
+      690
+     ],
+     [
+      759.2,
+      688.9
+     ],
+     [
+      758.4,
+      687.5
+     ],
+     [
+      758,
+      686.1
+     ],
+     [
+      757.5,
+      684.6
+     ],
+     [
+      757.7,
+      683.1
+     ],
+     [
+      757.6,
+      681.6
+     ],
+     [
+      757.3,
+      680
+     ],
+     [
+      758.1,
+      678.7
+     ],
+     [
+      758.2,
+      677.1
+     ],
+     [
+      759.1,
+      675.9
+     ],
+     [
+      759.8,
+      674.5
+     ],
+     [
+      760.8,
+      673.4
+     ],
+     [
+      762,
+      672.5
+     ],
+     [
+      763,
+      671.3
+     ],
+     [
+      764.4,
+      670.6
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-213",
+    "type": "note",
+    "x": 794,
+    "y": 672,
+    "text": "Write one rule",
+    "color": "#b8925a",
+    "size": 19,
+    "tab": "kog"
+   },
+   {
+    "id": "note-214",
+    "type": "note",
+    "x": 794,
+    "y": 702,
+    "text": "Only one, e.g. \"W down = I walk back.\" It becomes next week's\nfocus line before every queue.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "kog"
+   },
+   {
+    "id": "ink-215",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 1.5,
+    "points": [
+     [
+      -0.8,
+      889.3
+     ],
+     [
+      11.4,
+      889.8
+     ],
+     [
+      23.5,
+      890.2
+     ],
+     [
+      35.5,
+      889.8
+     ],
+     [
+      48.6,
+      890
+     ],
+     [
+      59.3,
+      889.8
+     ],
+     [
+      72.3,
+      890
+     ],
+     [
+      83.6,
+      889.9
+     ],
+     [
+      96.6,
+      890.2
+     ],
+     [
+      107.6,
+      890.1
+     ],
+     [
+      120.4,
+      889.5
+     ],
+     [
+      131.7,
+      890.3
+     ],
+     [
+      143.7,
+      890.3
+     ],
+     [
+      155.7,
+      889.7
+     ],
+     [
+      167.2,
+      889.4
+     ],
+     [
+      179.8,
+      889.2
+     ],
+     [
+      192.4,
+      889
+     ],
+     [
+      203.7,
+      889.4
+     ],
+     [
+      215.3,
+      889.1
+     ],
+     [
+      227.5,
+      889.7
+     ],
+     [
+      240.5,
+      889.1
+     ],
+     [
+      251.3,
+      889.2
+     ],
+     [
+      264.8,
+      889.7
+     ],
+     [
+      276.6,
+      889
+     ],
+     [
+      287.5,
+      889.8
+     ],
+     [
+      300.6,
+      888.7
+     ],
+     [
+      312.3,
+      889.9
+     ],
+     [
+      324.4,
+      890
+     ],
+     [
+      336.8,
+      890.1
+     ],
+     [
+      348.3,
+      889.2
+     ],
+     [
+      360.1,
+      889
+     ],
+     [
+      371.9,
+      888.7
+     ],
+     [
+      383.4,
+      888.9
+     ],
+     [
+      396.6,
+      888.8
+     ],
+     [
+      408.8,
+      889.1
+     ],
+     [
+      419.5,
+      889.3
+     ],
+     [
+      432.3,
+      889.8
+     ],
+     [
+      443.3,
+      889.2
+     ],
+     [
+      456.4,
+      889.2
+     ],
+     [
+      467.8,
+      889.2
+     ],
+     [
+      480.5,
+      889.4
+     ],
+     [
+      491.7,
+      889.1
+     ],
+     [
+      504.3,
+      889.5
+     ],
+     [
+      515.6,
+      889.2
+     ],
+     [
+      527.4,
+      888.3
+     ],
+     [
+      540.2,
+      889.5
+     ],
+     [
+      552.7,
+      888.4
+     ],
+     [
+      564.5,
+      888.1
+     ],
+     [
+      575.4,
+      889.3
+     ],
+     [
+      588.8,
+      889.1
+     ],
+     [
+      599.7,
+      889.3
+     ],
+     [
+      612.7,
+      888.4
+     ],
+     [
+      624.2,
+      888.4
+     ],
+     [
+      636.1,
+      888.4
+     ],
+     [
+      648.5,
+      889.1
+     ],
+     [
+      660.1,
+      889.2
+     ],
+     [
+      672.2,
+      889.2
+     ],
+     [
+      684.5,
+      888.8
+     ],
+     [
+      695.7,
+      887.9
+     ],
+     [
+      707.8,
+      888.5
+     ],
+     [
+      719.9,
+      887.9
+     ],
+     [
+      732.2,
+      888.4
+     ],
+     [
+      743.4,
+      888.8
+     ],
+     [
+      755.6,
+      889.2
+     ],
+     [
+      767.4,
+      888.5
+     ],
+     [
+      780.3,
+      888.9
+     ],
+     [
+      792.1,
+      888.7
+     ],
+     [
+      803.4,
+      887.8
+     ],
+     [
+      815.3,
+      887.9
+     ],
+     [
+      828.3,
+      888.8
+     ],
+     [
+      839.2,
+      887.8
+     ],
+     [
+      852.4,
+      888.1
+     ],
+     [
+      863.2,
+      888.5
+     ],
+     [
+      876,
+      888.4
+     ],
+     [
+      887.5,
+      887.8
+     ],
+     [
+      900.5,
+      888.5
+     ],
+     [
+      912.3,
+      887.7
+     ],
+     [
+      924.6,
+      888.4
+     ],
+     [
+      936.5,
+      888
+     ],
+     [
+      947.6,
+      888
+     ],
+     [
+      959.8,
+      887.8
+     ],
+     [
+      972.5,
+      888.2
+     ],
+     [
+      984.1,
+      888.7
+     ],
+     [
+      996.4,
+      887.5
+     ],
+     [
+      1008.5,
+      887.8
+     ],
+     [
+      1019.2,
+      888
+     ],
+     [
+      1031.8,
+      888
+     ],
+     [
+      1043.5,
+      888.4
+     ],
+     [
+      1055.4,
+      887.6
+     ],
+     [
+      1067.4,
+      888.2
+     ],
+     [
+      1079.4,
+      887.8
+     ],
+     [
+      1091.5,
+      888.5
+     ],
+     [
+      1104.4,
+      887.9
+     ],
+     [
+      1115.9,
+      887.5
+     ],
+     [
+      1127.8,
+      887.4
+     ],
+     [
+      1139.3,
+      887.3
+     ],
+     [
+      1152,
+      888.2
+     ],
+     [
+      1164,
+      887.4
+     ],
+     [
+      1176.3,
+      888.2
+     ],
+     [
+      1188,
+      888.2
+     ],
+     [
+      1199.9,
+      887.6
+     ],
+     [
+      1211.7,
+      887.3
+     ],
+     [
+      1223.4,
+      888.2
+     ],
+     [
+      1235.5,
+      887
+     ],
+     [
+      1247.4,
+      887.9
+     ],
+     [
+      1260.3,
+      888
+     ],
+     [
+      1271.2,
+      887.3
+     ],
+     [
+      1283.9,
+      887.7
+     ],
+     [
+      1295.4,
+      886.9
+     ],
+     [
+      1308.8,
+      888.2
+     ],
+     [
+      1320.5,
+      888
+     ],
+     [
+      1332.4,
+      887.6
+     ],
+     [
+      1343.7,
+      886.5
+     ],
+     [
+      1355.8,
+      887.5
+     ],
+     [
+      1368.2,
+      886.5
+     ],
+     [
+      1379.4,
+      887.6
+     ],
+     [
+      1392.4,
+      886.5
+     ],
+     [
+      1403.7,
+      887.3
+     ],
+     [
+      1415.4,
+      887.7
+     ],
+     [
+      1428,
+      887.3
+     ],
+     [
+      1440.6,
+      886.8
+     ],
+     [
+      1452.3,
+      887.2
+     ],
+     [
+      1464.4,
+      887.5
+     ],
+     [
+      1476.6,
+      887.8
+     ],
+     [
+      1488,
+      887
+     ],
+     [
+      1500,
+      887
+     ]
+    ],
+    "tab": "kog"
+   },
+   {
+    "id": "note-216",
+    "type": "note",
+    "x": 0,
+    "y": 910,
+    "text": "The pattern to break",
+    "color": "#c4593f",
+    "size": 24,
+    "tab": "kog"
+   },
+   {
+    "id": "note-217",
+    "type": "note",
+    "x": 0,
+    "y": 950,
+    "text": "You went 60% on Darius and 60% on Kog'Maw, and both times\nthe urge was to swap after losses to matchups or teams.\nHunting for an 80% build is the same urge. No build gets\nthere: a Challenger player still loses about 2 in 5.\nA loss you could not control goes in the log as \"Fair\ntrade\". It is not evidence. Only your decisions are.",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "kog"
+   },
+   {
+    "id": "note-218",
+    "type": "note",
+    "x": 760,
+    "y": 910,
+    "text": "Mechanics, 10 minutes before you queue",
+    "color": "#8f9a6e",
+    "size": 24,
+    "tab": "kog"
+   },
+   {
+    "id": "note-219",
+    "type": "note",
+    "x": 760,
+    "y": 950,
+    "text": "• Practice Tool: last-hit a wave under tower with W on.\n• Kite the target dummy: attack, step back, attack. Never\nstand still between autos.\n• Land 10 R casts on a moving dummy, aiming where it will\nbe.",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "kog"
    }
   ],
   "source": {
@@ -8236,6 +10274,10 @@
    {
     "id": "plan",
     "label": "5 · The plan"
+   },
+   {
+    "id": "kog",
+    "label": "6 · Kog'Maw: positioning and VODs"
    }
   ],
   "activeTab": "truth"
