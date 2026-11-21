@@ -1,0 +1,259 @@
+{
+  "about": "Coaching page: which role and champion to take from low Diamond back to Master and on to Challenger. First principles only: no win rates, pick rates or tier lists. Every score is a judgment (1 to 5) with the reason written next to it.",
+  "pulledAt": "2026-11-21",
+  "player": {
+    "history": [
+      "Bronze to Masters 450 LP, one rank per season",
+      "Top lane, Darius one-trick: Plat to Diamond 1",
+      "ADC, Kog'Maw one-trick on a fresh account: Diamond to Masters 450 LP",
+      "Now decayed to low Diamond 4"
+    ],
+    "complaints": [
+      "Low mobility",
+      "Dies to assassins",
+      "Hard to play for objectives"
+    ],
+    "header": [
+      "Your path: Bronze to Masters 450 LP, one rank a season.",
+      "Darius top: Plat to Diamond 1. Kog'Maw ADC: Diamond to Masters 450 LP.",
+      "Now: low Diamond 4 after decay."
+    ]
+  },
+  "truths": [
+    {
+      "head": "The champion is not your Master to Challenger gap.",
+      "body": "A new champion fixes one or two weaknesses. Most of the gap is decisions: where you stand at minute 14, which wave you push before dragon, which fights you skip. You already proved the hands twice."
+    },
+    {
+      "head": "Dying to assassins is half Kog, half ADC.",
+      "body": "Every ADC dies once an assassin reaches them. A dash buys a second chance, not the first. If you add a dash without changing where you stand, you will use it to survive the mistake instead of avoiding it."
+    },
+    {
+      "head": "Objectives are a timing habit, not a champion.",
+      "body": "The team that takes dragon is the one that arrives first, with waves pushed. Kog does not stop you shoving 60 seconds before spawn and walking in first. That habit carries to any pick."
+    },
+    {
+      "head": "One-tricking is your proven system. Keep it.",
+      "body": "Two champions, two big climbs, each more than a full tier. Changing champion is fine. Changing every few weeks, or keeping three in rotation, is the real risk."
+    },
+    {
+      "head": "Both of your climbs were on champions with no dash.",
+      "body": "Darius and Kog'Maw both win by committing in the right spot. That may be the style you enjoy. A slippery, dash-heavy champion can climb and still feel worse to play. Test the feel before you commit."
+    },
+    {
+      "head": "Low Diamond is your cheapest place to learn.",
+      "body": "LP lost on the way back to Master costs you nothing on the Challenger run. Learn the new champion here. If it is not second nature by Master 0 LP, that is your answer."
+    }
+  ],
+  "roleAxes": [
+    {
+      "id": "reach",
+      "label": "Map reach",
+      "why": "how many fights and objectives you can touch"
+    },
+    {
+      "id": "indep",
+      "label": "Wins alone",
+      "why": "how much you control without teammates"
+    },
+    {
+      "id": "obj",
+      "label": "Objectives",
+      "why": "how much dragon, grubs and Baron are your job"
+    },
+    {
+      "id": "late",
+      "label": "Late fights",
+      "why": "how much one player decides a 5v5"
+    },
+    {
+      "id": "cheap",
+      "label": "Cheap for you",
+      "why": "how little you must relearn"
+    }
+  ],
+  "roles": [
+    {
+      "name": "Jungle",
+      "scores": {
+        "reach": 5,
+        "indep": 4,
+        "obj": 5,
+        "late": 3,
+        "cheap": 1
+      },
+      "note": "The only role whose job is the objectives. You pick every fight. New role for you."
+    },
+    {
+      "name": "Mid",
+      "scores": {
+        "reach": 4,
+        "indep": 4,
+        "obj": 4,
+        "late": 4,
+        "cheap": 1
+      },
+      "note": "Short walk to both sides. Lots of agency, but a new role and the deepest champion pool to learn."
+    },
+    {
+      "name": "Top",
+      "scores": {
+        "reach": 2,
+        "indep": 5,
+        "obj": 2,
+        "late": 3,
+        "cheap": 4
+      },
+      "note": "Most independent lane, farthest from dragon. You force objectives by making them answer your side lane."
+    },
+    {
+      "name": "ADC",
+      "scores": {
+        "reach": 2,
+        "indep": 2,
+        "obj": 3,
+        "late": 5,
+        "cheap": 5
+      },
+      "note": "Most damage late, least control early. Your agency runs through a support you did not pick."
+    }
+  ],
+  "traitAxes": [
+    {
+      "id": "mob",
+      "label": "Mobility"
+    },
+    {
+      "id": "peel",
+      "label": "Survives assassins"
+    },
+    {
+      "id": "scale",
+      "label": "Scaling"
+    },
+    {
+      "id": "indep",
+      "label": "Wins alone"
+    },
+    {
+      "id": "obj",
+      "label": "Plays for objectives"
+    },
+    {
+      "id": "counter",
+      "label": "Hard to counter"
+    },
+    {
+      "id": "transfer",
+      "label": "Your skills carry over"
+    },
+    {
+      "id": "cheap",
+      "label": "Cheap to switch"
+    }
+  ],
+  "options": [
+    {
+      "name": "Kai'Sa",
+      "role": "ADC · smallest change",
+      "pick": true,
+      "pitch": "Kog's hybrid scaling with an escape button.",
+      "scores": {
+        "mob": 4,
+        "peel": 4,
+        "scale": 4,
+        "indep": 2,
+        "obj": 3,
+        "counter": 3,
+        "transfer": 5,
+        "cheap": 5
+      },
+      "fixes": [
+        "Mobility: E speed (invisible once evolved) and an R dash.",
+        "Assassins: R jumps out with a shield; E stealth breaks their target.",
+        "Same lane, same waves, same on-hit vs AP build logic as Kog."
+      ],
+      "costs": [
+        "Still an ADC: early agency runs through your support.",
+        "R needs a mark on an enemy, so it follows your team's engage.",
+        "Does not fix objectives. That stays a habit to build.",
+        "A pro favourite, so expect bans and balance changes (my guess)."
+      ]
+    },
+    {
+      "name": "Kindred",
+      "role": "Jungle · biggest upside",
+      "pick": false,
+      "pitch": "A marksman who owns the map.",
+      "scores": {
+        "mob": 3,
+        "peel": 4,
+        "scale": 4,
+        "indep": 4,
+        "obj": 5,
+        "counter": 2,
+        "transfer": 3,
+        "cheap": 2
+      },
+      "fixes": [
+        "Objectives become your job: smite, plus ranged DPS on the pit.",
+        "Q dash and R (nobody in it dies for a few seconds) for assassins.",
+        "Kog's kiting and auto spacing carry over directly."
+      ],
+      "costs": [
+        "A new role: pathing, camp timers and gank reads from zero.",
+        "Marks reward risky invades; a bad early game snowballs against you.",
+        "Expect a long stretch below your level. Graves is the sturdier backup."
+      ]
+    },
+    {
+      "name": "Jax",
+      "role": "Top · back to your roots",
+      "pick": false,
+      "pitch": "Darius's lane, with a leap and a late game.",
+      "scores": {
+        "mob": 3,
+        "peel": 4,
+        "scale": 5,
+        "indep": 5,
+        "obj": 2,
+        "counter": 3,
+        "transfer": 4,
+        "cheap": 4
+      },
+      "fixes": [
+        "Q leaps to any unit or ward; E dodges autos and stuns.",
+        "Assassins do not one-shot a bruiser.",
+        "Your Darius lane craft (waves, trades, Teleport) carries over."
+      ],
+      "costs": [
+        "Far from dragon: objectives come from side-lane pressure, not from being at the pit.",
+        "Top's agency is slow: you can win lane and still lose the map.",
+        "Your top run ended at Diamond 1, though you have learned a lot since."
+      ]
+    }
+  ],
+  "verdict": [
+    "My pick: Kai'Sa. It fixes two of your three problems for almost no switch cost, and that saves your time for the real gap: decisions.",
+    "Pick Kindred instead if what you are tired of is ADC itself, your games resting on a support you did not choose. Accept a slower season for a higher ceiling.",
+    "Pick Jax if you miss fighting in a lane where nobody else matters."
+  ],
+  "plan": [
+    {
+      "head": "1 · Feel test (one evening)",
+      "body": "Play each of the three in normals or the practice tool. After each game, answer one question: did I want to queue again? Pick the one you most want to play, not the one that won."
+    },
+    {
+      "head": "2 · Commit for the season",
+      "body": "One champion in ranked. No rotation. Judge it after 100 ranked games, not after a bad night. Your two climbs came from exactly this."
+    },
+    {
+      "head": "3 · Habits for any pick",
+      "body": "• 60 s before dragon or grubs: push, back, arrive first.\n• Before a fight, find their assassins. If you cannot see them, stand behind your front line, not beside it.\n• Review one loss a day: find your first death and its cause."
+    },
+    {
+      "head": "4 · Checkpoint at Master 0 LP",
+      "body": "If the new champion feels less natural than Kog did at the same LP, go back to Kog and keep the habits. No shame in it: the habits were the point."
+    }
+  ]
+}
