@@ -34,6 +34,11 @@
       "file": "kogmaw-adc-items-aggro.json",
       "title": "Kog'Maw ADC: items for aggression",
       "description": "First principles, not win rate: 14 build paths bought with the same gold and run through a fight model (LoL wiki, patch 26.22). First back, item order, a fed-diver duel, a tank fight, three build paths, and coachless/u.gg NA numbers (patch 16.21) as context."
+    },
+    {
+      "file": "kogmaw-keep-or-switch.json",
+      "title": "Coach: keep Kog'Maw or switch?",
+      "description": "First principles, no win rates: should a Master 450 LP Kog'Maw one-trick keep him to reach Challenger? Verdict, both sides steelmanned, low mobility / assassins / objectives split into champion vs skill, a 60 second objective clock, and seven habits."
     }
   ]
 }
