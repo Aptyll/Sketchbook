@@ -44,6 +44,7 @@ const views = [
   { id: 'system', label: '3 · Daily system' },
   { id: 'decisions', label: '4 · In-game rules' },
   { id: 'plan', label: '5 · The plan' },
+  { id: 'kog', label: '6 · Kog\'Maw: positioning and VODs' },
 ];
 
 // =====================================================================
@@ -59,8 +60,8 @@ s.tab('truth');
       color: 'Red chalk',
     },
     {
-      said: '"I want a champ and role I can enjoy and climb."',
-      truth: 'Enjoyment matters: decay is a sign the fun ran out. But every switch throws away thousands of games of reps. Choose once, this week, then lock it for 100 games. A switch decided after a bad session is tilt, not strategy.',
+      said: '"I\'ll keep playing Kog\'Maw. I went 60% over 150 Masters games."',
+      truth: 'Good call. 60% is above Challenger pace (even its noise range, about 52 to 68%, is above 50). The risk is your pattern: you left Darius at 60% too, after losses to matchups and teams. The champion was never the problem. A loss you could not control is not evidence to switch.',
       color: 'Sepia',
     },
     {
@@ -237,7 +238,7 @@ s.tab('plan');
       sub: 'Shake off the rust',
       body: [
         'You were Masters 450; D4 is below your level. The danger is impatience, not skill.',
-        'Champion: whatever you can play best this week. Do not experiment here.',
+        'Champion: Kog\'Maw, locked. No new builds or runes this phase.',
         'Focus: avoidable deaths ≤ 2 per game.',
         'Daily system from tab 3, stop rules strict.',
         'Exit: Masters.',
@@ -251,7 +252,7 @@ s.tab('plan');
         'Run the objective clock for every objective.',
         'Death review twice a week, weekly focus from the log.',
         'Focus: arrive first, wave pushed, at most objectives.',
-        'Allow the champion choice to settle: 100 games before judging it.',
+        'Judge yourself over 50+ games, never over one session.',
         'Exit: Grandmaster.',
       ],
       color: 'Sepia',
@@ -281,13 +282,67 @@ s.tab('plan');
   const by = top + 330;
   s.note(0, by, 'Honest expectation', { size: 24, color: 'Sepia' });
   s.note(0, by + 40, [
-    'Getting back to Masters should be quick if you play. Challenger is a volume question as much as a skill one: at a 55% win rate the math on tab 2 says ~500 games from here.',
-    'If you can play ~25 games a week, that is a long season. Fewer games means GM is the realistic target this season and Challenger the next. Both are on the path you are already on.',
+    'Getting back to Masters should be quick if you play. Challenger is a volume question as much as a skill one: tab 2 says ~500 games at 55%, ~250 at your Masters Kog pace of 60%.',
+    'Holding 60% means keeping the habits that got you there, in every session. Fewer games a week means GM is the realistic target this season and Challenger the next.',
   ].join('\n\n'), { size: 15, maxChars: 62 });
 
   const nx = 0;
   s.note(nx + 640, by, 'The one-line version', { size: 24, color: 'Red chalk' });
   s.note(nx + 640, by + 40, 'Stop looking for the champion that never loses. Lock one in, die less, arrive first, and stop queueing after two losses. Challenger is 55% held for a long time.', { size: 18, maxChars: 52 });
+}
+
+// =====================================================================
+// Tab 6: Kog'Maw positioning checklist and VOD routine
+// =====================================================================
+s.tab('kog');
+{
+  const top = 270;
+  s.note(0, top - 60, 'Positioning checklist (say it in your head every fight)', { size: 24 });
+  const checks = [
+    { t: 'Is W up?', b: 'W is on for 8 s of every 17. With it down you are a 500-range champion: step back, do not show yourself until it is back.', c: 'Red chalk' },
+    { t: 'Where are their gap closers?', b: 'Name each one out loud. Not on the map = assume it is in the nearest fog to you.', c: 'Red chalk' },
+    { t: 'Edge of W range, not past it', b: 'Hit the closest enemy at max range (630 to 710 with W). The frontline is a fine target. Walking forward for the backline is how you die.', c: 'Sepia' },
+    { t: 'Something between you and the fog', b: 'Your support, your frontline, a minion wave or a wall. Never be the champion closest to the fog.', c: 'Sepia' },
+    { t: 'Know your exit first', b: 'Before the fight, know the step you take when they engage: toward your team, never away into unwarded jungle.', c: 'Moss' },
+    { t: 'Scout with R and wards, not your face', b: 'R gives sight and reveals for 2 s from 1,300+ range. Use it on a brush before you walk past it.', c: 'Moss' },
+  ];
+  checks.forEach((c, i) => {
+    const y = top + i * 100;
+    s.note(0, y, `${i + 1}`, { size: 28, color: c.c });
+    s.note(40, y + 2, c.t, { size: 19, color: c.c });
+    s.note(40, y + 32, c.b, { size: 14, maxChars: 66 });
+  });
+
+  const vx = 760;
+  s.note(vx, top - 60, 'VOD routine: 25 minutes, twice a week', { size: 24 });
+  const passes = [
+    { t: 'Pick two games', b: 'One loss, one win, each with 2+ deaths. Never the same day you lost it: review with a calm head.' },
+    { t: 'Pass 1 · Deaths (10 min)', b: 'Jump to each death, rewind 15 s, pause. What did I know? What was I trying to do? Log the category from tab 3.' },
+    { t: 'Pass 2 · Fights (10 min)', b: 'Pause the moment the first enemy engages. Was W up? Was I at the edge of W range? Who stood between me and them? Run the checklist on the left.' },
+    { t: 'Pass 3 · Objectives (5 min)', b: 'Pause 90, 60 and 30 s before each drake and Baron. Where was I, and which waves were pushed?' },
+    { t: 'Write one rule', b: 'Only one, e.g. "W down = I walk back." It becomes next week\'s focus line before every queue.' },
+  ];
+  passes.forEach((p, i) => {
+    const y = top + i * 100;
+    s.loop(vx + 10, y + 12, 12, 12, { color: 'Slate', width: 1.6 });
+    s.note(vx + 34, y + 2, p.t, { size: 19, color: 'Sepia' });
+    s.note(vx + 34, y + 32, p.b, { size: 14, maxChars: 66 });
+  });
+
+  const by = top + 6 * 100 + 20;
+  s.wobblyLine([[0, by], [1500, by - 3]], { color: 'Red chalk', width: 1.5 });
+  s.note(0, by + 20, 'The pattern to break', { size: 24, color: 'Red chalk' });
+  s.note(0, by + 60, [
+    'You went 60% on Darius and 60% on Kog\'Maw, and both times the urge was to swap after losses to matchups or teams.',
+    'Hunting for an 80% build is the same urge. No build gets there: a Challenger player still loses about 2 in 5.',
+    'A loss you could not control goes in the log as "Fair trade". It is not evidence. Only your decisions are.',
+  ].join('\n'), { size: 16, maxChars: 60 });
+  s.note(vx, by + 20, 'Mechanics, 10 minutes before you queue', { size: 24, color: 'Moss' });
+  s.note(vx, by + 60, [
+    '• Practice Tool: last-hit a wave under tower with W on.',
+    '• Kite the target dummy: attack, step back, attack. Never stand still between autos.',
+    '• Land 10 R casts on a moving dummy, aiming where it will be.',
+  ].join('\n'), { size: 16, maxChars: 60 });
 }
 
 const out = s.page({
