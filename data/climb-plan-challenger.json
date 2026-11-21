@@ -1,0 +1,18 @@
+{
+  "title": "Climb plan: Masters 450 to Challenger",
+  "basis": "First principles and arithmetic, no win-rate data. Written as a coaching plan for Noah: Bronze to Masters 450 LP one rank per season (Darius top to D1, Kog'Maw ADC to Masters 450), decayed to low Diamond 4.",
+  "pulledAt": "2026-11-21",
+  "ladder": {
+    "lpPerWin": 20,
+    "lpPerLoss": 20,
+    "lpToClimb": 1000,
+    "note": "Assumptions for the arithmetic only. Low D4 to Masters 0 is about 400 LP; the NA Challenger cutoff moves during the season and sits several hundred LP above Masters 0, so 1,000 LP total is a round illustration. Real gains depend on MMR."
+  },
+  "variance": {
+    "trueWinRate": 0.55,
+    "fiveLossStreakIn100": 0.65,
+    "under50After20": 0.25,
+    "under50After50": 0.20,
+    "method": "Monte Carlo, 200,000 simulated runs of independent games at a true 55% win rate."
+  }
+}
