@@ -8759,6 +8759,15 @@
     "color": "#e9dfc9",
     "size": 15,
     "tab": "notes"
+   },
+   {
+    "id": "note-227",
+    "type": "note",
+    "x": 0,
+    "y": -138,
+    "text": "This model assumes Lethal Tempo. The locked build (Climb\nplan, tab 7) runs Stormraider's. The answer stands:\nRecurve's lead is mostly extra on-hit and W procs, not\nthe Tempo bolt (tab 2), and Recurve is in every Kog item\npath.",
+    "color": "#7f98ad",
+    "size": 16
    }
   ],
   "source": {
