@@ -120,6 +120,9 @@ export function normalizePage(raw, { freshId = false } = {}) {
   // Sidebar placement: the folder a page sits in, and which library entry it was copied from.
   if (isKey(raw.folderId)) page.folderId = raw.folderId;
   if (isKey(raw.library)) page.library = raw.library;
+  // Sidebar order: when the page was last opened, and whether it is pinned to the top.
+  if (isNum(raw.usedAt) && !freshId) page.usedAt = raw.usedAt;
+  if (raw.pinned === true && !freshId) page.pinned = true;
   if (raw.fit === true) page.fit = true;
   const tabs = normalizeTabs(raw.tabs, problems);
   if (tabs.length) {

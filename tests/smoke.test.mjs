@@ -186,7 +186,7 @@ test('images: paste, resize, and export/import round trip', async () => {
   await page2.setInputFiles('#import-input', path);
   // The imported page replaces the blank page a fresh browser starts with, and opens.
   await page2.waitForSelector('.item.image img[src^="blob:"]');
-  assert.equal(await count(page2, '#page-list li'), 1);
+  assert.equal(await count(page2, '#page-list .page-row'), 1);
   await page2.waitForSelector('.item.image img[src^="blob:"]');
   const restored = await page2.locator('.item.image').boundingBox();
   assert.ok(Math.abs(restored.width - 300) < 2);
@@ -203,21 +203,20 @@ test('pages: create, switch and delete', async () => {
 
   await drawLine(page, { x: 500, y: 300 }, { x: 600, y: 300 });
   await page.click('#new-page');
-  assert.equal(await count(page, '#page-list li'), 2);
+  assert.equal(await count(page, '#page-list .page-row'), 2);
   assert.equal(await count(page, '#ink-layer g'), 0);
 
   // Switching back shows the first page's stroke.
   await page.locator('#page-list .page-open').nth(1).click();
   assert.equal(await count(page, '#ink-layer g'), 1);
 
-  // Two-step delete of the active page, from its "⋯" menu.
-  const li = page.locator('#page-list li').nth(1);
+  // Switching moved it to the top. Delete it from its "⋯" menu.
+  const li = page.locator('#page-list .page-row.active');
+  assert.equal(await page.locator('#page-list .page-row').first().getAttribute('class'), 'page-row active');
   await li.hover();
   await li.locator('.row-more').click();
   await page.click('#row-menu >> text=Delete page');
-  assert.equal(await count(page, '#page-list li'), 2);
-  await page.click('#row-menu >> text=Delete page? Click again');
-  assert.equal(await count(page, '#page-list li'), 1);
+  assert.equal(await count(page, '#page-list .page-row'), 1);
   assert.equal(await count(page, '#ink-layer g'), 0);
 
   assert.deepEqual(errors, []);
@@ -278,27 +277,13 @@ test('agent API: add, remove, undo, and it persists', async () => {
   await context.close();
 });
 
-test('library: adding the spells page twice opens the same copy, in the Library folder', async () => {
+test('library: the spells page opens framed, with its notes, ink and icons', async () => {
   const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
   await fakeIcons(context);
   const { page, errors } = await openApp(context);
 
-  for (let i = 0; i < 2; i++) {
-    await page.click('#open-library');
-    await page.click('.library-entry >> text=summoner spells');
-    await page.waitForFunction(() => document.querySelector('#page-title').value === "Kog'Maw ADC: summoner spells");
-  }
-  // One Library folder holding one page, and the blank start page is gone.
-  await page.waitForFunction(() => document.querySelectorAll('#page-list .page-row').length === 1);
-  assert.equal(await count(page, '#page-list .folder-row.library'), 1);
-  assert.equal(await page.locator('.folder-row.library .folder-count').innerText(), '1');
-
-  // "Add a fresh copy" is how you get a second, clean copy.
-  await page.click('#open-library');
-  await page.click('.library-fresh');
-  await page.waitForFunction(() => document.querySelectorAll('#page-list .page-row').length === 2);
-  assert.equal(await page.locator('.folder-row.library .folder-count').innerText(), '2');
-  assert.equal(await page.locator('#page-title').inputValue(), "Kog'Maw ADC: summoner spells");
+  await page.click('.library-row >> text=Kog\'Maw ADC: summoner spells');
+  await page.waitForFunction(() => document.querySelector('#page-title').value === "Kog'Maw ADC: summoner spells");
   await page.waitForSelector('.item.image img[src^="blob:"]');
   assert.ok((await count(page, '.item.note')) > 20);
   assert.ok((await count(page, '#ink-layer g')) > 5);
@@ -315,8 +300,7 @@ test('library: the u.gg keystones page opens with its icons and notes', async ()
   await fakeIcons(context);
   const { page, errors } = await openApp(context);
 
-  await page.click('#open-library');
-  await page.click('.library-entry >> text=keystones (u.gg)');
+  await page.click('.library-row >> text=keystones (u.gg)');
   await page.waitForFunction(() => document.querySelector('#page-title').value === "Kog'Maw ADC: keystones (u.gg)");
   await page.waitForSelector('.item.image img[src^="blob:"]');
   assert.equal(await count(page, '.item.image'), 5);
