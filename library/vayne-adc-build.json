@@ -1,0 +1,8293 @@
+{
+ "format": "sketchbook-page",
+ "version": 1,
+ "page": {
+  "title": "Vayne ADC: the simple build",
+  "fit": true,
+  "items": [
+   {
+    "id": "img-1",
+    "type": "image",
+    "x": 0,
+    "y": 0,
+    "w": 64,
+    "h": 64,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/Vayne.png"
+   },
+   {
+    "id": "note-2",
+    "type": "note",
+    "x": 80,
+    "y": -4,
+    "text": "Vayne ADC · the simple build",
+    "color": "#e9dfc9",
+    "size": 38
+   },
+   {
+    "id": "ink-3",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2.5,
+    "points": [
+     [
+      84.8,
+      55.9
+     ],
+     [
+      96.2,
+      55.8
+     ],
+     [
+      107.9,
+      56.2
+     ],
+     [
+      120.3,
+      55.6
+     ],
+     [
+      132.7,
+      55.1
+     ],
+     [
+      144.6,
+      55.3
+     ],
+     [
+      157,
+      55.2
+     ],
+     [
+      168.1,
+      55.2
+     ],
+     [
+      181,
+      54.6
+     ],
+     [
+      192.5,
+      55.3
+     ],
+     [
+      205,
+      54.9
+     ],
+     [
+      216.3,
+      55.1
+     ],
+     [
+      228.8,
+      54.3
+     ],
+     [
+      241.7,
+      55.5
+     ],
+     [
+      253.7,
+      54
+     ],
+     [
+      264.9,
+      54.7
+     ],
+     [
+      277.8,
+      55.1
+     ],
+     [
+      289,
+      54.1
+     ],
+     [
+      301.3,
+      55.1
+     ],
+     [
+      314.5,
+      54.9
+     ],
+     [
+      326.3,
+      53.6
+     ],
+     [
+      338.6,
+      54.7
+     ],
+     [
+      350.2,
+      54.7
+     ],
+     [
+      361.4,
+      53.3
+     ],
+     [
+      373.6,
+      53.9
+     ],
+     [
+      386.2,
+      54.2
+     ],
+     [
+      398.7,
+      53.2
+     ],
+     [
+      410.6,
+      54.4
+     ],
+     [
+      422.7,
+      53.4
+     ],
+     [
+      435.3,
+      53.3
+     ],
+     [
+      447.1,
+      52.8
+     ],
+     [
+      459.3,
+      52.7
+     ],
+     [
+      471.3,
+      52.6
+     ],
+     [
+      482.4,
+      52.3
+     ],
+     [
+      495,
+      53.4
+     ],
+     [
+      507.5,
+      52.4
+     ],
+     [
+      518.7,
+      53.6
+     ],
+     [
+      532,
+      52.1
+     ],
+     [
+      543.9,
+      52.8
+     ],
+     [
+      554.8,
+      52.5
+     ],
+     [
+      567.1,
+      52.8
+     ],
+     [
+      578.8,
+      53.1
+     ],
+     [
+      592,
+      53
+     ],
+     [
+      603,
+      52.1
+     ],
+     [
+      615.9,
+      52
+     ],
+     [
+      627.6,
+      51.4
+     ],
+     [
+      640,
+      52
+     ]
+    ]
+   },
+   {
+    "id": "note-4",
+    "type": "note",
+    "x": 80,
+    "y": 66,
+    "text": "Patch 16.22 (u.gg calls it 26.22). Pulled 2026-11-17.\ncoachless WPA: NA Diamond+ 1,775 games, all regions Diamond+ 19,646.\nu.gg NA: All 36.3K, Diamond+ 2,229, Master+ 771, Challenger 168 games.",
+    "color": "#b8925a",
+    "size": 14
+   },
+   {
+    "id": "note-5",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "My pick for NA Diamond+ and up",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-6",
+    "type": "note",
+    "x": 0,
+    "y": 250,
+    "text": "Runes",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-7",
+    "type": "image",
+    "x": 130,
+    "y": 244,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-8",
+    "type": "note",
+    "x": 126,
+    "y": 302,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-9",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      187.2,
+      270.7
+     ],
+     [
+      202.3,
+      270.5
+     ],
+     [
+      216,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-10",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      276.1
+     ],
+     [
+      216,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-11",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      263.9
+     ],
+     [
+      216,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-12",
+    "type": "image",
+    "x": 222,
+    "y": 244,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/Triumph.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-13",
+    "type": "note",
+    "x": 218,
+    "y": 302,
+    "text": "Triumph",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-14",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      280.4,
+      269.4
+     ],
+     [
+      293.8,
+      270.5
+     ],
+     [
+      308,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-15",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      276.1
+     ],
+     [
+      308,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-16",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      263.9
+     ],
+     [
+      308,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-17",
+    "type": "image",
+    "x": 314,
+    "y": 244,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-18",
+    "type": "note",
+    "x": 310,
+    "y": 302,
+    "text": "Bloodline",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-19",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      371.3,
+      269.2
+     ],
+     [
+      386.4,
+      270.5
+     ],
+     [
+      400,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-20",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      276.1
+     ],
+     [
+      400,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-21",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      263.9
+     ],
+     [
+      400,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-22",
+    "type": "image",
+    "x": 406,
+    "y": 244,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CutDown/CutDown.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-23",
+    "type": "note",
+    "x": 402,
+    "y": 302,
+    "text": "Cut Down",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-24",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      463.5,
+      270.8
+     ],
+     [
+      477.4,
+      270.1
+     ],
+     [
+      492,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-25",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      276.1
+     ],
+     [
+      492,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-26",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      263.9
+     ],
+     [
+      492,
+      270
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-27",
+    "type": "image",
+    "x": 498,
+    "y": 244,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-28",
+    "type": "note",
+    "x": 494,
+    "y": 302,
+    "text": "Resolve or\nInspiration",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-29",
+    "type": "note",
+    "x": 0,
+    "y": 358,
+    "text": "Spells",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-30",
+    "type": "image",
+    "x": 130,
+    "y": 352,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerFlash.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-31",
+    "type": "note",
+    "x": 126,
+    "y": 410,
+    "text": "Flash",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-32",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      188.7,
+      377.6
+     ],
+     [
+      201.3,
+      377.5
+     ],
+     [
+      216,
+      378
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-33",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      384.1
+     ],
+     [
+      216,
+      378
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-34",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      371.9
+     ],
+     [
+      216,
+      378
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-35",
+    "type": "image",
+    "x": 222,
+    "y": 352,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerBarrier.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-36",
+    "type": "note",
+    "x": 218,
+    "y": 410,
+    "text": "Barrier",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-37",
+    "type": "note",
+    "x": 0,
+    "y": 466,
+    "text": "Start",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-38",
+    "type": "image",
+    "x": 130,
+    "y": 460,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/1055.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-39",
+    "type": "note",
+    "x": 126,
+    "y": 518,
+    "text": "Doran's\nBlade",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-40",
+    "type": "note",
+    "x": 0,
+    "y": 574,
+    "text": "On-hit",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-41",
+    "type": "image",
+    "x": 130,
+    "y": 568,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/6672.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-42",
+    "type": "note",
+    "x": 126,
+    "y": 626,
+    "text": "Kraken\nSlayer",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-43",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      188.5,
+      594.1
+     ],
+     [
+      202.4,
+      593.3
+     ],
+     [
+      216,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-44",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      600.1
+     ],
+     [
+      216,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-45",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      587.9
+     ],
+     [
+      216,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-46",
+    "type": "image",
+    "x": 222,
+    "y": 568,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3006.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-47",
+    "type": "note",
+    "x": 218,
+    "y": 626,
+    "text": "Berserker's",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-48",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      280.4,
+      593.5
+     ],
+     [
+      294.6,
+      594
+     ],
+     [
+      308,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-49",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      600.1
+     ],
+     [
+      308,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-50",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      587.9
+     ],
+     [
+      308,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-51",
+    "type": "image",
+    "x": 314,
+    "y": 568,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3124.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-52",
+    "type": "note",
+    "x": 310,
+    "y": 626,
+    "text": "Rageblade",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-53",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      371.8,
+      593.9
+     ],
+     [
+      386,
+      593.5
+     ],
+     [
+      400,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-54",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      600.1
+     ],
+     [
+      400,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-55",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      587.9
+     ],
+     [
+      400,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-56",
+    "type": "image",
+    "x": 406,
+    "y": 568,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3302.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-57",
+    "type": "note",
+    "x": 402,
+    "y": 626,
+    "text": "Terminus",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-58",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      464,
+      593.7
+     ],
+     [
+      477.5,
+      594.4
+     ],
+     [
+      492,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-59",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      600.1
+     ],
+     [
+      492,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-60",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      587.9
+     ],
+     [
+      492,
+      594
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-61",
+    "type": "image",
+    "x": 498,
+    "y": 568,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3036.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-62",
+    "type": "note",
+    "x": 494,
+    "y": 626,
+    "text": "Lord\nDominik's",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-63",
+    "type": "note",
+    "x": 0,
+    "y": 682,
+    "text": "or crit",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-64",
+    "type": "image",
+    "x": 130,
+    "y": 676,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3508.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-65",
+    "type": "note",
+    "x": 126,
+    "y": 734,
+    "text": "Essence\nReaver",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-66",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      187.4,
+      701.2
+     ],
+     [
+      202.6,
+      702.2
+     ],
+     [
+      216,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-67",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      708.1
+     ],
+     [
+      216,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-68",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      203.4,
+      695.9
+     ],
+     [
+      216,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-69",
+    "type": "image",
+    "x": 222,
+    "y": 676,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3006.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-70",
+    "type": "note",
+    "x": 218,
+    "y": 734,
+    "text": "Berserker's",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-71",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      279.2,
+      702.1
+     ],
+     [
+      293.7,
+      702.7
+     ],
+     [
+      308,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-72",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      708.1
+     ],
+     [
+      308,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-73",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      295.4,
+      695.9
+     ],
+     [
+      308,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-74",
+    "type": "image",
+    "x": 314,
+    "y": 676,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3095.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-75",
+    "type": "note",
+    "x": 310,
+    "y": 734,
+    "text": "Stormrazor",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-76",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      372.4,
+      701.7
+     ],
+     [
+      386.4,
+      701.9
+     ],
+     [
+      400,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-77",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      708.1
+     ],
+     [
+      400,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-78",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      387.4,
+      695.9
+     ],
+     [
+      400,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-79",
+    "type": "image",
+    "x": 406,
+    "y": 676,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3031.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-80",
+    "type": "note",
+    "x": 402,
+    "y": 734,
+    "text": "Infinity\nEdge",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-81",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      464.3,
+      701.3
+     ],
+     [
+      477.7,
+      702.6
+     ],
+     [
+      492,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-82",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      708.1
+     ],
+     [
+      492,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-83",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.5,
+    "points": [
+     [
+      479.4,
+      695.9
+     ],
+     [
+      492,
+      702
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "img-84",
+    "type": "image",
+    "x": 498,
+    "y": 676,
+    "w": 52,
+    "h": 52,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3036.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-85",
+    "type": "note",
+    "x": 494,
+    "y": 734,
+    "text": "Lord\nDominik's",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-86",
+    "type": "note",
+    "x": 0,
+    "y": 790,
+    "text": "Never Ruined King first.",
+    "color": "#c4593f",
+    "size": 22,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-87",
+    "type": "note",
+    "x": 0,
+    "y": 836,
+    "text": "It is the most bought first item and the worst one\nin all three coachless samples (tab 3).",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "ink-88",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2,
+    "points": [
+     [
+      -21.9,
+      797
+     ],
+     [
+      -13.2,
+      795
+     ],
+     [
+      -4.6,
+      792.9
+     ],
+     [
+      3.9,
+      790.9
+     ],
+     [
+      15.2,
+      789.1
+     ],
+     [
+      28.9,
+      787.7
+     ],
+     [
+      43.8,
+      786.5
+     ],
+     [
+      57.8,
+      785.1
+     ],
+     [
+      74.1,
+      784.4
+     ],
+     [
+      90.8,
+      784.1
+     ],
+     [
+      107.7,
+      784.1
+     ],
+     [
+      124.3,
+      784.3
+     ],
+     [
+      140.9,
+      784.6
+     ],
+     [
+      158.5,
+      784.6
+     ],
+     [
+      173.1,
+      786
+     ],
+     [
+      188.8,
+      786.9
+     ],
+     [
+      201.3,
+      788.6
+     ],
+     [
+      216.9,
+      789.9
+     ],
+     [
+      223.2,
+      792.3
+     ],
+     [
+      236,
+      794
+     ],
+     [
+      242.2,
+      796.3
+     ],
+     [
+      248.3,
+      798.6
+     ],
+     [
+      253.4,
+      801
+     ],
+     [
+      256.6,
+      803.4
+     ],
+     [
+      249.9,
+      805.9
+     ],
+     [
+      253.5,
+      808.4
+     ],
+     [
+      244.4,
+      810.6
+     ],
+     [
+      237,
+      812.8
+     ],
+     [
+      233.1,
+      815.3
+     ],
+     [
+      222.7,
+      817.4
+     ],
+     [
+      208.4,
+      818.8
+     ],
+     [
+      195,
+      820.4
+     ],
+     [
+      180.1,
+      821.6
+     ],
+     [
+      166.4,
+      823.2
+     ],
+     [
+      150,
+      824
+     ],
+     [
+      132.8,
+      824.4
+     ],
+     [
+      115.4,
+      824.4
+     ],
+     [
+      97.9,
+      825.1
+     ],
+     [
+      80.2,
+      824.8
+     ],
+     [
+      63.5,
+      823.9
+     ],
+     [
+      46.1,
+      823.3
+     ],
+     [
+      33.8,
+      821.3
+     ],
+     [
+      18.3,
+      820.1
+     ],
+     [
+      2.7,
+      818.8
+     ],
+     [
+      -7.7,
+      816.7
+     ],
+     [
+      -17.6,
+      814.7
+     ],
+     [
+      -22.8,
+      812.2
+     ],
+     [
+      -33.9,
+      810.1
+     ],
+     [
+      -37.4,
+      807.6
+     ],
+     [
+      -38.8,
+      805
+     ],
+     [
+      -36.2,
+      802.5
+     ],
+     [
+      -35.5,
+      800
+     ],
+     [
+      -32,
+      797.5
+     ],
+     [
+      -25,
+      795.1
+     ],
+     [
+      -16.3,
+      792.9
+     ],
+     [
+      -8.3,
+      790.6
+     ],
+     [
+      5.9,
+      789
+     ]
+    ],
+    "tab": "sheet"
+   },
+   {
+    "id": "note-89",
+    "type": "note",
+    "x": 700,
+    "y": 190,
+    "text": "Swap by enemy comp",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-90",
+    "type": "note",
+    "x": 700,
+    "y": 226,
+    "text": "Details and numbers on tab 6.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-91",
+    "type": "note",
+    "x": 700,
+    "y": 280,
+    "text": "Assassins / dive",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-92",
+    "type": "image",
+    "x": 700,
+    "y": 312,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerExhaust.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-93",
+    "type": "image",
+    "x": 752,
+    "y": 312,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3047.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-94",
+    "type": "image",
+    "x": 804,
+    "y": 312,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3026.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-95",
+    "type": "note",
+    "x": 870,
+    "y": 314,
+    "text": "Exhaust over Barrier, Steelcaps vs AD,\nGuardian Angel 3rd. Hold Condemn for the diver.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-96",
+    "type": "note",
+    "x": 700,
+    "y": 400,
+    "text": "Tanks",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-97",
+    "type": "image",
+    "x": 700,
+    "y": 432,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CutDown/CutDown.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-98",
+    "type": "image",
+    "x": 752,
+    "y": 432,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3036.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-99",
+    "type": "image",
+    "x": 804,
+    "y": 432,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3302.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-100",
+    "type": "note",
+    "x": 870,
+    "y": 434,
+    "text": "Your W already burns max HP. Keep Cut Down,\nrush Terminus or Lord Dominik's 3rd.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-101",
+    "type": "note",
+    "x": 700,
+    "y": 520,
+    "text": "Poke lane",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-102",
+    "type": "image",
+    "x": 700,
+    "y": 552,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/1055.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-103",
+    "type": "image",
+    "x": 752,
+    "y": 552,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-104",
+    "type": "image",
+    "x": 804,
+    "y": 552,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3072.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-105",
+    "type": "note",
+    "x": 870,
+    "y": 554,
+    "text": "Blade start, Resolve second, farm to 2 items.\nBloodthirster late for sustain.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-106",
+    "type": "note",
+    "x": 700,
+    "y": 640,
+    "text": "AP + lots of CC",
+    "color": "#e9dfc9",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "img-107",
+    "type": "image",
+    "x": 700,
+    "y": 672,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3111.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-108",
+    "type": "image",
+    "x": 752,
+    "y": 672,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3091.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "img-109",
+    "type": "image",
+    "x": 804,
+    "y": 672,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3139.png",
+    "tab": "sheet"
+   },
+   {
+    "id": "note-110",
+    "type": "note",
+    "x": 870,
+    "y": 674,
+    "text": "Mercury's Treads, then Wit's End or\nMercurial if one CC spell kills you.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-111",
+    "type": "note",
+    "x": 700,
+    "y": 780,
+    "text": "How sure am I?",
+    "color": "#b8925a",
+    "size": 20,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-112",
+    "type": "note",
+    "x": 700,
+    "y": 812,
+    "text": "• Lethal Tempo, Flash + Barrier: what 3 of 4 players run, and\nnothing beats them clearly. Safe.\n• Doran's Blade, Cut Down, Bloodline, no Ruined King first:\nthe same lean in every big sample. Leans, not proof.\n• Comp swaps: reasoning from Vayne's kit plus item WPA in all\ngames. coachless's \"vs champion\" filter is paid.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-113",
+    "type": "note",
+    "x": 0,
+    "y": 950,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "sheet"
+   },
+   {
+    "id": "note-114",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "Keystone",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "runes"
+   },
+   {
+    "id": "note-115",
+    "type": "note",
+    "x": 0,
+    "y": 226,
+    "text": "coachless WPA in percentage points · picks. Grey = under 500 picks.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-116",
+    "type": "note",
+    "x": 320,
+    "y": 260,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-117",
+    "type": "note",
+    "x": 352,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-118",
+    "type": "note",
+    "x": 392,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-119",
+    "type": "note",
+    "x": 432,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-120",
+    "type": "note",
+    "x": 472,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-121",
+    "type": "note",
+    "x": 512,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-122",
+    "type": "note",
+    "x": 620,
+    "y": 260,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-123",
+    "type": "note",
+    "x": 652,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-124",
+    "type": "note",
+    "x": 692,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-125",
+    "type": "note",
+    "x": 732,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-126",
+    "type": "note",
+    "x": 772,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-127",
+    "type": "note",
+    "x": 812,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-128",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      439.5,
+      303.9
+     ],
+     [
+      440.1,
+      315.4
+     ],
+     [
+      439.8,
+      327
+     ],
+     [
+      440,
+      339.9
+     ],
+     [
+      439.5,
+      351.7
+     ],
+     [
+      439.9,
+      362.5
+     ],
+     [
+      439.4,
+      374.3
+     ],
+     [
+      440.1,
+      386.3
+     ],
+     [
+      439.9,
+      397.6
+     ],
+     [
+      440.2,
+      409.2
+     ],
+     [
+      439.9,
+      421
+     ],
+     [
+      440.3,
+      433.2
+     ],
+     [
+      439.8,
+      445.5
+     ],
+     [
+      439.3,
+      456.9
+     ],
+     [
+      440,
+      468.4
+     ],
+     [
+      439.7,
+      480.1
+     ],
+     [
+      440.4,
+      492.5
+     ],
+     [
+      440,
+      504
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "ink-129",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      740,
+      303.6
+     ],
+     [
+      740.1,
+      316
+     ],
+     [
+      739.5,
+      327.5
+     ],
+     [
+      740.4,
+      339.8
+     ],
+     [
+      740.6,
+      350.5
+     ],
+     [
+      739.2,
+      362.8
+     ],
+     [
+      740.8,
+      373.9
+     ],
+     [
+      740.4,
+      386.2
+     ],
+     [
+      740.8,
+      398.2
+     ],
+     [
+      739.4,
+      409.2
+     ],
+     [
+      740.1,
+      422.3
+     ],
+     [
+      739.6,
+      433.9
+     ],
+     [
+      740,
+      445.1
+     ],
+     [
+      740.6,
+      457
+     ],
+     [
+      740.3,
+      469
+     ],
+     [
+      739.3,
+      480.9
+     ],
+     [
+      739.7,
+      491.9
+     ],
+     [
+      740,
+      504
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "img-130",
+    "type": "image",
+    "x": 0,
+    "y": 308,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-131",
+    "type": "note",
+    "x": 54,
+    "y": 308,
+    "text": "Lethal Tempo",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "note-132",
+    "type": "note",
+    "x": 54,
+    "y": 332,
+    "text": "Up to +28.8% attack speed over 6 hits,\nthen bonus damage per hit",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-133",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      439.7,
+      330.1
+     ],
+     [
+      456.8,
+      330
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-134",
+    "type": "note",
+    "x": 464.8,
+    "y": 320,
+    "text": "+0.84 · 1.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-135",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.9,
+      330.2
+     ],
+     [
+      743,
+      330
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-136",
+    "type": "note",
+    "x": 751,
+    "y": 320,
+    "text": "+0.15 · 15.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "img-137",
+    "type": "image",
+    "x": 0,
+    "y": 382,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/PressTheAttack/PressTheAttack.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-138",
+    "type": "note",
+    "x": 54,
+    "y": 382,
+    "text": "Press the Attack",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "note-139",
+    "type": "note",
+    "x": 54,
+    "y": 406,
+    "text": "3 hits: 40 to 174 damage, then +8% damage\ntaken",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-140",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      440.1,
+      403.8
+     ],
+     [
+      450.8,
+      404.1
+     ],
+     [
+      461.5,
+      404
+     ],
+     [
+      471.9,
+      404.2
+     ],
+     [
+      482.6,
+      404
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-141",
+    "type": "note",
+    "x": 490.6,
+    "y": 394,
+    "text": "+2.13 · 286 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-142",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      403.8
+     ],
+     [
+      731,
+      404
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-143",
+    "type": "note",
+    "x": 748,
+    "y": 394,
+    "text": "−0.45 · 3.7K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "img-144",
+    "type": "image",
+    "x": 0,
+    "y": 456,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/FleetFootwork/FleetFootwork.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-145",
+    "type": "note",
+    "x": 54,
+    "y": 456,
+    "text": "Fleet Footwork",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "note-146",
+    "type": "note",
+    "x": 54,
+    "y": 480,
+    "text": "Charged hit heals 9 to 110 and gives 15%\nmove speed",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-147",
+    "type": "note",
+    "x": 448,
+    "y": 469,
+    "text": "not listed",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-148",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      740.2,
+      478.1
+     ],
+     [
+      757,
+      478
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-149",
+    "type": "note",
+    "x": 765,
+    "y": 468,
+    "text": "+0.85 · 393 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-150",
+    "type": "note",
+    "x": 960,
+    "y": 260,
+    "text": "u.gg NA · pick rate · win rate",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-151",
+    "type": "note",
+    "x": 970,
+    "y": 286,
+    "text": "All ranks",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-152",
+    "type": "note",
+    "x": 1090,
+    "y": 286,
+    "text": "Diamond+",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-153",
+    "type": "note",
+    "x": 1210,
+    "y": 286,
+    "text": "Master+",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-154",
+    "type": "note",
+    "x": 1330,
+    "y": 286,
+    "text": "Challenger",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-155",
+    "type": "note",
+    "x": 970,
+    "y": 312,
+    "text": "71%\n49.9%",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-156",
+    "type": "note",
+    "x": 1090,
+    "y": 312,
+    "text": "78%\n50.3%",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-157",
+    "type": "note",
+    "x": 1210,
+    "y": 312,
+    "text": "77%\n50.3%",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-158",
+    "type": "note",
+    "x": 1330,
+    "y": 312,
+    "text": "74%\n50.4%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-159",
+    "type": "note",
+    "x": 970,
+    "y": 386,
+    "text": "25%\n48.9%",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-160",
+    "type": "note",
+    "x": 1090,
+    "y": 386,
+    "text": "17%\n50.9%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-161",
+    "type": "note",
+    "x": 1210,
+    "y": 386,
+    "text": "18%\n46.4%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-162",
+    "type": "note",
+    "x": 1330,
+    "y": 386,
+    "text": "20%\n47.1%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-163",
+    "type": "note",
+    "x": 970,
+    "y": 460,
+    "text": "2%\n47.0%",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-164",
+    "type": "note",
+    "x": 1090,
+    "y": 460,
+    "text": "4%\n42.0%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-165",
+    "type": "note",
+    "x": 1210,
+    "y": 460,
+    "text": "4%\n37.0%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-166",
+    "type": "note",
+    "x": 1330,
+    "y": 460,
+    "text": "5%\n37.5%",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-167",
+    "type": "note",
+    "x": 960,
+    "y": 520,
+    "text": "Win-rate noise at Diamond+ for Lethal Tempo (1,743 games):\n±2.3 pp. Press the Attack: ±5.1 pp.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-168",
+    "type": "note",
+    "x": 0,
+    "y": 582,
+    "text": "Precision rows",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "runes"
+   },
+   {
+    "id": "note-169",
+    "type": "note",
+    "x": 0,
+    "y": 618,
+    "text": "The two choices that actually move: row 3 and row 4.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "note-170",
+    "type": "note",
+    "x": 320,
+    "y": 652,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-171",
+    "type": "note",
+    "x": 352,
+    "y": 676,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-172",
+    "type": "note",
+    "x": 392,
+    "y": 676,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-173",
+    "type": "note",
+    "x": 432,
+    "y": 676,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-174",
+    "type": "note",
+    "x": 472,
+    "y": 676,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-175",
+    "type": "note",
+    "x": 512,
+    "y": 676,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-176",
+    "type": "note",
+    "x": 620,
+    "y": 652,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-177",
+    "type": "note",
+    "x": 652,
+    "y": 676,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-178",
+    "type": "note",
+    "x": 692,
+    "y": 676,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-179",
+    "type": "note",
+    "x": 732,
+    "y": 676,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-180",
+    "type": "note",
+    "x": 772,
+    "y": 676,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "note-181",
+    "type": "note",
+    "x": 812,
+    "y": 676,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-182",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      440.2,
+      696.7
+     ],
+     [
+      440.7,
+      708.6
+     ],
+     [
+      439.8,
+      720.3
+     ],
+     [
+      440.3,
+      731.3
+     ],
+     [
+      440.8,
+      743
+     ],
+     [
+      440.3,
+      756.2
+     ],
+     [
+      440.5,
+      766.9
+     ],
+     [
+      439.9,
+      779.2
+     ],
+     [
+      440.8,
+      792
+     ],
+     [
+      440.4,
+      802.5
+     ],
+     [
+      440.4,
+      815.6
+     ],
+     [
+      440.3,
+      827.4
+     ],
+     [
+      440,
+      839
+     ],
+     [
+      440,
+      850.9
+     ],
+     [
+      440.6,
+      862
+     ],
+     [
+      440,
+      875.2
+     ],
+     [
+      440.6,
+      886.5
+     ],
+     [
+      439.7,
+      897.8
+     ],
+     [
+      439.7,
+      910.1
+     ],
+     [
+      440.2,
+      921.9
+     ],
+     [
+      440,
+      934
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "ink-183",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      740.3,
+      695.5
+     ],
+     [
+      740.7,
+      708.7
+     ],
+     [
+      740.7,
+      719.4
+     ],
+     [
+      740.1,
+      731.6
+     ],
+     [
+      740.4,
+      744.2
+     ],
+     [
+      739.6,
+      755.5
+     ],
+     [
+      740.6,
+      766.7
+     ],
+     [
+      740.6,
+      779.8
+     ],
+     [
+      740.1,
+      790.8
+     ],
+     [
+      739.6,
+      802.6
+     ],
+     [
+      739.2,
+      815.1
+     ],
+     [
+      740.4,
+      827.2
+     ],
+     [
+      739.7,
+      839.4
+     ],
+     [
+      740.5,
+      850.1
+     ],
+     [
+      740.6,
+      861.9
+     ],
+     [
+      739.3,
+      875.3
+     ],
+     [
+      740.3,
+      887.1
+     ],
+     [
+      739.8,
+      898.3
+     ],
+     [
+      739.2,
+      909.6
+     ],
+     [
+      739.2,
+      922.5
+     ],
+     [
+      740,
+      934
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "img-184",
+    "type": "image",
+    "x": 0,
+    "y": 700,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LegendBloodline/LegendBloodline.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-185",
+    "type": "note",
+    "x": 54,
+    "y": 700,
+    "text": "Bloodline",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-186",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      440,
+      721.8
+     ],
+     [
+      453,
+      722.1
+     ],
+     [
+      465.9,
+      721.8
+     ],
+     [
+      478.6,
+      722
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-187",
+    "type": "note",
+    "x": 486.6,
+    "y": 712,
+    "text": "+1.93 · 380 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-188",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      722.1
+     ],
+     [
+      750.2,
+      722
+     ],
+     [
+      760.2,
+      722
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-189",
+    "type": "note",
+    "x": 768.2,
+    "y": 712,
+    "text": "+1.01 · 3.0K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "img-190",
+    "type": "image",
+    "x": 0,
+    "y": 762,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/LegendAlacrity/LegendAlacrity.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-191",
+    "type": "note",
+    "x": 54,
+    "y": 762,
+    "text": "Alacrity",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-192",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      440.1,
+      784.2
+     ],
+     [
+      448.6,
+      784
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-193",
+    "type": "note",
+    "x": 456.6,
+    "y": 774,
+    "text": "+0.43 · 1.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-194",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.7,
+      783.9
+     ],
+     [
+      736,
+      784
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-195",
+    "type": "note",
+    "x": 748,
+    "y": 774,
+    "text": "−0.20 · 16.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "img-196",
+    "type": "image",
+    "x": 0,
+    "y": 824,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CutDown/CutDown.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-197",
+    "type": "note",
+    "x": 54,
+    "y": 824,
+    "text": "Cut Down",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-198",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      439.8,
+      846.3
+     ],
+     [
+      453,
+      846.1
+     ],
+     [
+      466.1,
+      845.9
+     ],
+     [
+      479.5,
+      845.9
+     ],
+     [
+      492.4,
+      846.2
+     ],
+     [
+      505.6,
+      846
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-199",
+    "type": "note",
+    "x": 513.6,
+    "y": 836,
+    "text": "+3.28 · 666",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-200",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740,
+      846.2
+     ],
+     [
+      751.5,
+      845.8
+     ],
+     [
+      762.4,
+      846
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-201",
+    "type": "note",
+    "x": 770.4,
+    "y": 836,
+    "text": "+1.12 · 4.5K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "img-202",
+    "type": "image",
+    "x": 0,
+    "y": 886,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CoupDeGrace/CoupDeGrace.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-203",
+    "type": "note",
+    "x": 54,
+    "y": 886,
+    "text": "Coup de Grace",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-204",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      908.2
+     ],
+     [
+      430.9,
+      907.7
+     ],
+     [
+      421.8,
+      908
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-205",
+    "type": "note",
+    "x": 448,
+    "y": 898,
+    "text": "−0.91 · 1.1K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "ink-206",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      740.2,
+      907.9
+     ],
+     [
+      729.6,
+      908
+     ]
+    ],
+    "tab": "runes"
+   },
+   {
+    "id": "note-207",
+    "type": "note",
+    "x": 748,
+    "y": 898,
+    "text": "−0.52 · 14.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-208",
+    "type": "note",
+    "x": 960,
+    "y": 582,
+    "text": "Second tree",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "runes"
+   },
+   {
+    "id": "note-209",
+    "type": "note",
+    "x": 960,
+    "y": 618,
+    "text": "Share of games (u.gg NA) · win rate",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "runes"
+   },
+   {
+    "id": "img-210",
+    "type": "image",
+    "x": 960,
+    "y": 674,
+    "w": 36,
+    "h": 36,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-211",
+    "type": "note",
+    "x": 1006,
+    "y": 678,
+    "text": "Resolve",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "runes"
+   },
+   {
+    "id": "note-212",
+    "type": "note",
+    "x": 1130,
+    "y": 674,
+    "text": "53%\n49.5%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-213",
+    "type": "note",
+    "x": 1240,
+    "y": 674,
+    "text": "50%\n49.2%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-214",
+    "type": "note",
+    "x": 1350,
+    "y": 674,
+    "text": "46%\n47.4%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "img-215",
+    "type": "image",
+    "x": 960,
+    "y": 736,
+    "w": 36,
+    "h": 36,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7203_Whimsy.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-216",
+    "type": "note",
+    "x": 1006,
+    "y": 740,
+    "text": "Inspiration",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "runes"
+   },
+   {
+    "id": "note-217",
+    "type": "note",
+    "x": 1130,
+    "y": 736,
+    "text": "17%\n55.4%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-218",
+    "type": "note",
+    "x": 1240,
+    "y": 736,
+    "text": "23%\n51.7%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-219",
+    "type": "note",
+    "x": 1350,
+    "y": 736,
+    "text": "16%\n55.5%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "img-220",
+    "type": "image",
+    "x": 960,
+    "y": 798,
+    "w": 36,
+    "h": 36,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7200_Domination.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-221",
+    "type": "note",
+    "x": 1006,
+    "y": 802,
+    "text": "Domination",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "runes"
+   },
+   {
+    "id": "note-222",
+    "type": "note",
+    "x": 1130,
+    "y": 798,
+    "text": "23%\n50.2%",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-223",
+    "type": "note",
+    "x": 1240,
+    "y": 798,
+    "text": "21%\n47.3%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-224",
+    "type": "note",
+    "x": 1350,
+    "y": 798,
+    "text": "30%\n50.0%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "img-225",
+    "type": "image",
+    "x": 960,
+    "y": 860,
+    "w": 36,
+    "h": 36,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7202_Sorcery.png",
+    "tab": "runes"
+   },
+   {
+    "id": "note-226",
+    "type": "note",
+    "x": 1006,
+    "y": 864,
+    "text": "Sorcery",
+    "color": "#e9dfc9",
+    "size": 16,
+    "tab": "runes"
+   },
+   {
+    "id": "note-227",
+    "type": "note",
+    "x": 1130,
+    "y": 860,
+    "text": "7%\n39.7%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-228",
+    "type": "note",
+    "x": 1240,
+    "y": 860,
+    "text": "5%\n45.2%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-229",
+    "type": "note",
+    "x": 1350,
+    "y": 860,
+    "text": "8%\n46.1%",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "runes"
+   },
+   {
+    "id": "note-230",
+    "type": "note",
+    "x": 1130,
+    "y": 648,
+    "text": "Diamond+",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-231",
+    "type": "note",
+    "x": 1240,
+    "y": 648,
+    "text": "Master+",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-232",
+    "type": "note",
+    "x": 1350,
+    "y": 648,
+    "text": "Challenger",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-233",
+    "type": "note",
+    "x": 0,
+    "y": 1000,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "runes"
+   },
+   {
+    "id": "note-234",
+    "type": "note",
+    "x": 0,
+    "y": 1040,
+    "text": "• Lethal Tempo is the keystone: 78% of NA Diamond+\ngames and level with or above the rest in every\nbig sample.\n• Press the Attack's +2.13 in NA Diamond+ is 286\ngames. All regions it is −0.45 over 3.7K. Not a\nswitch.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-235",
+    "type": "note",
+    "x": 520,
+    "y": 1040,
+    "text": "• Cut Down beats Coup de Grace and Bloodline beats\nAlacrity in all four coachless samples I pulled\n(NA and all regions, Emerald+ and Diamond+).\n• Inspiration second: u.gg Diamond+ 55.4% win rate\non ~383 games, and Triple Tonic +4.77 (1.0K), Cash\nBack +1.27 on coachless. A lean to try in safe\nlanes. Resolve (Overgrowth −0.40) stays the\ndefault into poke and dive.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "runes"
+   },
+   {
+    "id": "note-236",
+    "type": "note",
+    "x": 0,
+    "y": 1330,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "runes"
+   },
+   {
+    "id": "note-237",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "Starter",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "start"
+   },
+   {
+    "id": "note-238",
+    "type": "note",
+    "x": 0,
+    "y": 226,
+    "text": "coachless WPA · buys. NA Diamond+ lists only Bow, so NA Emerald+ here.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "start"
+   },
+   {
+    "id": "note-239",
+    "type": "note",
+    "x": 320,
+    "y": 260,
+    "text": "NA Emerald+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-240",
+    "type": "note",
+    "x": 352,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-241",
+    "type": "note",
+    "x": 392,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-242",
+    "type": "note",
+    "x": 432,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-243",
+    "type": "note",
+    "x": 472,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-244",
+    "type": "note",
+    "x": 512,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-245",
+    "type": "note",
+    "x": 620,
+    "y": 260,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-246",
+    "type": "note",
+    "x": 652,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-247",
+    "type": "note",
+    "x": 692,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-248",
+    "type": "note",
+    "x": 732,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-249",
+    "type": "note",
+    "x": 772,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-250",
+    "type": "note",
+    "x": 812,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "ink-251",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      439.3,
+      304.3
+     ],
+     [
+      439.9,
+      315.5
+     ],
+     [
+      440.5,
+      326.7
+     ],
+     [
+      440.7,
+      338.4
+     ],
+     [
+      439.5,
+      350.6
+     ],
+     [
+      440.6,
+      361.6
+     ],
+     [
+      440.7,
+      372.7
+     ],
+     [
+      439.4,
+      383.7
+     ],
+     [
+      439.9,
+      396.3
+     ],
+     [
+      439.5,
+      407.8
+     ],
+     [
+      439.3,
+      419
+     ],
+     [
+      440,
+      430
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "ink-252",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      740.1,
+      303.7
+     ],
+     [
+      740.8,
+      315.5
+     ],
+     [
+      740.5,
+      327.6
+     ],
+     [
+      739.8,
+      337.6
+     ],
+     [
+      739.4,
+      349.3
+     ],
+     [
+      740.2,
+      361.8
+     ],
+     [
+      740.1,
+      372.2
+     ],
+     [
+      739.3,
+      383.6
+     ],
+     [
+      740.4,
+      394.9
+     ],
+     [
+      740.7,
+      407.5
+     ],
+     [
+      739.5,
+      419.1
+     ],
+     [
+      740,
+      430
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "img-253",
+    "type": "image",
+    "x": 0,
+    "y": 308,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/1055.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-254",
+    "type": "note",
+    "x": 54,
+    "y": 308,
+    "text": "Doran's Blade",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-255",
+    "type": "note",
+    "x": 54,
+    "y": 332,
+    "text": "450g · 10 AD, 80 HP, 2.5% omnivamp",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-256",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 10,
+    "points": [
+     [
+      438.2,
+      330
+     ],
+     [
+      442,
+      330
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-257",
+    "type": "note",
+    "x": 448.8,
+    "y": 320,
+    "text": "+0.04 · 1.5K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-258",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740,
+      330
+     ],
+     [
+      753.6,
+      330
+     ],
+     [
+      767,
+      330
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-259",
+    "type": "note",
+    "x": 775,
+    "y": 320,
+    "text": "+1.35 · 4.1K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "img-260",
+    "type": "image",
+    "x": 0,
+    "y": 382,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/1086.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-261",
+    "type": "note",
+    "x": 54,
+    "y": 382,
+    "text": "Doran's Bow",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-262",
+    "type": "note",
+    "x": 54,
+    "y": 406,
+    "text": "400g · 7 AD, 15% attack speed, 1.5% omnivamp",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-263",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      439.7,
+      404.1
+     ],
+     [
+      434.8,
+      404
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-264",
+    "type": "note",
+    "x": 448,
+    "y": 394,
+    "text": "−0.26 · 4.7K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-265",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      740.2,
+      403.9
+     ],
+     [
+      733.8,
+      404
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-266",
+    "type": "note",
+    "x": 748,
+    "y": 394,
+    "text": "−0.31 · 15.1K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "note-267",
+    "type": "note",
+    "x": 960,
+    "y": 260,
+    "text": "u.gg NA starter pick",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-268",
+    "type": "note",
+    "x": 960,
+    "y": 290,
+    "text": "All ranks: Doran's Bow\n25,287 games, 49.7% win",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "start"
+   },
+   {
+    "id": "note-269",
+    "type": "note",
+    "x": 960,
+    "y": 332,
+    "text": "Diamond+: Doran's Blade\n454 games, 52.6% win",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "start"
+   },
+   {
+    "id": "note-270",
+    "type": "note",
+    "x": 960,
+    "y": 374,
+    "text": "Master+: Doran's Blade\n112 games, 52.7% win",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "start"
+   },
+   {
+    "id": "note-271",
+    "type": "note",
+    "x": 960,
+    "y": 416,
+    "text": "Challenger: Doran's Blade\n28 games, 60.7% win",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "start"
+   },
+   {
+    "id": "note-272",
+    "type": "note",
+    "x": 0,
+    "y": 508,
+    "text": "First legendary",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "start"
+   },
+   {
+    "id": "note-273",
+    "type": "note",
+    "x": 0,
+    "y": 544,
+    "text": "coachless, slot \"1st\" only. Share = % of first items.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "start"
+   },
+   {
+    "id": "note-274",
+    "type": "note",
+    "x": 320,
+    "y": 578,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-275",
+    "type": "note",
+    "x": 352,
+    "y": 602,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-276",
+    "type": "note",
+    "x": 392,
+    "y": 602,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-277",
+    "type": "note",
+    "x": 432,
+    "y": 602,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-278",
+    "type": "note",
+    "x": 472,
+    "y": 602,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-279",
+    "type": "note",
+    "x": 512,
+    "y": 602,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-280",
+    "type": "note",
+    "x": 620,
+    "y": 578,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-281",
+    "type": "note",
+    "x": 652,
+    "y": 602,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-282",
+    "type": "note",
+    "x": 692,
+    "y": 602,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-283",
+    "type": "note",
+    "x": 732,
+    "y": 602,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-284",
+    "type": "note",
+    "x": 772,
+    "y": 602,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "note-285",
+    "type": "note",
+    "x": 812,
+    "y": 602,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "start"
+   },
+   {
+    "id": "ink-286",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      440.8,
+      622.7
+     ],
+     [
+      440.6,
+      633.4
+     ],
+     [
+      439.5,
+      646.3
+     ],
+     [
+      439.7,
+      657.2
+     ],
+     [
+      439.7,
+      668.6
+     ],
+     [
+      439.3,
+      681.3
+     ],
+     [
+      439.3,
+      693
+     ],
+     [
+      440.3,
+      704.7
+     ],
+     [
+      440.3,
+      716.8
+     ],
+     [
+      440.3,
+      728.6
+     ],
+     [
+      439.9,
+      740.3
+     ],
+     [
+      440.2,
+      752.9
+     ],
+     [
+      440,
+      764.4
+     ],
+     [
+      439.7,
+      776.1
+     ],
+     [
+      439.7,
+      787.7
+     ],
+     [
+      440.8,
+      799
+     ],
+     [
+      440.1,
+      811.7
+     ],
+     [
+      440.4,
+      824.1
+     ],
+     [
+      439.3,
+      834.7
+     ],
+     [
+      440.8,
+      847.1
+     ],
+     [
+      440,
+      858.9
+     ],
+     [
+      439.7,
+      871.1
+     ],
+     [
+      439.3,
+      883
+     ],
+     [
+      440.6,
+      893.7
+     ],
+     [
+      440.7,
+      905.6
+     ],
+     [
+      440.2,
+      918
+     ],
+     [
+      440,
+      930
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "ink-287",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      739.5,
+      621.8
+     ],
+     [
+      740.1,
+      633.9
+     ],
+     [
+      739.6,
+      645.5
+     ],
+     [
+      740.7,
+      657.5
+     ],
+     [
+      740.1,
+      668.8
+     ],
+     [
+      740.6,
+      681.9
+     ],
+     [
+      740.1,
+      692.9
+     ],
+     [
+      740.2,
+      704.5
+     ],
+     [
+      739.4,
+      717.2
+     ],
+     [
+      739.8,
+      727.9
+     ],
+     [
+      739.8,
+      740.4
+     ],
+     [
+      740.3,
+      752.8
+     ],
+     [
+      740.2,
+      763.4
+     ],
+     [
+      740.1,
+      776.5
+     ],
+     [
+      739.7,
+      787.6
+     ],
+     [
+      740.3,
+      800
+     ],
+     [
+      740,
+      811.9
+     ],
+     [
+      739.4,
+      823.5
+     ],
+     [
+      740.6,
+      835
+     ],
+     [
+      739.5,
+      846.9
+     ],
+     [
+      740,
+      858.9
+     ],
+     [
+      739.5,
+      870.4
+     ],
+     [
+      740.7,
+      883.2
+     ],
+     [
+      739.7,
+      894.3
+     ],
+     [
+      739.9,
+      905.6
+     ],
+     [
+      740.7,
+      917.6
+     ],
+     [
+      740,
+      930
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "img-288",
+    "type": "image",
+    "x": 0,
+    "y": 626,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/6672.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-289",
+    "type": "note",
+    "x": 54,
+    "y": 626,
+    "text": "Kraken Slayer",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-290",
+    "type": "note",
+    "x": 54,
+    "y": 650,
+    "text": "32% of first items (all regions D+)",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-291",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      647.9
+     ],
+     [
+      452.8,
+      648
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-292",
+    "type": "note",
+    "x": 460.8,
+    "y": 638,
+    "text": "+0.64 · 543",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-293",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.9,
+      648
+     ],
+     [
+      744.4,
+      648
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-294",
+    "type": "note",
+    "x": 752.4,
+    "y": 638,
+    "text": "+0.22 · 6.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "img-295",
+    "type": "image",
+    "x": 0,
+    "y": 690,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3508.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-296",
+    "type": "note",
+    "x": 54,
+    "y": 690,
+    "text": "Essence Reaver",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-297",
+    "type": "note",
+    "x": 54,
+    "y": 714,
+    "text": "16% of first items (all regions D+)",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-298",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      438,
+      712
+     ],
+     [
+      442,
+      712
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-299",
+    "type": "note",
+    "x": 448,
+    "y": 702,
+    "text": "−0.07 · 302 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-300",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740.2,
+      711.8
+     ],
+     [
+      751.9,
+      711.8
+     ],
+     [
+      763.4,
+      711.9
+     ],
+     [
+      775,
+      712
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-301",
+    "type": "note",
+    "x": 783,
+    "y": 702,
+    "text": "+1.75 · 3.2K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "img-302",
+    "type": "image",
+    "x": 0,
+    "y": 754,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3095.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-303",
+    "type": "note",
+    "x": 54,
+    "y": 754,
+    "text": "Stormrazor",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-304",
+    "type": "note",
+    "x": 54,
+    "y": 778,
+    "text": "7% of first items (all regions D+)",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-305",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      440.1,
+      775.8
+     ],
+     [
+      452.2,
+      776.1
+     ],
+     [
+      464.2,
+      776
+     ],
+     [
+      476.2,
+      776
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-306",
+    "type": "note",
+    "x": 484.2,
+    "y": 766,
+    "text": "+1.81 · 127 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-307",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.9,
+      776
+     ],
+     [
+      757.2,
+      776
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-308",
+    "type": "note",
+    "x": 765.2,
+    "y": 766,
+    "text": "+0.86 · 1.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "img-309",
+    "type": "image",
+    "x": 0,
+    "y": 818,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3032.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-310",
+    "type": "note",
+    "x": 54,
+    "y": 818,
+    "text": "Yun Tal Wildarrows",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-311",
+    "type": "note",
+    "x": 54,
+    "y": 842,
+    "text": "rare first",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-312",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      839.9
+     ],
+     [
+      452.1,
+      839.7
+     ],
+     [
+      464.5,
+      840.2
+     ],
+     [
+      476.5,
+      840.3
+     ],
+     [
+      489.1,
+      840
+     ],
+     [
+      501.2,
+      839.7
+     ],
+     [
+      513.3,
+      839.7
+     ],
+     [
+      525.8,
+      839.8
+     ],
+     [
+      537.8,
+      839.9
+     ],
+     [
+      550,
+      840
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-313",
+    "type": "note",
+    "x": 558,
+    "y": 830,
+    "text": "+5.69 · 124 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "note-314",
+    "type": "note",
+    "x": 748,
+    "y": 831,
+    "text": "not listed",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "img-315",
+    "type": "image",
+    "x": 0,
+    "y": 882,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3153.png",
+    "tab": "start"
+   },
+   {
+    "id": "note-316",
+    "type": "note",
+    "x": 54,
+    "y": 882,
+    "text": "Ruined King",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "start"
+   },
+   {
+    "id": "note-317",
+    "type": "note",
+    "x": 54,
+    "y": 906,
+    "text": "34% of first items (all regions D+)",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-318",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      439.7,
+      904.3
+     ],
+     [
+      427.8,
+      904.1
+     ],
+     [
+      415.3,
+      904.1
+     ],
+     [
+      402.9,
+      903.9
+     ],
+     [
+      390,
+      904
+     ],
+     [
+      377.8,
+      904
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-319",
+    "type": "note",
+    "x": 448,
+    "y": 894,
+    "text": "−3.11 · 557",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "ink-320",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      740.3,
+      903.9
+     ],
+     [
+      730.2,
+      903.8
+     ],
+     [
+      719.9,
+      903.9
+     ],
+     [
+      709.8,
+      904
+     ]
+    ],
+    "tab": "start"
+   },
+   {
+    "id": "note-321",
+    "type": "note",
+    "x": 748,
+    "y": 894,
+    "text": "−1.51 · 6.7K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "note-322",
+    "type": "note",
+    "x": 960,
+    "y": 508,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "start"
+   },
+   {
+    "id": "note-323",
+    "type": "note",
+    "x": 960,
+    "y": 548,
+    "text": "• Doran's Blade over Bow: +1.35 vs −0.31 all\nregions Diamond+, and u.gg's pick from Diamond+\nup. The 80 HP matters with only 550 range.\n• Ruined King first is a third of first items\nand below zero everywhere: −3.11 NA, −1.51 all\nregions.\n• Kraken Slayer is the safe first item (above\nzero in all three samples).\n• Essence Reaver leads all regions (+1.75) but\nis flat in NA. Take it if you go crit.\n• Yun Tal's +5.69 is 124 games. Ignore it for\nnow.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "start"
+   },
+   {
+    "id": "note-324",
+    "type": "note",
+    "x": 0,
+    "y": 1008,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "start"
+   },
+   {
+    "id": "note-325",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "Legendaries, any slot",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "items"
+   },
+   {
+    "id": "note-326",
+    "type": "note",
+    "x": 0,
+    "y": 226,
+    "text": "coachless WPA · buys. Items under ~1% of buys are hidden.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "items"
+   },
+   {
+    "id": "note-327",
+    "type": "note",
+    "x": 320,
+    "y": 260,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "items"
+   },
+   {
+    "id": "note-328",
+    "type": "note",
+    "x": 352,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-329",
+    "type": "note",
+    "x": 392,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-330",
+    "type": "note",
+    "x": 432,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-331",
+    "type": "note",
+    "x": 472,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-332",
+    "type": "note",
+    "x": 512,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-333",
+    "type": "note",
+    "x": 620,
+    "y": 260,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "items"
+   },
+   {
+    "id": "note-334",
+    "type": "note",
+    "x": 652,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-335",
+    "type": "note",
+    "x": 692,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-336",
+    "type": "note",
+    "x": 732,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-337",
+    "type": "note",
+    "x": 772,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "note-338",
+    "type": "note",
+    "x": 812,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "items"
+   },
+   {
+    "id": "ink-339",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      439.4,
+      303.6
+     ],
+     [
+      439.6,
+      315.3
+     ],
+     [
+      440.6,
+      328
+     ],
+     [
+      440.1,
+      340.5
+     ],
+     [
+      440.5,
+      352
+     ],
+     [
+      440.6,
+      363.3
+     ],
+     [
+      440.8,
+      375.7
+     ],
+     [
+      439.4,
+      387.4
+     ],
+     [
+      439.7,
+      399.1
+     ],
+     [
+      439.9,
+      411.4
+     ],
+     [
+      440.1,
+      422.9
+     ],
+     [
+      439.9,
+      434.8
+     ],
+     [
+      439.2,
+      447.1
+     ],
+     [
+      439.4,
+      460
+     ],
+     [
+      440.1,
+      471.1
+     ],
+     [
+      440.2,
+      483
+     ],
+     [
+      440.5,
+      494.6
+     ],
+     [
+      439.8,
+      507.7
+     ],
+     [
+      440.8,
+      519.8
+     ],
+     [
+      440,
+      530.6
+     ],
+     [
+      440,
+      543.4
+     ],
+     [
+      440.2,
+      555
+     ],
+     [
+      440.5,
+      566.6
+     ],
+     [
+      440.7,
+      579.5
+     ],
+     [
+      439.8,
+      591.1
+     ],
+     [
+      440.5,
+      602.3
+     ],
+     [
+      440.6,
+      614.7
+     ],
+     [
+      440.3,
+      626.7
+     ],
+     [
+      440.2,
+      638.2
+     ],
+     [
+      439.9,
+      651.4
+     ],
+     [
+      439.6,
+      662.2
+     ],
+     [
+      440.2,
+      674.1
+     ],
+     [
+      439.4,
+      686
+     ],
+     [
+      440,
+      698.9
+     ],
+     [
+      440.7,
+      709.9
+     ],
+     [
+      439.2,
+      722.4
+     ],
+     [
+      440.4,
+      734
+     ],
+     [
+      440.3,
+      747.2
+     ],
+     [
+      440.7,
+      757.7
+     ],
+     [
+      439.6,
+      770.5
+     ],
+     [
+      440.2,
+      783.1
+     ],
+     [
+      439.9,
+      794.8
+     ],
+     [
+      440.2,
+      807
+     ],
+     [
+      439.4,
+      818.8
+     ],
+     [
+      440.4,
+      830
+     ],
+     [
+      439.8,
+      842.5
+     ],
+     [
+      440.1,
+      853.7
+     ],
+     [
+      440,
+      865.7
+     ],
+     [
+      440,
+      878
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "ink-340",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      739.3,
+      303.4
+     ],
+     [
+      739.6,
+      315.6
+     ],
+     [
+      740.5,
+      328.6
+     ],
+     [
+      739.6,
+      340.5
+     ],
+     [
+      740.6,
+      351.4
+     ],
+     [
+      739.8,
+      363.3
+     ],
+     [
+      740.6,
+      375
+     ],
+     [
+      740.3,
+      388
+     ],
+     [
+      740,
+      399.3
+     ],
+     [
+      739.5,
+      410.8
+     ],
+     [
+      739.2,
+      423.2
+     ],
+     [
+      739.9,
+      435.6
+     ],
+     [
+      740.6,
+      447.3
+     ],
+     [
+      740.1,
+      458.8
+     ],
+     [
+      739.7,
+      471.5
+     ],
+     [
+      740.3,
+      482.7
+     ],
+     [
+      740.6,
+      495.8
+     ],
+     [
+      739.5,
+      507
+     ],
+     [
+      740.1,
+      519.5
+     ],
+     [
+      739.8,
+      530.6
+     ],
+     [
+      739.4,
+      542.4
+     ],
+     [
+      739.3,
+      554.7
+     ],
+     [
+      739.8,
+      566.4
+     ],
+     [
+      740.1,
+      579.1
+     ],
+     [
+      739.6,
+      590.4
+     ],
+     [
+      740.3,
+      603.2
+     ],
+     [
+      739.9,
+      615.1
+     ],
+     [
+      740.4,
+      627
+     ],
+     [
+      740.1,
+      638.7
+     ],
+     [
+      740,
+      650.3
+     ],
+     [
+      740.7,
+      662.8
+     ],
+     [
+      739.4,
+      674.7
+     ],
+     [
+      739.5,
+      686.8
+     ],
+     [
+      740.5,
+      698.9
+     ],
+     [
+      740.2,
+      710.1
+     ],
+     [
+      740.5,
+      722.6
+     ],
+     [
+      740.7,
+      733.9
+     ],
+     [
+      739.5,
+      745.9
+     ],
+     [
+      740.5,
+      758.4
+     ],
+     [
+      739.6,
+      770.7
+     ],
+     [
+      740.7,
+      783.1
+     ],
+     [
+      740.7,
+      794.3
+     ],
+     [
+      739.5,
+      806.6
+     ],
+     [
+      739.6,
+      818.3
+     ],
+     [
+      740.3,
+      830.8
+     ],
+     [
+      739.2,
+      842.5
+     ],
+     [
+      740.3,
+      854
+     ],
+     [
+      739.2,
+      866.6
+     ],
+     [
+      740,
+      878
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "img-341",
+    "type": "image",
+    "x": 0,
+    "y": 308,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3036.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-342",
+    "type": "note",
+    "x": 54,
+    "y": 308,
+    "text": "Lord Dominik's",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-343",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      330.2
+     ],
+     [
+      443.8,
+      330
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-344",
+    "type": "note",
+    "x": 451.8,
+    "y": 320,
+    "text": "+0.19 · 186 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-345",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740,
+      329.9
+     ],
+     [
+      752.1,
+      330.2
+     ],
+     [
+      764.2,
+      330
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-346",
+    "type": "note",
+    "x": 772.2,
+    "y": 320,
+    "text": "+1.21 · 1.7K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-347",
+    "type": "image",
+    "x": 0,
+    "y": 366,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3508.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-348",
+    "type": "note",
+    "x": 54,
+    "y": 366,
+    "text": "Essence Reaver",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-349",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      439.7,
+      388
+     ],
+     [
+      450.8,
+      387.8
+     ],
+     [
+      461.2,
+      388
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-350",
+    "type": "note",
+    "x": 469.2,
+    "y": 378,
+    "text": "+1.06 · 349 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-351",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740,
+      388.3
+     ],
+     [
+      753.1,
+      387.8
+     ],
+     [
+      766.2,
+      388
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-352",
+    "type": "note",
+    "x": 774.2,
+    "y": 378,
+    "text": "+1.31 · 4.0K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-353",
+    "type": "image",
+    "x": 0,
+    "y": 424,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3095.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-354",
+    "type": "note",
+    "x": 54,
+    "y": 424,
+    "text": "Stormrazor",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-355",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      445.9
+     ],
+     [
+      453.4,
+      446
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-356",
+    "type": "note",
+    "x": 461.4,
+    "y": 436,
+    "text": "+0.67 · 489 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-357",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      446.3
+     ],
+     [
+      753.4,
+      446
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-358",
+    "type": "note",
+    "x": 761.4,
+    "y": 436,
+    "text": "+0.67 · 5.1K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-359",
+    "type": "image",
+    "x": 0,
+    "y": 482,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/2512.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-360",
+    "type": "note",
+    "x": 54,
+    "y": 482,
+    "text": "Fiendhunter Bolts",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-361",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      440.2,
+      504
+     ],
+     [
+      424,
+      504
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-362",
+    "type": "note",
+    "x": 448,
+    "y": 494,
+    "text": "−0.80 · 406 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-363",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.9,
+      504
+     ],
+     [
+      751.4,
+      504
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-364",
+    "type": "note",
+    "x": 759.4,
+    "y": 494,
+    "text": "+0.57 · 4.2K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-365",
+    "type": "image",
+    "x": 0,
+    "y": 540,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3302.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-366",
+    "type": "note",
+    "x": 54,
+    "y": 540,
+    "text": "Terminus",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-367",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      440.2,
+      562
+     ],
+     [
+      428.5,
+      561.9
+     ],
+     [
+      417.1,
+      561.7
+     ],
+     [
+      406,
+      562
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-368",
+    "type": "note",
+    "x": 448,
+    "y": 552,
+    "text": "−1.70 · 549",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-369",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      561.7
+     ],
+     [
+      750,
+      562
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-370",
+    "type": "note",
+    "x": 758,
+    "y": 552,
+    "text": "+0.50 · 6.2K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-371",
+    "type": "image",
+    "x": 0,
+    "y": 598,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/6672.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-372",
+    "type": "note",
+    "x": 54,
+    "y": 598,
+    "text": "Kraken Slayer",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-373",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      440.1,
+      620.1
+     ],
+     [
+      444,
+      620
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-374",
+    "type": "note",
+    "x": 452,
+    "y": 610,
+    "text": "+0.20 · 578",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-375",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740.1,
+      619.8
+     ],
+     [
+      742.6,
+      620
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-376",
+    "type": "note",
+    "x": 750.6,
+    "y": 610,
+    "text": "+0.13 · 7.0K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-377",
+    "type": "image",
+    "x": 0,
+    "y": 656,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3124.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-378",
+    "type": "note",
+    "x": 54,
+    "y": 656,
+    "text": "Guinsoo's Rageblade",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-379",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      440,
+      678
+     ],
+     [
+      431,
+      678
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-380",
+    "type": "note",
+    "x": 448,
+    "y": 668,
+    "text": "−0.45 · 909",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-381",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 10,
+    "points": [
+     [
+      738.1,
+      678.2
+     ],
+     [
+      742,
+      678
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-382",
+    "type": "note",
+    "x": 749,
+    "y": 668,
+    "text": "+0.05 · 10.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-383",
+    "type": "image",
+    "x": 0,
+    "y": 714,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3031.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-384",
+    "type": "note",
+    "x": 54,
+    "y": 714,
+    "text": "Infinity Edge",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-385",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      440,
+      735.8
+     ],
+     [
+      450.1,
+      736.2
+     ],
+     [
+      460.6,
+      736
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-386",
+    "type": "note",
+    "x": 468.6,
+    "y": 726,
+    "text": "+1.03 · 388 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-387",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      740.1,
+      736.1
+     ],
+     [
+      736.6,
+      736
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-388",
+    "type": "note",
+    "x": 748,
+    "y": 726,
+    "text": "−0.17 · 3.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-389",
+    "type": "image",
+    "x": 0,
+    "y": 772,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3091.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-390",
+    "type": "note",
+    "x": 54,
+    "y": 772,
+    "text": "Wit's End",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-391",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 10,
+    "points": [
+     [
+      439.8,
+      793.7
+     ],
+     [
+      451.2,
+      793.8
+     ],
+     [
+      463,
+      794.2
+     ],
+     [
+      474,
+      793.7
+     ],
+     [
+      485.7,
+      793.8
+     ],
+     [
+      496.5,
+      794.3
+     ],
+     [
+      508.3,
+      794.2
+     ],
+     [
+      519.4,
+      793.8
+     ],
+     [
+      530.8,
+      794
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-392",
+    "type": "note",
+    "x": 538.8,
+    "y": 784,
+    "text": "+4.54 · 103 low",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-393",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      740.1,
+      794.2
+     ],
+     [
+      742.2,
+      794
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-394",
+    "type": "note",
+    "x": 750.2,
+    "y": 784,
+    "text": "+0.11 · 1.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "img-395",
+    "type": "image",
+    "x": 0,
+    "y": 830,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3153.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-396",
+    "type": "note",
+    "x": 54,
+    "y": 830,
+    "text": "Ruined King",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "items"
+   },
+   {
+    "id": "ink-397",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      439.7,
+      852
+     ],
+     [
+      427.8,
+      852.1
+     ],
+     [
+      415.9,
+      851.9
+     ],
+     [
+      404.2,
+      852
+     ],
+     [
+      391.9,
+      851.9
+     ],
+     [
+      380,
+      852.3
+     ],
+     [
+      368.2,
+      852
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-398",
+    "type": "note",
+    "x": 448,
+    "y": 842,
+    "text": "−3.59 · 624",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "ink-399",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.9,
+      851.8
+     ],
+     [
+      726.9,
+      852.2
+     ],
+     [
+      713.4,
+      852
+     ]
+    ],
+    "tab": "items"
+   },
+   {
+    "id": "note-400",
+    "type": "note",
+    "x": 748,
+    "y": 842,
+    "text": "−1.33 · 7.9K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "note-401",
+    "type": "note",
+    "x": 960,
+    "y": 190,
+    "text": "Boots",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "items"
+   },
+   {
+    "id": "note-402",
+    "type": "note",
+    "x": 960,
+    "y": 226,
+    "text": "coachless WPA · buys",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "items"
+   },
+   {
+    "id": "note-403",
+    "type": "note",
+    "x": 960,
+    "y": 260,
+    "text": "All regions D+ · Emerald+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "items"
+   },
+   {
+    "id": "img-404",
+    "type": "image",
+    "x": 960,
+    "y": 298,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3006.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-405",
+    "type": "note",
+    "x": 1014,
+    "y": 298,
+    "text": "Berserker's Greaves",
+    "color": "#e9dfc9",
+    "size": 17,
+    "tab": "items"
+   },
+   {
+    "id": "note-406",
+    "type": "note",
+    "x": 1014,
+    "y": 322,
+    "text": "−0.04 (15.3K) · −0.07 (59.8K)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "img-407",
+    "type": "image",
+    "x": 960,
+    "y": 362,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3008.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-408",
+    "type": "note",
+    "x": 1014,
+    "y": 362,
+    "text": "Gluttonous Greaves",
+    "color": "#e9dfc9",
+    "size": 17,
+    "tab": "items"
+   },
+   {
+    "id": "note-409",
+    "type": "note",
+    "x": 1014,
+    "y": 386,
+    "text": "+1.54 (2.2K) · +1.25 (5.8K)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "img-410",
+    "type": "image",
+    "x": 960,
+    "y": 426,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3047.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-411",
+    "type": "note",
+    "x": 1014,
+    "y": 426,
+    "text": "Plated Steelcaps",
+    "color": "#e9dfc9",
+    "size": 17,
+    "tab": "items"
+   },
+   {
+    "id": "note-412",
+    "type": "note",
+    "x": 1014,
+    "y": 450,
+    "text": "not listed · +1.95 (2.4K)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "img-413",
+    "type": "image",
+    "x": 960,
+    "y": 490,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3111.png",
+    "tab": "items"
+   },
+   {
+    "id": "note-414",
+    "type": "note",
+    "x": 1014,
+    "y": 490,
+    "text": "Mercury's Treads",
+    "color": "#e9dfc9",
+    "size": 17,
+    "tab": "items"
+   },
+   {
+    "id": "note-415",
+    "type": "note",
+    "x": 1014,
+    "y": 514,
+    "text": "not listed · +1.86 (1.3K)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "note-416",
+    "type": "note",
+    "x": 960,
+    "y": 610,
+    "text": "u.gg build split, NA Diamond+",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "items"
+   },
+   {
+    "id": "note-417",
+    "type": "note",
+    "x": 960,
+    "y": 660,
+    "text": "On-hit: 748 finished games\nKraken Slayer > Berserker's > Rageblade (Diamond+); Ruined\nKing > Berserker's > Rageblade (All ranks)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "note-418",
+    "type": "note",
+    "x": 960,
+    "y": 716,
+    "text": "Crit: 554 finished games\nEssence Reaver > Berserker's > Fiendhunter Bolts (Diamond+)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "note-419",
+    "type": "note",
+    "x": 960,
+    "y": 772,
+    "text": "Kraken + Stormrazor: 952 finished games\nKraken Slayer > Gluttonous Greaves > Stormrazor (Diamond+)",
+    "color": "#e9dfc9",
+    "size": 13,
+    "tab": "items"
+   },
+   {
+    "id": "note-420",
+    "type": "note",
+    "x": 960,
+    "y": 840,
+    "text": "Finished-build win rates favour late builds, so I only use\nthe split.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "note-421",
+    "type": "note",
+    "x": 0,
+    "y": 940,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "items"
+   },
+   {
+    "id": "note-422",
+    "type": "note",
+    "x": 0,
+    "y": 980,
+    "text": "• No item stands out by much. The spread from best\nto worst big item is about 2.5 pp, so buy for the\ngame in front of you.\n• Lord Dominik's (+1.21) and Terminus (+0.50) lead\nall regions as late picks (armor pen for the\ndamage that is not W). NA Diamond+ disagrees on\nTerminus (−1.70 on 549).",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "items"
+   },
+   {
+    "id": "note-423",
+    "type": "note",
+    "x": 520,
+    "y": 980,
+    "text": "• Ruined King is below zero in any slot too\n(−1.33). Skip it unless you have a reason.\n• Boots: Berserker's is ~85% of buys and flat. The\ndefensive boots that people buy for a reason sit\nhigher (+1.2 to +2.0), which is the point of tab\n6.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "items"
+   },
+   {
+    "id": "note-424",
+    "type": "note",
+    "x": 0,
+    "y": 1270,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "items"
+   },
+   {
+    "id": "note-425",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "Second spell",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "spells"
+   },
+   {
+    "id": "note-426",
+    "type": "note",
+    "x": 0,
+    "y": 226,
+    "text": "coachless WPA · picks. Flash is in ~100% of games, so its WPA means nothing.",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "spells"
+   },
+   {
+    "id": "note-427",
+    "type": "note",
+    "x": 320,
+    "y": 260,
+    "text": "NA Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "spells"
+   },
+   {
+    "id": "note-428",
+    "type": "note",
+    "x": 352,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-429",
+    "type": "note",
+    "x": 392,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-430",
+    "type": "note",
+    "x": 432,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-431",
+    "type": "note",
+    "x": 472,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-432",
+    "type": "note",
+    "x": 512,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-433",
+    "type": "note",
+    "x": 620,
+    "y": 260,
+    "text": "All regions Diamond+",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "spells"
+   },
+   {
+    "id": "note-434",
+    "type": "note",
+    "x": 652,
+    "y": 284,
+    "text": "−4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-435",
+    "type": "note",
+    "x": 692,
+    "y": 284,
+    "text": "−2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-436",
+    "type": "note",
+    "x": 732,
+    "y": 284,
+    "text": "0",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-437",
+    "type": "note",
+    "x": 772,
+    "y": 284,
+    "text": "+2",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "note-438",
+    "type": "note",
+    "x": 812,
+    "y": 284,
+    "text": "+4",
+    "color": "#7f98ad",
+    "size": 11,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-439",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      440.5,
+      304.2
+     ],
+     [
+      439.9,
+      316.4
+     ],
+     [
+      440,
+      327.7
+     ],
+     [
+      439.4,
+      339.5
+     ],
+     [
+      440.2,
+      351.1
+     ],
+     [
+      439.3,
+      363.8
+     ],
+     [
+      439.4,
+      375.3
+     ],
+     [
+      440.1,
+      387.1
+     ],
+     [
+      439.7,
+      398.7
+     ],
+     [
+      440.3,
+      410.8
+     ],
+     [
+      439.5,
+      423
+     ],
+     [
+      439.8,
+      434
+     ],
+     [
+      439.8,
+      446
+     ],
+     [
+      439.9,
+      457.9
+     ],
+     [
+      440.4,
+      469.6
+     ],
+     [
+      440.5,
+      481.6
+     ],
+     [
+      440.8,
+      493.5
+     ],
+     [
+      439.8,
+      505.2
+     ],
+     [
+      440.6,
+      518.2
+     ],
+     [
+      440.5,
+      530
+     ],
+     [
+      440.6,
+      541.2
+     ],
+     [
+      440,
+      552.4
+     ],
+     [
+      440.4,
+      564.1
+     ],
+     [
+      440.5,
+      577.3
+     ],
+     [
+      440.3,
+      588.3
+     ],
+     [
+      440.6,
+      600.9
+     ],
+     [
+      440.4,
+      612.9
+     ],
+     [
+      440,
+      623.3
+     ],
+     [
+      440,
+      636
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "ink-440",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 1.2,
+    "points": [
+     [
+      739.2,
+      303.5
+     ],
+     [
+      740.1,
+      316.1
+     ],
+     [
+      740.7,
+      328.5
+     ],
+     [
+      739.9,
+      339.1
+     ],
+     [
+      739.5,
+      352.1
+     ],
+     [
+      740.6,
+      364
+     ],
+     [
+      740.3,
+      374.6
+     ],
+     [
+      739.8,
+      387
+     ],
+     [
+      740.2,
+      398.2
+     ],
+     [
+      740.4,
+      411.4
+     ],
+     [
+      740.2,
+      423.2
+     ],
+     [
+      740.8,
+      433.9
+     ],
+     [
+      740,
+      446
+     ],
+     [
+      740.5,
+      458.2
+     ],
+     [
+      740.3,
+      469.8
+     ],
+     [
+      739.8,
+      482.6
+     ],
+     [
+      739.2,
+      494
+     ],
+     [
+      740.2,
+      504.9
+     ],
+     [
+      740.8,
+      517.7
+     ],
+     [
+      740.1,
+      529.8
+     ],
+     [
+      740.2,
+      541.4
+     ],
+     [
+      739.6,
+      553.1
+     ],
+     [
+      739.8,
+      564.2
+     ],
+     [
+      739.8,
+      576.1
+     ],
+     [
+      739.8,
+      588.2
+     ],
+     [
+      740.1,
+      599.8
+     ],
+     [
+      740.6,
+      612.9
+     ],
+     [
+      740.3,
+      624
+     ],
+     [
+      740,
+      636
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "img-441",
+    "type": "image",
+    "x": 0,
+    "y": 308,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerBarrier.png",
+    "tab": "spells"
+   },
+   {
+    "id": "note-442",
+    "type": "note",
+    "x": 54,
+    "y": 308,
+    "text": "Barrier",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "spells"
+   },
+   {
+    "id": "note-443",
+    "type": "note",
+    "x": 54,
+    "y": 332,
+    "text": "Shield 100 to 460 for 2.5 s, 180 s",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-444",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      440.3,
+      329.8
+     ],
+     [
+      450.9,
+      329.9
+     ],
+     [
+      461.6,
+      329.7
+     ],
+     [
+      472.2,
+      330
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-445",
+    "type": "note",
+    "x": 480.2,
+    "y": 320,
+    "text": "+1.61 · 1.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-446",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      330.1
+     ],
+     [
+      737,
+      330
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-447",
+    "type": "note",
+    "x": 748,
+    "y": 320,
+    "text": "−0.15 · 14.4K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "img-448",
+    "type": "image",
+    "x": 0,
+    "y": 378,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerExhaust.png",
+    "tab": "spells"
+   },
+   {
+    "id": "note-449",
+    "type": "note",
+    "x": 54,
+    "y": 378,
+    "text": "Exhaust",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "spells"
+   },
+   {
+    "id": "note-450",
+    "type": "note",
+    "x": 54,
+    "y": 402,
+    "text": "Slow 40% and cut their damage 35% for 3 s, 240 s",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "note-451",
+    "type": "note",
+    "x": 448,
+    "y": 391,
+    "text": "not listed",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-452",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      400.1
+     ],
+     [
+      752.4,
+      400
+     ],
+     [
+      764.4,
+      400
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-453",
+    "type": "note",
+    "x": 772.4,
+    "y": 390,
+    "text": "+1.22 · 2.8K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "img-454",
+    "type": "image",
+    "x": 0,
+    "y": 448,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerHaste.png",
+    "tab": "spells"
+   },
+   {
+    "id": "note-455",
+    "type": "note",
+    "x": 54,
+    "y": 448,
+    "text": "Ghost",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "spells"
+   },
+   {
+    "id": "note-456",
+    "type": "note",
+    "x": 54,
+    "y": 472,
+    "text": "24% to 51% move speed for 10 s, 240 s",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "note-457",
+    "type": "note",
+    "x": 448,
+    "y": 461,
+    "text": "not listed",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-458",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.7,
+      470.3
+     ],
+     [
+      736,
+      470
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-459",
+    "type": "note",
+    "x": 748,
+    "y": 460,
+    "text": "−0.20 · 1.3K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "img-460",
+    "type": "image",
+    "x": 0,
+    "y": 518,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerBoost.png",
+    "tab": "spells"
+   },
+   {
+    "id": "note-461",
+    "type": "note",
+    "x": 54,
+    "y": 518,
+    "text": "Cleanse",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "spells"
+   },
+   {
+    "id": "note-462",
+    "type": "note",
+    "x": 54,
+    "y": 542,
+    "text": "Remove disables (not airborne or suppression), 240 s",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "note-463",
+    "type": "note",
+    "x": 448,
+    "y": 531,
+    "text": "not listed",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-464",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 10,
+    "points": [
+     [
+      739.8,
+      539.9
+     ],
+     [
+      727.8,
+      540
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-465",
+    "type": "note",
+    "x": 748,
+    "y": 530,
+    "text": "−0.61 · 1.1K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "img-466",
+    "type": "image",
+    "x": 0,
+    "y": 588,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerFlash.png",
+    "tab": "spells"
+   },
+   {
+    "id": "note-467",
+    "type": "note",
+    "x": 54,
+    "y": 588,
+    "text": "Flash",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "spells"
+   },
+   {
+    "id": "note-468",
+    "type": "note",
+    "x": 54,
+    "y": 612,
+    "text": "400-unit blink, 300 s",
+    "color": "#b8925a",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-469",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 10,
+    "points": [
+     [
+      439.9,
+      610.3
+     ],
+     [
+      450.2,
+      610
+     ],
+     [
+      459.8,
+      610
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-470",
+    "type": "note",
+    "x": 467.8,
+    "y": 600,
+    "text": "+0.99 · 1.8K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "ink-471",
+    "type": "stroke",
+    "color": "#e9dfc9",
+    "width": 10,
+    "points": [
+     [
+      738,
+      610
+     ],
+     [
+      742,
+      610
+     ]
+    ],
+    "tab": "spells"
+   },
+   {
+    "id": "note-472",
+    "type": "note",
+    "x": 748,
+    "y": 600,
+    "text": "±0.00 · 19.6K",
+    "color": "#e9dfc9",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "note-473",
+    "type": "note",
+    "x": 960,
+    "y": 190,
+    "text": "What it says",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "spells"
+   },
+   {
+    "id": "note-474",
+    "type": "note",
+    "x": 960,
+    "y": 230,
+    "text": "• Flash + Barrier is the default: 73% of\nDiamond+ games, and the only second spell NA\nDiamond+ lists (+1.61).\n• Exhaust is the one that leans up all regions\n(+1.22 on 2.8K). People take it into assassins\nand divers, so read it as \"Exhaust works there\",\nnot \"always Exhaust\".\n• Cleanse is below zero (−0.61). Into heavy CC,\nMercury's or Mercurial do the job without giving\nup Barrier.\n• u.gg Challenger's top pair is Cleanse + Flash\non 12 games. That is noise.",
+    "color": "#e9dfc9",
+    "size": 15,
+    "tab": "spells"
+   },
+   {
+    "id": "note-475",
+    "type": "note",
+    "x": 0,
+    "y": 720,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "spells"
+   },
+   {
+    "id": "note-476",
+    "type": "note",
+    "x": 0,
+    "y": 190,
+    "text": "What Vayne brings",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "comps"
+   },
+   {
+    "id": "note-477",
+    "type": "note",
+    "x": 0,
+    "y": 226,
+    "text": "LoL wiki, abilities as of V26.20",
+    "color": "#7f98ad",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "note-478",
+    "type": "note",
+    "x": 0,
+    "y": 260,
+    "text": "Range 550: short for an ADC.\nQ  Tumble: 300-unit dash, next attack +75% to 115% AD.\nCooldown 6 to 2 s\nW  Silver Bolts: every 3rd hit on the same target deals 4%\nto 10% of max HP as true damage (min 40 to 100)\nE  Condemn: 550 range knockback 475 units; stun 1.5 s if\nthey hit a wall. Cooldown 20 to 12 s\nR  Final Hour: +35 to 65 AD for 8 to 12 s, Tumble cooldown\ncut 30% to 50% and gives 1 s stealth. Cooldown 100 to 70 s",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "note-479",
+    "type": "note",
+    "x": 0,
+    "y": 450,
+    "text": "Assassins / dive",
+    "color": "#c4593f",
+    "size": 26,
+    "tab": "comps"
+   },
+   {
+    "id": "ink-480",
+    "type": "stroke",
+    "color": "#c4593f",
+    "width": 2,
+    "points": [
+     [
+      0.4,
+      488.5
+     ],
+     [
+      11.6,
+      488.6
+     ],
+     [
+      24.5,
+      488.1
+     ],
+     [
+      36.7,
+      488
+     ],
+     [
+      47.9,
+      487.8
+     ],
+     [
+      59.3,
+      487.9
+     ],
+     [
+      71.4,
+      487.4
+     ],
+     [
+      84.2,
+      487.8
+     ],
+     [
+      96.7,
+      487.4
+     ],
+     [
+      107.9,
+      487.9
+     ],
+     [
+      119.9,
+      487.4
+     ],
+     [
+      132.4,
+      486.4
+     ],
+     [
+      144.1,
+      487.5
+     ],
+     [
+      155.2,
+      486.7
+     ],
+     [
+      167.7,
+      486.5
+     ],
+     [
+      180.2,
+      487.4
+     ],
+     [
+      192.5,
+      486
+     ],
+     [
+      203.4,
+      485.8
+     ],
+     [
+      216.3,
+      487.1
+     ],
+     [
+      228.8,
+      487
+     ],
+     [
+      239.5,
+      486.7
+     ],
+     [
+      252.3,
+      486.8
+     ],
+     [
+      264.6,
+      486.8
+     ],
+     [
+      275.5,
+      486
+     ],
+     [
+      287.2,
+      485.7
+     ],
+     [
+      300,
+      486
+     ]
+    ],
+    "tab": "comps"
+   },
+   {
+    "id": "note-481",
+    "type": "note",
+    "x": 0,
+    "y": 500,
+    "text": "They reach you before your 550 range matters. You live by\nTumble + R stealth and a Condemn on the diver.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "img-482",
+    "type": "image",
+    "x": 0,
+    "y": 570,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/SummonerExhaust.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-483",
+    "type": "note",
+    "x": 56,
+    "y": 568,
+    "text": "Exhaust",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-484",
+    "type": "note",
+    "x": 56,
+    "y": 594,
+    "text": "+1.22 (2.8K) all regions D+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-485",
+    "type": "image",
+    "x": 0,
+    "y": 632,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3047.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-486",
+    "type": "note",
+    "x": 56,
+    "y": 630,
+    "text": "Plated Steelcaps",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-487",
+    "type": "note",
+    "x": 56,
+    "y": 656,
+    "text": "+1.95 (2.4K) all regions E+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-488",
+    "type": "image",
+    "x": 0,
+    "y": 694,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3026.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-489",
+    "type": "note",
+    "x": 56,
+    "y": 692,
+    "text": "Guardian Angel 3rd",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-490",
+    "type": "note",
+    "x": 56,
+    "y": 718,
+    "text": "−0.14 (1.8K): flat, but it buys a second fight",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "note-491",
+    "type": "note",
+    "x": 720,
+    "y": 450,
+    "text": "Tanks / frontline",
+    "color": "#8f9a6e",
+    "size": 26,
+    "tab": "comps"
+   },
+   {
+    "id": "ink-492",
+    "type": "stroke",
+    "color": "#8f9a6e",
+    "width": 2,
+    "points": [
+     [
+      719.4,
+      487.7
+     ],
+     [
+      731.3,
+      488.5
+     ],
+     [
+      743.2,
+      487.1
+     ],
+     [
+      756.1,
+      488.4
+     ],
+     [
+      768.4,
+      487.2
+     ],
+     [
+      779.3,
+      487.6
+     ],
+     [
+      791.5,
+      487
+     ],
+     [
+      803.5,
+      487.3
+     ],
+     [
+      815.2,
+      487.7
+     ],
+     [
+      828,
+      487.6
+     ],
+     [
+      839.7,
+      487.6
+     ],
+     [
+      852.2,
+      487.1
+     ],
+     [
+      863.9,
+      487.6
+     ],
+     [
+      875.5,
+      487.7
+     ],
+     [
+      887.4,
+      486.2
+     ],
+     [
+      899.7,
+      486.7
+     ],
+     [
+      911.9,
+      486.2
+     ],
+     [
+      924.7,
+      487
+     ],
+     [
+      936.2,
+      487.3
+     ],
+     [
+      947.5,
+      485.7
+     ],
+     [
+      959.6,
+      486.6
+     ],
+     [
+      971.8,
+      486.3
+     ],
+     [
+      983.8,
+      486.3
+     ],
+     [
+      996.2,
+      485.6
+     ],
+     [
+      1008.3,
+      485.5
+     ],
+     [
+      1020,
+      486
+     ]
+    ],
+    "tab": "comps"
+   },
+   {
+    "id": "note-493",
+    "type": "note",
+    "x": 720,
+    "y": 500,
+    "text": "Your best matchup. W true damage scales with their max HP,\nso more hits = more melted tanks.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "img-494",
+    "type": "image",
+    "x": 720,
+    "y": 570,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/Precision/CutDown/CutDown.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-495",
+    "type": "note",
+    "x": 776,
+    "y": 568,
+    "text": "Cut Down",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-496",
+    "type": "note",
+    "x": 776,
+    "y": 594,
+    "text": "+1.12 (4.5K) all regions D+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-497",
+    "type": "image",
+    "x": 720,
+    "y": 632,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3036.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-498",
+    "type": "note",
+    "x": 776,
+    "y": 630,
+    "text": "Lord Dominik's",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-499",
+    "type": "note",
+    "x": 776,
+    "y": 656,
+    "text": "+1.21 (1.7K) all regions D+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-500",
+    "type": "image",
+    "x": 720,
+    "y": 694,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3302.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-501",
+    "type": "note",
+    "x": 776,
+    "y": 692,
+    "text": "Terminus",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-502",
+    "type": "note",
+    "x": 776,
+    "y": 718,
+    "text": "+0.50 (6.2K): pen in long fights",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "note-503",
+    "type": "note",
+    "x": 0,
+    "y": 780,
+    "text": "Poke / ranged lanes",
+    "color": "#7f98ad",
+    "size": 26,
+    "tab": "comps"
+   },
+   {
+    "id": "ink-504",
+    "type": "stroke",
+    "color": "#7f98ad",
+    "width": 2,
+    "points": [
+     [
+      0.2,
+      818.4
+     ],
+     [
+      11.3,
+      818.4
+     ],
+     [
+      23.4,
+      818
+     ],
+     [
+      36.7,
+      818.5
+     ],
+     [
+      47.5,
+      818.4
+     ],
+     [
+      60.3,
+      817.9
+     ],
+     [
+      72.7,
+      816.8
+     ],
+     [
+      84.8,
+      817.6
+     ],
+     [
+      96.6,
+      817.9
+     ],
+     [
+      107.5,
+      817.1
+     ],
+     [
+      120.3,
+      817.7
+     ],
+     [
+      132.5,
+      817.1
+     ],
+     [
+      144.5,
+      817.5
+     ],
+     [
+      155.3,
+      816.8
+     ],
+     [
+      168.1,
+      816.9
+     ],
+     [
+      180.7,
+      817.1
+     ],
+     [
+      192.1,
+      816
+     ],
+     [
+      204.1,
+      816.9
+     ],
+     [
+      216.6,
+      816.2
+     ],
+     [
+      227.3,
+      816
+     ],
+     [
+      239.4,
+      815.8
+     ],
+     [
+      251.7,
+      815.7
+     ],
+     [
+      264,
+      816.5
+     ],
+     [
+      275.4,
+      815.5
+     ],
+     [
+      288.4,
+      816.7
+     ],
+     [
+      300,
+      816
+     ]
+    ],
+    "tab": "comps"
+   },
+   {
+    "id": "note-505",
+    "type": "note",
+    "x": 0,
+    "y": 830,
+    "text": "Caitlyn, Miss Fortune and bot-lane mages are your worst\nlanes on u.gg (40% to 41% on 56 to 74 games; mages are\ntinier samples). Survive to 2 items.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "img-506",
+    "type": "image",
+    "x": 0,
+    "y": 900,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/1055.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-507",
+    "type": "note",
+    "x": 56,
+    "y": 898,
+    "text": "Doran's Blade",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-508",
+    "type": "note",
+    "x": 56,
+    "y": 924,
+    "text": "+1.35 (4.1K): the HP start",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-509",
+    "type": "image",
+    "x": 0,
+    "y": 962,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/Styles/7204_Resolve.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-510",
+    "type": "note",
+    "x": 56,
+    "y": 960,
+    "text": "Resolve second",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-511",
+    "type": "note",
+    "x": 56,
+    "y": 986,
+    "text": "Second Wind +2.94 on only 171 games",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-512",
+    "type": "image",
+    "x": 0,
+    "y": 1024,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3072.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-513",
+    "type": "note",
+    "x": 56,
+    "y": 1022,
+    "text": "Bloodthirster",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-514",
+    "type": "note",
+    "x": 56,
+    "y": 1048,
+    "text": "+1.94 (1.1K) all regions E+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "note-515",
+    "type": "note",
+    "x": 720,
+    "y": 780,
+    "text": "AP / heavy CC",
+    "color": "#b8925a",
+    "size": 26,
+    "tab": "comps"
+   },
+   {
+    "id": "ink-516",
+    "type": "stroke",
+    "color": "#b8925a",
+    "width": 2,
+    "points": [
+     [
+      719.8,
+      817.9
+     ],
+     [
+      732.4,
+      818.7
+     ],
+     [
+      743.8,
+      818.1
+     ],
+     [
+      756.3,
+      817.9
+     ],
+     [
+      767.8,
+      818.3
+     ],
+     [
+      779.7,
+      817.7
+     ],
+     [
+      792.3,
+      817.3
+     ],
+     [
+      803.9,
+      816.9
+     ],
+     [
+      816.6,
+      817.2
+     ],
+     [
+      827.4,
+      818.1
+     ],
+     [
+      840.4,
+      817.8
+     ],
+     [
+      852,
+      816.6
+     ],
+     [
+      863.6,
+      817.5
+     ],
+     [
+      876.6,
+      816.5
+     ],
+     [
+      888.2,
+      816.2
+     ],
+     [
+      900.4,
+      817
+     ],
+     [
+      911.2,
+      816.1
+     ],
+     [
+      924.4,
+      816.9
+     ],
+     [
+      935.5,
+      816.9
+     ],
+     [
+      947.8,
+      816.7
+     ],
+     [
+      960.7,
+      815.9
+     ],
+     [
+      971.2,
+      816.4
+     ],
+     [
+      983.5,
+      815.7
+     ],
+     [
+      995.8,
+      816.1
+     ],
+     [
+      1007.3,
+      816.4
+     ],
+     [
+      1020,
+      816
+     ]
+    ],
+    "tab": "comps"
+   },
+   {
+    "id": "note-517",
+    "type": "note",
+    "x": 720,
+    "y": 830,
+    "text": "One root or stun and you cannot Tumble. Tenacity and a\ncleanse item beat the Cleanse spell here.",
+    "color": "#e9dfc9",
+    "size": 14,
+    "tab": "comps"
+   },
+   {
+    "id": "img-518",
+    "type": "image",
+    "x": 720,
+    "y": 900,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3111.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-519",
+    "type": "note",
+    "x": 776,
+    "y": 898,
+    "text": "Mercury's Treads",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-520",
+    "type": "note",
+    "x": 776,
+    "y": 924,
+    "text": "+1.86 (1.3K) all regions E+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-521",
+    "type": "image",
+    "x": 720,
+    "y": 962,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3091.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-522",
+    "type": "note",
+    "x": 776,
+    "y": 960,
+    "text": "Wit's End",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-523",
+    "type": "note",
+    "x": 776,
+    "y": 986,
+    "text": "+0.11 (1.3K) all regions D+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "img-524",
+    "type": "image",
+    "x": 720,
+    "y": 1024,
+    "w": 44,
+    "h": 44,
+    "src": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/3139.png",
+    "tab": "comps"
+   },
+   {
+    "id": "note-525",
+    "type": "note",
+    "x": 776,
+    "y": 1022,
+    "text": "Mercurial Scimitar",
+    "color": "#e9dfc9",
+    "size": 18,
+    "tab": "comps"
+   },
+   {
+    "id": "note-526",
+    "type": "note",
+    "x": 776,
+    "y": 1048,
+    "text": "+0.25 (2.0K) all regions E+",
+    "color": "#b8925a",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "note-527",
+    "type": "note",
+    "x": 0,
+    "y": 1130,
+    "text": "The numbers are each pick in all games (coachless's \"vs champion\" filter is paid),\nso they show the pick is fine, not that it wins that matchup.\nThe comp logic comes from the kit.",
+    "color": "#7f98ad",
+    "size": 13,
+    "tab": "comps"
+   },
+   {
+    "id": "note-528",
+    "type": "note",
+    "x": 0,
+    "y": 1230,
+    "text": "Sources: coachless.gg runes/tree, items and spells for Vayne ADC,\npatch 16.22, Filters as labelled · u.gg NA build page, runes table\nand stats2.u.gg JSON (16_22, ranked solo) · LoL wiki Vayne ·\nData Dragon 16.22.1 icons and item stats.\nMade by tools/build-vayne-adc.mjs from data/vayne-adc-build.json.",
+    "color": "#7f98ad",
+    "size": 12,
+    "tab": "comps"
+   }
+  ],
+  "source": {
+   "stats": "https://coachless.gg/items/vayne/legendaries?role=adc ; https://u.gg/lol/champions/vayne/build/adc",
+   "wiki": "https://wiki.leagueoflegends.com/en-us/Vayne (abilities as of V26.20)",
+   "icons": "Riot Data Dragon 16.22.1",
+   "pulledAt": "2026-11-17"
+  },
+  "tabs": [
+   {
+    "id": "sheet",
+    "label": "1 · Cheat sheet"
+   },
+   {
+    "id": "runes",
+    "label": "2 · Runes"
+   },
+   {
+    "id": "start",
+    "label": "3 · Start + first item"
+   },
+   {
+    "id": "items",
+    "label": "4 · Items + boots"
+   },
+   {
+    "id": "spells",
+    "label": "5 · Spells"
+   },
+   {
+    "id": "comps",
+    "label": "6 · vs enemy comps"
+   }
+  ],
+  "activeTab": "sheet"
+ }
+}
