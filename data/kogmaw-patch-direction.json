@@ -1,0 +1,173 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "question": "What is Riot buffing and nerfing on Kog'Maw, which way are they pushing him, and should runes and items follow?",
+  "pulledAt": "2026-11-23",
+  "patch": {
+    "wiki": "Patch history up to V26.22",
+    "ugg": "26.22 (URL 16_22), the latest full patch. 26.23 had 30 NA Diamond+ Kog games on 2026-11-23, too few.",
+    "coachless": "16.22",
+    "dataDragon": "16.22.1"
+  },
+  "sources": {
+    "wiki": "https://wiki.leagueoflegends.com/en-us/Kog%27Maw/Patch_history",
+    "ugg": "https://u.gg/lol/champions/kogmaw/build/adc?region=na1&patch=16_22",
+    "uggRunes": "https://u.gg/lol/champions/kogmaw/runes-table?role=adc&region=na1&patch=16_22",
+    "coachless": "https://coachless.gg/items/kogmaw/legendaries?role=adc"
+  },
+  "icons": {
+    "item": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/item/",
+    "spell": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/spell/",
+    "passive": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/passive/",
+    "champion": "https://ddragon.leagueoflegends.com/cdn/16.22.1/img/champion/",
+    "rune": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/"
+  },
+  "caveat": "Patch notes say what changed, not why. Everything under 'direction' is inferred from the pattern of changes. Kog's own page also leaves out item and system changes (Doran's Bow, boots, on-hit items), which move his builds as much as his own numbers do.",
+
+  "dials": {
+    "note": "Rank 5 (rank 3 for R) values after each change, read from the wiki patch history. Each series starts at the first change in the window (2015 on) and holds until the next one.",
+    "series": [
+      {
+        "key": "wHp", "label": "W: max HP per hit (rank 5)", "unit": "%", "ability": "w",
+        "points": [["6.19", 6], ["6.24", 7], ["8.3", 5], ["8.4", 6], ["11.5", 7], ["12.11", 6], ["12.11h", 6.5], ["13.12", 6]],
+        "read": "Peaked at 7% twice, trimmed back to 6% each time. Flat since 2023."
+      },
+      {
+        "key": "qAs", "label": "Q passive: bonus attack speed (rank 5)", "unit": "%", "ability": "q",
+        "points": [["5.22", 35], ["12.11", 30], ["25.21", 25]],
+        "read": "Only ever goes down. The free attack speed in his kit is shrinking."
+      },
+      {
+        "key": "qAp", "label": "Q: AP ratio", "unit": "% AP", "ability": "q",
+        "points": [["5.22", 50], ["10.13", 70], ["25.04", 80], ["25.17", 90]],
+        "read": "Only ever goes up. Three raises, the last two in 2025."
+      },
+      {
+        "key": "wAp", "label": "W: max HP per 100 AP", "unit": "%", "ability": "w",
+        "points": [["5.22", 0.75], ["6.19", 1], ["25.17", 1.5]],
+        "read": "Untouched for nine years, then +50% in 25.17."
+      },
+      {
+        "key": "rAp", "label": "R: AP ratio (rank 3)", "unit": "% AP", "ability": "r",
+        "points": [["5.22", 25], ["10.13", 35], ["25.17", 45]],
+        "read": "Up twice. 25.17 made it grow with rank."
+      },
+      {
+        "key": "qBase", "label": "Q: base damage (rank 5)", "unit": "", "ability": "q",
+        "points": [["5.22", 280], ["9.21", 290], ["25.04", 260]],
+        "read": "Cut in 25.04 while the AP ratio went up: flat power moved into scaling."
+      }
+    ]
+  },
+
+  "recent": {
+    "note": "Every gameplay change from V13.1 to V26.22 (bug fixes left out unless they change how he plays). Buff, nerf or neutral is a judgement for Kog's power, not Riot's label.",
+    "changes": [
+      { "patch": "12.22", "cat": "stats", "dir": "nerf", "text": "AD growth 3.11 to 3.1 (rounding clean-up)" },
+      { "patch": "13.8", "cat": "util", "dir": "buff", "text": "Passive: 140 to 650 damage (from 125 to 550), now ghosted" },
+      { "patch": "13.8", "cat": "util", "dir": "buff", "text": "Q cooldown 8 to 7 s. E mana 60 to 40 at rank 1" },
+      { "patch": "13.12", "cat": "onhit", "dir": "nerf", "text": "W max HP 3.5–6.5% to 3–6%" },
+      { "patch": "14.5", "cat": "util", "dir": "buff", "text": "Passive +10% move speed. E slow 40–60%. Q cast = attack windup" },
+      { "patch": "14.5", "cat": "ad", "dir": "buff", "text": "R 65% to 75% bonus AD" },
+      { "patch": "14.23", "cat": "onhit", "dir": "mixed", "text": "Q shred 23–31% to 16–32%: weaker early, a bit stronger at rank 5" },
+      { "patch": "14.23", "cat": "ap", "dir": "nerf", "text": "E 75–255 to 70–230, 70% to 65% AP" },
+      { "patch": "25.04", "cat": "ap", "dir": "mixed", "text": "Q base 90–290 to 80–260, AP ratio 70% to 80%" },
+      { "patch": "25.17", "cat": "ap", "dir": "buff", "text": "Q 90% AP, W +1.5% HP per 100 AP, R up to 45% AP" },
+      { "patch": "25.21", "cat": "onhit", "dir": "nerf", "text": "Q passive attack speed 10–30% to 5–25%" },
+      { "patch": "26.09", "cat": "onhit", "dir": "buff", "text": "W fixed to act as a normal on-hit effect (26.10: procs Statikk Shiv)" },
+      { "patch": "26.16", "cat": "stats", "dir": "mixed", "text": "Base MR 30 to 33, growth 1.3 to 1.1 (same at 15, less late)" }
+    ],
+    "categories": [
+      { "key": "ap", "trend": "up", "label": "AP ratios and base damage", "verdict": "Up. Base damage traded for AP scaling, then AP buffed outright." },
+      { "key": "onhit", "trend": "down", "label": "Attack speed and W %HP", "verdict": "Down. Q attack speed cut twice, W %HP held at 6%." },
+      { "key": "ad", "trend": "up", "label": "AD scaling", "verdict": "Small buff. R AD ratio once (14.5)." },
+      { "key": "util", "trend": "up", "label": "Safety and utility", "verdict": "Up in 2023–24: passive, E slow, Q feel." },
+      { "key": "stats", "trend": "flat", "label": "Base stats", "verdict": "Left alone. Only clean-ups since the 12.10 durability patch." }
+    ]
+  },
+
+  "eras": [
+    { "years": "2010–14", "text": "Launch kit: armor pen Q, stacking artillery R. Riot mostly tuned R spam (stack caps, mana)." },
+    { "years": "2015–16", "text": "The rework years. W becomes %HP + range (5.22), attack speed moves to Q (6.19), R gets its execute (6.21)." },
+    { "years": "2017–22", "text": "Base stat fixes (7.22, 8.11, 12.10). AP ratios up (10.13, 11.18). W %HP rides 5–7%." },
+    { "years": "2023–24", "text": "Safety buffs (passive, E, Q feel) while W and Q shred are trimmed." },
+    { "years": "2025–26", "text": "The AP era: Q, W and R AP ratios raised, Q base and attack speed cut." }
+  ],
+
+  "apMath": {
+    "note": "Rank 5 Q and W, rank 3 R, before 25.04 vs now, from the patch history. AP only (AD parts left out). R is the minimum hit (target above 60% HP); it doubles below 40% HP.",
+    "apLevels": [200, 400],
+    "abilities": [
+      { "key": "q", "label": "Q Caustic Spittle", "before": { "base": 290, "ap": 0.7 }, "now": { "base": 260, "ap": 0.9 }, "unit": "magic" },
+      { "key": "w", "label": "W bonus per hit", "before": { "pctBase": 6, "pctPer100": 1 }, "now": { "pctBase": 6, "pctPer100": 1.5 }, "unit": "% max HP" },
+      { "key": "r", "label": "R Living Artillery", "before": { "base": 180, "ap": 0.35 }, "now": { "base": 180, "ap": 0.45 }, "unit": "magic" }
+    ]
+  },
+
+  "ugg": {
+    "label": "u.gg, NA Ranked Solo, patch 26.22, pulled 2026-11-23",
+    "note": "Doran's Ring is the AP start and Doran's Bow the attack speed start, so the starter split is a rough AP vs on-hit split. Starter counts are games with that starter as u.gg's top pick; the other starter's share is the rest, minus rare starts. Buckets overlap: Diamond+ includes Master+ includes Challenger.",
+    "samples": [
+      { "id": "all", "label": "All ranks", "matches": 26890, "wr": 52.42, "starter": { "name": "Doran's Bow", "games": 19393 },
+        "core": "Rageblade · Berserker's · Navori",
+        "keystones": { "Lethal Tempo": [52.99, 77.87], "Press the Attack": [51.5, 7.3], "Stormraider's Surge": [51.27, 6.9], "Arcane Comet": [48.87, 5.58] } },
+      { "id": "d", "label": "Diamond+", "matches": 2947, "wr": 52.09, "starter": { "name": "Doran's Bow", "games": 1793 }, "ring": 885,
+        "core": "Rageblade · Gluttonous Greaves · Navori",
+        "keystones": { "Lethal Tempo": [52.67, 65.46], "Stormraider's Surge": [52.07, 20.53], "Arcane Comet": [51.41, 6.01], "Press the Attack": [48.99, 5.06] } },
+      { "id": "m", "label": "Master+", "matches": 1232, "wr": 52.11, "starter": { "name": "Doran's Bow", "games": 573 },
+        "core": "Dusk and Dawn · Shadowflame · Sorcerer's",
+        "keystones": { "Lethal Tempo": [51.8, 51.87], "Stormraider's Surge": [53.01, 33.69], "Arcane Comet": [53.01, 6.74], "Press the Attack": [54.84, 5.03] } },
+      { "id": "c", "label": "Challenger", "matches": 356, "wr": 51.4, "starter": { "name": "Doran's Ring", "games": 230 },
+        "core": "Dusk and Dawn · Sorcerer's · Shadowflame",
+        "keystones": { "Stormraider's Surge": [54.98, 59.27], "Lethal Tempo": [44.44, 32.87], "Arcane Comet": [50, 4.49], "Press the Attack": [75, 1.12] } }
+    ],
+    "previous": {
+      "label": "Same pull for patch 26.21 (data/kogmaw-adc-runes-aggro.json): Stormraider's pick rate",
+      "storm": { "all": 6.91, "d": 25, "m": 37.71, "c": 58.37 }
+    },
+    "variants": {
+      "label": "u.gg build tabs, NA Diamond+ 26.22: the most common exact 3-item core",
+      "ap": { "start": ["Doran's Ring", 885, 51.19], "core": ["Dusk and Dawn · Shadowflame · Sorcerer's", 99, 58.59] },
+      "onhit": { "start": ["Doran's Bow", 905, 57.68], "core": ["BotRK · Berserker's · Rageblade", 64, 67.19] }
+    }
+  },
+
+  "coachless": {
+    "label": "coachless.gg, NA Diamond+, patch 16.22, 'Hide low occurrence' off, pulled 2026-11-23",
+    "note": "WPA = win rate minus the average pre-game win probability, in points. Buys are item purchases. At 1,000 buys the 95% noise on a win rate is about ±3 points, so every gap here is a lean.",
+    "items": [
+      { "name": "Terminus", "build": "onhit", "wpa": 0.74, "buys": 1237 },
+      { "name": "Wit's End", "build": "onhit", "wpa": 0.54, "buys": 326 },
+      { "name": "Blade of The Ruined King", "build": "onhit", "wpa": 0.49, "buys": 559 },
+      { "name": "Dusk and Dawn", "build": "ap", "wpa": 0.35, "buys": 845 },
+      { "name": "Shadowflame", "build": "ap", "wpa": 0.34, "buys": 689 },
+      { "name": "Runaan's Hurricane", "build": "onhit", "wpa": 0.34, "buys": 751 },
+      { "name": "Rabadon's Deathcap", "build": "ap", "wpa": -0.07, "buys": 429 },
+      { "name": "Guinsoo's Rageblade", "build": "onhit", "wpa": -0.54, "buys": 1901 },
+      { "name": "Navori Flickerblade", "build": "onhit", "wpa": -1.49, "buys": 986 },
+      { "name": "Stormsurge", "build": "ap", "wpa": -1.74, "buys": 145 }
+    ],
+    "keystones": [
+      { "name": "Lethal Tempo", "wpa": 0.36, "picks": 1904 },
+      { "name": "Stormraider's Surge", "wpa": -1.09, "picks": 561 },
+      { "name": "Arcane Comet", "wpa": -1.31, "picks": 150 },
+      { "name": "Press the Attack", "wpa": -7.67, "picks": 134 }
+    ],
+    "trees": "Primary tree share: Precision 74%, Sorcery 26%."
+  },
+
+  "ids": {
+    "items": {
+      "Doran's Bow": 1086, "Doran's Ring": 1056, "Guinsoo's Rageblade": 3124, "Terminus": 3302, "Wit's End": 3091,
+      "Blade of The Ruined King": 3153, "Runaan's Hurricane": 3085, "Navori Flickerblade": 6675, "Dusk and Dawn": 2510,
+      "Shadowflame": 4645, "Rabadon's Deathcap": 3089, "Stormsurge": 4646, "Sorcerer's Shoes": 3020, "Berserker's Greaves": 3006
+    },
+    "runes": {
+      "Lethal Tempo": "Styles/Precision/LethalTempo/LethalTempoTemp.png",
+      "Press the Attack": "Styles/Precision/PressTheAttack/PressTheAttack.png",
+      "Stormraider's Surge": "Styles/Sorcery/PhaseRush/StormraidersSurgeRuneIcon2.png",
+      "Arcane Comet": "Styles/Sorcery/ArcaneComet/ArcaneComet.png"
+    },
+    "abilities": { "q": "KogMawQ.png", "w": "KogMawBioArcaneBarrage.png", "e": "KogMawVoidOoze.png", "r": "KogMawLivingArtillery.png", "champion": "KogMaw.png" }
+  }
+}

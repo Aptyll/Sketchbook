@@ -49,6 +49,11 @@
       "file": "challenger-role-champ.json",
       "title": "Challenger: role and champion",
       "description": "Coaching from first principles, no win rates: straight talk on the Master to Challenger gap, which role has the most agency in solo queue, and three options (Kai'Sa, Kindred, Jax) scored on mobility, assassin safety, objectives and switch cost, with a plan to choose and commit."
+    },
+    {
+      "file": "kogmaw-patch-direction.json",
+      "title": "Kog'Maw ADC: where Riot is taking him",
+      "description": "What Riot keeps buffing and nerfing, from the LoL wiki patch history (V1.0 to V26.22): six key numbers over ten years, every change since 2023, what the 2025 AP buffs are worth, u.gg NA 26.22 and coachless NA Diamond+ 16.22 builds, and whether runes and items should follow."
     }
   ]
 }
