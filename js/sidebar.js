@@ -1,18 +1,22 @@
-// The sidebar's page list, shown as folders and pages, like a file explorer.
+// The sidebar, laid out like the conversation list of a chat app: every page
+// in one flat list, most recently used first, with when it was last used.
+// Pinned pages stay on top. Below them, the Library lists the ready-made pages
+// you don't have a copy of yet. Nothing is folded away or hidden in a dialog.
+//
 // This module only draws the list and reports what the user did; app.js owns
-// the data and saving. Folders come first (the Library folder on top), then
-// loose pages. Pages and folders can be dragged onto a folder, or moved with
-// the "⋯" menu, which also works on touch screens.
+// the data and saving.
 
-const dateFormat = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
-const collator = new Intl.Collator(undefined, { numeric: true, sensitivity: 'base' });
-const DRAG_TYPE = 'application/x-sketchbook-item';
+const DAY = 24 * 60 * 60 * 1000;
+const fullDate = new Intl.DateTimeFormat(undefined, { dateStyle: 'medium', timeStyle: 'short' });
+const monthDay = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric' });
+const monthDayYear = new Intl.DateTimeFormat(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+const weekday = new Intl.DateTimeFormat(undefined, { weekday: 'short' });
 
 const ICON = {
-  chevron: '<svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="M4.5 2.5L8 6l-3.5 3.5"/></svg>',
-  folder: '<svg class="folder-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M2.5 5.5a1 1 0 011-1h4l1.6 1.8h7.4a1 1 0 011 1v8.2a1 1 0 01-1 1h-13a1 1 0 01-1-1z"/></svg>',
-  book: '<svg class="folder-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3.5h9.5a1 1 0 011 1v12h-9.5a1 1 0 01-1-1zM4 15.5a1 1 0 011-1h9.5M7 7h5"/></svg>',
+  trash: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 6h12M8 6V4.5h4V6M6 6l.7 10h6.6L14 6M8.5 9v4.5M11.5 9v4.5"/></svg>',
   dots: '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="5" cy="10" r="1.3"/><circle cx="10" cy="10" r="1.3"/><circle cx="15" cy="10" r="1.3"/></svg>',
+  pin: '<svg class="pin-mark" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 3h4l-.5 5 2.5 2.5H6L8.5 8zM10 10.5V17"/></svg>',
+  plus: '<svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 5v10M5 10h10"/></svg>',
 };
 
 function node(tag, props = {}, ...children) {
@@ -21,244 +25,110 @@ function node(tag, props = {}, ...children) {
   return n;
 }
 
-// Sorted folders under a parent: the Library folder first, then by name.
-export function childFolders(folders, parentId) {
-  return folders
-    .filter((f) => (f.parentId ?? null) === parentId)
-    .sort((a, b) => (b.library === true) - (a.library === true) || collator.compare(a.name, b.name));
+// When a page was last used: opened or edited, whichever was later.
+export function lastUsed(page) {
+  return Math.max(page.usedAt ?? 0, page.updatedAt ?? 0, page.createdAt ?? 0);
 }
 
-// Ids of a folder and every folder inside it.
-export function folderAndDescendants(folders, id) {
-  const ids = new Set([id]);
-  let grew = true;
-  while (grew) {
-    grew = false;
-    for (const f of folders) {
-      if (f.parentId && ids.has(f.parentId) && !ids.has(f.id)) {
-        ids.add(f.id);
-        grew = true;
-      }
-    }
-  }
-  return ids;
+// Pinned pages first, then the most recently used.
+export function sortPages(pages) {
+  return [...pages].sort((a, b) => (b.pinned === true) - (a.pinned === true) || lastUsed(b) - lastUsed(a));
 }
 
-export function createSidebar({ list, actions }) {
-  let data = { pages: [], folders: [], activePage: null };
-  let dragging = null; // { kind: 'page' | 'folder', id }
-  let renaming = null; // folder id whose name is being edited
+const startOfDay = (t) => new Date(t).setHours(0, 0, 0, 0);
+
+// "Just now", "5m ago", "3h ago", "Yesterday", "Mon", "Nov 21", "Nov 21, 2025".
+export function relativeTime(t, now = Date.now()) {
+  const mins = Math.floor((now - t) / 60000);
+  if (mins < 1) return 'Just now';
+  const today = startOfDay(now);
+  if (t >= today) return mins < 60 ? `${mins}m ago` : `${Math.floor(mins / 60)}h ago`;
+  if (t >= today - DAY) return 'Yesterday';
+  if (t >= today - 6 * DAY) return weekday.format(t);
+  if (new Date(t).getFullYear() === new Date(now).getFullYear()) return monthDay.format(t);
+  return monthDayYear.format(t);
+}
+
+// The heading a page sits under in the list.
+function bucket(t, now) {
+  const today = startOfDay(now);
+  if (t >= today) return 'Today';
+  if (t >= today - DAY) return 'Yesterday';
+  if (t >= today - 6 * DAY) return 'Previous 7 days';
+  if (t >= today - 29 * DAY) return 'Previous 30 days';
+  return 'Older';
+}
+
+export function createSidebar({ list, search, actions }) {
+  let data = { pages: [], activePage: null, library: null, libraryError: null };
   let menuAnchor = null; // the "⋯" button whose menu is open
   const menu = node('div', { id: 'row-menu', role: 'menu', hidden: true });
   document.body.append(menu);
 
-  // A folder id that exists, or null (top level). Pages that point at a
-  // deleted folder show at the top level rather than vanishing.
-  const folderIds = () => new Set(data.folders.map((f) => f.id));
-  const placeOf = (page, ids = folderIds()) => (page.folderId && ids.has(page.folderId) ? page.folderId : null);
-
-  function pagesIn(folderId, ids) {
-    return data.pages.filter((p) => placeOf(p, ids) === folderId);
-  }
-
-  function countPages(folderId, ids) {
-    const inside = folderAndDescendants(data.folders, folderId);
-    return data.pages.filter((p) => inside.has(placeOf(p, ids))).length;
-  }
-
   // ---------- Rows ----------
 
-  function pageRow(page, depth) {
-    const li = node('li', { className: 'tree-row page-row' });
-    li.style.setProperty('--depth', depth);
+  const heading = (text, extra = '') => node('li', { className: `list-heading ${extra}`.trim(), textContent: text });
+
+  function pageRow(page, now) {
+    const li = node('li', { className: 'page-row' });
     li.dataset.pageId = page.id;
     li.classList.toggle('active', page === data.activePage);
-    li.draggable = true;
+    li.classList.toggle('pinned', page.pinned === true);
 
+    const used = lastUsed(page);
     const name = node('span', { className: 'page-name', textContent: page.title || 'Untitled' });
     name.classList.toggle('untitled', !page.title);
-    const open = node('button', { className: 'page-open', type: 'button' }, name);
-    // Dates only on loose pages, so folders stay compact. The full date is in the tooltip.
-    if (depth === 0) open.append(node('span', { className: 'page-date', textContent: dateFormat.format(page.createdAt) }));
-    open.title = `${page.title || 'Untitled'} · ${dateFormat.format(page.createdAt)}`;
+    const date = node('span', { className: 'page-date', textContent: relativeTime(used, now) });
+    date.dataset.t = String(used);
+    const open = node('button', { className: 'page-open', type: 'button' }, name, date);
+    if (page.pinned) open.insertAdjacentHTML('afterbegin', ICON.pin);
+    open.title = `${page.title || 'Untitled'}\nLast used ${fullDate.format(used)}`;
     open.addEventListener('click', () => actions.openPage(page));
 
-    const more = menuButton('Page actions', () => pageMenu(page, more));
-    li.append(open, more);
-    bindDrag(li, { kind: 'page', id: page.id });
-    bindDrop(li, () => placeOf(page));
+    const del = iconButton('row-delete', 'Delete page', ICON.trash, () => actions.deletePage(page));
+    const more = iconButton('row-more', 'More actions', ICON.dots, () => {
+      if (menuAnchor === more) closeMenu();
+      else pageMenu(page, more);
+    });
+    more.setAttribute('aria-haspopup', 'menu');
+    li.append(open, del, more);
     return li;
   }
 
-  function folderRow(folder, depth, ids) {
-    const li = node('li', { className: 'tree-row folder-row' });
-    li.style.setProperty('--depth', depth);
-    li.dataset.folderId = folder.id;
-    li.classList.toggle('library', folder.library === true);
-    li.draggable = renaming !== folder.id;
-
-    const toggle = node('button', { className: 'folder-toggle', type: 'button' });
-    toggle.setAttribute('aria-expanded', String(!folder.collapsed));
-    toggle.innerHTML = ICON.chevron + (folder.library ? ICON.book : ICON.folder);
-    const count = node('span', { className: 'folder-count', textContent: String(countPages(folder.id, ids)) });
-
-    if (renaming === folder.id) {
-      const input = node('input', { className: 'folder-rename', value: folder.name, spellcheck: false });
-      input.setAttribute('aria-label', 'Folder name');
-      let done = false;
-      const finish = (save) => {
-        if (done) return;
-        done = true;
-        renaming = null;
-        if (save && input.value.trim() && input.value.trim() !== folder.name) actions.renameFolder(folder, input.value.trim());
-        else render();
-      };
-      input.addEventListener('keydown', (e) => {
-        e.stopPropagation();
-        if (e.key === 'Enter') finish(true);
-        if (e.key === 'Escape') finish(false);
-      });
-      input.addEventListener('blur', () => finish(true));
-      input.addEventListener('click', (e) => e.stopPropagation());
-      toggle.append(input);
-      queueMicrotask(() => { input.focus(); input.select(); });
-    } else {
-      toggle.append(node('span', { className: 'folder-name', textContent: folder.name }));
-      toggle.addEventListener('click', () => actions.toggleFolder(folder));
-    }
-    toggle.append(count);
-
-    const more = menuButton('Folder actions', () => folderMenu(folder, more));
-    li.append(toggle, more);
-    bindDrag(li, { kind: 'folder', id: folder.id });
-    bindDrop(li, () => folder.id);
+  function libraryRow(entry) {
+    const li = node('li', { className: 'library-row' });
+    li.dataset.file = entry.file;
+    const name = node('span', { className: 'page-name', textContent: entry.title });
+    const b = node('button', { className: 'library-add', type: 'button' }, name);
+    b.insertAdjacentHTML('beforeend', ICON.plus);
+    b.title = `${entry.title}\n\n${entry.description ?? ''}\n\nClick to add your own copy.`.trim();
+    b.addEventListener('click', () => actions.addFromLibrary(entry));
+    li.append(b);
     return li;
   }
 
-  function menuButton(label, onClick) {
-    const b = node('button', { className: 'row-more', type: 'button', title: label });
+  function iconButton(className, label, svg, onClick) {
+    const b = node('button', { className: `row-btn ${className}`, type: 'button', title: label });
     b.setAttribute('aria-label', label);
-    b.setAttribute('aria-haspopup', 'menu');
-    b.innerHTML = ICON.dots;
+    b.innerHTML = svg;
     b.addEventListener('click', (e) => {
       e.stopPropagation();
-      // A second click on the same button closes its menu.
-      if (menuAnchor === b) closeMenu();
-      else onClick();
+      onClick();
     });
     return b;
   }
 
-  // ---------- Drag and drop ----------
-
-  function bindDrag(li, what) {
-    li.addEventListener('dragstart', (e) => {
-      if (renaming) return e.preventDefault();
-      dragging = what;
-      e.dataTransfer.effectAllowed = 'move';
-      e.dataTransfer.setData(DRAG_TYPE, JSON.stringify(what));
-      li.classList.add('dragging');
-      closeMenu();
-    });
-    li.addEventListener('dragend', () => {
-      dragging = null;
-      li.classList.remove('dragging');
-      clearDropMarks();
-    });
-  }
-
-  function canDrop(targetFolderId) {
-    if (!dragging) return false;
-    if (dragging.kind === 'folder') {
-      return targetFolderId === null || !folderAndDescendants(data.folders, dragging.id).has(targetFolderId);
-    }
-    return true;
-  }
-
-  function clearDropMarks() {
-    list.querySelectorAll('.drop-target').forEach((n) => n.classList.remove('drop-target'));
-    list.classList.remove('drop-root');
-  }
-
-  function markDrop(folderId) {
-    clearDropMarks();
-    if (folderId === null) list.classList.add('drop-root');
-    else list.querySelector(`[data-folder-id="${CSS.escape(folderId)}"]`)?.classList.add('drop-target');
-  }
-
-  // Dropping on a folder files it there; dropping on a page files it next to that page.
-  function bindDrop(li, targetOf) {
-    li.addEventListener('dragover', (e) => {
-      const target = targetOf();
-      if (!canDrop(target)) return;
-      e.preventDefault();
-      e.stopPropagation();
-      e.dataTransfer.dropEffect = 'move';
-      markDrop(target);
-    });
-    li.addEventListener('drop', (e) => {
-      e.preventDefault();
-      e.stopPropagation();
-      drop(targetOf());
-    });
-  }
-
-  function drop(target) {
-    const what = dragging;
-    dragging = null;
-    clearDropMarks();
-    if (what) moveTo(what, target);
-  }
-
-  function moveTo(what, target) {
-    if (what.kind === 'page') {
-      const page = data.pages.find((p) => p.id === what.id);
-      if (page && placeOf(page) !== target) actions.movePage(page, target);
-    } else {
-      const folder = data.folders.find((f) => f.id === what.id);
-      if (folder && (folder.parentId ?? null) !== target && !folderAndDescendants(data.folders, folder.id).has(target)) {
-        actions.moveFolder(folder, target);
-      }
-    }
-  }
-
-  // Empty space in the list means "top level".
-  list.addEventListener('dragover', (e) => {
-    if (!canDrop(null)) return;
-    e.preventDefault();
-    markDrop(null);
-  });
-  list.addEventListener('dragleave', (e) => {
-    if (!list.contains(e.relatedTarget)) clearDropMarks();
-  });
-  list.addEventListener('drop', (e) => {
-    e.preventDefault();
-    drop(null);
-  });
-
-  // ---------- Menus ----------
+  // ---------- Menu ----------
 
   function openMenu(anchor, entries) {
     menu.replaceChildren(
       ...entries.map((entry) => {
         if (entry === '-') return node('div', { className: 'menu-sep', role: 'separator' });
-        if (entry.heading) return node('div', { className: 'menu-heading', textContent: entry.heading });
         const b = node('button', { className: 'menu-item', type: 'button', textContent: entry.label });
         b.setAttribute('role', 'menuitem');
-        if (entry.depth) b.style.setProperty('--depth', entry.depth);
-        if (entry.current) {
-          b.disabled = true;
-          b.classList.add('current');
-        }
         if (entry.danger) b.classList.add('danger');
         b.addEventListener('click', (e) => {
           e.stopPropagation();
-          // Dangerous entries need a second click, like the old Delete button.
-          if (entry.confirm && !b.classList.contains('armed')) {
-            b.classList.add('armed');
-            b.textContent = entry.confirm;
-            return;
-          }
           closeMenu();
           entry.run();
         });
@@ -269,11 +139,11 @@ export function createSidebar({ list, actions }) {
     const r = anchor.getBoundingClientRect();
     const h = menu.offsetHeight;
     const w = menu.offsetWidth;
-    menu.style.left = `${Math.max(8, Math.min(r.left, window.innerWidth - w - 8))}px`;
+    menu.style.left = `${Math.max(8, Math.min(r.right - w, window.innerWidth - w - 8))}px`;
     menu.style.top = `${r.bottom + 4 + h > window.innerHeight - 8 ? Math.max(8, r.top - h - 4) : r.bottom + 4}px`;
     menuAnchor = anchor;
     anchor.closest('li')?.classList.add('menu-open');
-    menu.querySelector('.menu-item:not(:disabled)')?.focus();
+    menu.querySelector('.menu-item')?.focus();
   }
 
   function closeMenu() {
@@ -283,49 +153,11 @@ export function createSidebar({ list, actions }) {
     list.querySelectorAll('.menu-open').forEach((n) => n.classList.remove('menu-open'));
   }
 
-  // "Move to" choices: the top level, then every folder as an indented tree.
-  function destinations(current, exclude = new Set()) {
-    const out = [{ heading: 'Move to' }, { label: 'Top level', current: current === null, value: null }];
-    const walk = (parentId, depth) => {
-      for (const f of childFolders(data.folders, parentId)) {
-        if (exclude.has(f.id)) continue;
-        out.push({ label: f.name, depth, current: current === f.id, value: f.id });
-        walk(f.id, depth + 1);
-      }
-    };
-    walk(null, 1);
-    return out;
-  }
-
   function pageMenu(page, anchor) {
-    const moves = destinations(placeOf(page)).map((d) =>
-      d.heading ? d : { ...d, run: () => actions.movePage(page, d.value) },
-    );
-    openMenu(anchor, [
-      ...moves,
-      '-',
-      { label: 'Delete page', confirm: 'Delete page? Click again', danger: true, run: () => actions.deletePage(page) },
-    ]);
-  }
-
-  function folderMenu(folder, anchor) {
-    const moves = destinations(folder.parentId ?? null, folderAndDescendants(data.folders, folder.id)).map((d) =>
-      d.heading ? d : { ...d, run: () => actions.moveFolder(folder, d.value) },
-    );
-    openMenu(anchor, [
-      { label: 'New page here', run: () => actions.newPageIn(folder.id) },
-      { label: 'New folder inside', run: () => actions.newFolder(folder.id) },
-      { label: 'Rename', run: () => startRename(folder.id) },
-      '-',
-      ...moves,
-      '-',
-      {
-        label: 'Delete folder',
-        confirm: 'Delete? Its pages move up',
-        danger: true,
-        run: () => actions.deleteFolder(folder),
-      },
-    ]);
+    const entries = [{ label: page.pinned ? 'Unpin' : 'Pin to top', run: () => actions.togglePin(page) }];
+    if (page.library) entries.push({ label: 'Add a fresh copy', run: () => actions.freshCopy(page) });
+    entries.push('-', { label: 'Delete page', danger: true, run: () => actions.deletePage(page) });
+    openMenu(anchor, entries);
   }
 
   document.addEventListener('pointerdown', (e) => {
@@ -343,25 +175,67 @@ export function createSidebar({ list, actions }) {
   // ---------- Render ----------
 
   function render(next) {
-    if (next) data = next;
-    const ids = folderIds();
+    if (next) data = { ...data, ...next };
+    const now = Date.now();
+    const query = search.value.trim().toLowerCase();
+    const matches = (title) => !query || title.toLowerCase().includes(query);
     const rows = [];
-    const walk = (parentId, depth) => {
-      for (const folder of childFolders(data.folders, parentId)) {
-        rows.push(folderRow(folder, depth, ids));
-        if (!folder.collapsed) walk(folder.id, depth + 1);
+
+    let last = null;
+    for (const page of sortPages(data.pages)) {
+      if (!matches(page.title || 'Untitled')) continue;
+      const group = page.pinned ? 'Pinned' : bucket(lastUsed(page), now);
+      if (group !== last) rows.push(heading(group));
+      last = group;
+      rows.push(pageRow(page, now));
+    }
+    if (query && !rows.length) rows.push(node('li', { className: 'list-msg', textContent: 'No pages match.' }));
+
+    // The Library: ready-made pages you don't have yet. Adding one moves it up
+    // into your pages; deleting your copy brings it back down here.
+    const have = new Set(data.pages.map((p) => p.library).filter(Boolean));
+    rows.push(heading('Library', 'library-heading'));
+    if (data.libraryError) {
+      rows.push(node('li', { className: 'list-msg', textContent: `Couldn't load the library: ${data.libraryError}` }));
+    } else if (!data.library) {
+      rows.push(node('li', { className: 'list-msg', textContent: 'Loading…' }));
+    } else {
+      const left = data.library.filter((e) => !have.has(e.file) && matches(e.title));
+      if (!left.length) {
+        const all = data.library.every((e) => have.has(e.file));
+        rows.push(node('li', { className: 'list-msg', textContent: all ? 'You have every library page.' : 'No library pages match.' }));
       }
-      for (const page of pagesIn(parentId, ids)) rows.push(pageRow(page, depth));
-    };
-    walk(null, 0);
+      // Entries may carry a "group" (e.g. "Start here", "Archive"); a subheading
+      // shows whenever the group changes, so the index keeps each group together.
+      let lastGroup;
+      for (const entry of left) {
+        if (entry.group && entry.group !== lastGroup) rows.push(heading(entry.group, 'library-group'));
+        lastGroup = entry.group;
+        rows.push(libraryRow(entry));
+      }
+    }
+
     closeMenu();
     list.replaceChildren(...rows);
+    list.querySelector('.page-row.active')?.scrollIntoView({ block: 'nearest' });
   }
 
-  function startRename(folderId) {
-    renaming = folderId;
-    render();
-  }
+  // Keeps "5m ago" honest without redrawing the list (which would close menus).
+  setInterval(() => {
+    const now = Date.now();
+    list.querySelectorAll('.page-date').forEach((d) => { d.textContent = relativeTime(Number(d.dataset.t), now); });
+  }, 60000);
 
-  return { render, startRename, closeMenu };
+  search.addEventListener('input', () => render());
+  search.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      search.value = '';
+      render();
+      search.blur();
+    } else if (e.key === 'Enter') {
+      list.querySelector('.page-open, .library-add')?.click();
+    }
+  });
+
+  return { render, closeMenu };
 }

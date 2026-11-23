@@ -1,6 +1,7 @@
 // Thin promise wrapper around IndexedDB.
 // Stores: "pages" (page records with their items), "blobs" (image files) and,
-// since version 2, "folders" (sidebar folders; pages point at one with folderId).
+// since version 2, "folders" (from the old folder tree; no longer shown, kept so
+// nothing is lost and backups still carry them).
 // Upgrades only ever add stores, so existing pages and images are never touched.
 
 const DB_NAME = 'sketchbook';
