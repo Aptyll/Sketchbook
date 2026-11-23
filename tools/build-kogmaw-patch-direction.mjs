@@ -313,8 +313,8 @@ s.tab('verdict');
     },
     {
       n: '3', color: 'Sepia', title: 'On-hit is held, not killed',
-      body: 'W stays at 6% and Q attack speed was cut twice, so the attack speed has to come from items. Doran\'s Bow, Rageblade, then Terminus or BotRK, Lethal Tempo. Best into tanks and long fights.',
-      icons: [itemIcon("Doran's Bow"), itemIcon("Guinsoo's Rageblade"), itemIcon('Terminus'), itemIcon('Blade of The Ruined King'), runeIcon('Lethal Tempo')],
+      body: 'W stays at 6% and Q attack speed was cut twice, so the attack speed has to come from items. Doran\'s Bow, Rageblade, then Terminus or BotRK. Best into tanks and long fights. NA on-hit often runs Lethal Tempo; its gap to Stormraider\'s is inside the noise, so keep one page.',
+      icons: [itemIcon("Doran's Bow"), itemIcon("Guinsoo's Rageblade"), itemIcon('Terminus'), itemIcon('Blade of The Ruined King'), runeIcon("Stormraider's Surge")],
     },
     {
       n: '4', color: 'Slate', title: 'Play the curve, not just the items',

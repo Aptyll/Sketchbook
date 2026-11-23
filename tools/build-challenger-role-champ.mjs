@@ -140,6 +140,9 @@ data.plan.forEach((p, i) => {
   if (i < data.plan.length - 1) s.arrow([[x + 380, top + 14], [x + 425, top + 14]], { color: 'Red chalk', width: 2 });
 });
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Superseded 2026-11-21: you chose to stay on Kog'Maw.\nKept for the reasoning. Your plan is the \"Climb plan\" page.");
+
 const out = s.page({
   title: TITLE,
   source: {

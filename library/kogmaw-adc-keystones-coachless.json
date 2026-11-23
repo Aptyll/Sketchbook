@@ -5090,6 +5090,15 @@
     "text": "Stats:\nhttps://coachless.gg/runes/tree/kogmaw/precision/resolve?role=adc\nvs all champions, 'Hide low occurrence' on (site default). Rank\nand region set in the Filters panel; they don't show in the URL.\nKeystone pick counts are across all secondary trees. The runes\npage shows WPA and picks only, no win rate.\nRune text: https://wiki.leagueoflegends.com/en-us/<rune> ·\nicons: Riot Data Dragon 16.21.1\nMade by tools/build-kogmaw-keystones-coachless.mjs\nfrom data/kogmaw-adc-keystones-coachless.json.",
     "color": "#7f98ad",
     "size": 12
+   },
+   {
+    "id": "note-227",
+    "type": "note",
+    "x": 0,
+    "y": -68,
+    "text": "Archived 2026-11-23 (stats 16.17 to 16.20). The keystone\nyou play is on the Climb plan, tab 7.",
+    "color": "#c4593f",
+    "size": 16
    }
   ],
   "source": {

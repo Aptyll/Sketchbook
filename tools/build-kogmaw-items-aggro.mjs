@@ -477,6 +477,9 @@ s.tab('context');
   ].join('\n'), { size: 15, maxChars: 52 });
 }
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (wiki 26.22, stats 16.21). The build you play is on the Climb plan, tab 7:\nDusk and Dawn first. This model liked Nashor's first, by a lean inside its own ~10% margin.");
+
 const out = s.page({
   title: "Kog'Maw ADC: items for aggression",
   source: { numbers: data.wiki.source, stats: 'coachless.gg and u.gg, patch 16.21 (see data file)', model: 'tools/kogmaw-item-model.mjs', pulledAt: data.pulledAt },

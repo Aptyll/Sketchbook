@@ -3,8 +3,9 @@
 //   node tools/build-climb-plan-challenger.mjs
 //
 // A coaching page, not a stats page: first principles and arithmetic only.
-// Five tabs: the honest push-back, the ladder math, a daily practice system,
-// in-game decision rules, and a three-phase plan.
+// Seven tabs: the honest push-back, the ladder math, a daily practice system,
+// in-game decision rules, a three-phase plan, Kog positioning + VODs, and the
+// one locked build with the fed-assassin rules (tab 7).
 
 import { readFile, writeFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
@@ -35,7 +36,8 @@ s.wobblyLine([[4, 60], [1000, 56]], { color: 'Red chalk', width: 2.5 });
 s.note(0, 76, [
   'Coach mode: first principles, no win-rate data. Blunt on purpose.',
   'Bronze to Masters 450 LP, one rank a season. Now low Diamond 4.',
-  `Written ${data.pulledAt}. Tab 2 is arithmetic with stated assumptions.`,
+  `Written ${data.pulledAt}, tab 7 added 2026-11-23. Tab 2 is arithmetic.`,
+  'Start here: this is the one page to use. The rest of the Library is reference.',
 ].join('\n'), { size: 15, color: 'Sepia' });
 
 const views = [
@@ -45,6 +47,7 @@ const views = [
   { id: 'decisions', label: '4 · In-game rules' },
   { id: 'plan', label: '5 · The plan' },
   { id: 'kog', label: '6 · Kog\'Maw: positioning and VODs' },
+  { id: 'build', label: '7 · The build (locked)' },
 ];
 
 // =====================================================================
@@ -378,6 +381,61 @@ s.tab('kog');
     '• Practice Tool: last-hit a wave under tower with W on.',
     '• Kite the target dummy: attack, step back, attack. Never stand still between autos.',
     '• Land 10 R casts on a moving dummy, aiming where it will be.',
+  ].join('\n'), { size: 16, maxChars: 60 });
+}
+
+// =====================================================================
+// Tab 7: the one build to play, and the fed-assassin rules
+// (consolidated 2026-11-23 from the build and assassin pages)
+// =====================================================================
+s.tab('build');
+{
+  const top = 270;
+  s.note(0, top - 60, 'The build: locked until your 50 game review', { size: 24 });
+  const rows = [
+    { t: 'AP (default)', b: 'Doran\'s Ring, Dusk and Dawn, then Rabadon\'s or Shadowflame, Sorcerer\'s Shoes. Into squishy teams and short fights.', c: 'Moss' },
+    { t: 'On-hit (into tanks)', b: 'Doran\'s Bow, Rageblade, then Terminus or BotRK. Into tanky teams and long fights.', c: 'Sepia' },
+    { t: 'Runes (both builds)', b: 'Stormraider\'s Surge, Manaflow Band, Transcendence, Scorch. Second tree: Legend: Alacrity, Coup de Grace.', c: 'Slate' },
+    { t: 'Spells', b: 'Flash and Barrier.', c: 'Slate' },
+    { t: 'Third item when they dive you', b: 'AP: Zhonya\'s or Banshee\'s. On-hit: Wit\'s End. No Quicksilver.', c: 'Red chalk' },
+  ];
+  rows.forEach((r, i) => {
+    const y = top + i * 100;
+    s.loop(10, y + 12, 12, 12, { color: r.c, width: 1.6 });
+    s.note(34, y + 2, r.t, { size: 19, color: r.c });
+    s.note(34, y + 32, r.b, { size: 14, maxChars: 66 });
+  });
+
+  const vx = 760;
+  s.note(vx, top - 60, 'Behind into fed assassins', { size: 24 });
+  const rules = [
+    { t: 'Stop feeding the lead', b: 'Each death is worth more to them than any farm is to you. Farm with W and E from max range, give up a plate or a drake rather than walk into fog.' },
+    { t: 'Let them go first', b: 'Do not start the fight. Wait for their stun or engage to land on someone else, then turn W on and shoot whoever came in.' },
+    { t: 'Fight at chokes', b: 'Pits and warded jungle entrances make them walk to you. Open lanes favour their flanks. If you cannot contest, take a tower on the other side.' },
+    { t: 'Ask for peel, use your E', b: 'Ping your support to stay with you, not roam. Your E slow is your own peel: aim it at the gap closer, not for damage.' },
+  ];
+  rules.forEach((r, i) => {
+    const y = top + i * 100;
+    s.note(vx, y, `${i + 1}`, { size: 28, color: 'Red chalk' });
+    s.note(vx + 40, y + 2, r.t, { size: 19, color: 'Red chalk' });
+    s.note(vx + 40, y + 32, r.b, { size: 14, maxChars: 66 });
+  });
+  s.note(vx, top + 4 * 100 + 4, 'You 1v9 by being the last one they can reach: they spend their\nbuttons on your team, and you shoot for the 80 to 120 s after.', { size: 16, color: 'Sepia' });
+
+  const by = top + 5 * 100 + 20;
+  s.wobblyLine([[0, by], [1500, by - 3]], { color: 'Red chalk', width: 1.5 });
+  s.note(0, by + 20, 'Why it is locked', { size: 24, color: 'Red chalk' });
+  s.note(0, by + 60, [
+    'Every build page in the Library ends the same way: the gaps between builds are inside the noise.',
+    'A build change moves your win rate less than one game you skip while tilted.',
+    'Change it only when Riot changes W\'s % health damage, Q\'s attack speed or an AP ratio.',
+  ].join('\n'), { size: 16, maxChars: 60 });
+  s.note(vx, by + 20, 'Where it comes from', { size: 24, color: 'Slate' });
+  s.note(vx, by + 60, [
+    '• Items and keystone: "where Riot is taking him" (patch 26.22).',
+    '• Rune page: page A of "runes for aggression".',
+    '• Starters: the Doran\'s page. Spells: the spells page.',
+    '• Rules: "carry into fed assassins", tab 5.',
   ].join('\n'), { size: 16, maxChars: 60 });
 }
 

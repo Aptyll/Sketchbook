@@ -628,3 +628,5 @@ body.sidebar-hidden #sidebar { margin-left: calc(-1 * var(--sidebar-w)); }
 .library-desc, .library-msg { color: var(--muted); font-size: 13px; }
 .library-have { color: var(--accent); font-size: 12px; }
 .library-fresh { margin: 2px 0 0 6px; font-size: 12px; }
+.library-group { font-family: var(--serif); font-size: 14px; color: var(--accent); margin: 10px 0 0; }
+.library-group:first-child { margin-top: 0; }

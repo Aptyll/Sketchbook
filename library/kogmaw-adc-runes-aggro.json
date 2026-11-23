@@ -9187,6 +9187,15 @@
     "color": "#e9dfc9",
     "size": 15,
     "tab": "context"
+   },
+   {
+    "id": "note-505",
+    "type": "note",
+    "x": 0,
+    "y": -115,
+    "text": "Archived 2026-11-23 (wiki 26.22, stats 26.21). Page A\n(Storm Kog) is the one\nyou play: it is on the Climb plan, tab 7, for both\nbuilds.",
+    "color": "#c4593f",
+    "size": 16
    }
   ],
   "source": {

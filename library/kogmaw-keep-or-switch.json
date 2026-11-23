@@ -5830,6 +5830,15 @@
      ]
     ],
     "tab": "habits"
+   },
+   {
+    "id": "note-141",
+    "type": "note",
+    "x": 0,
+    "y": -115,
+    "text": "Decided 2026-11-21: keep Kog'Maw. These habits now live\nin the \"Climb plan\" page.\nThe 50 game test uses its death log: count \"Unseen\nthreat\" against \"Fair trade\".",
+    "color": "#c4593f",
+    "size": 16
    }
   ],
   "source": {
