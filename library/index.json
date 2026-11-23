@@ -59,6 +59,11 @@
       "file": "vayne-adc-build.json",
       "title": "Vayne ADC: the simple build",
       "description": "One page, six tabs: a cheat sheet, then runes, Doran's and first item, items and boots, summoner spells, and swaps vs assassins, tanks, poke and AP/CC. coachless WPA (NA and all regions, Diamond+) and u.gg NA (All ranks to Challenger), patch 16.22 / 26.22, with sample sizes."
+    },
+    {
+      "file": "kogmaw-700g-swords-vs-bow.json",
+      "title": "Kog'Maw ADC: 2 Long Swords or Recurve Bow?",
+      "description": "First principles, not win rates: with Lethal Tempo, which 700 gold buy deals more? A fight model at levels 6, 9 and 11 vs an ADC and a tank (LoL wiki, patch 26.23), hit by hit, when 20 AD would catch up, and what each buy builds into."
     }
   ]
 }

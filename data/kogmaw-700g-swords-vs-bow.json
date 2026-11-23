@@ -1,0 +1,59 @@
+{
+  "champion": "Kog'Maw",
+  "role": "ADC",
+  "pulledAt": "2026-11-23",
+  "question": "With Lethal Tempo, is 700 gold better spent on two Long Swords (20 AD) or a Recurve Bow (15% AS + 15 on-hit)?",
+  "wiki": {
+    "source": "https://wiki.leagueoflegends.com/en-us/",
+    "patch": "26.23",
+    "note": "Read live on the wiki 2026-11-23 (latest patch listed: V26.23). Kog'Maw's last change was a V26.22 bug fix; base stats unchanged since V26.16. Values for ranged champions."
+  },
+  "icons": {
+    "item": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/item/",
+    "rune": "https://ddragon.leagueoflegends.com/cdn/img/perk-images/",
+    "spell": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/spell/",
+    "champion": "https://ddragon.leagueoflegends.com/cdn/16.23.1/img/champion/KogMaw.png"
+  },
+  "kog": {
+    "base": { "ad": 61, "adG": 3.1, "as": 0.665, "asRatio": 0.665, "asG": 2.65, "range": 500 },
+    "qPassiveAs": [5, 10, 15, 20, 25],
+    "qDmg": [80, 125, 170, 215, 260],
+    "qShred": [16, 20, 24, 28, 32],
+    "qShredDuration": 4,
+    "qCd": 7,
+    "wHpPct": [3, 3.75, 4.5, 5.25, 6],
+    "wDuration": 8,
+    "wCd": 17,
+    "rDmg": [100, 140, 180],
+    "rBonusAd": 0.75,
+    "shardAs": 10,
+    "skillOrder": "W Q E W W R W Q W Q R Q Q E E R E E (W max, then Q)"
+  },
+  "lethalTempo": {
+    "icon": "Styles/Precision/LethalTempo/LethalTempoTemp.png",
+    "asPerStack": 4.8,
+    "stacks": 6,
+    "bolt": [6, 21.66],
+    "wiki": "Each attack on a champion: +4.8% bonus AS for 6 s, up to 6 stacks (28.8%). At 6 stacks attacks fire a bolt: 6 to 21.66 (level) adaptive damage, +1% per 1% bonus AS. No attack speed cap break."
+  },
+  "items": {
+    "Long Sword": { "id": 1036, "cost": 350, "ad": 10, "buildsInto": ["Hearthbound Axe (2 Long Swords + Dagger + 250)", "Rectrix", "Vampiric Scepter"] },
+    "Recurve Bow": { "id": 1043, "cost": 700, "as": 15, "onHit": 15, "buildsInto": ["Guinsoo's Rageblade", "Blade of the Ruined King", "Kraken Slayer", "Nashor's Tooth", "Terminus", "Wit's End"] },
+    "Dagger": { "id": 1042, "cost": 250, "as": 10 },
+    "Hearthbound Axe": { "id": 3051, "cost": 1200, "ad": 20, "as": 20, "recipe": "Long Sword + Long Sword + Dagger + 250", "buildsInto": ["Kraken Slayer", "Terminus", "Trinity Force"] },
+    "Rectrix": { "id": 6690, "cost": 775, "ad": 15, "msPct": 4 },
+    "Vampiric Scepter": { "id": 1053, "cost": 900, "ad": 15, "ls": 7 }
+  },
+  "finished": {
+    "Guinsoo's Rageblade": { "id": 3124, "recipe": "Amplifying Tome + Recurve Bow + Pickaxe" },
+    "Blade of the Ruined King": { "id": 3153, "recipe": "Vampiric Scepter + Recurve Bow + Pickaxe" },
+    "Kraken Slayer": { "id": 6672, "recipe": "Rectrix + Hearthbound Axe + Recurve Bow" },
+    "Terminus": { "id": 3302, "recipe": "Hearthbound Axe + Recurve Bow" },
+    "Nashor's Tooth": { "id": 3115, "recipe": "Recurve Bow + Blasting Wand + Fiendish Codex" },
+    "Wit's End": { "id": 3091, "recipe": "Recurve Bow + Negatron Cloak" }
+  },
+  "targets": {
+    "squishy": { "label": "enemy ADC, no defensive items", "hp": 640, "hpG": 100, "armor": 26, "armorG": 4.2, "mr": 30, "mrG": 1.3 },
+    "tank": { "label": "top-lane tank with ~1 tank item (+450 HP, +35 armor)", "hp": 650, "hpG": 108, "armor": 34, "armorG": 5, "mr": 32, "mrG": 2.05, "bonusHp": 450, "bonusArmor": 35 }
+  }
+}
