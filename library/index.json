@@ -1,69 +1,82 @@
 {
   "pages": [
     {
-      "file": "kogmaw-adc-summoner-spells.json",
-      "title": "Kog'Maw ADC: summoner spells",
-      "description": "Coachless WPA and win rates (patch 16.19, Diamond+) next to LoL wiki numbers, with notes."
+      "file": "climb-plan-challenger.json",
+      "group": "Start here",
+      "title": "Climb plan: Masters 450 to Challenger",
+      "description": "Coach mode, first principles: honest push-back, the math of losing (games to climb by win rate, streak odds at 55%), a daily practice system with stop rules and a death log, in-game rules for objectives and fights, and a three-phase plan from D4 to Challenger, plus a Kog'Maw positioning checklist and VOD routine, and the one build to use (locked until your 50-game review) with the fed-assassin rules."
+    },
+    {
+      "file": "kogmaw-patch-direction.json",
+      "group": "Reference",
+      "title": "Kog'Maw ADC: where Riot is taking him",
+      "description": "What Riot keeps buffing and nerfing, from the LoL wiki patch history (V1.0 to V26.22): six key numbers over ten years, every change since 2023, what the 2025 AP buffs are worth, u.gg NA 26.22 and coachless NA Diamond+ 16.22 builds, and whether runes and items should follow."
+    },
+    {
+      "file": "kogmaw-700g-swords-vs-bow.json",
+      "group": "Reference",
+      "title": "Kog'Maw ADC: 2 Long Swords or Recurve Bow?",
+      "description": "First principles, not win rates: with Lethal Tempo, which 700 gold buy deals more? A fight model at levels 6, 9 and 11 vs an ADC and a tank (LoL wiki, patch 26.23), hit by hit, when 20 AD would catch up, and what each buy builds into."
+    },
+    {
+      "file": "vayne-adc-build.json",
+      "group": "Other champions",
+      "title": "Vayne ADC: the simple build",
+      "description": "One page, six tabs: a cheat sheet, then runes, Doran's and first item, items and boots, summoner spells, and swaps vs assassins, tanks, poke and AP/CC. coachless WPA (NA and all regions, Diamond+) and u.gg NA (All ranks to Challenger), patch 16.22 / 26.22, with sample sizes."
+    },
+    {
+      "file": "kogmaw-keep-or-switch.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Coach: keep Kog'Maw or switch?",
+      "description": "Decided on 2026-11-21: keep Kog'Maw. Its habits now live in the climb plan. First principles, no win rates: should a Master 450 LP Kog'Maw one-trick keep him to reach Challenger? Verdict, both sides steelmanned, low mobility / assassins / objectives split into champion vs skill, a 60 second objective clock, and seven habits."
+    },
+    {
+      "file": "challenger-role-champ.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Challenger: role and champion",
+      "description": "Superseded on 2026-11-21: you chose to stay on Kog'Maw. Coaching from first principles, no win rates: straight talk on the Master to Challenger gap, which role has the most agency in solo queue, and three options (Kai'Sa, Kindred, Jax) scored on mobility, assassin safety, objectives and switch cost, with a plan to choose and commit."
+    },
+    {
+      "file": "kogmaw-adc-items-aggro.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Kog'Maw ADC: items for aggression",
+      "description": "First principles, not win rate: 14 build paths bought with the same gold and run through a fight model (LoL wiki, patch 26.22). First back, item order, a fed-diver duel, a tank fight, three build paths, and coachless/u.gg NA numbers (patch 16.21) as context."
+    },
+    {
+      "file": "kogmaw-adc-runes-aggro.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Kog'Maw ADC: runes for aggression",
+      "description": "First principles, not win rate: which keystone gives the most level 1 to 3 pressure, mid-game skirmish power and skill ceiling. A fight and kiting model for 11 keystones (LoL wiki, patch 26.22), three rune pages, and u.gg NA keystone pick rates (patch 26.21) as context."
+    },
+    {
+      "file": "kogmaw-adc-vs-assassins.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Kog'Maw ADC: carry into fed assassins",
+      "description": "Behind into fed Syndra, Qiyana and Yone: their engage ranges vs yours, the cooldown windows to fight in, AP and on-hit defensive picks checked against their CC types, coachless 16.21 WPA (NA and all regions Diamond+) and u.gg NA AP vs on-hit, and a game plan."
+    },
+    {
+      "file": "kogmaw-adc-starters.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Kog'Maw ADC: Doran's starter",
+      "description": "Bow, Blade, Helm or Ring? Four tabs: level 1 lane math from the LoL wiki, coachless WPA by rank (NA Gold+ to Master+, patches 16.18 to 16.20), u.gg's build variants up to NA Challenger, and a verdict per build and lane."
     },
     {
       "file": "kogmaw-adc-keystones-ugg.json",
+      "group": "Archive: decided, or older patches",
       "title": "Kog'Maw ADC: keystones (u.gg)",
       "description": "u.gg win and pick rates for Lethal Tempo, PTA, Stormraider's Surge, Comet and First Strike (NA, patch 26.20: All ranks, Diamond+, Master+, Challenger), with noise whiskers and LoL wiki rune text."
     },
     {
       "file": "kogmaw-adc-keystones-coachless.json",
+      "group": "Archive: decided, or older patches",
       "title": "Kog'Maw ADC: keystones (coachless, NA)",
       "description": "Lethal Tempo, Press the Attack, Stormraider's Surge and more: coachless WPA for NA Gold+, Diamond+ and Master+, patches 16.17 to 16.20 added together, with noise ranges and LoL wiki numbers."
     },
     {
-      "file": "kogmaw-adc-starters.json",
-      "title": "Kog'Maw ADC: Doran's starter",
-      "description": "Bow, Blade, Helm or Ring? Four tabs: level 1 lane math from the LoL wiki, coachless WPA by rank (NA Gold+ to Master+, patches 16.18 to 16.20), u.gg's build variants up to NA Challenger, and a verdict per build and lane."
-    },
-    {
-      "file": "kogmaw-adc-vs-assassins.json",
-      "title": "Kog'Maw ADC: carry into fed assassins",
-      "description": "Behind into fed Syndra, Qiyana and Yone: their engage ranges vs yours, the cooldown windows to fight in, AP and on-hit defensive picks checked against their CC types, coachless 16.21 WPA (NA and all regions Diamond+) and u.gg NA AP vs on-hit, and a game plan."
-    },
-    {
-      "file": "kogmaw-adc-runes-aggro.json",
-      "title": "Kog'Maw ADC: runes for aggression",
-      "description": "First principles, not win rate: which keystone gives the most level 1 to 3 pressure, mid-game skirmish power and skill ceiling. A fight and kiting model for 11 keystones (LoL wiki, patch 26.22), three rune pages, and u.gg NA keystone pick rates (patch 26.21) as context."
-    },
-    {
-      "file": "kogmaw-adc-items-aggro.json",
-      "title": "Kog'Maw ADC: items for aggression",
-      "description": "First principles, not win rate: 14 build paths bought with the same gold and run through a fight model (LoL wiki, patch 26.22). First back, item order, a fed-diver duel, a tank fight, three build paths, and coachless/u.gg NA numbers (patch 16.21) as context."
-    },
-    {
-      "file": "kogmaw-keep-or-switch.json",
-      "title": "Coach: keep Kog'Maw or switch?",
-      "description": "First principles, no win rates: should a Master 450 LP Kog'Maw one-trick keep him to reach Challenger? Verdict, both sides steelmanned, low mobility / assassins / objectives split into champion vs skill, a 60 second objective clock, and seven habits."
-    },
-    {
-      "file": "climb-plan-challenger.json",
-      "title": "Climb plan: Masters 450 to Challenger",
-      "description": "Coach mode, first principles: honest push-back, the math of losing (games to climb by win rate, streak odds at 55%), a daily practice system with stop rules and a death log, in-game rules for objectives and fights, and a three-phase plan from D4 to Challenger, plus a Kog'Maw positioning checklist and VOD routine."
-    },
-    {
-      "file": "challenger-role-champ.json",
-      "title": "Challenger: role and champion",
-      "description": "Coaching from first principles, no win rates: straight talk on the Master to Challenger gap, which role has the most agency in solo queue, and three options (Kai'Sa, Kindred, Jax) scored on mobility, assassin safety, objectives and switch cost, with a plan to choose and commit."
-    },
-    {
-      "file": "kogmaw-patch-direction.json",
-      "title": "Kog'Maw ADC: where Riot is taking him",
-      "description": "What Riot keeps buffing and nerfing, from the LoL wiki patch history (V1.0 to V26.22): six key numbers over ten years, every change since 2023, what the 2025 AP buffs are worth, u.gg NA 26.22 and coachless NA Diamond+ 16.22 builds, and whether runes and items should follow."
-    },
-    {
-      "file": "vayne-adc-build.json",
-      "title": "Vayne ADC: the simple build",
-      "description": "One page, six tabs: a cheat sheet, then runes, Doran's and first item, items and boots, summoner spells, and swaps vs assassins, tanks, poke and AP/CC. coachless WPA (NA and all regions, Diamond+) and u.gg NA (All ranks to Challenger), patch 16.22 / 26.22, with sample sizes."
-    },
-    {
-      "file": "kogmaw-700g-swords-vs-bow.json",
-      "title": "Kog'Maw ADC: 2 Long Swords or Recurve Bow?",
-      "description": "First principles, not win rates: with Lethal Tempo, which 700 gold buy deals more? A fight model at levels 6, 9 and 11 vs an ADC and a tank (LoL wiki, patch 26.23), hit by hit, when 20 AD would catch up, and what each buy builds into."
+      "file": "kogmaw-adc-summoner-spells.json",
+      "group": "Archive: decided, or older patches",
+      "title": "Kog'Maw ADC: summoner spells",
+      "description": "Coachless WPA and win rates (patch 16.19, Diamond+) next to LoL wiki numbers, with notes."
     }
   ]
 }

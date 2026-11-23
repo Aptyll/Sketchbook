@@ -273,6 +273,9 @@ s.tab('habits');
   s.loop(660, ty + 16, 100, 24, { color: 'Sepia', width: 1.5 });
 }
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Decided 2026-11-21: keep Kog'Maw. These habits now live in the \"Climb plan\" page.\nThe 50 game test uses its death log: count \"Unseen threat\" against \"Fair trade\".");
+
 const out = s.page({
   title: "Coach: keep Kog'Maw or switch?",
   source: {

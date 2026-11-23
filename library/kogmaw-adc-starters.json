@@ -7710,6 +7710,15 @@
     "text": "Sources:\nhttps://coachless.gg/items/kogmaw/starter?role=adc\n(Filters: NA or world, rank boxes, one patch at a time)\nhttps://stats2.u.gg/lol/1.5/<variant>/<patch>/\n  ranked_solo_5x5/96/1.5.0.json (behind u.gg's build page)\nhttps://wiki.leagueoflegends.com/en-us/Doran's_Bow, _Blade, _Helm, _Ring\nIcons: https://ddragon.leagueoflegends.com/cdn/16.21.1\nMade by tools/build-kogmaw-starters.mjs\nfrom data/kogmaw-adc-starters.json.",
     "color": "#7f98ad",
     "size": 12
+   },
+   {
+    "id": "note-334",
+    "type": "note",
+    "x": 0,
+    "y": -92,
+    "text": "Archived 2026-11-23 (stats 16.18 to 16.20). The answer\nis on the Climb plan, tab 7:\nDoran's Ring for AP, Doran's Bow for on-hit.",
+    "color": "#c4593f",
+    "size": 16
    }
   ],
   "source": {

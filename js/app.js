@@ -1058,8 +1058,16 @@ async function openLibrary() {
   libraryDialog.showModal();
   try {
     const entries = await fetchLibraryIndex();
+    // Entries may carry a "group" (e.g. "Start here", "Archive"): a heading is
+    // shown whenever the group changes, so keep each group together in the index.
+    let lastGroup;
     list.replaceChildren(
-      ...entries.map((entry) => {
+      ...entries.flatMap((entry) => {
+        const rows = [];
+        if (entry.group && entry.group !== lastGroup) {
+          rows.push(Object.assign(document.createElement('li'), { className: 'library-group', textContent: entry.group }));
+        }
+        lastGroup = entry.group;
         const li = document.createElement('li');
         const copy = libraryCopy(entry.file);
         const b = document.createElement('button');
@@ -1079,7 +1087,8 @@ async function openLibrary() {
           fresh.addEventListener('click', () => addFromLibrary(entry));
           li.append(fresh);
         }
-        return li;
+        rows.push(li);
+        return rows;
       }),
     );
   } catch (err) {

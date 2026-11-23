@@ -164,6 +164,9 @@ s.note(0, restTop + 170, [
   'from data/kogmaw-adc-keystones-coachless.json.',
 ].join('\n'), { size: 12, color: 'Slate', maxChars: 64 });
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (stats 16.17 to 16.20). The keystone you play is on the Climb plan, tab 7.");
+
 const page = s.page({
   title: `${data.champion} ${data.role}: keystones (coachless, NA)`,
   source: { stats: stats.source, patches: stats.patches, wiki: data.wiki.source, icons: `${data.icons.source} ${data.icons.version}`, pulledAt: data.pulledAt },

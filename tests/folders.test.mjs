@@ -215,8 +215,8 @@ test('upgrade: library pages saved before folders existed are filed in the Libra
 
   // The Library now opens the copy edited most recently instead of adding one.
   await page.click('#open-library');
-  await page.locator('.library-entry', { hasText: 'summoner spells' }).locator('.library-have').waitFor();
-  await page.click('.library-entry >> text=summoner spells');
+  await page.locator('.library-entry', { hasText: "Kog'Maw ADC: summoner spells" }).locator('.library-have').waitFor();
+  await page.click('.library-entry >> text=Kog\'Maw ADC: summoner spells');
   assert.equal(await page.evaluate(() => window.sketchbook.page().id), 'b');
   assert.equal((await page.evaluate(() => window.sketchbook.pages())).length, 4);
 

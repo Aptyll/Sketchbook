@@ -355,6 +355,9 @@ s.tab('notes');
   ].join('\n'), { size: 15 });
 }
 
+// Consolidated 2026-11-23: keystone note pointing at the locked build.
+s.banner("This model assumes Lethal Tempo. The locked build (Climb plan, tab 7) runs Stormraider's. The answer stands: Recurve's lead is mostly extra on-hit and W procs, not the Tempo bolt (tab 2), and Recurve is in every Kog item path.", { color: 'Slate' });
+
 const out = s.page({
   title: "Kog'Maw ADC: 2 Long Swords or Recurve Bow?",
   source: {

@@ -105,6 +105,19 @@ export function sketch({ seed = 1 } = {}) {
         api.stroke([[bx + Math.cos(a2) * len, by + Math.sin(a2) * len], [bx, by]], opts);
       }
     },
+    // A shared note above everything drawn so far (all tabs), e.g. "Archived: ...".
+    // Call it last so it sits above the page's own top edge.
+    banner(text, { size = 16, color: c = 'Red chalk' } = {}) {
+      const tops = items.map((it) => (it.type === 'stroke' ? Math.min(...it.points.map((p) => p[1])) : it.y));
+      // Notes wrap at 32x their font size and Windows fonts run wider: keep lines short.
+      const wrapped = wrap(text, 56);
+      const lines = wrapped.split('\n').length;
+      const y = Math.min(0, ...tops) - Math.round(lines * size * 1.45) - 22;
+      const prev = currentTab;
+      currentTab = null;
+      api.note(0, y, wrapped, { size, color: c });
+      currentTab = prev;
+    },
     // The finished page, wrapped in the single-page file format.
     page({ title = '', source, tabs, activeTab } = {}) {
       const page = { title, fit: true, items };

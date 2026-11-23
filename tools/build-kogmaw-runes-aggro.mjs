@@ -405,6 +405,9 @@ s.tab('context');
   ].join('\n'), { size: 15, maxChars: 50 });
 }
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (wiki 26.22, stats 26.21). Page A (Storm Kog) is the one\nyou play: it is on the Climb plan, tab 7, for both builds.");
+
 const out = s.page({
   title: "Kog'Maw ADC: runes for aggression",
   source: { stats: data.ugg.source, numbers: data.wiki.source, model: 'tools/kogmaw-rune-model.mjs', pulledAt: data.pulledAt },

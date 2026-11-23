@@ -285,7 +285,7 @@ test('library: adding the spells page twice opens the same copy, in the Library 
 
   for (let i = 0; i < 2; i++) {
     await page.click('#open-library');
-    await page.click('.library-entry >> text=summoner spells');
+    await page.click('.library-entry >> text=Kog\'Maw ADC: summoner spells');
     await page.waitForFunction(() => document.querySelector('#page-title').value === "Kog'Maw ADC: summoner spells");
   }
   // One Library folder holding one page, and the blank start page is gone.
@@ -306,6 +306,19 @@ test('library: adding the spells page twice opens the same copy, in the Library 
   // Opened framed to fit, so it starts zoomed out.
   assert.notEqual(await page.locator('#zoom-label').innerText(), '100%');
 
+  assert.deepEqual(errors, []);
+  await context.close();
+});
+
+test('library: entries are grouped, with the climb plan first under "Start here"', async () => {
+  const context = await browser.newContext({ viewport: { width: 1280, height: 800 } });
+  const { page, errors } = await openApp(context);
+  await page.click('#open-library');
+  await page.waitForSelector('.library-entry');
+  const groups = await page.locator('#library-list .library-group').allInnerTexts();
+  assert.deepEqual(groups, ['Start here', 'Reference', 'Other champions', 'Archive: decided, or older patches']);
+  const first = page.locator('#library-list > li').nth(1);
+  assert.match(await first.innerText(), /Climb plan/);
   assert.deepEqual(errors, []);
   await context.close();
 });

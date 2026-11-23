@@ -5304,6 +5304,15 @@
         "color": "#e9dfc9",
         "size": 15,
         "tab": "plan"
+      },
+      {
+        "id": "note-178",
+        "type": "note",
+        "x": 0,
+        "y": -92,
+        "text": "Superseded 2026-11-21: you chose to stay on Kog'Maw.\nKept for the reasoning. Your plan is the \"Climb plan\"\npage.",
+        "color": "#c4593f",
+        "size": 16
       }
     ],
     "source": {

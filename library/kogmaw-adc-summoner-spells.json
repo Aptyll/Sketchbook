@@ -1422,6 +1422,15 @@
     "text": "Sources: https://coachless.gg/spells/kogmaw?role=adc (site defaults (vs all champions))\nhttps://wiki.leagueoflegends.com/en-us/<spell> · icons: Riot Data Dragon 16.21.1\nMade by tools/build-kogmaw-spells.mjs from data/kogmaw-adc-spells.json.",
     "color": "#7f98ad",
     "size": 12
+   },
+   {
+    "id": "note-67",
+    "type": "note",
+    "x": 0,
+    "y": -68,
+    "text": "Archived 2026-11-23 (stats 16.19). The spells you play\nare on the Climb plan, tab 7.",
+    "color": "#c4593f",
+    "size": 16
    }
   ],
   "source": {

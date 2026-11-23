@@ -117,6 +117,9 @@ s.note(0, unlistedTop + unlisted.length * rowH + 10, [
   'Made by tools/build-kogmaw-spells.mjs from data/kogmaw-adc-spells.json.',
 ].join('\n'), { size: 12, color: 'Slate' });
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (stats 16.19). The spells you play are on the Climb plan, tab 7.");
+
 const page = s.page({
   title: `${data.champion} ${data.role}: summoner spells`,
   source: { stats: stats.source, wiki: data.wiki.source, icons: `${data.icons.source} ${data.icons.version}`, pulledAt: data.pulledAt },

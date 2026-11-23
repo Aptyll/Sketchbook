@@ -452,6 +452,9 @@ s.tab('plan');
   ].join('\n'), { size: 16, maxChars: 40 });
 }
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (stats 16.21). Its game plan rules are on the Climb plan, tab 7.");
+
 const out = s.page({
   title: "Kog'Maw ADC: carry into fed assassins",
   source: {

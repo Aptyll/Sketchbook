@@ -460,6 +460,9 @@ s.note(0, 1080, [
   'from data/kogmaw-adc-starters.json.',
 ].join('\n'), { size: 12, color: 'Slate' });
 
+// Consolidated 2026-11-23: the Climb plan page is the one to use.
+s.banner("Archived 2026-11-23 (stats 16.18 to 16.20). The answer is on the Climb plan, tab 7:\nDoran's Ring for AP, Doran's Bow for on-hit.");
+
 const page = s.page({
   title: `${data.champion} ${data.role}: Doran's starter`,
   source: {
