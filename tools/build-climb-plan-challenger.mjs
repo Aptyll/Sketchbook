@@ -279,16 +279,52 @@ s.tab('plan');
     if (i < phases.length - 1) s.arrow([[x + 510, top + 18], [x + 580, top + 18]], { color: 'Parchment', width: 2 });
   });
 
+  // Your pace: 10 to 25 ranked games a week (Noah, 2026-11-23).
   const by = top + 330;
-  s.note(0, by, 'Honest expectation', { size: 24, color: 'Sepia' });
-  s.note(0, by + 40, [
-    'Getting back to Masters should be quick if you play. Challenger is a volume question as much as a skill one: tab 2 says ~500 games at 55%, ~250 at your Masters Kog pace of 60%.',
-    'Holding 60% means keeping the habits that got you there, in every session. Fewer games a week means GM is the realistic target this season and Challenger the next.',
-  ].join('\n\n'), { size: 15, maxChars: 62 });
+  const { pace } = data;
+  const [gLo, gHi] = pace.gamesPerWeek;
+  const weeks = (lp, p, g) => Math.round(lp / netPerGame(p) / g);
+  s.note(0, by, `Your pace: ${gLo} to ${gHi} games a week`, { size: 24, color: 'Sepia' });
+  s.note(0, by + 34, 'Weeks needed, from the tab 2 math (+20 / −20 LP).', { size: 13, color: 'Slate' });
+  const kw = 9; // units per week
+  const bx = 190;
+  const legs = [
+    { label: `D4 to Masters (${pace.lpToMasters} LP)`, lp: pace.lpToMasters },
+    { label: `D4 to Challenger (${ladder.lpToClimb.toLocaleString('en-US')} LP)`, lp: ladder.lpToClimb },
+  ];
+  let ry = by + 70;
+  for (const leg of legs) {
+    s.note(0, ry, leg.label, { size: 16 });
+    ry += 30;
+    for (const p of pace.winRates) {
+      const fast = weeks(leg.lp, p, gHi);
+      const slow = weeks(leg.lp, p, gLo);
+      const color = p >= 0.6 ? 'Moss' : 'Sepia';
+      s.note(20, ry - 2, `at ${pctTxt(p)}`, { size: 14, color });
+      s.wobblyLine([[bx, ry + 9], [bx + fast * kw, ry + 9]], { color, width: 10, wobble: 0.3 });
+      s.wobblyLine([[bx + fast * kw, ry + 9], [bx + slow * kw, ry + 9]], { color, width: 2.5, wobble: 0.3 });
+      s.note(bx + slow * kw + 10, ry - 2, `${fast} to ${slow} weeks`, { size: 14, color });
+      ry += 30;
+    }
+    ry += 14;
+  }
+  s.note(0, ry, `Thick bar = ${gHi} games a week, thin line = down to ${gLo}.`, { size: 13, color: 'Slate' });
 
-  const nx = 0;
-  s.note(nx + 640, by, 'The one-line version', { size: 24, color: 'Red chalk' });
-  s.note(nx + 640, by + 40, 'Stop looking for the champion that never loses. Lock one in, die less, arrive first, and stop queueing after two losses. Challenger is 55% held for a long time.', { size: 18, maxChars: 52 });
+  const wx = 760;
+  s.note(wx, by, 'A standard week', { size: 24, color: 'Moss' });
+  s.note(wx, by + 40, [
+    `• ${gLo} to ${gHi} games in blocks of 3, on 4 or 5 days. Same hours each day.`,
+    '• One death note after every game (tab 3): result, focus kept or not, worst death and its category.',
+    '• Two VOD reviews, 25 minutes each (tab 6). Pick two set days and keep them, even in a good week.',
+    '• Sunday: count avoidable deaths per game and set next week\'s focus line.',
+    '• Stop rules still apply. A week of 10 calm games beats 25 with five tilted ones.',
+  ].join('\n'), { size: 15, maxChars: 62 });
+
+  s.note(wx, by + 300, 'Honest expectation', { size: 24, color: 'Red chalk' });
+  s.note(wx, by + 340, [
+    `Masters: ${weeks(pace.lpToMasters, 0.6, gHi)} to ${weeks(pace.lpToMasters, 0.6, gLo)} weeks at your 60% form, up to ${weeks(pace.lpToMasters, 0.55, gLo)} at 55%. Challenger: ${weeks(ladder.lpToClimb, 0.6, gHi)} to ${weeks(ladder.lpToClimb, 0.6, gLo)} weeks at 60%, ${weeks(ladder.lpToClimb, 0.55, gHi)} to ${weeks(ladder.lpToClimb, 0.55, gLo)} at 55%.`,
+    'So aim for Masters, then GM, this season. Challenger this season needs the top of your range and your 60% form held. It is the same path either way. The 1,000 LP is a guess: check the live cutoff.',
+  ].join('\n\n'), { size: 15, maxChars: 62 });
 }
 
 // =====================================================================

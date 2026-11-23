@@ -12,7 +12,20 @@
     "trueWinRate": 0.55,
     "fiveLossStreakIn100": 0.65,
     "under50After20": 0.25,
-    "under50After50": 0.20,
+    "under50After50": 0.2,
     "method": "Monte Carlo, 200,000 simulated runs of independent games at a true 55% win rate."
+  },
+  "pace": {
+    "gamesPerWeek": [
+      10,
+      25
+    ],
+    "lpToMasters": 400,
+    "winRates": [
+      0.55,
+      0.6
+    ],
+    "setOn": "2026-11-23",
+    "note": "Noah's answer: 10 to 25 ranked games a week, with a death note every game and two VOD reviews a week."
   }
 }
