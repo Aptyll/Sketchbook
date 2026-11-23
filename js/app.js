@@ -856,6 +856,8 @@ function newPage() {
   return page;
 }
 
+const pendingDeletes = new Map(); // page -> its db.delete promise, for Undo
+
 // Deleting is one click, with Undo in the toast instead of an "are you sure".
 // The page is kept in memory until then; its images stay stored until the next
 // visit cleans up blobs no page uses.
@@ -869,10 +871,13 @@ async function deletePage(page, { quiet = false } = {}) {
   } else {
     renderPageList();
   }
+  // Shown straight away, so Undo is there the moment the row disappears.
+  if (!quiet) toast(`Deleted "${page.title || 'Untitled'}"`, { action: { label: 'Undo', run: () => restorePage(page) } });
   try {
-    await db.delete('pages', page.id);
+    const deleting = db.delete('pages', page.id);
+    pendingDeletes.set(page, deleting);
+    await deleting;
     scheduleStorageRefresh();
-    if (!quiet) toast(`Deleted "${page.title || 'Untitled'}"`, { action: { label: 'Undo', run: () => restorePage(page) } });
   } catch (err) {
     toast(`Could not delete: ${err.message}`);
   }
@@ -882,6 +887,9 @@ async function restorePage(page) {
   if (state.pages.includes(page)) return;
   state.pages.push(page);
   try {
+    // An Undo clicked before the delete reached the database must land after it.
+    await pendingDeletes.get(page)?.catch(() => {});
+    pendingDeletes.delete(page);
     await db.put('pages', page);
   } catch (err) {
     toast(`Could not restore: ${err.message}`);
