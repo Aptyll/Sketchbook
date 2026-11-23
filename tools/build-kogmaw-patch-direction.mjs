@@ -262,10 +262,14 @@ s.tab('players');
   const zero = cx + 300;
   const k = 60; // units per WPA point
   s.note(cx, top, 'coachless WPA, NA Diamond+ 16.22', { size: 24 });
-  s.note(cx, top + 34, coachless.note, { size: 14, color: 'Sepia', maxChars: 74 });
-  s.wobblyLine([[zero, top + 110], [zero, top + 110 + coachless.items.length * 40 + 10]], { color: 'Parchment', width: 1 });
+  s.note(cx, top + 34, [
+    'WPA = win rate minus average pre-game win probability.',
+    'At 1,000 buys the 95% noise on a win rate is about',
+    '±3 points, so every gap here is a lean. Number = buys.',
+  ].join('\n'), { size: 14, color: 'Sepia' });
+  s.wobblyLine([[zero, top + 120], [zero, top + 130 + coachless.items.length * 40 + 10]], { color: 'Parchment', width: 1 });
   coachless.items.forEach((it, i) => {
-    const y = top + 120 + i * 40;
+    const y = top + 140 + i * 40;
     const c = it.build === 'ap' ? 'Moss' : 'Sepia';
     s.image(cx, y - 4, 30, 30, itemIcon(it.name));
     s.note(cx + 38, y, it.name.replace('Blade of The Ruined King', 'BotRK').replace("Guinsoo's ", '').replace(' Flickerblade', ''), { size: 14 });
@@ -273,7 +277,7 @@ s.tab('players');
     const lx = it.wpa >= 0 ? zero + it.wpa * k + 8 : zero + 8;
     s.note(lx, y + 2, `${sign(it.wpa)} · ${fmtK(it.buys)}`, { size: 12, color: c });
   });
-  const ky = top + 120 + coachless.items.length * 40 + 30;
+  const ky = top + 140 + coachless.items.length * 40 + 30;
   s.note(cx, ky, 'Keystones (same filter)', { size: 18 });
   coachless.keystones.forEach((r, i) => {
     const y = ky + 40 + i * 38;
